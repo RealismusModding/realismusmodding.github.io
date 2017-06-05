@@ -14,7 +14,7 @@ title: Team
             {% include microdata/organization.html %}
         </div>
 
-        <img itemprop="image" class="team-image hidden-xs-down" src="{{ member.image | default: 'http://www.placekitten.com/300/300?image=1' }}" />
+        <img itemprop="image" class="team-image hidden-xs-down" src="{{ member.image | default: 'http://www.placekitten.com/300/300?image=1' }}" alt="{{ member.name }} profile image" />
 
         <div class="team-body">
             <h5><span itemprop="name">{{ member.name }}</span> <small>(also known as <b itemprop="alternateName">{{ member.nickname }}</b>)</small></h5>
