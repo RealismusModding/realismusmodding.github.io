@@ -1,0 +1,84 @@
+locale: "en-US"
+timezone: "Europe/Amsterdam"
+
+title: Realismus Modding
+title_separator: "-"
+
+email: realismusmodding@gmail.com
+description: >
+  Adding realism to Farming Simulator with mods such as Seasons
+
+baseurl: ""
+url: "https://www.realismusmodding.com"
+
+github_username: RealismusModding
+youtube_channel: realismusmodding
+google_analytics: UA-96325378-1
+twitter_username: realismusMods
+
+breadcrumbs: true
+word_per_minute: 200
+
+# Build settings
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highligher: rouge
+lsi: false
+excerpt_separator: "\n\n"
+
+incremental: false
+
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - LICENSE
+  - script
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: post
+  -
+    scope:
+      type: "posts"
+      path: "_posts/blog"
+    values:
+      category: blog
+      nav_cat: blog
+  -
+    scope:
+      type: "posts"
+      path: "_posts/news"
+    values:
+      category: news
+      nav_cat: news
+  -
+    scope:
+      type: "pages"
+    values:
+      layout: page
+  -
+    scope:
+      path: "mods/seasons"
+    values:
+      mod: "seasons"
+      localnav: true
+      layout: page
+  -
+    scope:
+      path: "mods/seasons/manual"
+    values:
+      layout: documentation

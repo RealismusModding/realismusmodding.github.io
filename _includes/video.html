@@ -1,0 +1,22 @@
+<div class="embed-responsive embed-responsive-16by9" itemscope itemtype="http://schema.org/VideoObject">
+    <meta itemprop="name" content="{{ include.title }}" />
+
+    {% if include.description %}
+    <meta itemprop="description" content="{{ include.description }}" />
+    {% endif %}
+
+    <meta itemprop="thumbnailUrl" content="https://i.ytimg.com/vi/{{ include.id }}/hq720.jpg" />
+
+    {% if include.date %}
+    <meta itemprop="uploadDate" content="{{ include.date }}"/>
+    {% endif %}
+
+    {% if include.duration %}
+    <meta itemprop="duration" content="{{ include.duration }}" />
+    {% endif %}
+
+    <link itemprop="embedUrl" href="https://www.youtube.com/embed/{{ include.id }}" />
+    {% include microdata/publisher.html %}
+
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ include.id }}" allowfullscreen></iframe>
+</div>

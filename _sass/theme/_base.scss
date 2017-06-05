@@ -1,0 +1,33 @@
+.rm-col {
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    background: white;
+
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 540px) {
+    .rm-col {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+.item-meta {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.news-list {
+
+}
+
+.news-list article {
+	border-bottom: 1px solid #e6e6e6;
+    margin-top: 2em;
+}
+
+.news-list article:last-child {
+	border-bottom: 0;
+}

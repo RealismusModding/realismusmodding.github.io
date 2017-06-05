@@ -1,0 +1,39 @@
+
+body {
+    background: #f2f2f2;
+    color: #333333;
+
+    /*font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
+
+    font-synthesis: none;
+    -moz-font-feature-settings: "kern";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    min-width: 300px;
+}
+
+.main {
+    background: #fafafa;
+    overflow: hidden;
+}
+
+/*************
+ * Utilities
+ *************/
+
+.divider-left {
+    border-left: 1px solid #d6d6d6;
+}
+
+.divider-right {
+    border-right: 1px solid #d6d6d6;
+}
+
+@import "theme/base";
+@import "theme/nav";
+@import "theme/footer";
+@import "theme/syntax-highlighting";
+@import "theme/blog";
+@import "theme/team";
+@import "theme/responsive";

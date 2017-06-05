@@ -1,0 +1,29 @@
+---
+title: Mods
+---
+
+<h1 class="text-center display-3 mb-4">Mods</h1>
+
+<div class="row">
+{% for modHash in site.data.mods %}
+{% assign mod = modHash[1] %}
+    <div class="col-xs-12 col-md-6 col-lg-4 d-flex mb-4 mx-auto">
+        <div class="card">
+            <img class="card-img-top img-fluid" src="{{ mod.list_icon }}" alt="{{ mod.title }} icon" />
+
+            <div class="card-block">
+                <h4 class="card-title">{{ mod.title }}</h4>
+                <p class="card-text">{{ mod.list_text }}</p>
+
+                <a href="/mods/{{ modHash[0] }}" class="btn btn-outline-primary">More info</a>
+
+                {% if mod.modhub_id %}
+                <a href="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" class="card-link ml-2">Download</a>
+                {% endif%}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+</div>
+

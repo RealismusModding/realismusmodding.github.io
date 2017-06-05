@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<article itemscope itemtype="http://schema.org/Article">
+    <h1 class="display-3" itemprop="headline">{{ page.title }}</h1>
+    <meta itemprop="mainEntityOfPage" content="{{ page.url }}" />
+    <meta itemprop="url" content="{{ page.url }}" />
+    <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
+    <meta itemprop="dateModified" content="{{ page.last_modify_date | default: page.date | date_to_xmlschema }}" />
+    <div itemprop="author" itemscope itemtype="http://schema.org/Organization" itemid="Realismus Modding">
+        <meta itemprop="name" content="Realismus Modding" />
+    </div>
+    {% include microdata/publisher.html %}
+
+    {{ content }}
+</article>

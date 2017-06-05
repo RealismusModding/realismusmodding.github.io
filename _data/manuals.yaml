@@ -1,0 +1,25 @@
+
+
+
+seasons:
+  title: Hello
+  entries:
+    - title: Overview
+      url: overview
+      rel: overview
+    - title: Gameplay
+    - title: Adjusting Seasons
+    - title: Modding with Seasons
+      entries:
+        - title: Map Compatibility
+        - title: Admirers and Objects
+          rel: admirers
+          entries:
+            - title: ssSeasonAdmirer
+            - title: ssSnowAdmirer
+            - title: ssIcePlane
+            - title: Supporting games without Seasons
+    - title: Release notes
+      rel: release-notes
+      entires:
+        - title: "1.0 Release notes"

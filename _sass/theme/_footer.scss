@@ -1,0 +1,154 @@
+/*************
+ * Footer
+ *************/
+
+.site-footer {
+    min-height: 10rem;
+
+    background-color: #f2f2f2;
+
+    border-top: 1px solid #d6d6d6;
+    padding-top: 1rem;
+}
+
+/* Footer: breadcrumbs */
+
+.site-footer .breadcrumb {
+    padding: 0;
+    font-size: 0.9em;
+    background: transparent;
+}
+
+.site-footer .breadcrumb .breadcrumb-item:before {
+    color: #aaa;
+}
+
+.site-footer .breadcrumb .breadcrumb-item a {
+    color: #666;
+}
+
+.site-footer .breadcrumb .breadcrumb-item.active {
+    color: #4d4d4d;
+}
+
+.site-footer .breadcrumb .icon {
+  display: inline-block;
+}
+
+.site-footer .breadcrumb .icon svg {
+  height: 0.9rem;
+  width: 0.9rem;
+}
+
+/* Footer: legal */
+
+#footer-bottom {
+    border-top: 1px solid #dfdfdf;
+    padding-top: 0.5em;
+}
+
+.footer-legal {
+    font-size: 0.7rem
+}
+
+.footer-legal a {
+    font-weight: 500;
+    color: #797d7f;
+}
+
+.footer-legal p {
+    line-height: 0.9rem;
+    color: #999;
+}
+
+.footer-language .dropdown-toggle {
+    border: 0;
+    background: transparent;
+    color: #666;
+}
+
+/* Footer: navigation */
+
+@media (max-width: 540px) {
+    .directorynav {
+        display: none !important;
+    }
+}
+
+.directorynav h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.directorynav ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.9rem;
+}
+
+.directorynav a {
+    color: #555;
+}
+
+/*************
+ * Local navigation bar
+ *************/
+
+.localnav {
+    border-bottom: 1px solid #d6d6d6;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.localnav .nav a.nav-link.active {
+    color: #333;
+}
+
+/*************
+ * Navigation of docs
+ *************/
+
+.docnav {
+    margin-bottom: 2em;
+}
+
+.docnav ul {
+    margin-bottom: 0;
+    margin-left: -0.6em;
+    margin-top: -0.25em;
+    margin-right: 0;
+    list-style: none;
+
+    padding-left: 2rem;
+}
+
+.docnav > ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.docnav li {
+    margin-bottom: 0.3rem;
+    line-height: 1.4em;
+}
+
+.docnav a {
+    color: #595959;
+    cursor: pointer !important;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    display: inline-block;
+}
+
+.docnav a.active {
+    color: #333;
+    font-weight: 700;
+}
+
+.docnav a:hover {
+    background-color: #f2f2f2;
+    text-decoration: none;
+}

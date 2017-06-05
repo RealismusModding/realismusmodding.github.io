@@ -1,0 +1,45 @@
+---
+title: Blog
+permalink: /blog/
+---
+
+<h1>Blog</h1>
+<a href="archive">Archive ({{ site.posts | size }})</a>
+
+<section itemscope itemtype="http://schema.org/Blog">
+    {% for post in site.posts %}
+      {% if post.categories contains "blog" %}
+
+    <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="mt-4">
+        <header>
+            <h2 itemprop="name headline">{{ post.title | escape }}</h2>
+            <p class="blog-meta">
+
+                    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                    {{ post.date | date: date_format }}
+                </time>
+
+                {% if post.author %}
+                  • <author itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="alternateName">{{ site.data.team[post.author].nickname }}</span><span class="d-none" itemprop="name">{{ site.data.team[post.author].name }}</span></author>
+                {% endif %}
+            </p>
+
+            <meta itemprop="mainEntityOfPage url" content="{{ base_url }}{{ post.url }}" />
+            <meta itemprop="dateModified" content="{{ page.last_modify_date | default: page.date | date_to_xmlschema }}" />
+            {% include microdata/publisher.html %}
+        </header>
+
+        {% if forloop.first %}
+        <div itemprop="articleBody">
+            {{ post.content }}
+        </div>
+        {% else %}
+        <div>
+            {{ post.excerpt }}
+            <a href="{{ post.url }}" itemprop="url">Continue reading</a>
+        </div>
+        {% endif %}
+    </article>
+      {% endif %}
+    {% endfor %}
+</section>

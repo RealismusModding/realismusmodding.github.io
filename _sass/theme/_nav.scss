@@ -1,0 +1,60 @@
+
+/* Overwrite bootstrap */
+a.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main site navigation */
+.globalnav {
+    /*height: 52px;  Replace with padding and stuff */
+    font-size: 19px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background: #7B9CD4;
+    background: linear-gradient(right, #7B9CD4, #95B4ED);
+    background: -webkit-linear-gradient(right, #7B9CD4, #95B4ED);
+}
+
+.globalnav .navbar-brand img,
+.globalnav .navbar-brand svg {
+    height: 300px;
+    max-height: 100%;
+    max-width: 300px;
+    width: auto;
+
+    max-height: 38px;
+
+    padding-right: 0.5rem;
+}
+
+// At the frontpage, make the icon stand out, unless on phone
+@media (min-width: 541px) {
+    .frontpage .globalnav .navbar-brand img,
+    .frontpage .globalnav .navbar-brand svg {
+        max-height: 8rem;
+        padding: 0.2rem 0.5rem 0.2rem 0;
+    }
+}
+
+.frontpage .globalnav .navbar-brand {
+    // font-size: 3rem;
+}
+
+.globalnav a.nav-link {
+    // font-size: 150%;
+    // line-height: 70%;
+    margin-left: 1em;
+
+}
+
+.globalnav a.nav-link:link {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.localnav {
+    background: white;
+}

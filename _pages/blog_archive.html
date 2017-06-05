@@ -1,0 +1,44 @@
+---
+title: Blog Archive
+permalink: /blog/archive
+---
+
+<h1>Archive</h1>
+
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+    <ul class="blog-list">
+    {% endif %}
+
+    <li role="article" class="mb-3">
+        <header>
+            <p class="blog-meta mb-0">
+                Posted in {{ post.category | capitalize }} •
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+                {{post.date.year}}
+                {% if post.author %}
+                 • <author itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="alternateName">{{ site.data.team[post.author].nickname }}</span></author>
+                {% endif %}
+            </p>
+
+            <h2 class="h4">
+              <a class="blog-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h2>
+        </header>
+    </li>
+
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if this_year != next_year %}
+    </ul>
+    <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+    <ul class="blog-list">
+        {% endif %}
+    {% endif %}
+{% endfor %}
