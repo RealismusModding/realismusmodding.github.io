@@ -21,9 +21,6 @@ script:
   # bundle exec rake
   - bundle exec jekyll build
 
-after_script:
-  - ls -R .
-
 deploy:
   provider: pages
   github_token: $GITHUB_TOKEN
