@@ -22,8 +22,6 @@ install:
 # before_script:
 script:
   - bundle exec jekyll build
-
-after_script:
   - htmlproofer --check-html --check-opengraph --check-img-http --enforce-https --internal-domains $FQDN --assume-extension --allow-hash-href _site/
 
 deploy:
