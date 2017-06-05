@@ -22,7 +22,7 @@ script:
   - bundle exec jekyll build
 
 after_script:
-  - tree -d .
+  - ls -R .
 
 deploy:
   provider: pages
