@@ -1,0 +1,39 @@
+language: ruby
+
+branches:
+  except:
+  - test
+  - master
+
+
+env:
+  global:
+    secure: "zmpHwPaDkLfVe4+qwuO2eYZQjeov4TKWEpEG499/A6tLAVFqaPBy+0rKvJUAd7ONAKvB1vrHTIxkYDbZ748Z9H43Kl0/7PySxCK2VivIzl82nbjEqWM+n7wh+aS2L9cLUF7nXsmYAou6tEcpTC09rWfT2FHpjDPnnl28h3L1uz9W8rhCCULo+Q7k3hgKuCgfRTRyAnx8EonsDkeG/i74I0FT6eyXYDYwduhooykOn/36Wv3qOdRzTEcWIOMNxkXByYuWOtIyNnb6vFCY8jGmzL2+L0ZeCqnc4eK5F8+C+yMZyNrLPwe5LQcIyUO3LViYkGM4Vq0Sh9Z3eSuhuyPzO2NAOdKnTwWLUgWs0ZQh2tirJcxW+cJlCxysnByV57mpYmDgp+AtRqmRxDa9IoWi6c+p97fUh2gTc8Z+dV/GCbgj0k/r3vDrSkwDdKLpb2rB4XCZqJajKdBGMWStXTe4rPEFpkX0Nlx2aP91adYlFEBjZP2zuRMNRBV2GCiGrOJS41RBTmgOy+B5s19oTBouclECmaFRHvrO+gSiGw6hhYrw1jPfUawZQ0JsmvRYicX5im/6Yb92NGZAvvp21MUx/+gzYmN0MTl4XcRDjAPJNAtOyAAQESngjTgCfFllPmQ0yxcB0NMsMnHeOkmr79Y7j6dTOQ9rbgD21snlIi29l+Y="
+
+# before_install:
+install:
+  - bundle install
+
+# before_script:
+script:
+  # bundle exec rake
+  - bundle exec jekyll build
+
+after_script:
+  - tree -d .
+
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  fqdn: www.realismusmodding.com
+
+  # Do not clean up, or site is gone
+  skip_cleanup: true
+
+  # Site is at _site
+  local_dir: _site
+
+  # Push built from source to master
+  target_branch: test # master
+  on:
+    branch: source
