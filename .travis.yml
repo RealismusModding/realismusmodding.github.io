@@ -33,9 +33,9 @@ deploy:
   local_dir: _site
 
   # Push built from source to master
-  target_branch: test # master
+  target_branch: master
   on:
-    branch: develop # source
+    branch: source
 
 # Only do slack notifications
 notifications:
