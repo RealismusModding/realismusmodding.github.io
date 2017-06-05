@@ -39,6 +39,7 @@ exclude:
   - vendor
   - LICENSE
   - script
+  - README.md
 
 collections:
   pages:
