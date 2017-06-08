@@ -1,0 +1,33 @@
+{% strip %}
+{% include base_path %}
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" itemscope itemtype="http://schema.org/WebSite">
+<head>
+    {% include head.html %}
+</head>
+
+<body {% if layout.globalnav-size == "large" or page.globalnav-size == "large" %}class="frontpage"{% endif %}>
+    {% include browser_upgrade.html %}
+
+    {% include header.html %}
+
+    {% if page.localnav or layout.localnav %}
+        {% if layout.localnav %}
+            {% assign page.localnav = layout.localnav %}
+        {% endif %}
+        {% include localnav.html %}
+    {% endif %}
+
+    <main class="main">
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+</body>
+</html>
+{% endstrip %}

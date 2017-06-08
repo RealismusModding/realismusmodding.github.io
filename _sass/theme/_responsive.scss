@@ -1,0 +1,41 @@
+
+@media (max-width: 540px) {
+    // On phones, stick navigation to the top
+    .globalnav {
+        position: sticky;
+        top: 0;
+        z-index: 1030;
+    }
+
+    .localnav {
+        position: sticky;
+        top: 63px;
+        z-index: 1030;
+    }
+
+    // On the frontpage, no not show the unused line
+    .frontpage #footer-bottom {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    // Use a smaller display size
+    .display-1 {
+      font-size: 5rem;
+    }
+    .display-2 {
+      font-size: 4.5rem;
+    }
+    .display-3 {
+      font-size: 3.5rem;
+    }
+    .display-4 {
+      font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 356px) {
+    .globalnav .navbar-brand {
+        display: none;
+    }
+}

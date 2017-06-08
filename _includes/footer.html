@@ -1,0 +1,71 @@
+<section class="site-footer">
+    <footer class="container">
+        <nav class="row" id="footer-links">
+            <div class="col-12">
+                {% include nav-breadcrumbs.html %}
+            </div>
+
+            <div class="col-3 directorynav">
+                <h3>Realismus Modding</h3>
+                <ul>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/team">Team</a></li>
+                </ul>
+            </div>
+
+            <div class="col-3 directorynav">
+                <h3>Mods</h3>
+                <ul>
+{% for modHash in site.data.mods %}
+{% assign mod = modHash[1] %}
+                    <li><a href="/mods/{{ modHash[0] }}">{{ mod.title }}</a></li>
+{% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-3 directorynav">
+                <h3>Social &amp; Contact</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/c/realismusmodding" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.youtube.com/c/realismusmodding" ga-transport="beacon">YouTube</a></li>
+                    <li><a href="https://slack.realismusmodding.com" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://slack.realismusmodding.com" ga-transport="beacon">Slack</a></li>
+                    <li><a href="https://www.twitter.com/{{ site.twitter_username }}" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.twitter.com/{{ site.twitter_username }}" ga-transport="beacon">Twitter</a></li>
+                    <li><a href="mailto:realismusmodding@gmail.com?subject=Contact%20from%20website">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-3 directorynav">
+                <h3>Website</h3>
+                <ul>
+                {% if false %}
+                    <li><a href="/legal/privacy-policy">Privacy Policy</a></li>
+                {% endif %}
+                    <li><a href="/sitemap.xml">Sitemap</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Legal -->
+        <div class="row" id="footer-bottom">
+            <div class="col-10 footer-legal">
+                <p class="mb-0">&copy; 2017 Realismus Modding. All rights reserved. Documentation is licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY-4.0</a>.</p>
+                <p>Farming Simulator is a trademark of GIANTS Software GmbH. All other trademarks are properties of their respective owners.</p>
+            </div>
+            <div class="col-2 text-right footer-language">
+                {% if false %}
+                <div class="dropdown dropup">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Deutch</a>
+                        <a class="dropdown-item" href="#">français</a>
+                        <a class="dropdown-item" href="#">русский</a>
+                        <a class="dropdown-item" href="#">Polskie</a>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </footer>
+</section>

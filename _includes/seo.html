@@ -1,0 +1,117 @@
+{% include base_path %}
+
+<!-- begin SEO -->
+{% if site.url %}
+  {% assign seo_url = site.url | append: site.baseurl %}
+{% endif %}
+
+{% if page.title %}
+  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+{% endif %}
+
+{% if seo_title %}
+  {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+{% if site.url %}
+  {% assign canonical_url = page.url | prepend: seo_url | replace: "/index.html", "/" %}
+{% endif %}
+
+<meta name="keywords" content="{{page.tags}}{% if page.tags %}, {% endif %} {{page.keywords}}" />
+
+<title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ site.title_separator }} {{ site.data.ui-text[site.locale].page }} {{ paginator.page }}{% endunless %}{% endif %}</title>
+<meta itemprop="name" content="{{ site.title }}" />
+
+{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
+{% if seo_description %}
+  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+{% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
+{% if seo_author %}
+  {% if seo_author.twitter %}
+    {% assign seo_author_twitter = seo_author.twitter %}
+  {% else %}
+    {% if site.data.authors and site.data.authors[seo_author] %}
+      {% assign seo_author_twitter = site.data.authors[seo_author].twitter  %}
+    {% else %}
+      {% assign seo_author_twitter = seo_author  %}
+    {% endif %}
+  {% endif %}
+  {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
+{% endif %}
+
+<meta property="og:locale" content="{{ site.locale }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}" />
+
+{% if seo_url %}
+  <link rel="canonical" href="{{ canonical_url }}" itemprop="url" />
+  <meta property="og:url" content="{{ canonical_url }}" />
+{% endif %}
+
+{% if page.excerpt %}
+  <meta property="og:description" content="{{ seo_description }}" />
+{% endif %}
+
+{% if site.twitter_username %}
+  <meta name="twitter:site" content="@{{ site.twitter_username | replace: "@", "" }}" />
+  <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}" />
+  <meta name="twitter:description" content="{{ seo_description }}" />
+  <meta name="twitter:url" content="{{ canonical_url }}" />
+
+  {% if page.header.image %}
+    <meta itemprop="image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: base_path }}{% endif %}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: base_path }}{% endif %}" />
+  {% else %}
+    <meta name="twitter:card" content="summary" />
+    {% if site.og_image %}
+      <meta name="twitter:image" content="{{ site.og_image | prepend: base_path }}" />
+      <meta property="og:image" content="{{ site.og_image | prepend: base_path }}" />
+    {% endif %}
+  {% endif %}
+
+  {% if seo_author_twitter %}
+    <meta name="twitter:creator" content="@{{ seo_author_twitter }}" />
+  {% endif %}
+{% endif %}
+
+{% if site.facebook %}
+  {% if site.facebook.publisher %}
+    <meta property="article:publisher" content="{{ site.facebook.publisher }}" />
+  {% endif %}
+
+  {% if site.facebook.app_id %}
+    <meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
+  {% endif %}
+{% endif %}
+
+{% if page.header.image %}
+  <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: base_path }}{% endif %}" />
+{% endif %}
+
+{% if page.date %}
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
+  {% if page.next.url %}
+    <link rel="next" href="{{ page.next.url | prepend: seo_url | replace: "/index.html", "/" }}" title="{{ page.next.title | escape }}" />
+  {% endif %}
+  {% if page.previous.url %}
+    <link rel="prev" href="{{ page.previous.url | prepend: seo_url | replace: "/index.html", "/" }}" title="{{ page.previous.title | escape }}" />
+  {% endif %}
+{% endif %}
+
+{% if site.social %}
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}person{% endif %}",
+      "name" : "{{ site.social.name | default: site.name }}",
+      "url" : {{ seo_url | jsonify }},
+      "sameAs" : {{ site.social.links | jsonify }}
+    }
+  </script>
+{% endif %}
+
+<!-- end SEO -->

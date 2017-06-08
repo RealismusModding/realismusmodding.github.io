@@ -1,0 +1,38 @@
+---
+layout: default
+globalnav-size: large
+---
+
+<div class="row mt-5">
+    <div class="col-md-9 col-sm-12 mx-auto">
+
+        <h1 class="display-3">Mods with realism</h1>
+        <p>Realismus Modding was formed in 2016 with a vision for increased realism in Farming Simulator</p>
+        <p>We are just as passionate about virtual farming as we are about real farming, so we create mods which focus on making gameplay more realistic.</p>
+
+        {% if site.data.mods["seasons"].released %}
+        <div class="col-xl-6 col-md-9 col-xs-12 mx-auto my-3">
+            <div class="card card-inverse mx-auto">
+                <a href="/mods/seasons">
+                    <img class="card-img img-fluid" src="/assets/img/mods/seasons/SeasonsIcon_512.jpg" alt="Seasons icon to go to seasons information page" />
+
+                    <div class="card-img-overlay d-flex">
+                        <h4 class="card-title mt-auto mx-auto" style="color: #ddd">Click for more information</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endif %}
+
+        <p>Our team is always hard at work improving our mods and creating new ones, so follow us to hear about our latest projects. You can also join our Slack to talk with us directly.</p>
+
+        <p class="text-center">
+            <a class="btn btn-outline-danger m-1" href="https://slack.realismusmodding.com" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://slack.realismusmodding.com" ga-transport="beacon">Join the conversation on Slack</a>
+            <a  href="https://www.youtube.com/c/realismusmodding" class="btn btn-outline-warning m-1" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.youtube.com/c/realismusmodding" ga-transport="beacon">Subscribe on YouTube</a>
+            <a  href="https://www.twitter.com/realismusMods" class="btn btn-outline-info m-1" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.twitter.com/realismusMods" ga-transport="beacon">Follow on Twitter</a>
+        </p>
+
+    </div>
+</div>
+
+{% include latest_news.html %}

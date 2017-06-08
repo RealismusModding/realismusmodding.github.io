@@ -1,0 +1,23 @@
+# As a post instead with a category?
+# all in _posts now have blog as category
+# can make _posts/blog ? with blog category
+# how does it affect permalink, breadcrumb
+# new type: frontpage post
+
+- type: mod
+  name:
+
+- type: article
+  url:
+
+
+- type: blogpost
+
+- type: video
+  youtube_id:
+  date:
+  title:
+  text:
+  author:
+
+- type: custom

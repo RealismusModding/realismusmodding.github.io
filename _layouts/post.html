@@ -1,0 +1,58 @@
+---
+layout: page
+---
+
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <meta itemprop="mainEntityOfPage" content="{{ page.url }}" />
+    <header>
+        <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+        <p class="blog-meta">
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {{ page.date | date: date_format }}
+            </time>
+
+            {% if page.author %}
+              • <author itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="alternateName">{{ site.data.team[page.author].nickname }}</span><span class="d-none" itemprop="name">{{ site.data.team[page.author].name }}</span></author>
+            {% endif %}
+        </p>
+
+        <meta itemprop="dateModified" content="{{ page.last_modify_date | default: page.date | date_to_xmlschema }}" />
+        {% include microdata/publisher.html %}
+
+    </header>
+
+    <div itemprop="articleBody">
+        {{ content }}
+    </div>
+</article>
+
+{% for post in site.categories[page.nav_cat] %}
+  {% if post.url == page.url %}
+    {% assign post_index0 = forloop.index0 %}
+    {% assign post_index1 = forloop.index %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.categories[page.nav_cat] %}
+  {% if post_index0 == forloop.index %}
+    {% assign next_post = post %}
+  {% endif %}
+  {% if post_index1 == forloop.index0 %}
+    {% assign prev_post = post %}
+  {% endif %}
+{% endfor %}
+
+<aside class="row mt-5">
+    {% if prev_post %}
+    <div class="col text-left">
+        <p><a href="{{ prev_post.url }}">Previous post: {{ prev_post.title }}</a></p>
+    </div>
+    {% endif %}
+
+    {% if next_post %}
+    <div class="col text-right">
+        <p><a href="{{ next_post.url }}">Next post: {{ next_post.title }}</a></p>
+    </div>
+    {% endif %}
+</aside>

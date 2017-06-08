@@ -1,0 +1,54 @@
+language: ruby
+rvm:
+  - 2.2
+
+branches:
+  except:
+  - test
+  - master
+
+env:
+  global:
+    - FQDN=www.realismusmodding.com
+    - secure: "zmpHwPaDkLfVe4+qwuO2eYZQjeov4TKWEpEG499/A6tLAVFqaPBy+0rKvJUAd7ONAKvB1vrHTIxkYDbZ748Z9H43Kl0/7PySxCK2VivIzl82nbjEqWM+n7wh+aS2L9cLUF7nXsmYAou6tEcpTC09rWfT2FHpjDPnnl28h3L1uz9W8rhCCULo+Q7k3hgKuCgfRTRyAnx8EonsDkeG/i74I0FT6eyXYDYwduhooykOn/36Wv3qOdRzTEcWIOMNxkXByYuWOtIyNnb6vFCY8jGmzL2+L0ZeCqnc4eK5F8+C+yMZyNrLPwe5LQcIyUO3LViYkGM4Vq0Sh9Z3eSuhuyPzO2NAOdKnTwWLUgWs0ZQh2tirJcxW+cJlCxysnByV57mpYmDgp+AtRqmRxDa9IoWi6c+p97fUh2gTc8Z+dV/GCbgj0k/r3vDrSkwDdKLpb2rB4XCZqJajKdBGMWStXTe4rPEFpkX0Nlx2aP91adYlFEBjZP2zuRMNRBV2GCiGrOJS41RBTmgOy+B5s19oTBouclECmaFRHvrO+gSiGw6hhYrw1jPfUawZQ0JsmvRYicX5im/6Yb92NGZAvvp21MUx/+gzYmN0MTl4XcRDjAPJNAtOyAAQESngjTgCfFllPmQ0yxcB0NMsMnHeOkmr79Y7j6dTOQ9rbgD21snlIi29l+Y=" #GITHUB_TOKEN
+    - secure: "gcwbP1vmiS6aPcQPo7XWMqPHOnVfYiWHPqmaGQT6yLeOXay56eR4or4idgnBipkHkmhrPnoItVCZzHuCIIEkP8POKG1dhRdW5lZL+LgZ3kPfrgNGeRuWf2ZsA7RkFXpgKpG0/hc8rHy2r/h3fn+q7tk0607Wd9qDOIZyCsBZV/D65ezrTD7FbJmfsKukDgj73tYNareZWYGO3tcDXBGxJVBiqwk86OdGE7lGVy4jyCtw2mXTOBaO4hnNIlGAbpY2+w+vQLuxDIZowMCvJpXcssJFimE5tg4CtoMpWWG8DSNwbm8cKHH6zi1En6sNb7ecr94XW7YVs664oQ8j9sIoi4zgKxf7TL4MTTk15ty0la8zNTQns5oGOsAjfUTjk2zOP4uo/TnWPGECnMBkdiO8/d7Wlwo7+U53XEngU8dxDRf0rVV/e8eBOhSqFgQgw8nWzfPKRYz7z0F1K0akZRFrs+WNgGA4EimvHmeQOsa1Egf8sS1ZzV3bffEYYY7vqiU/APrkNhm8J/PvnixW5L0zTgMFaeL+pY5m1STeXuvy6IWovg33SuNeqTqhI+TEpKIAnLgn9Xk3KjkkHrQCV/jzeJGCNVFaeJOWWGgwQsoHHo3YZrbCjH0oE4mClhut1zXiPUwmUx4QffLJnLi9tMPVlblA5jwdTgVo5GtijEazrgQ=" #CF_ZONE_ID
+    - secure: "HxRThGaGTvAuC+DOZCQ8Vy0mj9j8XHL5/PQNciV+xDsdtox+WDuf9d3zQlZIrvAOP5NDaC9PRcItadKPN/hI30QnfiqdJUcQM7F4PrC+NsyKHc9YMoICk8hMFA3f4Q5g6BkbpUMyAmP8ih8COl5k/dWXqXKNU3/t3sMq+xAp6eiEEMgWZGqFvOYkyioOBlsrus9GzrCeOf546wmitsLVFRKfO3btTQTrdN4pWoX5wBtNkPax1GBJtJguI7IshPsNK443JEa7TtodMv4oPAh8cemV4tovBzc28b7S4sK/Pf/OjOi1CW68Jc4idRx+pdHjwo1E6mqB8znihFbr+F05+rRh4eDj2ShWkM8JzO+PW/PUOjRhU+5ic0jA/xXGpz5BjtH5huK6NfRpBPph6dWkl36UcBR+D+jWFav7wCK/DT6TIkRwzScvBZAs9PskYnY2CiUJ0JxKjTVfoSZwjUkwyOMfwIizAhlB0x++/7yCN3kwiEJ6jJxWvdthfVL1pLafCkr+k7cKpPQwl5gLt57qO38/DP78bCpgGtZMsAAvHVscRaSGbiA2MQlamuubb1wMlHcvMnbvmTcRsfbCefyYjU/1BYFVk7A+7FpPywM0PvglTZxpmV7v5uQ9jIx83zuXssKBDc2fARZDKUJKWgaGwbWT5kN3hSPYpPLIxYwVvwg=" #CF_API_KEY
+    - secure: "IFecimSPAanzIAENlfKDCgbEpsENNrhA4B+fZEFlOiVCm6g2EjrFr3RFwuFlC/k0t/5mAHK2a66rNdGnMFuDW4alKpBNUzYQlxEnJ/uHfjCODgOZEeytuYwkkSdfXGVkxaISUoDstKvZR3XRGD4Fm4WHb3jhKdqfmBwqmOAADAaE+XwEWPQ7N6/x64qD/bWCxlU5sk4urkPtjkIwYNVjxE2446DpE8BDOm4qICRskWRkGJmKWnzaAGu8D0c5/8xpB8dUAiN3Fwq5q5dUYzcJ/xOaEEmu+atwXEBwrYabKZVCW89CId0c9nRzoVc2zu90LiggupcRL0xB+p/6Abhl4ZvE2eGMdWfW2hA03XNPJCiy0xEbIJlhYYoSlSeV2EYNC1qP6SgTVxU4ixJIFDdRt7ua235vGlC6EAQJ+tsPIOj6bUb3o9NjCcK9WsqJT2l48OF2tXZvmAh7gxYYhnvB9tyZmIZzHIkYfO9mIf3X1MElsSwQ/OYHg+d/QhIdAmR1rFWlbYcAKwvr29heA6/FqNckm1bj66qx6gl92LSpPfWsdSsXfpLh5a46qNEWxKdHcw52aJpct6T+5+zM3YDKYCHc1xhxiRAYuGTXF+1ipDGTJbpwC7KHr6Tr97/+RwojkFbvCyqANvuQUY2x3IorJ5cPKFbY15Sjm8TeKflJb8g=" #CF_EMAIL
+
+# before_install:
+install:
+  - bundle install
+
+# before_script:
+script:
+  - bundle exec jekyll build
+  - htmlproofer --check-html --check-opengraph --check-img-http --enforce-https --internal-domains $FQDN --assume-extension --allow-hash-href _site/
+
+deploy:
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  fqdn: $FQDN
+
+  # Do not clean up, or site is gone
+  skip_cleanup: true
+
+  # Site is at _site
+  local_dir: _site
+
+  # Push built from source to master
+  target_branch: master
+  on:
+    branch: source
+
+after_deploy:
+  - "curl -X DELETE 'https://api.cloudflare.com/client/v4/zones/$CF_ZONE_ID/purge_cache' -H 'X-Auth-Email: $CF_EMAIL' -H 'X-Auth-Key: $CF_API_KEY' -H 'Content-Type: application/json' --data '{\'purge_everything\':true}'"
+
+# Only do slack notifications
+notifications:
+  slack:
+    # secure: "pI7bQ0bAtstZvRif3TcDm9XRSKCE/MOMcprus8Q4LUAB+CJFWxE1x47VDCWSm5ysfH2vmFjDWvFxfQUYvGQLcbOsNk0A1a3VKjJaz4jRVTtAW3/9KwnW5JHX6mFZB/KzRb1OYdXys8Tj5I3lb20PIfIg56/Z1pFnzSUuqpOKT9bVCVUd9a2fQ0JDhBP+5w35SbfG3UvZRjNlBS9LVf3iJllvdZTaIl9BqM5RDeFrSpALW9qjkukecuyA+iM3HAER6wE1jBv8+pv3y/wEAZLYD/QaQ9n9do14pdZVAveEYA+KpWFMOMO7RtnNwKizJG8Cy40rq7LgWYz1yKW/EOugmLO2TORdoaZ8WfDOWa4jW1EtlI+F2yAoO04lOdWF6/L9d4URWkimaPlMqgtqlSWeea9j/sCgH6ah1bOHsw3HZ0Ls83Pq0hL5juJCEqvX/Rzd+uPSF0UzNBRG9VXO1AYXjXslQN5xU8vKqyiwwFLjQKYxPX3OOlm62cAq4DUGIH2IKNWO/SXnOX3pE67oOyG+aUozOugXT6hvnYVvYXEeqFqsGriCcEcH8DHrhBp7AcneGQktfx/s0fSOnZqIE1nIxfyTle1WOOLOkjIhiRgOqOkFnpdYq85lbtQgUX/6okwhm7ZiKSmk8ouPvkqSUj+Rlerev5aRNqB5xCzTH3ag3NI="
+    rooms:
+      secure: cMg/u32d/TpXEEbCRPHbVm2DRSoK97jac886rtTnTerRhURUgAv0G+CX13EBrGUuw3HU2XKwHQXhsgVXalLn8L7/ZrgjljjeY1iEr5SnMVjMykXdyq+ASJKI1fJbv46QZK8regke4fco8q+PhXXYIYcdzWfpbTV8o+c5VX6iBABnSmMfp8DL3/mQ1pj0WFUS8bx2LcELIW4O5nMMAkg20cHxwRqVuoy5eoi61BO0m7p2xcCK2z0oBCYohIzUnBman5HWmM/w+azUaGQ8uSAeF5gjoPwku7imEtkltka7ZBHgBXMk2Tn4cC0PruG/MtYaH72CaqgwvZy3lyylAUSZVZUIVjZlk19sqF09Pj5rTsjiFU7D5TWwBVTA0W02Eg24YTM2l+BCz32YXnMmvlAa1XWIL1jEHaEf0JOnFubzRfmUIS6uD5mEusfrH4zCNq0kVRdBe8f0Ol1GwuTFcKsBggGGZW6K+dSOC8EEISx/yyHJoh1hf0UBaF9FBUrcXkg8nCp5eZmmCVK1uHERtfoiwmY65P6DrYyW5zK9suaMGQLkOghYMHIk6E/akD86dcOggBCw5p4OmmJtwzyuICDacbe2t7u4rOs2Lp1EWLRQXAySQenQz0cAz87rTVbrcnCRXT5THwrg/EhfjGjii8FtMVkTUSl6q80UFyf2DkZYaPw=
+    on_success: change
+    on_failure: always
+  email: false

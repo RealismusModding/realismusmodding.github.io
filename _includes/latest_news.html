@@ -1,0 +1,41 @@
+<div class="row mt-5">
+    <div class="col-md-7 col-sm-12 rm-col mx-auto news-list" style="border-top: 1px solid #d6d6d6">
+        <header>
+            <h2 class="text-center">Latest news</h2>
+        </header>
+
+        {% for post in site.posts limit:3 %}
+        <article class="pb-3">
+            <header>
+                <h2 class="h4">{{ post.title }}</h2>
+            </header>
+
+            {% if post.header.image %}
+            <img src="{{ post.header.image }}" class="card-img-top" style="max-width: 100%; max-height: 25rem" />
+            {% endif %}
+
+            <div>
+                <header class="item-meta mb-1">
+                    Posted in {{ post.category | capitalize }} •
+
+                    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: date_format }}
+                    </time>
+
+                    {% if post.author %}
+                      • <author itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="alternateName">{{ site.data.team[post.author].nickname }}</span><span class="d-none" itemprop="name">{{ site.data.team[post.author].name }}</span></author>
+                    {% endif %}
+                </header>
+
+                {% if post.category contains "blog" %}
+                {{ post.excerpt }}
+                <a href="{{ post.url }}">Continue reading</a>
+                {% else %}
+                {{ post.content }}
+                {% endif %}
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>
