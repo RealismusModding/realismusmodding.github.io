@@ -29,7 +29,7 @@ header:
     {% for screenshot in mod.screenshots %}
     <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
         <a href="{{ screenshot.url }}" target="_blank">
-            <img class="img-fluid rounded" src="{{ screenshot.url }}" alt="{{ screenshot.title }}" />
+            <img class="img-fluid rounded" src="{{ screenshot.url }}" alt="{{ screenshot.title }}" title="{{ screenshot.title }}" />
         </a>
     </div>
     {% endfor %}
@@ -40,7 +40,7 @@ header:
     {% for video in mod.videos %}
     <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
         <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">
-            <img class="img-fluid rounded" src="https://i.ytimg.com/vi/{{ video.id }}/hq720.jpg" alt="{{ video.title }}" />
+            <img class="img-fluid rounded" src="https://i.ytimg.com/vi/{{ video.id }}/hq720.jpg" alt="{{ video.title }}" title="YouTube video: {{ video.title }}" />
         </a>
     </div>
     {% endfor %}
