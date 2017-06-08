@@ -22,6 +22,8 @@ permalink: /blog/
                 {% if post.author %}
                   • <author itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="alternateName">{{ site.data.team[post.author].nickname }}</span><span class="d-none" itemprop="name">{{ site.data.team[post.author].name }}</span></author>
                 {% endif %}
+
+                • <a href="{{ post.url }}">permalink</a>
             </p>
 
             <meta itemprop="mainEntityOfPage url" content="{{ base_url }}{{ post.url }}" />
