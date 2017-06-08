@@ -1,5 +1,3 @@
-require_relative 'drops/manual_page.rb'
-
 Jekyll::Hooks.register :site, :pre_render do |site, payload|
   man = Jekyll::ManualGenerator.new
   man.generate(site, payload)
