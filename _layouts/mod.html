@@ -26,6 +26,10 @@ layout: page
     <a name="video" />
     {% include video.html title=mod.video.title id=mod.video.id duration=mod.video.duration date=mod.video.date %}
     <p> </p>
+    {% elsif mod.videos.size > 0 %}
+    {% assign vid = mod.videos[0] %}
+    {% include video.html title=vid.title id=vid.id duration=vid.duration date=vid.date %}
+    <p> </p>
     {% endif %}
 
     {% anchor h2 %}Screenshots{% endanchor %}
