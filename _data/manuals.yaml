@@ -1,16 +1,27 @@
 seasons:
-  - rel: overview
-  - rel: gameplay
-  - rel: adjusting_seasons
-  - rel: modding_with_seasons
-    entries:
-      - rel: map_compatibility
-      - rel: admirers
-        entries:
-          - rel: obj_season_admirer
-          - rel: obj_snow_admirer
-          - rel: obj_ice_plane
-          - rel: supporting_without_seasons
-  - rel: release_notes
-    entries:
-      - rel: release_notes_1_0
+  entries:
+    - ref: overview
+    - ref: gameplay
+      entries:
+        # - ref: gp_growth
+        # - ref: gp_economy
+        # - ref: gp_animals
+        - ref: gp_crops
+        # - ref: gp_weather
+    # - ref: adjusting_seasons
+    #   entries:
+    #     - ref: adj_growth
+    #     - ref: adj_weather
+    #     - ref: adj_textures
+    - ref: modding
+      entries:
+        - ref: map_compatibility
+        - ref: admirers
+          entries:
+            - ref: obj_season_admirer
+            # - ref: obj_snow_admirer
+            # - ref: obj_ice_plane
+            # - ref: supporting_without_seasons
+    # - ref: refease_notes
+    #   entries:
+    #     - ref: refease_notes_1_0

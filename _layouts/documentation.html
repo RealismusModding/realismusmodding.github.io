@@ -6,40 +6,54 @@ localnav: true
 <div class="row">
     <!-- Manual side navigation -->
     <div class="col-sm-3 col-xs-12 docnav pb-5 pt-5">
+        {% assign manpages = manuals[page.manual].pages %}
         <ul>
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Gameplay</a></li>
-<!--                     <ul>
-                <li><a href="#">Growth</a></li>
-                <li><a href="#">Economy</a></li>
-                <li><a href="#">Animals</a></li>
-                <li><a href="#">Crops</a></li>
-                <li><a href="#">Weather</a></li>
-            </ul> -->
-            <li><a href="#">Adjusting Seasons</a></li>
-<!--                     <ul>
-                <li><a href="#">Weather</a></li>
-                <li><a href="#">Growth</a></li>
-                <li><a href="#">Textures</a></li>
-            </ul> -->
-            <li><a href="#">Modding with Seasons</a></li>
-            <ul>
-                <li><a href="#">Map Compatibility</a></li>
-                <li><a href="#" class="active">Admirers and Objects</a></li>
+
+        {% for i in site.data.manuals[page.manual].entries %}
+            {% assign pi = manpages[i.ref] %}
+
+            <li><a href="{{ pi.url }}"{% if false %} class="active"{% endif %}>{{ pi.title }}</a></li>
+
+            {% if i.entries %}
                 <ul>
-                    <li><a href="#">ssSeasonAdmirer</a></li>
-                    <li><a href="#">ssSnowAdmirer</a></li>
-                    <li><a href="#">ssIcePlane</a></li>
-                    <li><a href="#">Supporting games without Seasons</a></li>
+                {% for j in i.entries %}
+                    {% assign pj = manpages[j.ref] %}
+
+                    <li><a href="{{ pj.url }}"{% if false %} class="active"{% endif %}>{{ pj.title }}</a></li>
+
+                    {% if j.entries %}
+                        <ul>
+                        {% for k in j.entries %}
+                            {% assign pk = manpages[k.ref] %}
+
+                            <li><a href="{{ pk.url }}"{% if false %} class="active"{% endif %}>{{ pk.title }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                {% endfor %}
                 </ul>
-                <li><a href="#">Texture Mods</a></li>
-                <li><a href="#">Geographical Mods</a></li>
-            </ul>
+            {% endif %}
+        {% endfor %}
         </ul>
     </div>
 
     <!-- Manual content -->
     <div class="col-sm-9 col-xs-12 rm-col">
         {{ content }}
+
+        <aside class="row">
+            <div class="col-6 text-left">
+                {% if page.prev %}
+                <p><a href="{{ page.prev.url }}">Prev page: {{ page.prev.title }}</a></p>
+                {% endif %}
+            </div>
+
+            <div class="col-6 text-right">
+                {% if page.next %}
+                <p><a href="{{ page.next.url }}">Next page: {{ page.next.title }}</a></p>
+                {% endif %}
+            </div>
+        </aside>
+
     </div>
 </div>

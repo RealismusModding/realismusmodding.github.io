@@ -4,7 +4,7 @@ tags: [modding]
 keywords: guide, modding, compatibility
 last_updated: 2017-06-07 22:16:15 +0100
 summary: ""
-rel: map_compatibility
+ref: map_compatibility
 permalink: /mods/seasons/manual/modding/compatibility
 ---
 

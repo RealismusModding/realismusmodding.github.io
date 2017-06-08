@@ -4,13 +4,15 @@ tags: [modding]
 keywords: guide, modding, admirer, object
 last_updated: 2017-06-07 22:16:15 +0100
 summary: "You can add map objects that change their behaviour depending on the season, snow or temperature"
-rel: admirers
-permalink: /mods/seasons/manual/modding/admirers
+ref: admirers
+permalink: /mods/seasons/manual/modding/admirers/
 ---
 
 Admirers!
 
 Stuff here
+
+{{ page.test }}
 
 
 <!-- <aside class="row mt-5">
