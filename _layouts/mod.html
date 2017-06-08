@@ -2,6 +2,8 @@
 layout: page
 ---
 
+{% assign mod = site.data.mods[page.mod] %}
+
 <article itemscope itemtype="http://schema.org/Article">
     <h1 class="display-3" itemprop="headline">{{ page.title }}</h1>
     <meta itemprop="mainEntityOfPage" content="{{ page.url }}" />
@@ -14,4 +16,37 @@ layout: page
     {% include microdata/publisher.html %}
 
     {{ content }}
+
+    {% if mod.released %}
+    <p class="text-center">
+        <a class="btn btn-outline-primary m-1" href="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" ga-transport="beacon">Download and Vote</a>
+    </p>
+
+
+    <a name="video" />
+    {% include video.html title=mod.video.title id=mod.video.id duration=mod.video.duration date=mod.video.date %}
+    <p> </p>
+    {% endif %}
+
+    {% anchor h2 %}Screenshots{% endanchor %}
+    <div class="row">
+        {% for screenshot in mod.screenshots %}
+        <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+            <a href="{{ screenshot.url }}" target="_blank">
+                <img class="img-fluid rounded" src="{{ screenshot.url }}" alt="{{ screenshot.title }}" title="{{ screenshot.title }}" />
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% anchor h2 %}More videos{% endanchor %}
+    <div class="row">
+        {% for video in mod.videos %}
+        <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+            <a href="https://www.youtube.com/watch?v={{ video.id }}" target="_blank">
+                <img class="img-fluid rounded" src="https://i.ytimg.com/vi/{{ video.id }}/hq720.jpg" alt="{{ video.title }}" title="YouTube video: {{ video.title }}" />
+            </a>
+        </div>
+        {% endfor %}
+    </div>
 </article>
