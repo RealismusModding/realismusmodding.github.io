@@ -1,5 +1,6 @@
 require_relative 'drops/breadcrumb_item.rb'
 
+# Hook for all pages
 Jekyll::Hooks.register :pages, :pre_render do |page, payload|
   drop = Drops::BreadcrumbItem
 

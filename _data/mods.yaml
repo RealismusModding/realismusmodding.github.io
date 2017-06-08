@@ -1,20 +1,41 @@
 seasons:
   title: Seasons
-  # modhub_id: 79288
-  list_icon: /assets/img/mods/seasons/seasons.jpg
+  modhub_id: 79288
+  list_icon: /assets/img/mods/seasons/SeasonsIcon_512.jpg
   list_text: Experience a whole new way of playing Farming Simulator!
+  released: false
   navitems:
     - name: supplements
       title: Additional mods
       url: /mods/seasons/supplements
+  video:
+    title: Farming Simulator 17 - Seasons Mod - Main features
+    id: b4u6Vz1aAvA
+    duration: PT2M30S
+    date: 2017-06-01T22:47:00+01:00
+  screenshots:
+    - title: Spring
+      url: /assets/img/mods/seasons/screenshots/spring.jpg
+    - title: Summer
+      url: /assets/img/mods/seasons/screenshots/summer.jpg
+    - title: Autumn
+      url: /assets/img/mods/seasons/screenshots/autumn.jpg
+    - title: Winter
+      url: /assets/img/mods/seasons/screenshots/winter.jpg
+    - title: Menu
+      url: /assets/img/mods/seasons/screenshots/menu.jpg
+  videos:
+    - title: Farming Simulator 17 - Seasons Mod - One Year Time Lapse
+      id: _Y1ALHmKbsk
+      duration: PT2M53S
+      date: 2017-06-02T01:00:00+01:00
+    - title: Farming Simulator 17 - Seasons Mod WIP - Seasonal tree textures by KimG
+      id: qDDurn1aO_I
+      duration: PT6M37S
+      date: 2017-03-31T08:00:00+01:00
   supplements:
   #   - name: geo_northernsweden
   #     title: "GEO: Northern Sweden"
   #     list_icon: /assets/img/mods/seasons/logo_geo_sweden.jpg
   #     description: "Get the weather and environment of the colder Northern Sweden. Play without corn and soybean but with more snow."
   #     modhub_id: 55367
-
-# livestock:
-#   title: Livestock
-#   modhub_id: 50271
-#   list_icon: /assets/img/seasons.jpg

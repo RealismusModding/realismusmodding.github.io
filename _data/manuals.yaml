@@ -1,25 +1,16 @@
-
-
-
 seasons:
-  title: Hello
-  entries:
-    - title: Overview
-      url: overview
-      rel: overview
-    - title: Gameplay
-    - title: Adjusting Seasons
-    - title: Modding with Seasons
-      entries:
-        - title: Map Compatibility
-        - title: Admirers and Objects
-          rel: admirers
-          entries:
-            - title: ssSeasonAdmirer
-            - title: ssSnowAdmirer
-            - title: ssIcePlane
-            - title: Supporting games without Seasons
-    - title: Release notes
-      rel: release-notes
-      entires:
-        - title: "1.0 Release notes"
+  - rel: overview
+  - rel: gameplay
+  - rel: adjusting_seasons
+  - rel: modding_with_seasons
+    entries:
+      - rel: map_compatibility
+      - rel: admirers
+        entries:
+          - rel: obj_season_admirer
+          - rel: obj_snow_admirer
+          - rel: obj_ice_plane
+          - rel: supporting_without_seasons
+  - rel: release_notes
+    entries:
+      - rel: release_notes_1_0

@@ -1,14 +1,14 @@
 ---
-title: Admirers
+title: Map compatibility
 tags: [modding]
-keywords: guide, modding, admirer, object
+keywords: guide, modding, compatibility
 last_updated: 2017-06-07 22:16:15 +0100
-summary: "You can add map objects that change their behaviour depending on the season, snow or temperature"
-rel: admirers
-permalink: /mods/seasons/manual/modding/admirers
+summary: ""
+rel: map_compatibility
+permalink: /mods/seasons/manual/modding/compatibility
 ---
 
-Admirers!
+Map compatibility!
 
 Stuff here
 

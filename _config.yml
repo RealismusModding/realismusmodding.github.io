@@ -83,3 +83,4 @@ defaults:
       path: "mods/seasons/manual"
     values:
       layout: documentation
+      manual: seasons
