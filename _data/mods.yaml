@@ -3,7 +3,7 @@ seasons:
   modhub_id: 79288
   list_icon: /assets/img/mods/seasons/SeasonsIcon_512.jpg
   list_text: Experience a whole new way of playing Farming Simulator!
-  released: false
+  released: true
   navitems:
     - name: supplements
       title: Additional mods
