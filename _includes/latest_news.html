@@ -10,10 +10,6 @@
                 <h2 class="h4">{{ post.title }}</h2>
             </header>
 
-            {% if post.header.image %}
-            <img src="{{ post.header.image }}" class="card-img-top" alt="Post image" style="max-width: 100%; max-height: 25rem" />
-            {% endif %}
-
             <div>
                 <header class="item-meta mb-1">
                     Posted in {{ post.category | capitalize }} •
