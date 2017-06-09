@@ -12,21 +12,21 @@ localnav: true
         {% for i in site.data.manuals[page.manual].entries %}
             {% assign pi = manpages[i.ref] %}
 
-            <li><a href="{{ pi.url }}"{% if false %} class="active"{% endif %}>{{ pi.title }}</a></li>
+            <li><a href="{{ pi.url }}"{% if pi.url == page.url %} class="active"{% endif %}>{{ pi.title }}</a></li>
 
             {% if i.entries %}
                 <ul>
                 {% for j in i.entries %}
                     {% assign pj = manpages[j.ref] %}
 
-                    <li><a href="{{ pj.url }}"{% if false %} class="active"{% endif %}>{{ pj.title }}</a></li>
+                    <li><a href="{{ pj.url }}"{% if pj.url == page.url %} class="active"{% endif %}>{{ pj.title }}</a></li>
 
                     {% if j.entries %}
                         <ul>
                         {% for k in j.entries %}
                             {% assign pk = manpages[k.ref] %}
 
-                            <li><a href="{{ pk.url }}"{% if false %} class="active"{% endif %}>{{ pk.title }}</a></li>
+                            <li><a href="{{ pk.url }}"{% if pk.url == page.url %} class="active"{% endif %}>{{ pk.title }}</a></li>
                         {% endfor %}
                         </ul>
                     {% endif %}

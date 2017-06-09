@@ -7,4 +7,6 @@ ref: overview
 permalink: /mods/seasons/manual/
 ---
 
-## Overview
+## Seasons manual
+
+Find the most up to date and correct information on the Seasons mod here.

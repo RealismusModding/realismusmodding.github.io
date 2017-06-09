@@ -3,22 +3,24 @@ seasons:
     - ref: overview
     - ref: gameplay
       entries:
-        # - ref: gp_growth
-        # - ref: gp_economy
-        # - ref: gp_animals
+        - ref: gp_hud_overview
+        - ref: gp_weather
         - ref: gp_crops
-        # - ref: gp_weather
+        - ref: gp_grass_bales_and_silage
+        - ref: gp_animals
+        - ref: gp_vehicles
+        - ref: gp_economy
     # - ref: adjusting_seasons
     #   entries:
     #     - ref: adj_growth
     #     - ref: adj_weather
     #     - ref: adj_textures
-    - ref: modding
-      entries:
-        - ref: map_compatibility
-        - ref: admirers
-          entries:
-            - ref: obj_season_admirer
+    # - ref: modding
+    #   entries:
+    #     - ref: map_compatibility
+    #     - ref: admirers
+    #       entries:
+    #         - ref: obj_season_admirer
             # - ref: obj_snow_admirer
             # - ref: obj_ice_plane
             # - ref: supporting_without_seasons
