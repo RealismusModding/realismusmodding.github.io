@@ -15,8 +15,9 @@ seasons:
     #     - ref: adj_growth
     #     - ref: adj_weather
     #     - ref: adj_textures
-    # - ref: modding
-    #   entries:
+    - ref: modding
+      entries:
+        - ref: info_for_map_makers
     #     - ref: map_compatibility
     #     - ref: admirers
     #       entries:

@@ -8,4 +8,6 @@ ref: modding
 permalink: /mods/seasons/manual/modding/
 ---
 
-Season Admirer
+# Modding
+
+Information for map makers and other modders.
