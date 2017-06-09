@@ -14,7 +14,7 @@ permalink: /blog/
         <header>
             <h2 itemprop="name headline">{{ post.title | escape }}</h2>
             <p class="blog-meta">
-
+                <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
                     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
                     {{ post.date | date: date_format }}
                 </time>
