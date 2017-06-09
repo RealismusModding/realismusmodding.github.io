@@ -9,4 +9,4 @@ permalink: /mods/seasons/manual/
 
 ## Seasons manual
 
-Find the most up to date and correct information on the Seasons mod here.
+Find additional information about Seasons gameplay and features in this manual. In case you notice any missing or erroneous information in this manual please contact us.
