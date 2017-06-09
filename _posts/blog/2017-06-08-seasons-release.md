@@ -1,6 +1,6 @@
 ---
 title: Release of Seasons
-date: 2017-06-10 12:00:00 +0100
+date: 2017-06-12 12:00:00 +0100
 author: theseb
 ---
 
