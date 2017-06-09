@@ -16,6 +16,8 @@ youtube_channel: realismusmodding
 google_analytics: UA-96325378-1
 twitter_username: realismusMods
 
+og_image: /assets/img/logo/social.png
+
 breadcrumbs: true
 word_per_minute: 200
 
