@@ -80,6 +80,8 @@ There are also some other layers that we use for other purposes or for the futur
 
 - Snow should now appear correctly and not where the snowMask was painted.
 
+Some users have experienced problems with maps that have old versions of windrowFoliageShader.xml rendering the snow mask invisible in Giants editor. If you have this problem try replacing windrowFoliageShader.xml in the map with the version from the games installation directory, you can find it in the data\shaders directory.
+
 ### Texture Replacements
 
 The texture replacement system is actually a material replacement system so if you want you can change things like shaders and shader parameters between seasons.
