@@ -205,7 +205,7 @@ An explanation of these attributes:
   - `secondaryNodeName` The subobject to search for below the above, can be the same as shapeName if there is no hierarchy. This is used to replace LOD1 of birch_stage1 even if other objects also have meshes named LOD1. (You can find this using Giants Editor.)
   - `to` The name of the shape as defined in the material holder. (This is your Shape name from replacementTexturesMaterialHolder.i3d)
 
-- You can also do replacement for foliageLayers by using XML like this instead of the <texture.... > tags
+- You can also do replacement for foliageLayers by using XML like this instead of the &lt;texture.... &gt; tags
 
 ```xml
 <foliageLayer name="grass" to="grass_winter" />
