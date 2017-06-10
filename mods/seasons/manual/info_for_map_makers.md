@@ -36,7 +36,7 @@ The mask is a new foliage layer named `ssSnowMask`. Everywhere you paint, snow w
 
 There are also some other layers that we use for other purposes or for the future.
 
-- Download invisible_mask_diffuse, invisible_mask_diffuse0, and seasons_density from https://github.com/RealismusModding/FS17_seasons/tree/develop/modding/snowMask/map01 and put them into your map01 folder.
+- Download [invisible_mask_diffuse.dds](https://github.com/RealismusModding/FS17_seasons/raw/develop/modding/snowMask/map01/invisible_mask_diffuse.dds), [invisible_mask_diffuse0.dds](https://github.com/RealismusModding/FS17_seasons/raw/develop/modding/snowMask/map01/invisible_mask_diffuse0.dds), and [seasons_density.gdm](https://github.com/RealismusModding/FS17_seasons/raw/develop/modding/snowMask/map01/seasons_density.gdm) and put them into your map01 folder.
 - Open the i3d file for your map i.e. map01.i3d with a text editor and do the following changes.
 
 - Insert the following two lines under `<Files>`:
