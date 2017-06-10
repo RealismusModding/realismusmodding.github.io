@@ -106,13 +106,9 @@ Except for seasons_textures.xml you could use different file and directory name 
 ```xml
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!--
-
 Do not ever open and save this file in Giants editor, you will loose data and mess ut then file.
-
 It references textures in the game directory that the editor will not find and thus remove.
-
 /MrBear
-
 -->
 <i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
@@ -121,18 +117,14 @@ It references textures in the game directory that the editor will not find and t
 
   <Files>
     <!-- Autumn -->
-
+    <!-- Winter -->
     <!-- Spring -->
- 
   </Files>
 
   <Materials>
     <!-- Autumn -->
-
     <!-- Winter -->
-
     <!-- Spring -->
-
   </Materials>
 
   <Shapes externalShapesFile="replacementTexturesMaterialHolder.i3d.shapes">
@@ -143,11 +135,8 @@ It references textures in the game directory that the editor will not find and t
 
   <Scene>
     <!-- Autumn -->
-
     <!-- Winter -->
-
     <!-- Spring -->
-
   </Scene>
 </i3D>
 ```
