@@ -92,14 +92,16 @@ To be able to replace textures in the game, the textures need to be loaded into 
 
 Like any other XML-part we have in Seasons, there are two ways to get new replacement visuals in the game: by adding it to the map or by making a separate mod. Ideally, a map maker incorporates it into the map. If that has not been done it is possible to make a Seasons Texture Mod (STM), as can be found on our GitHub for a couple of popular maps.
 
-This procedure is a little tricky and I can recommend using a map with custom texture replacements like "Dusty Cove" by DustyDave available on the modhub as an example. You can use data\textures.xml and the files under resources\replacementTextures in the Seasons mod for examples of what's possible. Take it slowly and methodically doing one season for one material at a time and get that working before continuing to the next.
+This procedure is a little tricky and I can recommend using a map with custom texture replacements like "Dusty Cove" by DustyDave available on the modhub as an example. You can use `data/textures.xml` and the files under resources/replacementTextures in the Seasons mod for examples of what's possible. Take it slowly and methodically doing one season for one material at a time and get that working before continuing to the next.
 
 Except for seasons_textures.xml you could use different file and directory name as long as you edit the files accordingly but I will not point out where to do those changes but rather stick to one way of doing it in this example.
 
-#### Setting up the map for texture replacement.
+#### Adding texture replacements
+
+By default, Seasons will replace textures for all default FS17 trees. If you have trees that do not have replacements (for example, FS15 trees, or CPF bushes), you can add your own replacement textures.
 
 - Create a folder resources in the top level folder of your map.
-- Create a textures folder and subfolders in it for each season like textures\autumn, textures\spring and textures\winter. This is where you will store the season specific texture files.
+- Create a textures folder and subfolders in it for each season like `textures/autumn`, `textures/spring` and `textures/winter`. This is where you will store the season specific texture files.
 - Copy replacementTexturesMaterialHolder.i3d and replacementTexturesMaterialHolder.i3d.shapes from the directory "resources/replacementTextures" in the seasons mod to that resources folder.
 - Edit replacementTexturesMaterialHolder.i3d so only the skeleton remains as follows:
 
