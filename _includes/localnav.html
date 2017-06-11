@@ -10,7 +10,7 @@
                     <li class="nav-item "><a href="{{ modUrl }}" class="nav-link{% if modUrl == page.url %} active{% endif %}">Info</a></li>
 
                     {% if mod.modhub_id and mod.released %}
-                    <li class="nav-item"><a href="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" target="_blank" class="nav-link" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://farming-simulator.com/mods.php?mod_id={{ mod.modhub_id }}" ga-transport="beacon">Download</a></li>
+                    <li class="nav-item"><a href="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" target="_blank" class="nav-link" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" ga-transport="beacon">Download</a></li>
                     {% endif %}
 
                     {% for item in mod.navitems %}
