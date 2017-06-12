@@ -74,13 +74,21 @@ There are also some other layers that we use for other purposes or for the futur
 - Now, in Giants Editor, use terrain foliage paint mode to paint windrowfoliage wherever snow must NOT appear (roads, inside buildings) (it appears in list as ssSnowMask).
 - *Note:* make sure you only paint the first layer (ssSnowMask). All other layers *must* remain empty.
 - Save in Giants Editor before launching the game
+
+To test wether the snow mask works before painting it, you can place a shed on a field and then use the `ssAddSnow` command. If a snow mask was found, the shed will now not have snow inside.
+
+Some users have experienced problems with maps that have old versions of windrowFoliageShader.xml rendering the snow mask invisible in Giants editor. If you have this problem try replacing windrowFoliageShader.xml in the map with the version from the games installation directory, you can find it in the `data/shaders` directory.
+
+#### Preparing map for release
+To make the map behave normally when not being used with Seasons, the seasons mask needs to be invisible.
+
 - Rename invisible_mask_diffuse to invisible_mask_diffuse1 (to switch off the 'Visible green snowMask texture')
 - Rename invisible_mask_diffuse0 to invisibe_mask_diffuse (to switch on 'invisible texture' )
 - After you finished editing in GE, change the viewDistance from 80 to 0 to hide it correctly. When you want to do changes again, set it back to 80.
 
-- Snow should now appear correctly and not where the snowMask was painted.
+Snow should now appear correctly and not where the snowMask was painted.
 
-Some users have experienced problems with maps that have old versions of windrowFoliageShader.xml rendering the snow mask invisible in Giants editor. If you have this problem try replacing windrowFoliageShader.xml in the map with the version from the games installation directory, you can find it in the data\shaders directory.
+If you want to make changes again, do these steps in reverse.
 
 ### Texture Replacements
 
@@ -142,7 +150,7 @@ It references textures in the game directory that the editor will not find and t
   </Scene>
 </i3D>
 ```
-- Create a file seasons_textures.xml in the toplevel folder of your map mod and edit it using a text editor as follows obviously using values for shapeName, secondaryNodeName and to as appropriate for your map and placeholder. 
+- Create a file seasons_textures.xml in the toplevel folder of your map mod and edit it using a text editor as follows obviously using values for shapeName, secondaryNodeName and to as appropriate for your map and placeholder.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
@@ -164,7 +172,7 @@ It references textures in the game directory that the editor will not find and t
 ```
 
 #### Steps for adding a replacement mapping
-  
+
 - Start by opening the map i3d file in a text editor windows and the replacementTexturesMaterialHolder.i3d in an other.
 - Open the map in Giants editor and find an object of the type that you want to add seasonal textures to. Take note of both the object, and the actual mesh that you want to modify.
 - Search for the objects name in the i3d file and locate the actually mesh that you want to modify. Take note of the value after materialIds, say XXX.
@@ -179,7 +187,7 @@ It references textures in the game directory that the editor will not find and t
 ```
 
 Note that file names are relative to the location of replacementTexturesMaterialHolder.i3d so you might have to prepend them with ../maps/ or something similar to refference unmodified files in there original location.
-To reference paths in the games installation directory such as shaders or unchanged normal maps use  relativePath=false and give a path relative to the directory where the game is installed. 
+To reference paths in the games installation directory such as shaders or unchanged normal maps use  relativePath=false and give a path relative to the directory where the game is installed.
 
 It's a good practise to  prefix all Shape names with some prefix like a short form of the map name to make them unique and sufix them with the relevant season to make things easer to follow.
 
