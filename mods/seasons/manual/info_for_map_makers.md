@@ -154,7 +154,7 @@ It references textures in the game directory that the editor will not find and t
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<textures materialHolder="resources/materialHolder.i3d">
+<textures materialHolder="resources/replacementTexturesMaterialHolder.i3d">
     <seasons>
         <spring>
         </spring>
