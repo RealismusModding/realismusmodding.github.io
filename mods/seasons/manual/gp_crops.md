@@ -23,7 +23,7 @@ The following crops can be planted in autumn: canola (rape), barley and wheat, g
 All crops can be planted throughout spring, except soybeans and sunflowers, which can only be planted in mid spring and late spring.
 
 There is a planting and harvesting calendar included in the Seasons menu as a handy reference (`Alt + S`)
--- insert picture of calendar
+{% include big_image.html title="Planting calendar" url="/assets/img/mods/seasons/screenshots/menu.jpg" %}
 
 Winter will wither certain crops grass will be knocked back to stage 2 in the winter. If you plant crops in a transition that is not within the planting window in the calendar, it will die. Another factor which determines whether your crops will germinate is the germination temperature of crops and the current soil temperature. The germination temperature for all crops can be seen in the Seasons menu and the current soil temperature is shown in the HUD. If the soil temperature if below the germination temperature, then the sown crops will not germinate. They will not die though as long as you are within the planting window. For example, spring barley has a planting window of early, mid and late spring. So, if you plant barley in early spring, but the soil temperature is too low, it will only grow in mid or late spring, or in the worst case, in early summer.
 
