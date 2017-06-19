@@ -34,8 +34,16 @@ seasons:
       duration: PT6M37S
       date: 2017-03-31T08:00:00+01:00
   supplements:
-  #   - name: geo_northernsweden
-  #     title: "GEO: Northern Sweden"
-  #     list_icon: /assets/img/mods/seasons/logo_geo_sweden.jpg
-  #     description: "Get the weather and environment of the colder Northern Sweden. Play without corn and soybean but with more snow."
-  #     modhub_id: 55367
+    # - name: geo_northernsweden
+    #   title: "GEO: Northern Sweden"
+    #   list_icon: /assets/img/mods/seasons/logo_geo_sweden.jpg
+    #   description: "Get the weather and environment of the colder Northern Sweden. Play without corn and soybean but with more snow."
+    #   modhub_id: 55367
+    # - name: geo_wales
+    #   title: "GEO: Wales"
+    #   list_icon: /assets/img/mods/seasons/logo_geo_wales.jpg
+    #   description: ""
+    # - name: geo_snowylands
+    #   title: "GEO: Snowy Lands"
+    #   list_icon: /assets/img/mods/seasons/logo_geo_snowylands.jpg
+    #   description: "Take a break from farming with a Winter Holiday. Experience an eternal winter and have some fun in the snow."
