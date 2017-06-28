@@ -90,6 +90,20 @@
     color: #555;
 }
 
+.directorynav input[type="submit"] {
+    color: #555;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    cursor: pointer;
+}
+
+.directorynav input[type="submit"]:hover {
+    text-decoration: underline;
+}
+
 /*************
  * Local navigation bar
  *************/
