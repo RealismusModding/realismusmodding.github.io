@@ -62,6 +62,8 @@ There are also some other layers that we use for other purposes or for the futur
 
 - Insert the following at the end of `<Layers>`:
 
+***NOTE***: if you are making or updating a map for release: please seek contact with us, because we want to clean up the layers (not breaking compatibility).
+
 ```xml
 <FoliageMultiLayer densityMapId="100051" numChannels="5" numTypeIndexChannels="0">`
     <FoliageSubLayer name="ssSnowMask"  densityMapChannelOffset="0" numDensityMapChannels="1" materialId="100610" cellSize="8" viewDistance="80" objectMask="16711935" decalLayer="0" atlasSize="1" atlasOffsets="1 0" numBlocksPerUnitDefault="1.8" numBlocksPerUnitMin="1.8" numBlocksPerUnitMax="1.8" width="0.8" height="0.3" widthVariance="0.1" heightVariance="0.1" horizontalPositionVariance="0.3" blockShapeId="1"/>
