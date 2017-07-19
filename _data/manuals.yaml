@@ -28,3 +28,4 @@ seasons:
     # - ref: refease_notes
     #   entries:
     #     - ref: refease_notes_1_0
+    - ref: release_notes
