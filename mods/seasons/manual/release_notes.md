@@ -12,36 +12,38 @@ The release notes contain the changed made in every version after the initial re
 {% anchor h2 %}Version 1.1.0{% endanchor %}
 This version is 100% compatible with save games created with Mod Contest version of Seasons.
 
-#### Fixes
-- German translation has an error regarding germination temperatures
-- Grass is wrongly removed around the edge of a field when using a cultivator
-- Hail never shows in multiplayer when generated when already joined
-- Hay bales do not rot
-- Low HP machines with high maintenance have insane repair costs
-- Placeables don't  mask in snowmask after load of savegame
-- Snow is not removed under vehicles, bales and pallets
-- Snow tracks can't be disabled
-- Train storage silo has its prices not adjusted
-- Upkeep of animals is not adjusted and normalized
-- Weather unnecessarily resets when changing settings
-
-#### Improvements / changes
-- Added adjusted and better textures by KimG and BulletBill
-- Adjusted distance limits for tree growth
-- Adjusted normalization of bale rotting
-- General code improvements
-- Improved growth for winter crops (limited to stage 2 in autumn mostly for visual purposes)
-- Pigs now give birth both in autumn and in spring (used to be only in spring)
-- Reduced time for free demo of vehicles to 30 min
-
 #### New features
 - Added debug console commands for vehicle repair and fruit growth manipulation
 - Added longer seasons (up to 24 days per season)
 - Added new system for script-less GEO mods
 - Added texture replacement for shapes with multiple materials
-- Grass now rots in tippers, just like grass bales
+- Grass rots in tippers, just like grass bales
 - New visual seasons algorithm depending on weather and latitude
 - Straw and hay now rots in tippers, just like bales (during rain)
+
+#### Improvements / Changes
+- Added adjusted and better textures by KimG and BulletBill
+- Adjusted distance limits for tree growth
+- Adjusted normalization of bale rotting
+- Adjusted pigs to give birth both in autumn and in spring (used to be only in spring)
+- General code improvements
+- Improved growth for winter crops (limited to stage 2 in autumn mostly for visual purposes)
+- Reduced time for free demo of vehicles to 30 min
+
+#### Fixes
+- German translation had an error regarding germination temperatures
+- Germination didn't work properly after fast forwarding through multiple transitions
+- Grass sometimes did not regrow in spring after the first year
+- Grass was wrongly removed around the edge of a field when using a cultivator
+- Hail never showed in multiplayer for already joined players
+- Hay bales did not rot
+- Low HP machines with high maintenance had insane repair costs
+- Snow tracks couldn't be disabled
+- Snow was not removed under vehicles, bales and pallets
+- Snowmask not properly generated for placeables after load of savegame
+- Train storage silo fees were not adjusted
+- Upkeep of animals was not adjusted and normalized per year
+- Weather was unnecessarily reset when changing settings
 
 {% anchor h2 %}Version 1.0.0{% endanchor %}
 Initial release
