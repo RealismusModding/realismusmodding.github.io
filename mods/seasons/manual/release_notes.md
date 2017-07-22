@@ -29,6 +29,7 @@ This version is 100% compatible with save games created with Mod Contest version
 - General code improvements
 - Improved growth for winter crops (limited to stage 2 in autumn mostly for visual purposes)
 - Reduced time for free demo of vehicles to 30 min (only works for base configuration vehicles & equipment)
+- Repairs are required at least once a year, instead of twice.
 
 #### Fixes
 - German translation had an error regarding germination temperatures
