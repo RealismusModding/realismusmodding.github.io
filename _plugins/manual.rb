@@ -77,6 +77,10 @@ module Jekyll
     def walk_tree(manual, configItem, nthChild, parentItem)
       # Page object for current item
       page = manual.pages[configItem["ref"]]
+      if page == nil
+        print "WARNING: Missing page for ref #{configItem["ref"]}\n"
+        return
+      end
 
       page.data["parent"] = manual.pages[parentItem["ref"]] if parentItem["ref"]
 

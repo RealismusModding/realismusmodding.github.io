@@ -10,22 +10,25 @@ seasons:
         - ref: gp_animals
         - ref: gp_vehicles
         - ref: gp_economy
-    # - ref: adjusting_seasons
-    #   entries:
-    #     - ref: adj_growth
-    #     - ref: adj_weather
-    #     - ref: adj_textures
     - ref: modding
       entries:
         - ref: info_for_map_makers
-    #     - ref: map_compatibility
-    #     - ref: admirers
-    #       entries:
-    #         - ref: obj_season_admirer
-            # - ref: obj_snow_admirer
-            # - ref: obj_ice_plane
-            # - ref: supporting_without_seasons
-    # - ref: refease_notes
-    #   entries:
-    #     - ref: refease_notes_1_0
+        # - ref: maps
+        #   entries:
+            # - ref: maps_seasons_mask
+            # - ref: maps_objects
+            # - ref: maps_custom_textures
+            # - ref: maps_custom_fruits
+            # - ref: maps_compatibility
+            # - ref: maps_testing
+        - ref: geo
+          entries:
+            # - ref: geo_weather
+            # - ref: geo_growth
+            # - ref: geo_daylight
+            # - ref: geo_economy
+            - ref: geo_testing
+        # - ref: scripting
+        # - ref: testing_and_debugging
+        # - ref: best_practices
     - ref: release_notes

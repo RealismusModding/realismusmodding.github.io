@@ -10,4 +10,4 @@ permalink: /mods/seasons/manual/modding/
 
 # Modding
 
-Information for map makers and other modders.
+Learn more about making compatible mods for Seasons, improving maps, vehicles and placeables.
