@@ -9,3 +9,8 @@ permalink: /mods/seasons/manual/modding/geo/
 ---
 
 # GEO mods
+
+
+
+
+If you upload your GEO mod to modhub, make sure to look at the testing document. Also, make sure you supply a screenshot of the growth overview in the Seasons menu.
