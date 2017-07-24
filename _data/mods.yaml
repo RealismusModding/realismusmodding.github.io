@@ -34,16 +34,28 @@ seasons:
       duration: PT6M37S
       date: 2017-03-31T08:00:00+01:00
   supplements:
-    # - name: geo_northernsweden
-    #   title: "GEO: Northern Sweden"
-    #   list_icon: /assets/img/mods/seasons/logo_geo_sweden.jpg
-    #   description: "Get the weather and environment of the colder Northern Sweden. Play without corn and soybean but with more snow."
-    #   modhub_id: 55367
-    # - name: geo_wales
-    #   title: "GEO: Wales"
-    #   list_icon: /assets/img/mods/seasons/logo_geo_wales.jpg
+    - name: geo_northernsweden
+      title: "GEO: Northern Sweden"
+      list_icon: /assets/img/mods/seasons/logo_geo_sweden.jpg
+      description: "Discover the colder climate of northern Sweden. Enjoy longer and harsher winters with snow and colder soil temperatures."
+      modhub_id: 84335
+    - name: geo_wales
+      title: "GEO: Wales"
+      list_icon: /assets/img/mods/seasons/logo_geo_wales.jpg
+      description: "With short amount of proper harvesting time and a lot of rainy days, you will have to plan carefully and work hard to keep your farm afloat."
+      modhub_id: 84332
+    - name: geo_snowylands
+      title: "GEO: Snowy Lands"
+      list_icon: /assets/img/mods/seasons/logo_geo_snowylands.jpg
+      description: "Is it time to take a break from farming and have a winter holiday? Then go to Snowy Lands with its eternal winter and high snow!"
+      modhub_id: 84238
+    - name: geo_usmidwest
+      title: "GEO: U.S. Midwest"
+      list_icon: /assets/img/mods/seasons/logo_geo_midwest.jpg
+      description: "Enjoy the weather and growth of one of the most intensely farmed regions in the world. Note that sugarbeet does not grow in this part of the world."
+      modhub_id: 84675
+    # - name: geo_centralfrance
+    #   title: "GEO: Central France"
+    #   list_icon: /assets/img/mods/seasons/logo_geo_centralfrance.jpg
     #   description: ""
-    # - name: geo_snowylands
-    #   title: "GEO: Snowy Lands"
-    #   list_icon: /assets/img/mods/seasons/logo_geo_snowylands.jpg
-    #   description: "Take a break from farming with a Winter Holiday. Experience an eternal winter and have some fun in the snow."
+    #   modhub_id: 5
