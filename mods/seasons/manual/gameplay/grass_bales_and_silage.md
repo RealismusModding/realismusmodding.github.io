@@ -14,7 +14,7 @@ To  create hay  the grass must be dry enough to be able to use a tedder. If you 
 
 Swaths of straw and grass will start to rot and disappear if not baled in time and left on the ground. Currently they do not turn to manure, but simply reduce in size to simulate rotting.
 
-Grass bales will rot and disappear after two days, unless they are wrapped so that they become silage bales. Wrapped bales do not turn into silage immediately, but instead need some time to ferment. It takes one third of a season (1 transition) to fully ferment either a silage bale.
+Grass bales will gradually rot and disappear after two days, unless they are wrapped so that they become silage bales. Wrapped bales do not turn into silage immediately, but instead need some time to ferment. It takes one third of a season (1 transition) to fully ferment either a silage bale.
 
 Hay and straw bales exposed to rain will start to rot so keep them inside sheds.
 
