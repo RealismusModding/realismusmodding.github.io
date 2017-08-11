@@ -19,4 +19,10 @@ When you upload your mod to Giants ModHub, Giants will attempt to test it.
 - Seasons can start a new save game with the GEO mod, without errors.
 - The modDesc.xml contains a seasons tag with a minimum version of 2, and type 'geo'.
 
+If the GEO mod is not created by Realismus Modding, make sure that:
+- The author is not 'Realismus Modding'
+- The filename of the mod does not contain "RM" (as in `FS17_RM_GEO_Wales`)
+
+It is preferable to call the zip name `FS17_GEO_<area>`.
+
 That the growth works according to the overview will not be tested.
