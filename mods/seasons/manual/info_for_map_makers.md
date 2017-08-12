@@ -8,6 +8,8 @@ ref: info_for_map_makers
 permalink: /mods/seasons/manual/modding/info-for-map-makers
 ---
 
+Make sure fruit_density.gdm and the terrainDetailHeight_density.gdm are the exact same size to avoid problems with growth of crops. If the files have different size the player will experience uneven (stripes) of growth. 
+
 # Info for map makers (wip)
 
 This document will guide you through the process of optimizing your map for use with the Seasons mod from RealismusModding.
