@@ -8,7 +8,7 @@ ref: info_for_map_makers
 permalink: /mods/seasons/manual/modding/info-for-map-makers
 ---
 
-Make sure fruit_density.gdm and the terrainDetailHeight_density.gdm are the exact same size to avoid problems with growth of crops. If the files have different size the player will experience uneven (stripes) of growth. 
+Make sure fruit_density.gdm and the terrainDetailHeight_density.gdm are the exact same size to avoid problems with growth of crops. If the files have different size the player will experience uneven (stripes) of growth.
 
 # Info for map makers (wip)
 
@@ -227,6 +227,11 @@ If you would like to add your own animals and growth data for your map, then you
 
 1. Copy animals.xml and growth.xml (both of these files can be found in the /data directory under the season mod into the root folder of your map) and then modify them.
 2. Rename the files to seasons_animals.xml and seasons_growth.xml
+3. Make changes
+
+If you just want to add new fruits:
+3. Remove all existing fruits, those will automatically be used from the Seasons mod
+4. Add your own fruits
 
 ### Custom weather
 It is possible to supply a custom seasons_weather.xml with the map. In the 12 periods (period 1 = early spring, period 12 = late winter), there are three temperatures values to be specified (`min`, `mode`, `max`). Min and max values are not used at the moment, but needs to be given. The mode of the temperature is monthly average daily maximum temperature. So if you take the average of the daily high temperature for all days in January in your 20-30 data series you get the value for mode for January.
