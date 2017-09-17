@@ -30,5 +30,5 @@ seasons:
             - ref: geo_testing
         # - ref: scripting
         # - ref: testing_and_debugging
-        # - ref: best_practices
+        - ref: best_practices
     - ref: release_notes

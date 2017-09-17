@@ -8,13 +8,17 @@ ref: info_for_map_makers
 permalink: /mods/seasons/manual/modding/info-for-map-makers
 ---
 
-Make sure fruit_density.gdm and the terrainDetailHeight_density.gdm are the exact same size to avoid problems with growth of crops. If the files have different size the player will experience uneven (stripes) of growth.
-
 # Info for map makers (wip)
+{:.no_toc}
 
 This document will guide you through the process of optimizing your map for use with the Seasons mod from RealismusModding.
 
 The process consists of one or more of the following steps that will be described in detail bellow.
+
+* TOC
+{:toc}
+
+## Possibilities
 
 - Adding a snowMask to tell seasons about areas where snow should not be added. If your map only uses giants default trees and bushes and you are content with the default tunable values from the seasons mod this might be all you have to do.
 - If you have vegetation or other objects that you want to change textures as the seasons progresses you will have to configure texture replacements.
@@ -29,6 +33,8 @@ To help you test your map there are 4 console commands:
 - `ssRemoveSnow` removes a layer of snow
 - `ssResetSnow` removes all snow on the map
 - `ssSetVisualSeason <season>` sets the visual season, where <season> is autumn, summer, winter, spring.
+
+## Seasons integration
 
 ### Snow Mask
 

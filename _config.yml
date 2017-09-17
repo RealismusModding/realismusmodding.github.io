@@ -24,6 +24,10 @@ word_per_minute: 200
 # Build settings
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+kramdown:
+  auto_ids: true
+  auto_id_stripping: true
+  toc_levels: "2..6"
 highligher: rouge
 lsi: false
 excerpt_separator: "\n\n"

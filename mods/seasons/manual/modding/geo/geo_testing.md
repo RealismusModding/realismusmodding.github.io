@@ -12,7 +12,7 @@ permalink: /mods/seasons/manual/modding/geo/testing
 If you made, or are making, a GEO mod it is important to test that it works properly and does not break Seasons, or the game in general.
 
 
-{% anchor h2 %}ModHub QA Testing{% endanchor %}
+## ModHub QA Testing
 
 When you upload your mod to Giants ModHub, Giants will attempt to test it.
 - The in-game growth overview is the same as the supplied screenshot.

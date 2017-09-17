@@ -9,7 +9,7 @@ The release notes contain the changed made in every version after the initial re
 - [Version 1.1.0](#version-110)
 - [Version 1.0.0](#version-100)
 
-{% anchor h2 %}Version 1.1.0{% endanchor %}
+## Version 1.1.0
 This version is 100% compatible with save games created with Mod Contest version of Seasons.
 
 #### New features
@@ -46,5 +46,5 @@ This version is 100% compatible with save games created with Mod Contest version
 - Upkeep of animals was not adjusted and normalized per year
 - Weather was unnecessarily reset when changing settings
 
-{% anchor h2 %}Version 1.0.0{% endanchor %}
+## Version 1.0.0
 Initial release
