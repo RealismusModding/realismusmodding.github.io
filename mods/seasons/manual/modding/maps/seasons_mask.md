@@ -74,7 +74,7 @@ The last part to add are the actual density layers. Copy the code below, and pas
 
 ```xml
 <FoliageMultiLayer densityMapId="100051" numChannels="5" numTypeIndexChannels="0">`
-    <FoliageSubLayer name="ssSeasonsMask"  densityMapChannelOffset="0" numDensityMapChannels="1" materialId="100610" cellSize="8" viewDistance="80" objectMask="16711935" decalLayer="0" atlasSize="1" atlasOffsets="1 0" numBlocksPerUnitDefault="1.8" numBlocksPerUnitMin="1.8" numBlocksPerUnitMax="1.8" width="0.8" height="0.3" widthVariance="0.1" heightVariance="0.1" horizontalPositionVariance="0.3" blockShapeId="1"/>
+    <FoliageSubLayer name="ssSnowMask"  densityMapChannelOffset="0" numDensityMapChannels="1" materialId="100610" cellSize="8" viewDistance="80" objectMask="16711935" decalLayer="0" atlasSize="1" atlasOffsets="1 0" numBlocksPerUnitDefault="1.8" numBlocksPerUnitMin="1.8" numBlocksPerUnitMax="1.8" width="0.8" height="0.3" widthVariance="0.1" heightVariance="0.1" horizontalPositionVariance="0.3" blockShapeId="1"/>
     <FoliageSubLayer name="ssTempMask" materialId="100611" densityMapChannelOffset="1" numDensityMapChannels="1" cellSize="8" viewDistance="0"  terrainOffset="0.0" objectMask="0" atlasSize="1" numBlocksPerUnit="0" width="0" widthVariance="0" heightVariance="0" horizontalPositionVariance="0" height="0" />
     <FoliageSubLayer name="ssReserved1" materialId="100611" densityMapChannelOffset="2" numDensityMapChannels="1" cellSize="8" viewDistance="0"  terrainOffset="0.0" objectMask="0" atlasSize="1" numBlocksPerUnit="0" width="0" widthVariance="0" heightVariance="0" horizontalPositionVariance="0" height="0" />
     <FoliageSubLayer name="ssReserved2" materialId="100611" densityMapChannelOffset="3" numDensityMapChannels="2" cellSize="8" viewDistance="0"  terrainOffset="0.0" objectMask="0" atlasSize="1" numBlocksPerUnit="0" width="0" widthVariance="0" heightVariance="0" horizontalPositionVariance="0" height="0" />
@@ -88,7 +88,7 @@ Here you need to make sure that the `densityMapId` references to seasons_density
 
 Save the file. Open your map in the Giants Editor. Make sure there are no errors in the console. If there are any, you made a mistake.
 
-You can select the foliage brush and the ssSeasonsMask (sometimes called ssSnowMask) channel and start painting. Go to the step about the tipCol to get some useful data first.
+You can select the foliage brush and the ssSnowMask (sometimes called ssSnowMask) channel and start painting. Go to the step about the tipCol to get some useful data first.
 
 ### Technical explanation
 
@@ -113,7 +113,7 @@ Open your map in the Giants Editor and save it.
 
 ## Painting the snowmask
 
-Painting the mask is the same as with any foliage layer (wheat, grass, and so on): you select the correct layer (ssSeasonsMask), and use the mouse to paint.
+Painting the mask is the same as with any foliage layer (wheat, grass, and so on): you select the correct layer (ssSnowMask), and use the mouse to paint.
 You can see ugly green where the mask is. Remember: where there is green, _no_ snow will fall, and it will be seen as _inside_.
 
 ### Best practices
@@ -145,9 +145,9 @@ It is important to test your mask. There are two ways to verify ingame where you
 
 When you are going to publish your map, it is important to disable the green of the mask, so that when players use your map without Seasons, there is no mask visible. (Seasons automatically makes it invisible.)
 
-To do this set the viewDistance of the ssSeasonsMask to 0. When you want to edit again, set it to 80.
+To do this set the viewDistance of the ssSnowMask to 0. When you want to edit again, set it to 80.
 
-If you want to clean up the map code a bit, you can replace the materialId of the ssSeasonsMask with the materialId of the ssReserved1 layer. Then you can also remove the seasons_mask_mat material and the invisible_mask_diffuse file and file reference. You will need to re-add this all when you want to edit, so only do it on the to-be-published export.
+If you want to clean up the map code a bit, you can replace the materialId of the ssSnowMask with the materialId of the ssReserved1 layer. Then you can also remove the seasons_mask_mat material and the invisible_mask_diffuse file and file reference. You will need to re-add this all when you want to edit, so only do it on the to-be-published export.
 
 ## Notes
 
@@ -155,4 +155,4 @@ Even though the snowmask stops rotting of bales inside buildings, it does still 
 
 ## Tips and tricks
 
-Set the viewDistance of ssSeasonsMask to 800 to make it visible from far away for an overview. It is takes more performance.
+Set the viewDistance of ssSnowMask to 800 to make it visible from far away for an overview. It is takes more performance.
