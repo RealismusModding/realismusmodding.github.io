@@ -8,7 +8,6 @@ ref: maps
 permalink: /mods/seasons/manual/modding/maps/
 ---
 
-Maps
+# Maps
 
-
-
+Information for map makers
