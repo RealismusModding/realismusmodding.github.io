@@ -32,3 +32,5 @@ seasons:
         # - ref: testing_and_debugging
         - ref: best_practices
     - ref: release_notes
+      entries:
+        - ref: 1_2_checklist
