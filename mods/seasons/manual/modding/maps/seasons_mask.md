@@ -107,7 +107,7 @@ As snow is also a material, it should not fall in any spot where you can't pick 
 You can leverage the automatically generated tipCol by using it as a basis for your mask.
 
 Use the GRLE converter from GDN to convert the `tipColInfoLayer.grle` to a PNG file. A readme file is inside the download. You can drag-and-drop the grle file on top of the convert.cmd.
-Rename the generated file from `tipColInfoLayer.png` to `seasons_density.png` and remove the Seasons gdm file.
+Rename the generated file from `tipColInfoLayer.png` to `seasons_density.png` and remove the Seasons gdm file. Then open the png file in an image editor and resize it to 4096px x 4096px (double it), so it becomes the same size as the fruits.
 
 Open your map in the Giants Editor and save it.
 
@@ -152,6 +152,9 @@ If you want to clean up the map code a bit, you can replace the materialId of th
 ## Notes
 
 Even though the snowmask stops rotting of bales inside buildings, it does still visually rain. That is a limitation in the game and can't be solved by Seasons.
+
+#### Warning for density size
+The team discovered that in general the Seasons density map is sized 2048x2048: a 1m precision. It is better to have a 4096x4096 map with 0.5m precision, just like fruits have. Since version 1.2 Seasons will show a warning if this is not the case. To update, resize the seasons density file to 4096px squared using a bicubic resize function. After that you could improve the snow mask, if wanted and needed.
 
 ## Tips and tricks
 
