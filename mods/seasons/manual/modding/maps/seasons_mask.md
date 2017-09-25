@@ -37,7 +37,7 @@ The density layers need to be added to the map. Open your `map01.i3d` in a prope
 Add the following two lines inside the `<Files>` part of the `i3d`:
 ```xml
 <File fileId="100050" filename="map01/invisible_mask_diffuse.png" relativePath="true"/>
-<File fileId="100051" filename="map01/seasons_density.png" relativePath="true"/>
+<File fileId="100051" filename="map01/seasons_mask.png" relativePath="true"/>
 ```
 
 Do make sure those fileIds are not in use already. Also note that once you save the map with Giants Editor again, these ids _will_ change.
@@ -75,7 +75,7 @@ The last part to add are the actual density layers. Copy the code below, and pas
 </FoliageMultiLayer>
 ```
 
-Here you need to make sure that the `densityMapId` references to seasons_density file and that the materialId on the second line references the material we just made.
+Here you need to make sure that the `densityMapId` references to seasons_mask file and that the materialId on the second line references the material we just made.
 
 
 ### Testing the density layer
@@ -99,7 +99,7 @@ As snow is also a material, it should not fall in any spot where you can't pick 
 You can leverage the automatically generated tipCol by using it as a basis for your mask.
 
 Use the GRLE converter from GDN to convert the `tipColInfoLayer.grle` to a PNG file. A readme file is inside the download. You can drag-and-drop the grle file on top of the convert.cmd.
-Rename the generated file from `tipColInfoLayer.png` to `seasons_density.png` and remove the Seasons gdm file.
+Rename the generated file from `tipColInfoLayer.png` to `seasons_mask.png` and remove the Seasons gdm file.
 
 Open your map in the Giants Editor and save it.
 
