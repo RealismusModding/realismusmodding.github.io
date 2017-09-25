@@ -23,13 +23,10 @@ In this guide you will learn all steps of adding the Seasons mask to a map.
 
 ## Downloading required files
 
-Download the following files. They will be used for the mask:
+Download the following file. They will be used for the mask:
 - [invisible_mask_diffuse.dds](https://github.com/RealismusModding/FS17_seasons/raw/develop/modding/snowMask/map01/invisible_mask_diffuse.dds)
-- [seasons_density.gdm](https://github.com/RealismusModding/FS17_seasons/raw/develop/modding/snowMask/map01/seasons_density.gdm)
 
-Put these files in your `map01` folder. This is often located at `ModFolder/maps/map01`.
-
-Note that the density file (the last one in the list) is for 1x maps. If you are making a 4x map, you need to resize the file, or follow the tipCol advice below.
+Put this file in your `map01` folder. This is often located at `ModFolder/maps/map01`.
 
 ## Adding the density layers
 
@@ -75,9 +72,6 @@ The last part to add are the actual density layers. Copy the code below, and pas
 ```xml
 <FoliageMultiLayer densityMapId="100051" numChannels="5" numTypeIndexChannels="0">`
     <FoliageSubLayer name="ssSnowMask"  densityMapChannelOffset="0" numDensityMapChannels="1" materialId="100610" cellSize="8" viewDistance="80" objectMask="16711935" decalLayer="0" atlasSize="1" atlasOffsets="1 0" numBlocksPerUnitDefault="1.8" numBlocksPerUnitMin="1.8" numBlocksPerUnitMax="1.8" width="0.8" height="0.3" widthVariance="0.1" heightVariance="0.1" horizontalPositionVariance="0.3" blockShapeId="1"/>
-    <FoliageSubLayer name="ssTempMask" materialId="100611" densityMapChannelOffset="1" numDensityMapChannels="1" cellSize="8" viewDistance="0"  terrainOffset="0.0" objectMask="0" atlasSize="1" numBlocksPerUnit="0" width="0" widthVariance="0" heightVariance="0" horizontalPositionVariance="0" height="0" />
-    <FoliageSubLayer name="ssReserved1" materialId="100611" densityMapChannelOffset="2" numDensityMapChannels="1" cellSize="8" viewDistance="0"  terrainOffset="0.0" objectMask="0" atlasSize="1" numBlocksPerUnit="0" width="0" widthVariance="0" heightVariance="0" horizontalPositionVariance="0" height="0" />
-    <FoliageSubLayer name="ssReserved2" materialId="100611" densityMapChannelOffset="3" numDensityMapChannels="2" cellSize="8" viewDistance="0"  terrainOffset="0.0" objectMask="0" atlasSize="1" numBlocksPerUnit="0" width="0" widthVariance="0" heightVariance="0" horizontalPositionVariance="0" height="0" />
 </FoliageMultiLayer>
 ```
 
@@ -96,8 +90,6 @@ You can skip reading this part if you are not interested in the details of the d
 
 What we did above is add 4 different foliage sublayers in a big multilayer. The multilater references the density map, a `.gdm` (Giants Density Map) file containing binary data. The first layer is the Seasons mak, a single bit (on or off). It used a material so that the mask is visible in the editor when we draw it.
 
-The rest of the layers are currently unused but their use is planned for Seasons 2.0. They should be empty. They all use the second material, which is an empty material. They also have viewDistance set to 0, which means they won't be drawn.
-
 ## Using the tipCol as a basis of the mask
 
 The tipCol is a layer that is used to determine if you can tip a material to the ground. As tipped material is always on the terrain, and does not collide with objects, you can't pick up grains with a shovel when there is a road or another object at that location. To prevent tipped material to drop in locations where it can't be picked up again, GIANTS added the tipCol. Wherever it is painted material can be tipped. It is not painted at roads, big models you can drive at, and so on. GIANTS does not mask where you can't go with your machine.
@@ -107,7 +99,7 @@ As snow is also a material, it should not fall in any spot where you can't pick 
 You can leverage the automatically generated tipCol by using it as a basis for your mask.
 
 Use the GRLE converter from GDN to convert the `tipColInfoLayer.grle` to a PNG file. A readme file is inside the download. You can drag-and-drop the grle file on top of the convert.cmd.
-Rename the generated file from `tipColInfoLayer.png` to `seasons_density.png` and remove the Seasons gdm file. Then open the png file in an image editor and resize it to 4096px x 4096px (double it), so it becomes the same size as the fruits.
+Rename the generated file from `tipColInfoLayer.png` to `seasons_density.png` and remove the Seasons gdm file.
 
 Open your map in the Giants Editor and save it.
 
@@ -153,8 +145,9 @@ If you want to clean up the map code a bit, you can replace the materialId of th
 
 Even though the snowmask stops rotting of bales inside buildings, it does still visually rain. That is a limitation in the game and can't be solved by Seasons.
 
-#### Warning for density size
-The team discovered that in general the Seasons density map is sized 2048x2048: a 1m precision. It is better to have a 4096x4096 map with 0.5m precision, just like fruits have. Since version 1.2 Seasons will show a warning if this is not the case. To update, resize the seasons density file to 4096px squared using a bicubic resize function. After that you could improve the snow mask, if wanted and needed.
+For Seasons 2.0, a bunch of new density layers will be needed. The density map created using the current and previous manuals will be valid, but not all 2.0 functionality will be available.
+
+All maps created with previous manuals are still valid, but you can update.
 
 ## Tips and tricks
 
