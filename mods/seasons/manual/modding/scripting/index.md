@@ -2,7 +2,7 @@
 title: Scripting
 tags: [modding, scripting]
 keywords: mod, modding, script, scripting, lua
-last_updated: 2017-06-07 22:16:15 +0100
+last_updated: 2017-09-25 17:45:00 +0100
 summary: ""
 ref: scripting
 permalink: /mods/seasons/manual/modding/scripting/

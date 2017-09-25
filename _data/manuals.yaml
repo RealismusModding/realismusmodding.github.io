@@ -29,7 +29,7 @@ seasons:
             # - ref: geo_economy
             - ref: geo_testing
         - ref: scripting
-        # - ref: testing_and_debugging
+        - ref: testing_and_debugging
         - ref: best_practices
         - ref: 1_2_checklist
     - ref: release_notes
