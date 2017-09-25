@@ -70,7 +70,7 @@ Copy the value for `fileId` (here that is 50) and put it as `customShaderId`, re
 The last part to add are the actual density layers. Copy the code below, and paste it at the end of the `<Layers>` part of the file:
 
 ```xml
-<FoliageMultiLayer densityMapId="100051" numChannels="5" numTypeIndexChannels="0">`
+<FoliageMultiLayer densityMapId="100051" numChannels="1" numTypeIndexChannels="0">`
     <FoliageSubLayer name="ssSnowMask"  densityMapChannelOffset="0" numDensityMapChannels="1" materialId="100610" cellSize="8" viewDistance="80" objectMask="16711935" decalLayer="0" atlasSize="1" atlasOffsets="1 0" numBlocksPerUnitDefault="1.8" numBlocksPerUnitMin="1.8" numBlocksPerUnitMax="1.8" width="0.8" height="0.3" widthVariance="0.1" heightVariance="0.1" horizontalPositionVariance="0.3" blockShapeId="1"/>
 </FoliageMultiLayer>
 ```
