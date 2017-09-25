@@ -8,7 +8,7 @@ permalink: /mods/seasons/manual/modding/1-2-checklist
 
 This is a small checklist for maps to fully support Seasons 1.2. This also includes changes to make sure you are compatible with future versions of Seasons, as known at the time of writing by the developers.
 
-## Tree alphablending is now not enabled by default
+## Tree alphablending is now not disabled by default
 
 Since 1.1 Seasons has new tree textures that included alphaBlending. Some maps took advantage of this.
 For performance reasons, alphaBlending has been disabled again. However, if you want your map to use alphaBlending, there is an option to enable it again.
@@ -19,4 +19,4 @@ Note that performance is considerbly worse when using alphaBlending.
 
 ## Seasons mask
 
-We made the Seasons mask smaller: we removed the 4 bits that were unused until 2.0. For 2.0 we have new changes planned. You can make your map use less memory by removing the layers not called 'ssSnowMask' from the FoliageMultiLayer. Then re-save the map.
+We made the Seasons mask smaller: we removed the 4 bits that are unused. For 2.0 we have new changes planned that will require new map changes. You can make your map use less memory by removing the layers not called 'ssSnowMask' from the FoliageMultiLayer. Then re-save the map.
