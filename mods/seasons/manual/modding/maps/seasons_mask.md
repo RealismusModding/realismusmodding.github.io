@@ -77,13 +77,6 @@ The last part to add are the actual density layers. Copy the code below, and pas
 
 Here you need to make sure that the `densityMapId` references to seasons_mask file and that the materialId on the second line references the material we just made.
 
-
-### Testing the density layer
-
-Save the file. Open your map in the Giants Editor. Make sure there are no errors in the console. If there are any, you made a mistake.
-
-You can select the foliage brush and the ssSnowMask (sometimes called ssSnowMask) channel and start painting. Go to the step about the tipCol to get some useful data first.
-
 ### Technical explanation
 
 You can skip reading this part if you are not interested in the details of the density layer.
@@ -102,6 +95,12 @@ Use the GRLE converter from GDN to convert the `tipColInfoLayer.grle` to a PNG f
 Rename the generated file from `tipColInfoLayer.png` to `seasons_mask.png` and remove the Seasons gdm file.
 
 Open your map in the Giants Editor and save it.
+
+### Testing the density layer
+
+Save the file. Open your map in the Giants Editor. Make sure there are no errors in the console. If there are any, you made a mistake.
+
+You can select the foliage brush and the ssSnowMask (sometimes called ssSnowMask) channel and start painting. Go to the step about the tipCol to get some useful data first.
 
 ## Painting the snowmask
 
