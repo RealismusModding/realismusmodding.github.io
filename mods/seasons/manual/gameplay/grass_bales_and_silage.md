@@ -16,7 +16,7 @@ Swaths of straw and grass will start to rot and disappear if not baled in time a
 
 Grass bales will gradually rot and disappear after two days, unless they are wrapped so that they become silage bales. Wrapped bales do not turn into silage immediately, but instead need some time to ferment. It takes one third of a season (1 transition) to fully ferment either a silage bale.
 
-Hay and straw bales exposed to rain will start to rot so keep them inside sheds.
+Hay and straw bales exposed to rain will start to rot so keep them inside sheds. These bales will only rot if the map has been prepared with a so called Seasons mask.
 
 Chaff in bunkers will take one third of a season to ferment (same time as bales).
 
