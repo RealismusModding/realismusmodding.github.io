@@ -149,6 +149,13 @@ For Seasons 2.0, a bunch of new density layers will be needed. The density map c
 
 All maps created with previous manuals are still valid, but you can update.
 
+If you changed your map from 5 channels (previous guide) to 1 channel, you might get this error:
+```
+Error: GDM file has wrong number of channels (5 should be 1)
+```
+To solve it, convert the Seasons gdm file to a png with the GRLE converter from Giants, and re-open your map in the editor.
+
+
 ## Tips and tricks
 
 Set the viewDistance of ssSnowMask to 800 to make it visible from far away for an overview. It is takes more performance.
