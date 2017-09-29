@@ -16,6 +16,8 @@ The density map consists of multiple layers, of which the first one is the Seaso
 
 The Seasons mask is a layer that must be painted by the map maker to enable all functionalities of Seasons. This includes the rotting of bales and higher levels of snow. The Seasons mask is used to *determine whether a piece of the terrain is inside or outside*. It will prevent snow from falling inside buildings, and it will prevent rain from rotting bales inside those same buildings.
 
+Note that when a map does not have a seasons mask, bales will _not_ rot.
+
 In this guide you will learn all steps of adding the Seasons mask to a map.
 
 * TOC
@@ -142,17 +144,23 @@ If you want to clean up the map code a bit, you can replace the materialId of th
 
 ## Notes
 
+#### Limitations
+
 Even though the snowmask stops rotting of bales inside buildings, it does still visually rain. That is a limitation in the game and can't be solved by Seasons.
 
-For Seasons 2.0, a bunch of new density layers will be needed. The density map created using the current and previous manuals will be valid, but not all 2.0 functionality will be available.
-
-All maps created with previous manuals are still valid, but you can update.
+#### Wrong size density file
 
 If you changed your map from 5 channels (previous guide) to 1 channel, you might get this error:
 ```
 Error: GDM file has wrong number of channels (5 should be 1)
 ```
 To solve it, convert the Seasons gdm file to a png with the GRLE converter from Giants, and re-open your map in the editor.
+
+#### Previous versions
+
+For Seasons 2.0, a bunch of new density layers will be needed. The density map created using the current and previous manuals will be valid, but not all 2.0 functionality will be available.
+
+All maps created with previous manuals are still valid, but you can update.
 
 
 ## Tips and tricks
