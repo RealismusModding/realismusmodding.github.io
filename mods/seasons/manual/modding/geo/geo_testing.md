@@ -1,6 +1,6 @@
 ---
 title: Testing GEO mods
-tags: [modding]
+tags: [modding, geo, testing]
 keywords: guide, modding, geo, testing
 last_updated: 2017-06-07 22:16:15 +0100
 ref: geo_testing
@@ -20,7 +20,7 @@ When you upload your mod to Giants ModHub, Giants will attempt to test it.
 - The modDesc.xml contains a seasons tag with a minimum version of 2, and type 'geo'.
 
 If the GEO mod is not created by Realismus Modding, make sure that:
-- The author is not 'Realismus Modding'
+- The author is **not** 'Realismus Modding'
 - The filename of the mod does not contain "RM" (as in `FS17_RM_GEO_Wales`)
 
 It is preferable to call the zip name `FS17_GEO_<area>`.

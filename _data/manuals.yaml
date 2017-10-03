@@ -24,7 +24,7 @@ seasons:
         - ref: geo
           entries:
             # - ref: geo_weather
-            # - ref: geo_growth
+            - ref: geo_growth
             # - ref: geo_daylight
             # - ref: geo_economy
             - ref: geo_testing
