@@ -96,7 +96,7 @@ As snow is also a material, it should not fall in any spot where you can't pick 
 You can leverage the automatically generated tipCol by using it as a basis for your mask.
 
 Use the GRLE converter from GDN to convert the `tipColInfoLayer.grle` to a PNG file. A readme file is inside the download. You can drag-and-drop the grle file on top of the convert.cmd.
-Rename the generated file from `tipColInfoLayer.png` to `seasons_mask.png` and remove the Seasons gdm file.
+Rename the generated file from `tipColInfoLayer.png` to `seasons_mask.png`.
 
 Open your map in the Giants Editor and save it. Make sure there are no errors in the console. If there are any, you made a mistake.
 
