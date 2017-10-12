@@ -25,14 +25,14 @@ In this guide you will learn all steps of adding the Seasons mask to a map.
 
 ## Downloading required files
 
-Download the following file. They will be used for the mask:
+Download the following file. It will be used to make the mask visible in the editor:
 - [invisible_mask_diffuse.dds](https://github.com/RealismusModding/FS17_seasons/raw/develop/modding/snowMask/map01/invisible_mask_diffuse.dds)
 
 Put this file in your `map01` folder. This is often located at `ModFolder/maps/map01`.
 
 ## Adding the density layers
 
-The density layers need to be added to the map. Open your `map01.i3d` in a proper text editor. We will start by adding references to the two diffuse textures.
+The density layer needs to be added to the map. Open your `map01.i3d` in a proper text editor. We will start by adding references to the diffuse texture and the density file we will create later on.
 
 ### File references
 
@@ -72,8 +72,8 @@ Copy the value for `fileId` (here that is 50) and put it as `customShaderId`, re
 The last part to add are the actual density layers. Copy the code below, and paste it at the end of the `<Layers>` part of the file:
 
 ```xml
-<FoliageMultiLayer densityMapId="100051" numChannels="1" numTypeIndexChannels="0">`
-    <FoliageSubLayer name="ssSnowMask"  densityMapChannelOffset="0" numDensityMapChannels="1" materialId="100610" cellSize="8" viewDistance="80" objectMask="16711935" decalLayer="0" atlasSize="1" atlasOffsets="1 0" numBlocksPerUnitDefault="1.8" numBlocksPerUnitMin="1.8" numBlocksPerUnitMax="1.8" width="0.8" height="0.3" widthVariance="0.1" heightVariance="0.1" horizontalPositionVariance="0.3" blockShapeId="1"/>
+<FoliageMultiLayer densityMapId="100051" numChannels="1" numTypeIndexChannels="0">
+    <FoliageSubLayer name="ssSnowMask" densityMapChannelOffset="0" numDensityMapChannels="1" materialId="100610" cellSize="8" viewDistance="80" objectMask="16711935" decalLayer="0" atlasSize="1" atlasOffsets="1 0" numBlocksPerUnitDefault="1.8" numBlocksPerUnitMin="1.8" numBlocksPerUnitMax="1.8" width="0.8" height="0.3" widthVariance="0.1" heightVariance="0.1" horizontalPositionVariance="0.3" blockShapeId="1" />
 </FoliageMultiLayer>
 ```
 
@@ -85,7 +85,7 @@ Save the i3d file.
 
 You can skip reading this part if you are not interested in the details of the density layer.
 
-What we did above is add 4 different foliage sublayers in a big multilayer. The multilater references the density map, a `.gdm` (Giants Density Map) file containing binary data. The first layer is the Seasons mak, a single bit (on or off). It used a material so that the mask is visible in the editor when we draw it.
+What we did above is add a foliage sublayer in a big multilayer. The multilater references the density map, a `.gdm` (Giants Density Map) file containing binary data. The sublayer is the Seasons mask, a single bit (on or off). It used a material so that the mask is visible in the editor when we draw it.
 
 ## Using the tipCol as a basis of the mask
 
@@ -99,6 +99,8 @@ Use the GRLE converter from GDN to convert the `tipColInfoLayer.grle` to a PNG f
 Rename the generated file from `tipColInfoLayer.png` to `seasons_mask.png`.
 
 Open your map in the Giants Editor and save it. Make sure there are no errors in the console. If there are any, you made a mistake.
+
+Make sure the map01 folder only contains seasons_mask.gdm now, and not the png version. If it does, remove that png file.
 
 ### Testing the density layer
 
