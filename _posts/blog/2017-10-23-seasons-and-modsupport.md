@@ -4,19 +4,19 @@ date: 2017-10-24 9:30:00 +0100
 author: rahkiin
 ---
 
-It has been four months since Seasons won the Giants ModContest 2017, and even longer since the latest blogpost. Seasons has been received better than we could have ever hoped for and we are glad players enjoy it so much. We are continuing development to make it even better, with new gameplay, more planning and more things to do in the winter.
+It has been four months since Seasons won the Giants ModContest 2017, and even longer since the latest blogpost. Seasons has been received way better than we could have ever hoped for and we are glad players enjoy it so much. We are continuing development to make it even better, with new gameplay, more planning and adding more realism.
 
 In the latest months we have been trying to support the community the best we can. And for that we have seen many new maps and mods with full Seasons compatibility. Even maps with their own textures, local weather and growth.
 
 Over this time we have also seen some compatibility issues. Some have required changes in Seasons and are included in our upcoming version 1.2. However, other issues cannot or should not be fixed by Seasons.
 
-#### Support from our team
+#### Seasons support from our team
 
-Since the release of Seasons it has been great to see how widely it is being used and how many maps that have been prepared for Seasons. We actively try to support any maps on ModHub. These maps have had their testing by Giants and should work with Seasons too. Not all do, but we try to contact and help the makers of those mods. Sadly, we can't do the same for mods published outside ModHub; We can't quickly test and try them, they are not collected together and not verified to be virus free.
+Since the release of Seasons it has been great to see how widely it is being used and how many maps that have been prepared for Seasons. We actively try to support any maps on ModHub. These maps have had their testing by Giants and should work with Seasons too. Not all do, but we try to contact and help the makers of those mods. Unfortunately, we can't do the same for all mods published outside ModHub; We can't quickly test and try them, they are not collected together and not verified to be virus free.
 
-Modders should use ModHub at all cost. It is better for all parties: players have a single collection of tested virus-free mods that are even accessible from in-game and have at least an english, french and german translation. Some mods even might make it to console. And modders have a free upload service that even pays them per download, without any advertorials or restrictions.
+We encourage modders to use ModHub, not only because it is easier for us. It is better for all parties: players have a single collection of tested virus-free mods that are even accessible from in-game and have at least an English, French and German translation. Some mods even might make it to console. And modders have a free upload service that even pays them per download, without any advertorials or restrictions.
 
-We do realize the current ModHub has some pitfalls, like no way to search and no nice Google and Facebook integration, but we believe these issues will be resolved for Farming Simulator 19 before the end of 2018, if not sooner.
+We do realize the current ModHub has some pitfalls, like no way to search and no nice Google and Facebook integration, but we believe Giants will make a better solution for the next version of the game.
 
 #### Writing compatible scripts
 
