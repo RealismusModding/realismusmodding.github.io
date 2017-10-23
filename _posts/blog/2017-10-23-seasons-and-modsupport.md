@@ -10,7 +10,7 @@ In the latest months we have been trying to support the community the best we ca
 
 Over this time we have also seen some compatibility issues. Some have required changes in Seasons and are included in our upcoming version 1.2. However, other issues cannot or should not be fixed by Seasons.
 
-##### Support from our team
+#### Support from our team
 
 Since the release of Seasons it has been great to see how widely it is being used and how many maps that have been prepared for Seasons. We actively try to support any maps on ModHub. These maps have had their testing by Giants and should work with Seasons too. Not all do, but we try to contact and help the makers of those mods. Sadly, we can't do the same for mods published outside ModHub; We can't quickly test and try them, they are not collected together and not verified to be virus free.
 
@@ -18,7 +18,7 @@ Modders should use ModHub at all cost. It is better for all parties: players hav
 
 We do realize the current ModHub has some pitfalls, like no way to search and no nice Google and Facebook integration, but we believe these issues will be resolved for Farming Simulator 19 before the end of 2018, if not sooner.
 
-##### Writing compatible scripts
+#### Writing compatible scripts
 
 There are modders that attempt to add new functionality, new gameplay to their maps. We applaud this: we love more gameplay. However, we have seen that at times this gameplay is added in a way where errors occur when used together with Seasons.
 The game, mods and also Seasons assumes a certain design and implementation of said game. The mod or map in question might work well alone, but when used together with Seasons it gives errors. As far as possible we try to iron out these issues.
