@@ -2,7 +2,7 @@
 title: Seasons Mask
 tags: [modding, maps, mask]
 keywords: guide, modding, maps, mask, snow
-last_updated: 2017-09-20 22:00:00 +0100
+last_updated: 2017-10-23 13:47:00 +0100
 summary: "Learn how to add the Seasons mask to your map for full compatibility"
 ref: maps_seasons_mask
 permalink: /mods/seasons/manual/modding/maps/seasons-mask
@@ -19,6 +19,10 @@ The Seasons mask is a layer that must be painted by the map maker to enable all 
 Note that when a map does not have a seasons mask, bales will _not_ rot.
 
 In this guide you will learn all steps of adding the Seasons mask to a map.
+
+<div class="alert alert-info" role="alert">
+  <strong>Please read the full guide</strong> before executing the steps, or asking questions about issues you have. This guide contains a step-by-step explanation on how to properly add snowmasks.
+</div>
 
 * TOC
 {:toc}
