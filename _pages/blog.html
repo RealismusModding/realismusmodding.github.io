@@ -4,7 +4,6 @@ permalink: /blog/
 ---
 
 <h1>Blog</h1>
-<a href="archive">Archive ({{ site.posts | size }})</a>
 
 <section itemscope itemtype="http://schema.org/Blog">
     {% for post in site.posts %}
@@ -27,7 +26,7 @@ permalink: /blog/
             </p>
 
             <meta itemprop="mainEntityOfPage url" content="{{ base_url }}{{ post.url }}" />
-            <meta itemprop="dateModified" content="{{ page.last_modify_date | default: page.date | date_to_xmlschema }}" />
+            <meta itemprop="dateModified" content="{{ page.last_modify_date | default: post.date | date_to_xmlschema }}" />
             {% include microdata/publisher.html %}
         </header>
 
