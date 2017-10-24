@@ -23,7 +23,7 @@ We do realize the current ModHub has some pitfalls, like no way to search and no
 There are modders that attempt to add new functionality, new gameplay to their maps. We applaud this: we love more gameplay. However, we have seen that at times this gameplay is added in a way where errors occur when used together with Seasons.
 The game, mods and also Seasons assumes a certain design and implementation of said game. The mod or map in question might work well alone, but when used together with Seasons it gives errors. As far as possible we try to iron out these issues.
 Sometimes though, it is better if the issue is corrected in the other mod or map.
-For example, an animal husbandry contains the animal description in addition to other information about the animals. This is the case in the game, so if you add a new tyoe of animal husbandry, the description should show up as well. If then a mod does not supply this, it will break Seasons.
+For example, an animal husbandry contains the animal description in addition to other information about the animals. This is the case in the game, so if you add a new type of animal husbandry, the description should show up as well. If then a mod does not supply this, it will break Seasons.
 
 We will be appending our Best Practices document with more information on how to add elements like new animals to a map without fully breaking with existing mods such as Seasons.
 
