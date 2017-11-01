@@ -14,6 +14,7 @@ The release notes contain the changed made in every version after the initial re
 *Unreleased*
 
 This version is 100% compatible with save games created with earlier versions of Seasons.
+To play Seasons 1.2 you need at least version 1.5.1 of Farming Simulator 2017.
 
 #### New features
 - Added a ground wetness model.
@@ -53,6 +54,7 @@ This version is 100% compatible with save games created with earlier versions of
 - Alpha Blending of tree billboard is now turned off by default. See the [guide](/mods/seasons/manual/modding/1-2-checklist#tree-alphablending-is-now-not-disabled-by-default)
 - The 4Real Module Crop Destruction patch has been removed, as Giants fixed the mod.
 - To play Seasons 1.2 you need at least version 1.5.1 of Farming Simulator 2017.
+- This version has compatibility for the Platinum DLC and its GEO mod, 'Seasons GEO: Paraguay'.
 
 ## Version 1.1.0
 *Released on July 26th*
