@@ -14,7 +14,7 @@ Seasons has a new rebalanced economy that feels more realistic and has a better 
 
 ### Loans
 
-The arbitrary loan cap in the vanilla game has been removed and replaced with a loan cap based on your equity, which is the combined value of your land and placeable buildings. The new loan cap is 30% of that equity with a minimum of 300,000 and a maximum of 1,000,000. In addition, the interest payable on the loan has been increased and is adjusted to the year length.
+The arbitrary loan cap in the vanilla game has been removed and replaced with a loan cap based on your equity, which is the combined value of your land and placeable buildings. The new loan cap is 80% of that equity with a minimum of 300,000 and a maximum of 1,500,000. In addition, the interest payable on the loan has been increased and is adjusted to the year length.
 Be sure to pay off your loans as the interest rates are higher now.
 
 ### Prices
@@ -23,6 +23,14 @@ The prices of products change realistically during the year, based on supply/dem
 For example, the prices of firewood will increase in the winter due to higher demand, and the prices of wheat will decrease at the end of autumn due to higher supply.
 
 The prices of some produce, which normally would not be sold by a farm, have been reduced to 0. This currently includes grass, hay and straw that hasn't been baled and also grass bales. Hay, silage and straw bales can be sold as usual.
+
+#### Economy information
+
+Information about the prices can be found on the economy page of the Seasons menu.
+
+{% include big_image.html title="Economy information" url="/assets/img/mods/seasons/screenshots/economy.jpg" %}
+
+In your first year, simulated data is shown. The price will roughly follow this. So you can see when the best time is to buy or sell. Every day, the price is updated, so for next year you can use the price information of the year before.
 
 ### Helper Wages
 

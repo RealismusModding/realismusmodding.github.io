@@ -16,13 +16,9 @@ If you have activated the Seasons mod on an existing save game, you will be prom
 
 Vanilla growth is completely disabled. The mod controls all growth of fruits, including pine trees, which take 5 years to become fully grown and harvestable after 2 years.
 
-A year is broken up into 12 transitions. Each season has 3 transitions. They are called early, mid and late and the new growth system follows real life as much as possible, so crops can only be planted and harvested at certain times of the year.
+A year is broken up into 12 transitions. Each season has 3 transitions. They are called early, mid and late and the new growth system follows real life as much as possible, so crops can only be planted and harvested at certain times of the year. What this is,
 
-The following crops can be planted in late summer: canola (rape), grass, poplar
-The following crops can be planted in autumn: canola (rape), barley and wheat, grass, poplar
-All crops can be planted throughout spring, except soybeans and sunflowers, which can only be planted in mid spring and late spring.
-
-There is a planting and harvesting calendar included in the Seasons menu as a handy reference (`Alt + S`)
+There is a planting and harvesting calendar included in the Seasons menu as a reference.
 {% include big_image.html title="Planting calendar" url="/assets/img/mods/seasons/screenshots/menu.jpg" %}
 
 Winter will wither certain crops grass will be knocked back to stage 2 in the winter. If you plant crops in a transition that is not within the planting window in the calendar, it will die. Another factor which determines whether your crops will germinate is the germination temperature of crops and the current soil temperature. The germination temperature for all crops can be seen in the Seasons menu and the current soil temperature is shown in the HUD. If the soil temperature if below the germination temperature, then the sown crops will not germinate. They will not die though as long as you are within the planting window. For example, spring barley has a planting window of early, mid and late spring. So, if you plant barley in early spring, but the soil temperature is too low, it will only grow in mid or late spring, or in the worst case, in early summer.
@@ -31,7 +27,7 @@ Crops, except for grass and oilseed radish, are only harvestable in the final st
 
 Spraying, or spreading, fertiliser can now only be done in the initial growing stages.
 
-Custom fruits are handled gracefully by using barley's growth patterns. Map makers can choose to modify the growth patterns of vanilla fruits and also make the mod aware of custom fruits by supplying custom growth patterns for them. Also, Seasons Geo Mods can supply their own growth patterns.
+Custom fruits are handled gracefully by using barley's growth patterns. Map makers can choose to modify the growth patterns of vanilla fruits and also make the mod aware of custom fruits by supplying custom growth patterns for them. Also, Seasons GEO Mods can supply their own growth patterns.
 
 ## Q: My crops keep disappearing?!
 A: You are seeding in the wrong season. You can look in the Seasons menu to find out when you can plant each crop. Like in real life, if the soil becomes too cold, crops will not grow. This means winter crops needs to be planted before the temperature drops too much in autumn. You will also have to wait in spring until the soil is warm enough for seeds to germinate in the soil. The temperature limit for sowing is set for each fruit in the growth.xml file.
