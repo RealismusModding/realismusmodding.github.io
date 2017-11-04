@@ -12,6 +12,8 @@ permalink: /mods/seasons/manual/modding/geo/
 
 A GEO mod is a small mod with some XML files and a special Seasons setting in the modDesc. It allows a player to choose a different weather and growth configuration. GEO comes from 'geographic', as the mods are meant to describe an actual area in the world, like Midwest U.S.A. or Northern Sweden.
 
+You can download official GEO mods from Realismus Modding on ModHub. A list of available GEO mods can be found at [the additional mods page](/mods/seasons/supplements). Other modders have released GEO mods as well.
+
 The guides in this category will explain how to create the configuration files.
 
 **Note**: All of the possible configuration files for a GEO mod can also be supplied in a map mod. Make sure you put the files in the mod root folder. For example, if the mod is named MyMap, put the weather file at `MyMap/seasons_weather.xml`

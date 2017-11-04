@@ -21,12 +21,12 @@ Equations for the suns elevation above the horizon has been used to determine th
 ### Soil temperature
 A thermodynamic model has been implemented to model the propagation of heat into the soil. The model uses air temperature and solar radiation, which changes with season and time of day. In winter the soil be frozen and cannot be worked on. An icon will show on the screen when the soil is frozen (shown below). Crops need a certain soil temperature in order for the seeds to germinate. You should consult the planting and harvesting calendar before planting.
 
-<img src="/assets/img/mods/seasons/frozenGround.png" alt="Frozen ground icon" class="img-fluid rounded" />
+<img src="/assets/img/mods/seasons/frozenGround.jpg" alt="Frozen ground icon" class="img-fluid rounded" />
 
 ### Crop moisture
 Crop moisture is simulated in the Seasons mod. Rain and hail increases crop moisture, while sunny weather helps to decrease it. An icon will show on the screen when the crop is too moist to harvest crops (shown below). When crop is moist it is also not possible to turn grass into hay by using a tedder. Crops will dry faster in summer than in autumn, both due to lower temperatures in autumn, but at this time of year there is also much less solar radiation. At night crop dry very slowly (as of yet there is no modelling of wind). This will mean that if you are unlucky and experiences a late afternoon shower in autumn, you might not be able to harvest before next morning after sunrise some time.
 
-<img src="/assets/img/mods/seasons/wetCrop.png" alt="Wet crops icon" class="img-fluid rounded" />
+<img src="/assets/img/mods/seasons/wetCrop.jpg" alt="Wet crops icon" class="img-fluid rounded" />
 
 ### Snow
 Snow is a swath. You can handle it with any bucket you would be able to use on grass. Because of the Tip Anywhere functionality, there is this new feature called the TipCol. This is a way for map developers to decide where snow can't be placed. Good places are inside buildings, or on roads that are made of models. (The snow would not be able to be cleaned up by machinery because the road object is in the way). We can't use this TipCol (for performance and technical reasons), so we place snow everywhere. This will sadly cause a lot of ploblems on roads where it can't be cleared by a snowplough. So we added a way for map makers to tell us where we can and can't place snow. As long as the map does not tell us this, we will keep the snow till a minumum, which is 1 layer (6 cm).
