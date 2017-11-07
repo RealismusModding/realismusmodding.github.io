@@ -49,7 +49,7 @@ To play Seasons 1.2 you need at least version 1.5.1 of Farming Simulator 2017.
 - Straw and hay bale prices are brought back to vanilla level, while silage bale prices are lowered to be more in line with the hay bale price.
 - Upkeep of pigs has been reduced and birthrate has been increased (i.e. improved profitability).
 
-### Notes
+###$ Notes
 - Added warning about fruit density layers not being same size as terrain.
 - Alpha Blending of tree billboard is now turned off by default. See the [guide](/mods/seasons/manual/modding/1-2-checklist#tree-alphablending-is-now-not-disabled-by-default)
 - The 4Real Module Crop Destruction patch has been removed, as Giants fixed the mod.
