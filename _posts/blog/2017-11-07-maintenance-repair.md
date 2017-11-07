@@ -2,11 +2,15 @@
 title: Maintenance, repair and Seasons
 date: 2017-11-07 12:30:00 +0100
 author: reallogger
+header:
+  image: /assets/img/blog/repair/workshop.jpg
 ---
 
 There have been many questions about the repair feature in Seasons and why there is both a repair and maintenance cost. Here we explain some of the reasoning and background.
 
 Seasons adds more days between each harvest compared to vanilla so it became apparent that it was needed to change the vehicle upkeep for the mod. Some considerations were done for gameplay and there were some restrictions by the game (for instance being compatible with the vehicle upkeep interface). In general we wanted to reduce to upkeep as this is one of the main cost item in vanilla. Also we wanted the overall vehicle cost to be better aligned with age and how much you use it. Equipment that is not used should have lower upkeep than equipment that is used often.
+
+{% include big_image.html title="Repairs" url="/assets/img/blog/repair/workshop.jpg" %}
 
 We added repair as a gameplay feature as taking care of your machinery is an important part of a farmers routine. Having the daily check is too cumbersome for gameplay, but the wish was to represent for instance the overhaul of combines before harvest and that it becomes more expensive to do repairs if you don't follow the prescribed service intervals.
 
