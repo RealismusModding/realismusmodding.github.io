@@ -22,6 +22,6 @@ The maintenance cost is thought to represent taxes, insurance and daily maintena
 
 The repair cost is representing major repairs, normally done in a workshop or similar. This cost is dependent on the age, the total hours on the machine and the hours since last repair. If you find repair cost to become high, it might be time to replace it with a new model.
 
-The costs algorithms have been calibrated to real life data on maintenance of agricultural machinery. Where no data was found, assumptions where made.
+The costs algorithms have been calibrated to real life data on maintenance of agricultural machinery. Where no data was found, assumptions were made.
 
 If you choose to not repair according to the given intervals (currently once a year), repair will become more expensive and there is also a probability that your machinery will break down.
