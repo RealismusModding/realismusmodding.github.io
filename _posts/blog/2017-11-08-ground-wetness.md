@@ -8,9 +8,11 @@ header:
 
 With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. The model is driven by environmental factors like rain, melting snow, relative humidity, air and soil temperature and more. 
 
-In the original game the ground basically dries fully within an hour after the rain has stopped. Since Seasons brings a longer and variable time scale (i.e. ability to set number of days per season) it was necessary with some changes. The new model is based on a scientific model of soil moisture dynamics and this model was specifically made for soils in which crops grow. Currently the ground wetness is mainly affecting the tire friction, but exciting features are planned for a future version of Seasons where ground wetness will play a large role. 
+In the original game the ground basically dries fully within an hour after the rain has stopped. Since Seasons brings a longer and variable time scale (i.e. ability to set number of days per season) it was necessary with some changes. The new model is based on a scientific model of soil moisture dynamics and this model was specifically made for soils in which crops grow.
 
-Fundamental in the model is the calculation of the soil water content as a fraction of saturation, where unity is fully saturated soil. Different to vanilla mechanics is that the ground wetness in Seasons never reaches zero as there always is some water in the soil. Generally, depending on what environment (i.e. GEO) the player uses the minimum value is normally around 0.05-0.1. The model is global, which means that the same ground wetness is assumed for the whole map. 
+Ground wetness is a game variable that varies between 0 and 1. Currently, ground wetness is mainly affecting the tire friction. Exciting features are planned for a future version of Seasons where ground wetness will play a large role. 
+
+In Seasons ground wetness is interpreted as the level of saturation, where unity is fully saturated soil. Different to vanilla mechanics is that the ground wetness in Seasons never reaches zero as there always is some water in the soil. Generally, depending on what environment (i.e. GEO) the player uses the minimum value is normally around 0.05-0.1. The model is global, which means that the same ground wetness is assumed for the whole map.
 
 The figure below shows the major effects captured in the model. In the game, at every hour, Seasons now calculates the water infiltration, transpiration from crops, evaporation from soil and drainage. 
 
