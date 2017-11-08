@@ -51,7 +51,7 @@
 {% endif %}
 
 {% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt }}" />
+  <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
 {% endif %}
 
 {% if site.twitter_username %}
