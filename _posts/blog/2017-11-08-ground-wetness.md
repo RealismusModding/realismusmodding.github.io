@@ -6,7 +6,6 @@ header:
   image: /assets/img/blog/groundWetness/wetnessModel.png
 ----
 
-
 With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. The model is driven by environmental factors like rain, melting snow, relative humidity, air and soil temperature, solar radiation and more. 
 
 In the original game the ground basically dries after 30 in game minutes. Since Seasons brings a longer and variable time scale (i.e. ability to set number of days per season) it was necessary with some changes. The new model is based on a scientific model of soil moisture dynamics and this model was specifically made for soils in which crops grow.
@@ -19,11 +18,11 @@ The figure below shows the major effects captured in the model. In the game, at 
 
 {% include big_image.html title="Soil moisture model" url="/assets/img/blog/groundWetness/wetnessModel.png" %}
 
-WATER INFILTRATION, DRAINAGE AND FROZEN SOIL
+#### WATER INFILTRATION, DRAINAGE AND FROZEN SOIL
 
 When it rains or when snow melts, water will infiltrate into the ground. This is the main inflow into the soil, but is countered by drainage (i.e. net outflow) to neighbouring areas. In reality the drainage is very dependent on soil type and topography, but for now this is kept constant so hilly areas are drained in similar manner as flat lands. Perhaps a future version can include the effects of topography and ways to customize soil parameters. Currently, when the soil water content is below a field capacity the drainage stops and there is assumed equilibrium between inflow and outflow in the soil. When the soil is frozen the soil water content is not updated. This means whatever water is in the soil in the autumn, when soil freezes, is locked until the soil thaws in spring. 
 
-EVAPORATION AND TRANSPIRATION
+#### EVAPORATION AND TRANSPIRATION
 
 From the surface of the soil and plants, water evaporate. In Seasons evaporation does not occur when the soil water content is below a certain soil saturation point, when the air is saturated with water (i.e. high relative humidity) or when snow is covering the ground. The evaporation is a function of soil water content and other factors. There is also has an upper limit to how much water that can evaporate in one hour. 
 
