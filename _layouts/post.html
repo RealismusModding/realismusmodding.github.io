@@ -27,6 +27,8 @@ layout: page
     </div>
 </article>
 
+{% include subscribe.html %}
+
 {% for post in site.categories[page.nav_cat] %}
   {% if post.url == page.url %}
     {% assign post_index0 = forloop.index0 %}
