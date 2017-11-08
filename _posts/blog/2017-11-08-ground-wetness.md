@@ -5,11 +5,14 @@ author: reallogger
 header:
   image: /assets/img/blog/groundWetness/wetnessModel.png
 description: With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. This post elaborates on the model, its implementation and effects on the game.
+excerpt_separator: <!-- more -->
 ---
 
-_This post is part of a series about the workings of Seasons. The previous post was about [maintenance and repair of vehicles](/blog/2017/11/07/maintenance-repair)._
+_This post is part of a series with background information on Seasons. The previous post was about [maintenance and repair of vehicles](/blog/2017/11/07/maintenance-repair)._
 
 With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. The model is driven by environmental factors like rain, melting snow, relative humidity, air and soil temperature and more.
+
+<!-- more -->
 
 In the original game the ground basically dries fully within an hour after the rain has stopped. Since Seasons brings a longer and variable time scale (i.e. ability to set number of days per season) it was necessary to make some changes. The new model is based on a scientific model of soil moisture dynamics and this model was specifically made for soils in which crops grow.
 
