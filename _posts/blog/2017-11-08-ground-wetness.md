@@ -4,7 +4,7 @@ date: 2017-11-08 15:00:00 +0100
 author: reallogger
 header:
   image: /assets/img/blog/groundWetness/wetnessModel.png
-----
+---
 
 With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. The model is driven by environmental factors like rain, melting snow, relative humidity, air and soil temperature, solar radiation and more. 
 
