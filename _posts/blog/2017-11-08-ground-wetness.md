@@ -26,6 +26,12 @@ From the surface of the soil and plants, water evaporate. In Seasons evaporation
 
 Crops, plants and trees are consumers of water. In Seasons the transpiration from growth is considered. There is a lower and upper limit to how much water crops and plants consume every hour. We have also assumed that there is effectively no growth when the air temperature is below 5 degrees so transpiration stops. The effect is that ground dries less quickly in autumn for instance when colder nights can be experienced.
 
+Below is an example of the ground wetness for one year using a 9 day season length. It rains a few times in spring. Then the whole summer stays dry. In autumn there are days with rain again, but the ground dries before the next rain. Then in late autumn, the ground dries slower after rain. In mid winter the ground freezes when the ground has approximately 40% saturation. This will then be the start value when ground thaws in spring. 
+
+{% include big_image.html title="Soil moisture model" url="/assets/img/blog/groundWetness/plot.png" %}
+
+#### MEASURING THE GROUND WETNESS
+
 It is possible to measure the ground wetness with the Wopstr handtool. The icon for ground wetness looks like this: 
 
 {% include big_image.html title="Soil moisture model" url="/assets/img/blog/groundWetness/wetnessIcon.png" %}
