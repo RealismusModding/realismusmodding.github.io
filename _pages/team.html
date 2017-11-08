@@ -9,7 +9,7 @@ title: Team
 
     {% for memberHash in site.data.team %}
     {% assign member = memberHash[1] %}
-    <div class="team-item" itemscope itemtype="http://schema.org/Person">
+    <div class="team-item {% if member.active == false %}team-inactive{% endif %}" itemscope itemtype="http://schema.org/Person">
         <div itemprop="memberOf" itemscope itemtype="https://schema.org/Organization">
             {% include microdata/organization.html %}
         </div>

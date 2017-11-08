@@ -1,12 +1,3 @@
-theseb:
-  nickname: theSeb
-  name: Sebastian
-  github: theSeb1979
-  role: Project Manager and Programmer
-  slack: theseb
-  image: /assets/img/team/theseb.jpeg
-  twitter: theSeb1979
-
 rahkiin:
   nickname: Rahkiin
   name: Jos
@@ -24,14 +15,6 @@ reallogger:
   image: /assets/img/team/reallogger.png
   slack: reallogger
 
-mrbear:
-  nickname: mrbear
-  name: Per
-  github: mrbear
-  role: Snow and texture master
-  slack: mrbear
-  image: /assets/img/team/mrbear.png
-
 baron:
   nickname: baron
   name: Markus
@@ -40,3 +23,31 @@ baron:
   image: /assets/img/team/baron.png
   slack: baron
   twitter: MarkusMve
+
+wopster:
+  nickname: Wopster
+  name: Stijn
+  github: stijnwop
+  role: Programmer and 3d artist
+  image: /assets/img/team/wopster.jpg
+  slack: wopster
+  twitter:
+
+theseb:
+  nickname: theSeb
+  name: Sebastian
+  github: theSeb1979
+  role: Project Manager and Programmer
+  slack: theseb
+  image: /assets/img/team/theseb.jpeg
+  twitter: theSeb1979
+  active: false
+
+mrbear:
+  nickname: mrbear
+  name: Per
+  github: mrbear
+  role: Snow and texture master
+  slack: mrbear
+  image: /assets/img/team/mrbear.png
+  active: false

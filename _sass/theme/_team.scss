@@ -23,7 +23,7 @@
 
 .team-image {
     /*width: 100%;*/
-    max-height: 9rem;
+    max-height: 10rem;
 }
 
 .team-item:nth-child(2n) .team-image {
@@ -40,4 +40,17 @@
 
 .team-links {
     font-size: .8rem;
+}
+
+.team-inactive {
+    color: rgba(0, 0, 0, .2) !important;
+    // border-color: rgba(0, 0, 0, .125);
+
+    a {
+        color: rgba(0, 0, 0, .2) !important;
+    }
+
+    img {
+        opacity: 0.2
+    }
 }
