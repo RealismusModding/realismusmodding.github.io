@@ -31,7 +31,7 @@ title: Team
                 {% endif %}
 
                 {% if member.slack %}
-                <span class="col-xl-6">Slack: <a itemprop="url" href="https://realismusmodding.slack.com/team/{{ member.slack }}" target="_blank">{{ member.slack }}</a></span>
+                <span class="col-xl-6">Slack: <a itemprop="url" href="https://realismusmodding.slack.com/team/{% if member.slack_id %}{{member.slack_id}}{% else %}{{member.slack}}{% endif %}" target="_blank">{{ member.slack }}</a></span>
                 {% endif %}
 
                 {% if member.twitter %}
