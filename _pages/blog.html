@@ -30,16 +30,10 @@ permalink: /blog/
             {% include microdata/publisher.html %}
         </header>
 
-        {% if forloop.first %}
-        <div itemprop="articleBody" class="blog-body">
-            {{ post.content }}
-        </div>
-        {% else %}
         <div class="blog-body">
             {{ post.excerpt }}
             <a href="{{ post.url }}" itemprop="url">Continue reading</a>
         </div>
-        {% endif %}
     </article>
       {% endif %}
     {% endfor %}
