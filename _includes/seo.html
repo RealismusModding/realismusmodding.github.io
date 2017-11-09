@@ -61,14 +61,13 @@
   <meta name="twitter:url" content="{{ canonical_url }}" />
 
   {% if page.header.image %}
-    <meta itemprop="image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: base_path }}{% endif %}" />
+    <meta itemprop="image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: seo_url }}{% endif %}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: base_path }}{% endif %}" />
+    <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: seo_url }}{% endif %}" />
   {% else %}
     <meta name="twitter:card" content="summary" />
     {% if site.og_image %}
-      <meta name="twitter:image" content="{{ site.og_image | prepend: base_path }}" />
-      <meta property="og:image" content="{{ site.og_image | prepend: base_path }}" />
+      <meta name="twitter:image" content="{{ site.og_image | prepend: seo_url }}" />
     {% endif %}
   {% endif %}
 
@@ -88,7 +87,7 @@
 {% endif %}
 
 {% if page.header.image %}
-  <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: base_path }}{% endif %}" />
+  <meta property="og:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: seo_url }}{% endif %}" />
 {% endif %}
 
 {% if page.date %}
