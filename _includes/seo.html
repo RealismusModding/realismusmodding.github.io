@@ -66,9 +66,6 @@
     <meta name="twitter:image" content="{% if page.header.image contains "://" %}{{ page.header.image }}{% else %}{{ page.header.image | prepend: seo_url }}{% endif %}" />
   {% else %}
     <meta name="twitter:card" content="summary" />
-    {% if site.og_image %}
-      <meta name="twitter:image" content="{{ site.og_image | prepend: seo_url }}" />
-    {% endif %}
   {% endif %}
 
   {% if seo_author_twitter %}
