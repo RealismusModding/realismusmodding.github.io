@@ -8,7 +8,7 @@ permalink: /mods/seasons/manual/modding/1-2-checklist
 
 This is a small checklist for maps to fully support Seasons 1.2. This also includes changes to make sure you are compatible with future versions of Seasons, as known at the time of writing by the developers.
 
-## Tree alphablending is now not disabled by default
+## Tree alphablending is now disabled by default
 
 Since 1.1 Seasons has new tree textures that included alphaBlending. Some maps took advantage of this.
 For performance reasons, alphaBlending has been disabled again. However, if you want your map to use alphaBlending, there is an option to enable it again.
