@@ -11,7 +11,7 @@ The release notes contain the changed made in every version after the initial re
 - [Version 1.0.0](#version-100)
 
 ## Version 1.2.0
-*Unreleased*
+*Released on November 9th*
 
 This version is 100% compatible with save games created with earlier versions of Seasons.
 To play Seasons 1.2 you need at least version 1.5.1 of Farming Simulator 2017.
