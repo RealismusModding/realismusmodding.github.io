@@ -9,6 +9,7 @@ seasons:
         - ref: gp_animals
         - ref: gp_vehicles
         - ref: gp_economy
+        - ref: gp_measuring
         - ref: gp_hud_overview
     - ref: modding
       entries:

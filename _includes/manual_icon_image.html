@@ -1,0 +1,12 @@
+<!-- <figure class="figure mx-auto d-block text-center">
+    <img src="{{ include.src }}" class="figure-img img-fluid rounded" title="{{ include.name }}" alt="{{ include.alt }}" style="width: 64px;" />
+    <figcaption class="figure-caption text-center">{{ include.name }}<br /><em>{{ include.info }}</em></figcaption>
+</figure> -->
+
+<div class="d-flex flex-row align-items-start mb-2">
+    <img src="{{ include.src }}" class="figure-img img-fluid rounded mr-3" style="width:64px" alt="{{ include.alt }}" title="{{ include.name }}" />
+    <figcaption>
+        <strong>{{ include.name }}</strong>
+        <p>{{ include.info }}</p>
+    </figcaption>
+</div>
