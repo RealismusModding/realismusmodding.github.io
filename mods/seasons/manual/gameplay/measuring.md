@@ -12,7 +12,7 @@ permalink: /mods/seasons/manual/gameplay/measuring
 
 In Seasons 1.2 we added a measurement tool support to aid in getting information about your farm and the objects on it.
 
-The Wopstr is a measurement handtool, created specifically for Seasons. It is available in the shop under the 'Misc' category and sells for 3500 euros. It is a very magical device, that can measure a wide varierty of objects and metrics.
+The Wopstr M420 is a measurement handtool, created specifically for Seasons. It is available in the shop under the 'Misc' category and sells for 3500 euros. It is a very magical device, that can measure a wide varierty of objects and metrics.
 
 * TOC
 {:toc}
