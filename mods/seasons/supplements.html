@@ -29,9 +29,13 @@ savegame. Texture mods extend the compatibility of a map for Seasons: it adds ma
                 <h4 class="card-title">{{ mod.title }}</h4>
                 <p class="card-text">{{ mod.description }}</p>
 
-                {% if mod.modhub_id %}
+                {% if mod.modhub_id and mod.button == null %}
                 <a href="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" class="btn btn-outline-primary">Download</a>
-                {% endif%}
+                {% endif %}
+
+                {% if mod.button %}
+                <span class="btn btn-outline-secondary">{{ mod.button }}</a>
+                {% endif %}
             </div>
         </div>
     </div>

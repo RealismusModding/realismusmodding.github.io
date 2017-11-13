@@ -56,7 +56,7 @@ seasons:
     - name: geo_usmidwest
       title: "GEO: U.S. Midwest"
       list_icon: /assets/img/mods/seasons/geo/logo_geo_midwest.jpg
-      description: "Enjoy the weather and growth of one of the most intensely farmed regions in the world. Note that sugarbeet does not grow in this part of the world."
+      description: "Enjoy the weather and growth of one of the most intensely farmed regions in the world."
       modhub_id: 84675
     # - name: geo_centralfrance
     #   title: "GEO: Central France"
@@ -66,5 +66,6 @@ seasons:
     - name: geo_paraguay
       title: "GEO: Paraguay"
       list_icon: /assets/img/mods/seasons/logo_geo_paraguay.jpg
-      description: "Experience the hot and humid environment of Paraguay with this GEO mod, made specifically for the Farming Simulator 17 Platinum Edition!"
+      description: "Experience the hot and humid environment of Paraguay with this GEO mod, made specially for Farming Simulator 17 Platinum Edition!"
       modhub_id: 94570
+      button: "Soon"
