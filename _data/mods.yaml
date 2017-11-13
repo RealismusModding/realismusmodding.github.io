@@ -63,3 +63,8 @@ seasons:
     #   list_icon: /assets/img/mods/seasons/geo/logo_geo_centralfrance.jpg
     #   description: ""
     #   modhub_id: 5
+    - name: geo_paraguay
+      title: "GEO: Paraguay"
+      list_icon: /assets/img/mods/seasons/logo_geo_paraguay.jpg
+      description: "Experience the hot and humid environment of Paraguay with this GEO mod, made specifically for the Farming Simulator 17 Platinum Edition!"
+      modhub_id: 94570
