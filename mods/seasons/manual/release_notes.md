@@ -6,15 +6,32 @@ ref: release_notes
 # Release notes
 The release notes contain the changed made in every version after the initial release.
 
+- [Version 1.2.1](#version-121)
 - [Version 1.2.0](#version-120)
 - [Version 1.1.0](#version-110)
 - [Version 1.0.0](#version-100)
+
+## Version 1.2.1
+*Unreleased*
+
+This version is 100% compatible with save games created with earlier versions of Seasons.
+To play Seasons 1.2 and higher you need at least version 1.5.1 of Farming Simulator 2017.
+
+#### Fixes
+- Fixed bug with repair costs for machinery with high operating hours.
+- Nights were too short and dawn too early, that is now rectified.
+- Sell price of placeables can't go above buy price anymore.
+- Texts in Skip Night dialog are now correct.
+
+#### Improvements
+- Cost of repairs for forestry equipment improved.
+- The Wopstr is now more sensitive.
 
 ## Version 1.2.0
 *Released on November 9th*
 
 This version is 100% compatible with save games created with earlier versions of Seasons.
-To play Seasons 1.2 you need at least version 1.5.1 of Farming Simulator 2017.
+To play Seasons 1.2 and higher you need at least version 1.5.1 of Farming Simulator 2017.
 
 #### New features
 - Added a ground wetness model.
