@@ -14,10 +14,10 @@
                     {% endif %}
 
                     {% for item in mod.navitems %}
-                    <li class="nav-item"><a href="{{ item.url }}" class="nav-link{% if item.url == page.url %} active{% endif %}">{{ item.title }}</a></li>
+                    <li class="nav-item"><a href="{{ item.url }}" class="nav-link{% if page.url contains item.url %} active{% endif %}">{{ item.title }}</a></li>
                     {% endfor %}
 
-                    <li class="nav-item"><a href="{{ manualUrl }}" class="nav-link{% if manualUrl == page.url %} active{% endif %}">Manual</a></li>
+                    <li class="nav-item"><a href="{{ manualUrl }}" class="nav-link{% if page.url contains manualUrl %} active{% endif %}">Manual</a></li>
                 </ul>
             </div>
         </div>
