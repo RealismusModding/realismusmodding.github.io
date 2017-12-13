@@ -24,3 +24,9 @@ Do not put Realismus Modding as author of the mod. You can add us as contributor
 It is preferable to call the zip name `FS17_GEO_<area>`. Do not put `RM` in the mod name, that is reserved for the Realismus Modding team.
 
 If you upload your GEO mod to Giants ModHub, make sure to look at the testing document. Also, make sure you supply a screenshot of the growth overview in the Seasons menu.
+
+### Console
+
+Giants might invite your GEO mod on console as well. This will require more testing to make sure it does not affect Seasons on console in a very bad way. A console GEO mod can only contain XML files and replace textures, no scripts.
+
+For replacement textures, the additional field `textureMemoryUsage` is required in the `textures` tag, containing the number of texture bytes required. Either Giants or Realismus Modding will calculate this value.
