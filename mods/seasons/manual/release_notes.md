@@ -6,10 +6,44 @@ ref: release_notes
 # Release notes
 The release notes contain the changed made in every version after the initial release.
 
+- [Version 1.3.0](#version-130)
 - [Version 1.2.1](#version-121)
 - [Version 1.2.0](#version-120)
 - [Version 1.1.0](#version-110)
 - [Version 1.0.0](#version-100)
+
+## Version 1.3.0
+*Released on December 18th*
+
+This version is 100% compatible with save games created with earlier versions of Seasons.
+To play Seasons 1.3 and higher you need at least version 1.5.3 of Farming Simulator 2017.
+
+#### New features
+- Now available on console as well.
+- NPCs now use the crop calendar for their planting and missions.
+- Repairing is now done in the configure / sell dialog. You can only sell when the vehicle is repaired or when it is totalled.
+- Walking and driving in snow produces sound.
+
+#### Fixes
+- Added missing Brazilian translations.
+- Daylight saving time has been fixed for the southern hemisphere.
+- With local multiplayer, the settings are now shown correctly.
+
+#### Improvements
+- Animals sell for less when their health is below 80%, but for more when above 80%.
+- Initial growth reset and snow is done during the loading of the game, not after starting.
+- Show warning when trying to drive with a turned off engine.
+- Straw and hay heaps only rot when it rains now, not during a transition change.
+- The animals overview now shows 'Health' instead of 'Productivity' to better reflect its meaning.
+- The calendar is now better accessible with scrolling and selections.
+- Vast performance improvements on snow, growth and rotting.
+
+#### Notes
+- All non-scripted GEO mods work on console too, once going through our and Giants QA.
+- Modders can add the snow mask, replacement textures and admirers to their console maps.
+- The multiplayer settings fix and change in straw/hay reducation did not make it on console for patch 1.53.
+- Using version 1.2.1 or below on Patch 1.5.3 is not recommended due to changes in the engine that required changes in Seasons.
+
 
 ## Version 1.2.1
 *Released on November 15th*
@@ -26,6 +60,7 @@ To play Seasons 1.2 and higher you need at least version 1.5.1 of Farming Simula
 #### Improvements
 - Cost of repairs for forestry equipment improved.
 - The Wopstr is now more sensitive.
+
 
 ## Version 1.2.0
 *Released on November 9th*
@@ -72,6 +107,7 @@ To play Seasons 1.2 and higher you need at least version 1.5.1 of Farming Simula
 - The 4Real Module Crop Destruction patch has been removed, as Giants fixed the mod.
 - To play Seasons 1.2 you need at least version 1.5.1 of Farming Simulator 2017.
 
+
 ## Version 1.1.0
 *Released on July 26th*
 
@@ -110,6 +146,7 @@ This version is 100% compatible with save games created with Mod Contest version
 - Train storage silo fees were not adjusted.
 - Upkeep of animals was not adjusted and normalized per year.
 - Weather was unnecessarily reset when changing settings.
+
 
 ## Version 1.0.0
 *Released on June 9th*
