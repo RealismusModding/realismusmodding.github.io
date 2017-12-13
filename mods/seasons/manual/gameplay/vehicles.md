@@ -10,7 +10,7 @@ permalink: /mods/seasons/manual/gameplay/vehicles
 
 # Vehicles
 
-A new maintenance system has been implemented which requires you to repair vehicles manually. Equipment and implements are maintained automatically. When you are inside a vehicle the bottom of the F1 menu shows the number of hours or days until a service is required, whichever comes first. Repairing a vehicle can be done at the vehicle workshop. Using the dealer workshop will cost you a bit more to simulate extra labour charges. Tool box mods that act like a workshop are compatible and can be used to repair your vehicles as well.
+A new maintenance system has been implemented which requires you to repair vehicles manually. Equipment and implements are maintained automatically. When you are inside a vehicle the bottom of the control hud shows the number of hours or days until a service is required, whichever comes first. Repairing a vehicle can be done at the vehicle workshop. Using the dealer workshop will cost you a bit more to simulate extra labour charges. Tool box mods that act like a workshop are compatible and can be used to repair your vehicles as well.
 
 If a machine is not used much, then the maintenance fee will be much lower. If you don’t maintain your vehicle, it may struggle to start, or cut out when working. After a while it may not start at all to simulate a catastrophic failure.
 
