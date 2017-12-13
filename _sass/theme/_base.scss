@@ -31,3 +31,45 @@
 .news-list article:last-child {
 	border-bottom: 0;
 }
+
+.image-flag {
+    position: absolute;
+    top: 27px;
+    right: -40px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    font-size: 18px;
+    color: white;
+    background-color: red;
+    width: 170px;
+    height: 36px;
+    font-weight: 700; line-height: 36px;
+    text-align: center;
+    z-index: 2;
+}
+
+.image-flag-small {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    top: 20px;
+    right: -52px;
+}
+
+.image-flag-red {
+    background-color: #BF796E;
+}
+
+.image-flag-yellow {
+    background-color: #BFA16E;
+}
+
+.image-flag-blue {
+    background-color: #6E8CBF;
+}
+
+.image-flag-green {
+    background-color: #6EB4BF;
+}
+

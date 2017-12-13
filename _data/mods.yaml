@@ -4,6 +4,7 @@ seasons:
   list_icon: /assets/img/mods/seasons/SeasonsIcon_512.jpg
   list_text: Experience a whole new way of playing Farming Simulator!
   released: true
+  console: true
   navitems:
     - name: supplements
       title: Additional mods
@@ -68,3 +69,27 @@ seasons:
       list_icon: /assets/img/mods/seasons/logo_geo_paraguay.jpg
       description: "Experience the hot and humid environment of Paraguay with this GEO mod, made specially for Farming Simulator 17 Platinum Edition!"
       modhub_id: 94824
+
+# no_teleport:
+#   title: No Teleport
+#   modhub_id: 84337
+#   list_icon: /assets/img/mods/no_teleport/icon.jpg
+#   list_text: Disable all teleporting functionality for even more immersion.
+#   released: true
+#   screenshots:
+#     - title:
+#       url:
+#     - title:
+#       url:
+
+# plantable_spruce_trees:
+#   title: Plantable Spruce Trees
+#   modhub_id: 93731
+#   list_icon: /assets/img/mods/plantable_spruce_trees/icon.jpg
+#   list_text: Buyable spruce tree saplings for more varied forests.
+#   released: true
+#   screenshots:
+#     - title:
+#       url:
+#     - title:
+#       url:
