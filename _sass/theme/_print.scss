@@ -1,0 +1,54 @@
+
+@media print {
+    body {
+        background-color: white;
+    }
+
+    a:after {
+        content: " ("attr(href)")"
+    }
+
+    .main {
+        background: white;
+    }
+
+    .rm-col {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .globalnav .navbar-nav {
+        display: none;
+    }
+
+    .globalnav {
+        background: #ddd;
+
+        a:after {
+            content: ""
+        }
+    }
+
+    .localnav {
+        display: none;
+    }
+
+    .site-footer {
+        display: none;
+    }
+
+    .docnav {
+        display: none;
+    }
+
+    aside.row > .col-6 {
+        max-width: 100%;
+        width: 100%;
+        text-align: left!important;
+
+        -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+
+}
