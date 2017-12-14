@@ -13,13 +13,13 @@ The release notes contain the changed made in every version after the initial re
 - [Version 1.0.0](#version-100)
 
 ## Version 1.3.0
-*Released on December 18th*
+*Will be released on December 15th*
 
 This version is 100% compatible with save games created with earlier versions of Seasons.
 To play Seasons 1.3 and higher you need at least version 1.5.3 of Farming Simulator 2017.
 
 #### New features
-- Now available on console as well.
+- Now available on console (Xbox and PS4) as well.
 - NPCs now use the crop calendar for their planting and missions.
 - Repairing is now done in the configure / sell dialog. You can only sell when the vehicle is repaired or when it is totalled.
 - Walking and driving in snow produces sound.
