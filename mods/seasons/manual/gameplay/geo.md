@@ -30,4 +30,5 @@ Wales - based on weather data from the village of Cwmystwyth
 Northern Sweden - based on weather data from Storuman and Dikanäs
 Paraguay - based on weather data from Concepción
 U.S. Midwest - based on weather data from Princeton, Missouri
+Snowy Lands - fictious and not based on any real location
 The default weather is based on Yeovilton, UK, but edited to get colder winters.
