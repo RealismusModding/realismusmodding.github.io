@@ -12,7 +12,7 @@ permalink: /mods/seasons/manual/gameplay/animals
 
 In real life the change of seasons, especially weather and daylight, affect animals. This is a natural cycle, which is simulated in the mod.
 
-Even though in many farms today animals are artifically inseminated, we have chosen to follow a natural cycle where animals give birth in spring and summer. In the mod, pigs and sheep give birth to offspring in spring, while cows give birth in summer.
+Even though in many farms today animals are artifically inseminated, we have chosen to follow a natural cycle where animals give birth in spring and summer. In the mod, sheep give birth to offspring in spring, while cows give birth in summer. Pigs are the exception which in gives birth both in spring and in autumn. 
 
 Milk production varies through the year, being highest in spring and lowest in autumn. Sheep produce wool mostly in spring and some in summer, to imitate that shearing is done before the weather gets too warm.
 
@@ -22,4 +22,4 @@ It is now only possible to fill the feeding throughs with feed lasting maximum 3
 
 The cost of keeping animals (daily upkeep) is with the Seasons mod thought to represent for instance veterinary costs. This means daily upkeep also varies through the year and is highest in the seasons when animals give birth.
 
-The soild and liquid manure production is also changed and is with the Seasons mod based on actual real life data for cows and pigs. In the colder seasons, the animals stay more inside so manure is collected and stored for further use. In the warmer seasons the animals stay more outside, thus the reduced manure production then.
+The solid and liquid manure production is also changed and is with the Seasons mod based on actual real life data for cows and pigs. In the colder seasons, the animals stay more inside so manure is collected and stored for further use. In the warmer seasons the animals stay more outside, thus the reduced manure production then.
