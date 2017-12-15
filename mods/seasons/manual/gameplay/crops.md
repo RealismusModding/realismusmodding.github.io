@@ -14,7 +14,7 @@ At the beginning of a new game, the mod will reset all fields that have crops to
 
 If you have activated the Seasons mod on an existing save game, you will be prompted if you wish to reset all fields. We highly recommend to start a new game though.
 
-Vanilla growth is completely disabled. The mod controls all growth of fruits, including pine trees, which take 5 years to become fully grown and harvestable after 2 years.
+Vanilla growth is completely disabled. The mod controls all growth of fruits, including pine trees, which take 5 years to become fully grown and harvestable after 2 years since you planted them.
 
 A year is broken up into 12 transitions. Each season has 3 transitions. They are called early, mid and late and the new growth system follows real life as much as possible, so crops can only be planted and harvested at certain times of the year. What this is,
 

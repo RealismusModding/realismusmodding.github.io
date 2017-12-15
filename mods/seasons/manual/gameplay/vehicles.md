@@ -16,7 +16,6 @@ If a machine is not used much, then the maintenance fee will be much lower. If y
 
 When snow falls tippers and shovels fill up, so you should put them in a shed (when the map has a Seasons mask) or activate the cover.
 
-
 ### Q: I pay much less for machinery upkeep now. Why is that?
 A: The machinery upkeep system has been changed and is now based on real data for the operating costs of agricultural machinery. By using this mod you will pay a low daily interest and tax as basis for the machinery upkeep. In addition you will be required to do maintenance twice a year or every 30 engine hours for any motorised machinery to avoid an increase in machinery upkeep.
 
