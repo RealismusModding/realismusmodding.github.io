@@ -16,7 +16,7 @@ The weather system in the game has been adjusted to suit each season. In general
 For every day in the game the air temperature and weather is determined according to weather statistics. In the current version of the mod the weather forecast is very reliable and the forecast will not change. This is with one exception. Hail will not be forecasted and can occur only with a couple of hours warning.
 
 ### Daylight
-Equations for the suns elevation above the horizon has been used to determine the completely new daylight effects. As default we have used a latitude of 51 degrees, but this can be changed for a map that is prepared for our mod, or by using one of our GEO mods.
+Equations for the suns elevation above the horizon has been used to determine the completely new daylight effects. As default we have used a latitude of 48.9 degrees, but this can be changed for a map that is prepared for our mod, or by using one of our GEO mods.
 
 ### Soil temperature
 A thermodynamic model has been implemented to model the propagation of heat into the soil. The model uses air temperature and solar radiation, which changes with season and time of day. In winter the soil be frozen and cannot be worked on. An icon will show on the screen when the soil is frozen (shown below). Crops need a certain soil temperature in order for the seeds to germinate. You should consult the planting and harvesting calendar before planting.
