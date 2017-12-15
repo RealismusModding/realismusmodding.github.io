@@ -32,7 +32,7 @@ To change the season length, open the Seasons menu (`Alt + S` by default) and na
 
 ### Warnings for Gameplay
 
-We do not officially support activating the seasons mod on an existing save game. Instead, we recommend that you start a new game. However, using an existing save game is possible and probably will work. We just will not be able to help if things go wrong. Always make a backup of your save game before activating the seasons mod. We are not responsible for corrupt save games. To avoid issues with growth when activating Seasons on an existing save game, it is advisable to harvest all fields first.
+We do not officially support activating the seasons mod on an existing save game. Instead, we recommend that you start a new game. However, using an existing save game is possible and probably will work. We just will not be able to help if things go wrong. Always make a backup of your save game before activating the seasons mod. We are not responsible for corrupt save games.
 
 If you are using a fast forward mod, keep within the below thresholds, otherwise the game will get out of sync with the extra load of seasons:
 - Do not fast forward faster than 6000x on singleplayer (preferable even slower)
