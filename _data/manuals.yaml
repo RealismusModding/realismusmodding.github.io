@@ -11,6 +11,7 @@ seasons:
         - ref: gp_economy
         - ref: gp_measuring
         - ref: gp_hud_overview
+        - ref: gp_geo_mods
     - ref: modding
       entries:
         - ref: info_for_map_makers

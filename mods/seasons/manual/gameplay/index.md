@@ -52,4 +52,4 @@ The Seasons mod touches almost all parts of the game. It will therefore conflict
 There is an issue with the game when loading multiple map mods. Always only load the mod map you are going to play on and disable all maps in the mod selection screen.
 
 ### Other seasonal effects
-- Pedestrians do not spawn in the Winter.
+- Pedestrians do not spawn when it is cold outside.
