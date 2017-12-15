@@ -20,7 +20,7 @@ General activities for each season (note that this is with no GEO mod. With GEO 
 * Autumn - harvesting, ploughing, cultivating, fertilising, sowing, spraying
 * Winter - animal husbandry, vehicle and equipment maintenance, forestry
 
-Winters are especially hard because you will not be able to mow any grass for your animals. All their food must come from hay bales and silage you already made.
+Winters are especially hard because you will not be able to mow any grass for your animals. All their food must come from hay bales and silage you already made. Note you will need to take care of your animals all year.
 
 The lengths of days and nights have been adjusted to suit the seasons, so nights will be longer in the Winter than in the Summer. In Winter it might be light for only 8 hours while in Summer it is near 17 hours. The seasonal effects of sunlight is dependent on latitude, which can be changed in a GEO mod. For default Seasons, the sunlight fits southern UK.
 
