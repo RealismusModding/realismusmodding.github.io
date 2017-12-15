@@ -26,9 +26,9 @@ If you want to play with weather and growth of a specific area, you can first se
 If enough requests are made for the same area we might consider making a mod for it.
 
 ### Current GEO mods published by Realismus Modding
-Wales - based on weather data from the village of Cwmystwyth
-Northern Sweden - based on weather data from Storuman and Dikanäs
-Paraguay - based on weather data from Concepción
-U.S. Midwest - based on weather data from Princeton, Missouri
-Snowy Lands - fictious and not based on any real location
+- Wales - based on weather data from the village of Cwmystwyth
+- Northern Sweden - based on weather data from Storuman and Dikanäs
+- Paraguay - based on weather data from Concepción
+- U.S. Midwest - based on weather data from Princeton, Missouri
+- Snowy Lands - fictious and not based on any real location
 The default weather is based on Yeovilton, UK, but edited to get colder winters.
