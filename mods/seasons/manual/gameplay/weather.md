@@ -26,10 +26,15 @@ A thermodynamic model has been implemented to model the propagation of heat into
 ### Crop moisture
 Crop moisture is simulated in the Seasons mod. Rain and hail increases crop moisture, while sunny weather helps to decrease it. An icon will show on the screen when the crop is too moist to harvest crops (shown below). When crop is moist it is also not possible to turn grass into hay by using a tedder. Crops will dry faster in summer than in autumn, both due to lower temperatures in autumn, but at this time of year there is also much less solar radiation. At night crop dry very slowly (as of yet there is no modelling of wind). This will mean that if you are unlucky and experiences a late afternoon shower in autumn, you might not be able to harvest before next morning after sunrise some time.
 
+Note that you can turn off this feature if it is too bothersome to you. There is a toggle in the Seasons menu settings.
+
 <img src="/assets/img/mods/seasons/wetCrop.jpg" alt="Wet crops icon" class="img-fluid rounded" />
 
 ### Snow
-Snow is a swath. You can handle it with any bucket you would be able to use on grass. Because of the Tip Anywhere functionality, there is this new feature called the TipCol. This is a way for map developers to decide where snow can't be placed. Good places are inside buildings, or on roads that are made of models. (The snow would not be able to be cleaned up by machinery because the road object is in the way). We can't use this TipCol (for performance and technical reasons), so we place snow everywhere. This will sadly cause a lot of ploblems on roads where it can't be cleared by a snowplough. So we added a way for map makers to tell us where we can and can't place snow. As long as the map does not tell us this, we will keep the snow till a minumum, which is 1 layer (6 cm). As long as the map is prepared with a seasons mask, the mask is automatically updated when placing placeables in the game.
+Snow with Seasons is just like heaps of wheat, seeds, fertilizer, grass or chaff: you can pick it up, move it around, load it into a tipper, and so on. On top of that, when driving through snow you will be compressing it with the wheels.
+
+Snow does not fall everywhere: if a map is optimized it will not fall inside buildings that have a roof or on other parts where snow can't get. Snow also does not fall inside placeable sheds.
+If a map is not fully optimized for Seasons, snow will fall everywhere and will not accumulate higher than 1 level (6cm).
 
 When snow falls, tippers and shovels fill up. Put them in a shed (when the map has a seasons mask) or activate the cover. Snow will melt from tippers and shovels when it is not freezing outside.
 
