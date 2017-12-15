@@ -40,6 +40,8 @@ If you are using a fast forward mod, keep within the below thresholds, otherwise
 
 ### Mod Conflicts
 
+*Note: on console, there are no scripts other than those approved directly by Giants, and players do not need to worry about conflicts. If there are issues, please report.*
+
 The Seasons mod touches almost all parts of the game. It will therefore conflict with a lot of script mods. Here is a list of types of mods that will conflict if they have not been updated specifically for Seasons:
 - Any mod that manipulates the weather, e.g. Multi overlay hud
 - Any mod that manipulates growth, e.g. SoilMod
