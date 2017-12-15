@@ -12,9 +12,9 @@ permalink: /mods/seasons/manual/gameplay/
 
 A new game starts on the first day of spring with all fields reset to being harvested, thus simulating a  farm that you have bought that hasn't been looked after for some time. It is not possible to start at another time of year. You will have to start your game by ploughing, cultivating and seeding your fields before the plant season is over.
 
-Nearly all aspects of the game have been changed to suit the season.
+Nearly all aspects of the game have been changed to suit the seasons.
 
-General activities for each season:
+General activities for each season (note that this is with no GEO mod. With GEO mods, this can differ):
 * Spring - ploughing, cultivating, fertilising, sowing, spraying
 * Summer - spraying, harvesting, mowing grass and baling hay
 * Autumn - harvesting, ploughing, cultivating, fertilising, sowing, spraying
@@ -28,7 +28,7 @@ The lengths of days and nights have been adjusted to suit the seasons, so nights
 
 Each season consists of 3 transitions, referred to as early, mid or late in the game. Since there are 4 seasons in a year, there are 12 of these transitions. Because each season consists of 3 transitions, the season length can only be set to a multiple of 3 days. 3 days is the minimum season length, which would mean a transition lasting one day and a full year lasting 12 days. We have chosen 24 days as the maximum. A 24 day season length will result in each transition lasting 8 days and a full year lasting 96 days.
 
-To change the season length, open the Seasons menu (`Alt + S` by default) and navigate to the second page where you can change the value. Don't forget to save your game.
+To change the season length, open the Seasons menu (`Alt + S` by default, or `L1 + Options`) and navigate to the second page where you can change the value. Don't forget to save your game.
 
 ### Warnings for Gameplay
 
