@@ -31,4 +31,5 @@ If enough requests are made for the same area we might consider making a mod for
 - Paraguay - based on weather data from Concepción
 - U.S. Midwest - based on weather data from Princeton, Missouri
 - Snowy Lands - fictious and not based on any real location
+
 The default weather is based on Yeovilton, UK, but edited to get colder winters.
