@@ -14,7 +14,7 @@ GEO mods are tiny mods available to both PC and console players that change the 
 
 There is currently one special GEO mod: Paraguay. This mod is made specifically for the Platinum map, Estancia Lapacho. It changes not only weather and growth, but also the textures, lighting, animals and economy. To play with sugarcane, you currently need this GEO mod.
 
-You can download GEO mods on the ModHub in the category 'Other' or by searching for "Seasons GEO". If you use a GEO mod you also need to activate Seasons, still. Also, at most one GEO mod is used, so only select the one you want to play with, or you get unexpected results.
+You can download GEO mods on the ModHub in the category 'Other' or by searching for "Seasons GEO". If you use a GEO mod you still need to activate Seasons. Also, at most one GEO mod is used, so only select the one you want to play with, or you get unexpected results.
 
 ### Accuracy
 
@@ -24,3 +24,10 @@ Note that this is still a game so the GEO mods are not 100% accurate. Farming te
 
 If you want to play with weather and growth of a specific area, you can first search for a GEO mod close to it. If you can't find it, you can either create one yourself or ask the team about it.
 If enough requests are made for the same area we might consider making a mod for it.
+
+### Current GEO mods published by Realismus Modding
+Wales - based on weather data from the village of Cwmystwyth
+Northern Sweden - based on weather data from Storuman and Dikanäs
+Paraguay - based on weather data from Concepción
+U.S. Midwest - based on weather data from Princeton, Missouri
+The default weather is based on Yeovilton, UK, but edited to get colder winters.
