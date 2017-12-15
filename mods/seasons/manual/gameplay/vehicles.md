@@ -28,3 +28,5 @@ A: Motorised machinery with overdue maintenance might break down. The longer you
 ### Q: I see the sell price of the machinery is different than it used to be. How is the sell price determined?
 A: The sell price of the machinery is revised in the mod and based on actual data for depreciation of value of agricultural machinery. The model has been benchmarked towards advertised machinery. Note that machinery requiring maintenance will have lower sell value. Operating hours are now more important for the sell price than the age of the machinery.
 
+### Q: At the dealer I don't get the option to sell my tractor, only repair it. Why is that?
+A: At the dealer you need to repair first. Then you will be allowed to sell. You can still sell directly from the garage. But note that you will get more for a tractor that has been repaired.
