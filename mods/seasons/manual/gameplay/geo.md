@@ -14,7 +14,7 @@ GEO mods are tiny mods available to both PC and console players that change the 
 
 There is currently one special GEO mod: Paraguay. This mod is made specifically for the Platinum map, Estancia Lapacho. It changes not only weather and growth, but also the textures, lighting, animals and economy. To play with sugarcane, you currently need this GEO mod.
 
-You can download GEO mods on the ModHub in the category 'Other' or by searching for "Seasons GEO". If you use a GEO mod you also need to activate Seasons, still.
+You can download GEO mods on the ModHub in the category 'Other' or by searching for "Seasons GEO". If you use a GEO mod you also need to activate Seasons, still. Also, at most one GEO mod is used, so only select the one you want to play with, or you get unexpected results.
 
 ### Accuracy
 
