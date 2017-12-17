@@ -28,7 +28,7 @@ The lengths of days and nights have been adjusted to suit the seasons, so nights
 
 Each season consists of 3 transitions, referred to as early, mid or late in the game. Since there are 4 seasons in a year, there are 12 of these transitions. Because each season consists of 3 transitions, the season length can only be set to a multiple of 3 days. 3 days is the minimum season length, which would mean a transition lasting one day and a full year lasting 12 days. We have chosen 24 days as the maximum. A 24 day season length will result in each transition lasting 8 days and a full year lasting 96 days.
 
-To change the season length, open the Seasons menu (`Alt + S` by default, or `L1 + R1 + Options` on console) and navigate to the third page where you can change the value. The settings are automatically saved.
+To change the season length, open the Seasons menu (`Alt + S` by default, or `L1 + Options` on console) and navigate to the third page where you can change the value. The settings are automatically saved.
 
 ### Warnings for Gameplay
 
