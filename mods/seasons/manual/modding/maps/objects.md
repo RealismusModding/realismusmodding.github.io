@@ -82,6 +82,10 @@ Make sure you set the plane invisible so it does not show when not using Seasons
  - class name: ssIcePlane
  - attributes: none
 
+For a nice guide to make frozen lakes, see this video by ShyWizard:
+
+{% include video.html title="Seasons mod icePlane FS17" id="fqG8NeWQMF8" duration="45M46S" date="2017-10-24T10:00:00+01:00" %}
+
 ## Notes
 
 Seasons disables colission masks when hiding the objects, unlike the vanilla admirers. Note however that this does not work when using an admirer on a transform group containing nodes with colissions.
