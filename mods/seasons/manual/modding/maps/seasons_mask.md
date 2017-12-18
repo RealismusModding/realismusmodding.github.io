@@ -123,6 +123,8 @@ So where should you prevent snow from falling?
 - Inside buildings
 - Inside lakes (possibly handled by the tipCol)
 - Animal troughs
+- Wool spawnpoint
+- Other pallet spawnpoints
 
 Where should you NOT prevent snow from falling?
 
