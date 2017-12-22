@@ -16,7 +16,7 @@ If you have activated the Seasons mod on an existing save game, you will be prom
 
 Vanilla growth is completely disabled. The mod controls all growth of fruits, including pine trees, which take 5 years to become fully grown and harvestable after 2 years since you planted them.
 
-A year is broken up into 12 transitions. Each season has 3 transitions. They are called early, mid and late and the new growth system follows real life as much as possible, so crops can only be planted and harvested at certain times of the year.
+A year is broken up into 12 transitions. Each season has 3 transitions. They are called early, mid and late and the new growth system follows real life as much as possible, so crops can only be planted and harvested at certain times of the year. The growth happens at midnight when there is a change in transition (change between early, mid, late). The growth is distributed between planting and harvesting and since most crops have only 4 visible growing growth stages there can be several transitions between each time you see crops growing.
 
 There is a planting and harvesting calendar included in the Seasons menu as a reference.
 {% include big_image.html title="Planting calendar" url="/assets/img/mods/seasons/screenshots/menu.jpg" %}
