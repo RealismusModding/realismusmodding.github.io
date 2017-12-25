@@ -18,7 +18,7 @@ Milk production varies through the year, being highest in spring and lowest in a
 
 As a result of colder weather in winter, they need more straw as bedding in winter and autumn, than in summer.
 
-It is now only possible to fill the feeding throughs with feed lasting maximum 3 days. If the animals run out of feed, your animals will suffer and die, except if you are playing on Easy difficulty. In winter it is not possible to feed animals grass. This means that it is not possible to reach 100% production in winter. The amount of food has also been changed so compared to vanilla the animals will consume more than what you might be used for.
+It is now only possible to fill the feeding throughs with feed lasting maximum 3 days. If the animals run out of feed, your animals will suffer and die, except if you are playing on Easy difficulty. The amount of food has also been changed so compared to vanilla the animals will consume more than what you might be used for. The productivities of animals are now average over time. It takes more time and effort to increase productivity than to reduce it.
 
 The cost of keeping animals (daily upkeep) is with the Seasons mod thought to represent for instance veterinary costs. This means daily upkeep also varies through the year and is highest in the seasons when animals give birth.
 
