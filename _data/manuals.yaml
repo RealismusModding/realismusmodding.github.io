@@ -19,7 +19,7 @@ seasons:
           entries:
             - ref: maps_seasons_mask
             - ref: maps_objects
-            # - ref: maps_custom_textures
+            - ref: maps_custom_textures
             # - ref: maps_custom_fruits
             # - ref: maps_compatibility
             # - ref: maps_testing
