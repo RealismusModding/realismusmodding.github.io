@@ -23,3 +23,5 @@ This article is being written.
 
 Do ***never*** open the textures `.i3d` in GIANTS Editor! Never! It will break both the i3d file and the shapes file. Only use a text editor such as Notepad++ or Sublime Text. Even though it might still seem to work fine, the map will not pass certification for consoles.
 If you are in doubt, copy the `.shapes` file from Seasons to your map again.
+
+Make sure any XML files starts with the `<?xml .......` header. Not with anything else. It might work but will not pass console validation. You can verify your XML files using the [W3C validator](https://www.w3schools.com/xml/xml_validator.asp).
