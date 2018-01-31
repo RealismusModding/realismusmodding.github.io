@@ -59,16 +59,21 @@ seasons:
       list_icon: /assets/img/mods/seasons/geo/logo_geo_midwest.jpg
       description: "Enjoy the weather and growth of one of the most intensely farmed regions in the world."
       modhub_id: 84675
-    # - name: geo_centralfrance
-    #   title: "GEO: Central France"
-    #   list_icon: /assets/img/mods/seasons/geo/logo_geo_centralfrance.jpg
-    #   description: ""
-    #   modhub_id: 5
     - name: geo_paraguay
       title: "GEO: Paraguay"
-      list_icon: /assets/img/mods/seasons/logo_geo_paraguay.jpg
+      list_icon: /assets/img/mods/seasons/geo/logo_geo_paraguay.jpg
       description: "Experience the hot and humid environment of Paraguay with this GEO mod, made specially for Farming Simulator 17 Platinum Edition!"
       modhub_id: 94824
+    - name: geo_southaustralia
+      title: "GEO: South Australia"
+      list_icon: /assets/img/mods/seasons/geo/logo_geo_southaustralia.jpg
+      description: ""
+      # modhub_id: 102207
+    - name: geo_canadianeast
+      title: "GEO: Canadian East"
+      list_icon: /assets/img/mods/seasons/geo/logo_geo_canadianeast.jpg
+      description: ""
+      # modhub_id: 102209
 
 # no_teleport:
 #   title: No Teleport
