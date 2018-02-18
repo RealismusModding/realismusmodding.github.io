@@ -23,3 +23,5 @@ It is now only possible to fill the feeding throughs with feed lasting maximum 3
 The cost of keeping animals (daily upkeep) is with the Seasons mod thought to represent for instance veterinary costs. This means daily upkeep also varies through the year and is highest in the seasons when animals give birth.
 
 The solid and liquid manure production is also changed and is with the Seasons mod based on actual real life data for cows and pigs. In the colder seasons, the animals stay more inside so manure is collected and stored for further use. In the warmer seasons the animals stay more outside, thus the reduced manure production then.
+
+Food amounts, daily upkeep, birthrate and production are kept constant per year and independent on what season length is used. As a consequence the values per day are dependent on season length.
