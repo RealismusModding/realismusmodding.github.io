@@ -15,14 +15,14 @@ reallogger:
   image: /assets/img/team/reallogger.png
   slack: reallogger
 
-baron:
-  nickname: baron
-  name: Markus
-  github: baleBaron
-  role: Bale master
-  image: /assets/img/team/baron.png
-  slack: baron
-  twitter: MarkusMve
+theseb:
+  nickname: theSeb
+  name: Sebastian
+  github: theSeb1979
+  role: Project Manager and Programmer
+  slack: theseb
+  image: /assets/img/team/theseb.jpeg
+  twitter: theSeb1979
 
 wopster:
   nickname: Wopster
@@ -34,16 +34,6 @@ wopster:
   slack_id: U7V23P0AW
   twitter:
 
-theseb:
-  nickname: theSeb
-  name: Sebastian
-  github: theSeb1979
-  role: Project Manager and Programmer
-  slack: theseb
-  image: /assets/img/team/theseb.jpeg
-  twitter: theSeb1979
-  active: false
-
 mrbear:
   nickname: mrbear
   name: Per
@@ -51,4 +41,14 @@ mrbear:
   role: Snow and texture master
   slack: mrbear
   image: /assets/img/team/mrbear.png
+  active: false
+
+baron:
+  nickname: baron
+  name: Markus
+  github: baleBaron
+  role: Bale master
+  image: /assets/img/team/baron.png
+  slack: baron
+  twitter: MarkusMve
   active: false
