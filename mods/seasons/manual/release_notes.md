@@ -24,9 +24,11 @@ To play Seasons 1.3 and higher you need at least version 1.5.3 of Farming Simula
 - Compaction of chaff is still possible after driving in snow now.
 - Days until repair was not correct in the vehicle in-game screen after changing season length.
 - Fix possible MP sync issues (only showed up with a dedicated server)
+- Prevent multi materials nodes garbage collection.
 - Repair is now always possible even for old, used vehicles.
 - Skipping night now takes less long to finish when going through a transition.
 - Some equipment got very large upkeep costs.
+- Support straw harvest early placeables.
 - Tedder will turn grass to hay in wet crop conditions if crop moisture is turned off
 - Text color of germination temperature is now correct even with mouse-over.
 - Unit change of temperature now updates calendar correctly.
