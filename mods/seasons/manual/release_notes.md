@@ -6,11 +6,47 @@ ref: release_notes
 # Release notes
 The release notes contain the changed made in every version after the initial release.
 
+- [Version 1.3.1](#version-131)
 - [Version 1.3.0](#version-130)
 - [Version 1.2.1](#version-121)
 - [Version 1.2.0](#version-120)
 - [Version 1.1.0](#version-110)
 - [Version 1.0.0](#version-100)
+
+## Version 1.3.1
+*Sent to GIANTS*
+
+This version is 100% compatible with save games created with earlier versions of Seasons.
+To play Seasons 1.3 and higher you need at least version 1.5.3 of Farming Simulator 2017.
+
+#### Fixes
+- Calendar was inconsistent after reloading the game.
+- Compaction of chaff is still possible after driving in snow now.
+- Days until repair was not correct in the vehicle in-game screen after changing season length.
+- Fix possible MP sync issues (only showed up with a dedicated server)
+- Repair is now always possible even for old, used vehicles.
+- Skipping night now takes less long to finish when going through a transition.
+- Some equipment got very large upkeep costs.
+- Tedder will turn grass to hay in wet crop conditions if crop moisture is turned off
+- Text color of germination temperature is now correct even with mouse-over.
+- Unit change of temperature now updates calendar correctly.
+- Weekday of the forecast now aligns with the finances page.
+- When having no animals, the health is not influenced anymore.
+
+#### Improvements
+- Growth now allows more complex GEO mods.
+- Improved reliability of Skip Night.
+- Improved texts and information.
+- No maintenance costs for equipment that has no dailyUpkeep.
+- No overtime pay in weekends.
+- Repair cost is capped at 10% of original price.
+- Vehicle GUI shows daily tax for vehicles and tax + repair for other equipment.
+- Vehicle upkeep in the game menu is now only red when maintenance is required.
+- You can now spread manure when soil is frozen.
+
+#### Notes
+- This update is only for PC!
+
 
 ## Version 1.3.0
 *Released on December 15th*
