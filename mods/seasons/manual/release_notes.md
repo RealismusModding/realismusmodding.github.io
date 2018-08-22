@@ -41,6 +41,7 @@ To play Seasons 1.3 and higher you need at least version 1.5.3 of Farming Simula
 - Improved texts and information.
 - No maintenance costs for equipment that has no dailyUpkeep.
 - No overtime pay in weekends.
+- Pigs are now more profitable.
 - Repair cost is capped at 10% of original price.
 - Vehicle GUI shows daily tax for vehicles and tax + repair for other equipment.
 - Vehicle upkeep in the game menu is now only red when maintenance is required.
