@@ -41,7 +41,6 @@ mrbear:
   role: Snow and texture master
   slack: mrbear
   image: /assets/img/team/mrbear.png
-  active: false
 
 baron:
   nickname: baron
