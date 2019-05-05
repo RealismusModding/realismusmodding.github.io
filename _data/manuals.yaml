@@ -42,4 +42,7 @@ seasons19:
       entries:
         - ref: gp_weather
     - ref: modding
+      entries:
+        - ref: scripting
+        - ref: best_practices
     - ref: release_notes
