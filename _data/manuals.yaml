@@ -35,3 +35,11 @@ seasons:
         - ref: best_practices
         - ref: 1_2_checklist
     - ref: release_notes
+seasons19:
+  entries:
+    - ref: overview
+    - ref: gameplay
+      entries:
+        - ref: gp_weather
+    - ref: modding
+    - ref: release_notes

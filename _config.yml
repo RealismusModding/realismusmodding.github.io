@@ -90,3 +90,16 @@ defaults:
     values:
       layout: documentation
       manual: seasons
+  -
+    scope:
+      path: "mods/seasons19"
+    values:
+      mod: "seasons19"
+      localnav: true
+      layout: page
+  -
+    scope:
+      path: "mods/seasons19/manual"
+    values:
+      layout: documentation
+      manual: seasons19
