@@ -129,6 +129,22 @@ The last step is to update your `visuals.xml` for Seasons:
 
 Seasons will now automatically change the bush01 visuals to the bush01Winter visuals in the winter, and switch them back in the other seasons.
 
+## Disabling Depth of Field
+
+An often requested feature by map makers is to disable depth of field for their map. We have added this to Seasons:
+
+```xml
+<visuals disableDoF="true">
+```
+
+## Console
+
+If you map is invited to get to console by GIANTS, you need to adjust your `visuals.xml` to contain the `memoryUsage` attribute. This is a whole number of bytes. This reserves VRAM slots for the GEO mod so the console does not crash.
+
+```xml
+<visuals memoryUsage="1024000">
+```
+
 ## Notes and Warnings
 
 Make sure any XML files starts with the `<?xml .......` header. Not with anything else. It might work but will not pass console validation. You can verify your XML files using the [W3C validator](https://www.w3schools.com/xml/xml_validator.asp).
