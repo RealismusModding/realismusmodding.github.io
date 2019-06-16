@@ -11,12 +11,23 @@ permalink: /mods/seasons19/manual/modding/maps/sound
 # Sound
 {:.no_toc}
 
-A map contains many objects, including houses, roads, trees but also traffic lights and other decorations. The vanilla game allows the use of 'admirers' to give certain behaviour to objects.
-A good example is the `Nightlight2`: it makes the object visible during night and invisible during the day. Another example is the `SunAdmirer`, that makes an object only visible when the sun is. (It is invisible in bad weather or the night.)
+Ambient sound gives a lot of immersion to a map. Farming Simulator 19 has new changes for ambient sound configuration. One of these configuration attributes is whether the sound should play at night.
 
-Seasons adds some more of these 'admirers' to the game, to allow for seasonal objects, such as a BBQ in the summer or a hearth in the winter.
+Seasons adds new attributes for the seasons and new weather.
 
 * TOC
 {:toc}
 
-## How admirers and objects work
+## New attributes
+
+Seasons adds new attributes. If no attributes are specified, the sound defaults to the vanilla set-up. There is thus no need to add these new attributes to sounds you are already content with. Hence all the attributes default to 'true'.
+
+The new attributes are as follows:
+
+- `playDuringSnow`: boolean, play when it is snowing.
+- `playInSpring`: boolean, play when it is spring.
+- `playInSummer`: boolean, play when it is summer.
+- `playInAutumn`: boolean, play when it is autumn.
+- `playInWinter`: boolean, play when it is winter.
+- `playWhenFreezing`: boolean, play when the air is freezing.
+- `playDuringStorm`: boolean, play when it is storming.
