@@ -24,10 +24,10 @@ Seasons adds new attributes. If no attributes are specified, the sound defaults 
 
 The new attributes are as follows:
 
-- `playDuringSnow`: boolean, play when it is snowing.
 - `playInSpring`: boolean, play when it is spring.
 - `playInSummer`: boolean, play when it is summer.
 - `playInAutumn`: boolean, play when it is autumn.
 - `playInWinter`: boolean, play when it is winter.
 - `playWhenFreezing`: boolean, play when the air is freezing.
 - `playDuringStorm`: boolean, play when it is storming.
+- `playDuringSnow`: boolean, play when it is snowing. This one defaults to false, like the playDuringRain from the basegame.
