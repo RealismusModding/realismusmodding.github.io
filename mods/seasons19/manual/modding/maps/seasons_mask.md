@@ -12,7 +12,7 @@ permalink: /mods/seasons19/manual/modding/maps/seasons-mask
 {:.no_toc}
 
 <div class="alert alert-warning" role="alert">
-    <strong>Warning:</strong> The Seasons mask system completely changes for Farming Simulator 19.
+    <strong>Warning:</strong> The Seasons mask system completely changed for Farming Simulator 19.
 </div>
 
 The Seasons mask is a bitvector map (also known as a grle file or an infolayer) that contains a mask used by Seasons to determine if the area is inside or outside. Or technically. whether the terrain at the area is accessible from the air. If there is a roof above, then it is not accessible. Also when there is a road shape on top it is not accessible.
