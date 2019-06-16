@@ -21,7 +21,7 @@ The mask is used to place snow only outside of sheds and not under road objects.
 
 This infolayer has to be implemented by any map that wants ultimate support for Seasons.
 
-Note that when a map does not have a Seasons mask, the tipCol layer will be used as a fallback (this is new in Seasons 19). There have been major changes between Farming Simulator 17 and 19 that made a simplified system possible (and also the fallback).
+Note that when a map does not have a Seasons mask, the tipCol layer will be used as a fallback (this is new in Seasons 19). There have been major changes between Farming Simulator 17 and 19 that made a simplified system possible (and also the fallback). The tipCol is only used for snow. Bales will not rot until a custom mask is supplied.
 
 In this guide you will learn all steps of adding the Seasons mask to a map.
 
