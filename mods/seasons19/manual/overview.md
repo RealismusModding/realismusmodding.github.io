@@ -13,4 +13,4 @@ Find additional information about Seasons gameplay and features in this manual. 
 
 Be sure to read the gameplay manual to learn all about the mod. Most of this information can also be found in the ingame help menu.
 
-You can find everything that's new in Seasons 19 compared to Seasons 17 in our [What's new? article]({{ site.baseurl }}{% post_url blog/2019-06-01-seasons19 %}).
+You can find everything that's new in Seasons 19 compared to Seasons 17 in our [What's new? article]({{ site.baseurl }}{% post_url blog/2019-07-01-seasons19 %}).
