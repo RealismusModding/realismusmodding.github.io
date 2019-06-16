@@ -41,6 +41,14 @@ seasons19:
     - ref: gameplay
       entries:
         - ref: gp_weather
+        - ref: gp_crops
+        - ref: gp_grass
+        - ref: gp_animals
+        - ref: gp_vehicles
+        - ref: gp_economy
+        - ref: gp_measuring
+        # - ref: gp_hud_overview
+        - ref: gp_geo_mods
     - ref: modding
       entries:
         - ref: maps

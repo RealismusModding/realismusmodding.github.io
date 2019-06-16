@@ -2,7 +2,7 @@
 title: Gameplay
 tags: [gameplay]
 keywords:
-last_updated: 2019-05-05 20:16:00 +0100
+last_updated: 2019-06-16 20:00:00 +0100
 summary: ""
 ref: gameplay
 permalink: /mods/seasons19/manual/gameplay/
