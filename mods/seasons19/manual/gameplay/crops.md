@@ -45,10 +45,17 @@ A: There are 12 transitions during a year. A year is made up of 4 seasons. There
 A: Please refer to the Seasons growth calendar in the game (`Alt + S` by default on PC, `L1 + Options` on console).
 
 ## Q: How does season length work with the transitions?
-A: Season length can be set to 3, 6, 9 or 12 days. So, if season length is set to 3 days, that means early season will be day 1, mid will be day 2 and late will 3.
+A: Season length can be set to 3, 6, 9, up to 24 days. So, if season length is set to 3 days, that means early season will be day 1, mid will be day 2 and late will 3.
 
-Season length 6 days - early: [days 1-2] mid: [days 3-4] late: [days 5-6]
+- Season length 6 days - early: [days 1-2] mid: [days 3-4] late: [days 5-6]
+- Season length 9 days - early: [days 1-3] mid: [days 4-6] late: [days 7-9]
+- Season length 12 days - early: [days 1-4] mid: [days 5-8] late: [days 9-12]
+- etc.
 
-Season length 9 days - early: [days 1-3] mid: [days 4-6] late: [days 7-9]
+You can see the number of days also in the calendar.
 
-Season length 12 days - early: [days 1-4] mid: [days 5-8] late: [days 9-12]
+
+## TODO
+
+- PCF
+- Weather based

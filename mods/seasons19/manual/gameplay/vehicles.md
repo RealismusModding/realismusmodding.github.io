@@ -30,3 +30,10 @@ A: The sell price of the machinery is revised in the mod and based on actual dat
 
 ### Q: At the dealer I don't get the option to sell my tractor, only repair it. Why is that?
 A: At the dealer you need to repair first. Then you will be allowed to sell. You can still sell directly from the garage. But note that you will get more for a tractor that has been repaired.
+
+
+
+## TODO
+
+- Wear
+- Repainting

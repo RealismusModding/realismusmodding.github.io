@@ -78,3 +78,6 @@ As said above, the Wopstr is magical, advanced and fragile. If it does not measu
 
 In real life, trees can grow on, and on, depending on how much light and food they can get. This not the case in the game. That means 100% tree heigth means the tree can't grow anymore in the game. If it is stuck at 50%, it can't grow with the current tree distances.
 
+## TODO
+
+- New icons

@@ -41,3 +41,9 @@ When snow falls, tippers and shovels fill up. Put them in a shed (when the map h
 If you want more fun with more snow, ask you mod-map maker to update his or her map for Seasons.
 
 *Note*: The extra weather effects, such as snow, will work on any map, but for the full gameplay experience, we highly recommend you to play on maps that have been optimised for seasons.
+
+
+## TODO
+
+- New forecast
+- Forecast uncertainty
