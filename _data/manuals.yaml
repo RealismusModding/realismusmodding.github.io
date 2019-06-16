@@ -50,8 +50,11 @@ seasons19:
             - ref: maps_sound
             - ref: maps_visuals
             # - ref: maps_custom_fruits
-            # - ref: maps_compatibility
-            # - ref: maps_testing
+        - ref: geo
+          entries:
+            - ref: geo_weather
+            - ref: geo_growth
+            - ref: geo_testing
         - ref: scripting
         - ref: best_practices
     - ref: release_notes
