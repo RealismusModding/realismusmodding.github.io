@@ -43,6 +43,15 @@ seasons19:
         - ref: gp_weather
     - ref: modding
       entries:
+        - ref: maps
+          entries:
+            - ref: maps_seasons_mask
+            - ref: maps_objects
+            - ref: maps_sound
+            - ref: maps_visuals
+            # - ref: maps_custom_fruits
+            # - ref: maps_compatibility
+            # - ref: maps_testing
         - ref: scripting
         - ref: best_practices
     - ref: release_notes
