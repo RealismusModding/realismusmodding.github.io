@@ -2,6 +2,7 @@
 @media print {
     body {
         background-color: white;
+
     }
 
     a:after {
@@ -15,6 +16,17 @@
     .rm-col {
         border-left: 0;
         border-right: 0;
+        width: 100%;
+        margin: 0!important;
+        max-width: 100%;
+        flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        -webkit-flex: 0 0 100%;
+    }
+
+    .container {
+        margin: 0;
+        width: 100%;
     }
 
     .globalnav .navbar-nav {
@@ -39,6 +51,10 @@
 
     .docnav {
         display: none;
+    }
+
+    .blog-body {
+        font-size: 1rem;
     }
 
     aside.row > .col-6 {
