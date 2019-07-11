@@ -75,13 +75,13 @@ seasons:
       description: ""
       # modhub_id: 102209
 
-# seasons19:
-#   title: Seasons 19
-#   # modhub_id: 79288
-#   list_icon: /assets/img/mods/seasons/SeasonsIcon_512.jpg
-#   list_text: Experience a whole new way of playing Farming Simulator 19!
-#   released: false
-#   console: true
+seasons19:
+  title: Seasons 19
+  # modhub_id: 79288
+  list_icon: /assets/img/mods/seasons19/SeasonsIcon_1024.jpg
+  list_text: Experience a whole new way of playing Farming Simulator 19!
+  released: false
+  console: false
 #   navitems:
 #     - name: supplements
 #       title: Additional mods
@@ -91,15 +91,15 @@ seasons:
 #   #   id: b4u6Vz1aAvA
 #   #   duration: PT2M30S
 #   #   date: 2017-06-01T22:47:00+01:00
-#   screenshots:
+  screenshots:
 #     - title: Spring
 #       url: /assets/img/mods/seasons/screenshots/spring.jpg
 #     - title: Summer
 #       url: /assets/img/mods/seasons/screenshots/summer.jpg
-#     - title: Autumn
-#       url: /assets/img/mods/seasons/screenshots/autumn.jpg
-#     - title: Winter
-#       url: /assets/img/mods/seasons/screenshots/winter.jpg
+    - title: Autumn
+      url: /assets/img/mods/seasons19/screenshots/autumn.jpg
+    - title: Winter
+      url: /assets/img/mods/seasons19/screenshots/snow.jpg
 #     - title: Calendar
 #       url: /assets/img/mods/seasons/screenshots/menu.jpg
 #     - title: Economy
