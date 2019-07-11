@@ -1,5 +1,5 @@
 seasons:
-  title: Seasons
+  title: Seasons 17
   modhub_id: 79288
   list_icon: /assets/img/mods/seasons/SeasonsIcon_512.jpg
   list_text: Experience a whole new way of playing Farming Simulator!
@@ -74,6 +74,89 @@ seasons:
       list_icon: /assets/img/mods/seasons/geo/logo_geo_canadianeast.jpg
       description: ""
       # modhub_id: 102209
+
+seasons19:
+  title: Seasons 19
+  # modhub_id: 79288
+  list_icon: /assets/img/mods/seasons19/SeasonsIcon_1024.jpg
+  list_text: Experience a whole new way of playing Farming Simulator 19!
+  released: false
+  console: false
+#   navitems:
+#     - name: supplements
+#       title: Additional mods
+#       url: /mods/seasons19/supplements
+#   # video:
+#   #   title: Farming Simulator 19 - Seasons Mod - Main features
+#   #   id: b4u6Vz1aAvA
+#   #   duration: PT2M30S
+#   #   date: 2017-06-01T22:47:00+01:00
+  screenshots:
+#     - title: Spring
+#       url: /assets/img/mods/seasons/screenshots/spring.jpg
+#     - title: Summer
+#       url: /assets/img/mods/seasons/screenshots/summer.jpg
+    - title: Autumn
+      url: /assets/img/mods/seasons19/screenshots/autumn.jpg
+    - title: Winter
+      url: /assets/img/mods/seasons19/screenshots/snow.jpg
+#     - title: Calendar
+#       url: /assets/img/mods/seasons/screenshots/menu.jpg
+#     - title: Economy
+#       url: /assets/img/mods/seasons/screenshots/economy.jpg
+#     - title: Measurements
+#       url: /assets/img/mods/seasons/screenshots/measurement.jpg
+#   # videos:
+#   #   - title: Farming Simulator 17 - Seasons Mod - One Year Time Lapse
+#   #     id: _Y1ALHmKbsk
+#   #     duration: PT2M53S
+#   #     date: 2017-06-02T01:00:00+01:00
+#   #   - title: Farming Simulator 17 - Seasons Mod WIP - Seasonal tree textures by KimG
+#   #     id: qDDurn1aO_I
+#   #     duration: PT6M37S
+#   #     date: 2017-03-31T08:00:00+01:00
+#   supplements:
+#     - name: geo_northernsweden
+#       title: "GEO: Northern Sweden"
+#       list_icon: /assets/img/mods/seasons19/geo/logo_geo_sweden.jpg
+#       description: "Discover the colder climate of northern Sweden. Enjoy longer and harsher winters with snow and colder soil temperatures."
+#       # modhub_id: 84335
+#     - name: geo_wales
+#       title: "GEO: Wales"
+#       list_icon: /assets/img/mods/seasons19/geo/logo_geo_wales.jpg
+#       description: "With short amount of proper harvesting time and a lot of rainy days, you will have to plan carefully and work hard to keep your farm afloat."
+#       # modhub_id: 84332
+#     - name: geo_snowylands
+#       title: "GEO: Snowy Lands"
+#       list_icon: /assets/img/mods/seasons19/geo/logo_geo_snowylands.jpg
+#       description: "Is it time to take a break from farming and have a winter holiday? Then go to Snowy Lands with its eternal winter and high snow!"
+#       # modhub_id: 84238
+#     - name: geo_usmidwest
+#       title: "GEO: U.S. Midwest"
+#       list_icon: /assets/img/mods/seasons19/geo/logo_geo_usmidwest.jpg
+#       description: "Enjoy the weather and growth of one of the most intensely farmed regions in the world."
+#       # modhub_id: 84675
+#     - name: geo_paraguay
+#       title: "GEO: Paraguay"
+#       list_icon: /assets/img/mods/seasons19/geo/logo_geo_paraguay.jpg
+#       description: "Experience the hot and humid environment of Paraguay with this GEO mod, made specially for Farming Simulator 17 Platinum Edition!"
+#       # modhub_id: 94824
+#     - name: geo_southaustralia
+#       title: "GEO: South Australia"
+#       list_icon: /assets/img/mods/seasons19/geo/logo_geo_southaustralia.jpg
+#       description: ""
+#       # modhub_id: 102207
+#     - name: geo_canadianeast
+#       title: "GEO: Canadian East"
+#       list_icon: /assets/img/mods/seasons19/geo/logo_geo_canadianeast.jpg
+#       description: ""
+#       # modhub_id: 102209
+#     - name: geo_centralfrance
+#       title: "GEO: Central France"
+#       list_icon: /assets/img/mods/seasons19/geo/logo_geo_centralfrance.jpg
+#       description: ""
+#       # modhub_id: 102209
+
 
 # no_teleport:
 #   title: No Teleport

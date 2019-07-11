@@ -1,0 +1,43 @@
+---
+layout: page
+title:  Seasons 19 Additional Mods
+breadcrumb: Additional Mods
+---
+
+<h1>Additional mods for {{ site.data.mods[page.mod].title }}</h1>
+
+<p>We made additional mods to extend the experience of Seasons. All of them are geographical (GEO) mods.</p>
+<p>Geographical mods change the weather, environment and possibly even the growth patterns of Seasons. They can provide a different region to play in. A new savegame is required.</p>
+<p>Note that you can only load a single (1) GEO mod.</p>
+
+{% if site.data.mods[page.mod].supplements == nil %}
+<div class="card card-outline-info text-center">
+    <div class="card-block">
+        <p class="mb-0"><strong>Note: </strong>At this time, there don't seem to be any supplemental mods available. Check back later.</p>
+    </div>
+</div>
+{% endif %}
+
+<div class="row">
+{% for mod in site.data.mods[page.mod].supplements %}
+    <div class="col-xs-12 col-md-6 col-lg-4 d-flex mb-4 mx-auto">
+        <div class="card">
+            <img class="card-img-top img-fluid" src="{{ mod.list_icon }}" alt="{{ mod.title }} icon" />
+
+            <div class="card-block">
+                <h4 class="card-title">{{ mod.title }}</h4>
+                <p class="card-text">{{ mod.description }}</p>
+
+                {% if mod.modhub_id and mod.button == null %}
+                <a href="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" class="btn btn-outline-primary">Download</a>
+                {% endif %}
+
+                {% if mod.button %}
+                <span class="btn btn-outline-secondary">{{ mod.button }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+</div>

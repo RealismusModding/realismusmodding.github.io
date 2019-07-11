@@ -35,3 +35,34 @@ seasons:
         - ref: best_practices
         - ref: 1_2_checklist
     - ref: release_notes
+seasons19:
+  entries:
+    - ref: overview
+    - ref: gameplay
+      entries:
+        - ref: gp_weather
+        - ref: gp_crops
+        - ref: gp_grass
+        - ref: gp_animals
+        - ref: gp_vehicles
+        - ref: gp_economy
+        - ref: gp_measuring
+        # - ref: gp_hud_overview
+        - ref: gp_geo_mods
+    - ref: modding
+      entries:
+        - ref: maps
+          entries:
+            - ref: maps_seasons_mask
+            - ref: maps_objects
+            - ref: maps_sound
+            - ref: maps_visuals
+            # - ref: maps_custom_fruits
+        - ref: geo
+          entries:
+            - ref: geo_weather
+            - ref: geo_growth
+            - ref: geo_testing
+        - ref: scripting
+        - ref: best_practices
+    - ref: release_notes
