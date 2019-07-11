@@ -11,4 +11,4 @@ The release notes contain the changed made in every version after the initial re
 ## Version 1.0.0
 *Yet to be released*
 
-Initial release. For all changes compared to Seasons 17, see our [What's new? article]({{ site.baseurl }}{% post_url blog/2019-07-01-seasons19 %}).
+Initial release. For all changes compared to Seasons 17, see our [What's new? article]({{ site.baseurl }}{% post_url blog/2019-07-11-seasons19 %}).
