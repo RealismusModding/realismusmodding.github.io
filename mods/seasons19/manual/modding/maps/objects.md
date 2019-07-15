@@ -72,8 +72,8 @@ Lastly you can specify the required snow level for the object to be visible. Eac
 
  - class name: modOnCreate.SnowAdmirer
  - attributes:
-   - hide (boolean, default is false)
-   - level (float, default is `1`)
+   - hideWhenSnow (boolean, default is false)
+   - minimumLevel (float, default is `1`)
 
 ### Frozen lakes
 
