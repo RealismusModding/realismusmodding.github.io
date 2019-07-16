@@ -82,33 +82,45 @@ You should paint:
 
 If you have static animal pens you can also clean up those:
  - Animal troughs
- - Wool spawnpoint
+ - Wool spawnpoints
+ - Manure heaps
  - Other pallet spawnpoints
 
 ## Adding masks to custom placeables
 
 With the new placeable system in Farming Simulator 19 come new masks. In Seasons17 the whole clearArea of the placeable was automatically masked so no snow fell inside sheds. This is not possible in Farming Simulator 19 as placeables are now bigger and more varied. Especially animal pens have different requirements.
 
-
-
 If your map uses custom animal pens that can be placed by the player, you should supply new masks. If the pens are placed by you in items.xml, you can also mask directly in the map Seasons mask, and disable masking inside the placeable.
+
+Areas in placeables that should be masked:
+ - Silage bunkers
+ - Manure heaps
+ - Feeding troughs
+ - Pallet spawnpoints (otherwise they are blocked from spawning)
+ - Inside buildings on the placeable.
 
 The areas are created in the same way as the clearAreas, foliageAreas, and so on. Any area with a mask will not have snow and will be treated as inside.
 
-TODO
+For each area you want to mask (prevent snow from falling or bales from rotting), you need to create a parallelogram. Do this by creating a new transform group in your placeable model. This is the first corner. Then add two children, also transform groups. Each form another corner of the parallogram. These corners have to be the sides of the first corner (so not the opposite). This is exactly the same as the other areas.
+
+Then add the areas to the XML:
 
 ```xml
 <placeable>
     ...
     <seasons>
         <maskAreas>
-            <maskArea ... />
+            <maskArea startNode="0|1|1" startNode="0|1|1|0" startNode="0|1|1|1" />
         </maskAreas>
     </seasons>
 
     ...
 </placeable>
 ````
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> You will not find an example of this in the basegame. We have inserted the masks for the basegame placeables in a different way, without the need to update the game or any assets.
+</div>
 
 ### Disabling automatic masking fallback
 
@@ -129,8 +141,8 @@ Use the following mask definition in your placeable:
 </placeable>
 ````
 
-This will tell Seasons that there is a custom mask, being: no areas.
+This will tell Seasons that there is a custom mask, where the mask has no areas.
 
 ## Testing
 
-The masks can be tested in-game by dropping snow using the `rmAddSnow 1` console command. Use `rmResetSnow` to remove all snow.
+The masks can be tested in-game by dropping snow using the `rmAddSnow 1` console command. Use `rmResetSnow` to remove all snow and start over.

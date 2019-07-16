@@ -17,9 +17,7 @@
                     <li class="nav-item"><a href="{{ item.url }}" class="nav-link{% if page.url contains item.url %} active{% endif %}">{{ item.title }}</a></li>
                     {% endfor %}
 
-                    {% if mod.released %}
                     <li class="nav-item"><a href="{{ manualUrl }}" class="nav-link{% if page.url contains manualUrl %} active{% endif %}">Manual</a></li>
-                    {% endif %}
                 </ul>
             </div>
         </div>

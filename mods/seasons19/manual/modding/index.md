@@ -11,3 +11,5 @@ permalink: /mods/seasons19/manual/modding/
 # Modding
 
 Learn more about making compatible mods for Seasons, improving maps, vehicles and placeables.
+
+For help you can try to contact the team on Slack or try the forums to get answers from the community.

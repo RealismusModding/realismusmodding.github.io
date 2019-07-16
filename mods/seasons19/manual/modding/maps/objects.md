@@ -27,7 +27,7 @@ The generic use of an admirer is as follows:
  - Select the object
  - In the attributes editor, add a new use attribute of type `script`.
  - Name the attribute `onCreate`
- - Give the attribut a value in the form of `<admirer class>.onCreate`, like `Nightlight2.onCreate`
+ - Give the attribut a value in the form of `modOnCreate.<admirer class>`, like `modOnCreate.IcePlane`
  - Add any attributes that are used by the used admirer.
 
 Note that adding such a script will not change the appearance of an object. The scripts only run when playing the map.
@@ -53,7 +53,7 @@ If you are missing something or want something special, make your own objects or
 
 Make an object appear in one or more season, while hiding it in the other seasons. By default the object is invisible for all seasons.
 
- - class name: modOnCreate.SeasonAdmirer
+ - class name: `modOnCreate.SeasonAdmirer`
  - attributes:
    - mask (integer, default is 0)
 
@@ -70,7 +70,7 @@ Add the value for each season you want the object to be visible for, and put tha
 To create a snowman or visual heaps of snow, you can use the `SnowAdmirer`. With it you can make an object visible when there is snow. You can also hide objects if there is snow, by adding the `hide` attribute and checking it.
 Lastly you can specify the required snow level for the object to be visible. Each level is 6cm of snow.
 
- - class name: modOnCreate.SnowAdmirer
+ - class name: `modOnCreate.SnowAdmirer`
  - attributes:
    - hideWhenSnow (boolean, default is false)
    - minimumLevel (integer, default is `1`)
@@ -81,7 +81,7 @@ It is not possible to freeze a lake. It is however possible to make it look like
 
 Make sure you set the plane invisible so it does not show when not using Seasons.
 
- - class name: modOnCreate.IcePlane
+ - class name: `modOnCreate.IcePlane`
  - attributes: none
 
 For a nice guide to make frozen lakes, see this video by ShyWizard (for Seasons 17):
