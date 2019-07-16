@@ -19,7 +19,7 @@ Preparing a map for Seasons is required to activate bale and swath rotting. Only
 
 See the manual article on the Seasons mask on how to add the mask, configure it, and paint it.
 
-{% include big_image.html title="Weeds" url="/assets/img/blog/map-modding/bales.jpg" %}
+{% include big_image.html title="Bales stacked, protected by a shed" url="/assets/img/blog/map-modding/bales.jpg" %}
 
 #### Placeable masks
 
