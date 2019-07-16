@@ -3,7 +3,7 @@ title: "Seasons 19: Growth"
 date: 2019-07-17 17:00:00 +0100
 author: theseb
 header:
-  image: /assets/img/blog/whatsnew19/weeds.jpg
+  image: /assets/img/blog/growth19/damage.jpg
 excerpt_separator: <!-- more -->
 ---
 
@@ -13,11 +13,11 @@ One of the major design goals for Seasons was to remove the feeling that you wer
 
 We’ve made some changes in this regard in Seasons 19. Instead of killing entire fields of crops when they were planted at the wrong time, we’ve implemented a feature that I lovingly called patchy crop failure, or PCF for short. PCF, unsurprisingly, does exactly what it says on the tin: it causes patches of failed crops based on two conditions: temperature and moisture. This helps to introduce an element of randomness, since these two conditions have annual variances. Every crop has been given split into 3 states: seeded, young and mature and each of those states has different frost and drought resistances.
 
-SCREENSHOT OF RESISTANCE UI
+{% include big_image.html title="Info screen with crop resistance information" url="/assets/img/blog/growth19/ui.jpg" %}
 
 Throughout each day the current temperature and moisture levels are checked and if they exceeded the parameters, patches of your crop will be damaged randomly. PCF causes planted crops to become germination failed. Young plants become harvested and mature plants become withered. These transition states were chosen because they make the most sense visually.
 
-SCREENSHOT OF DAMAGED PLANTS
+{% include big_image.html title="A damaged crop" url="/assets/img/blog/growth19/damage.jpg" %}
 
 Default weather is mostly quite gentle and can be thought of as "easy mode" when it comes to the potential of crop damage. For example, you are not likely to see much frost in your first spring. This creates the opportunity for longer planting windows, especially for those more delicate plants that used to die if planted in early spring. Similarly, planting in the middle of the summer would cause some crops to die. This does not happen anymore. Instead the crops may try to grow, but if you plant outside the planting window, they are unlikely to mature before winter. Killing in the winter has been moved forward as well. The default growth algorithm now kills all mature crops in the transition between early and mid-winter. This will make all the players who love to harvest potatoes and sugarbeet in the winter very happy, but if the late autumn or early winter are harsh, some parts of the crop may get damaged. 
 
