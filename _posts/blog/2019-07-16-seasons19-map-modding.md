@@ -3,16 +3,13 @@ title: "Seasons 19: Map and placeable mods"
 date: 2019-07-16 12:00:00 +0100
 author: rahkiin
 header:
-  image: /assets/img/blog/map-modding/modding.jpg
+  image: /assets/img/blog/map-modding/bales.jpg
 excerpt_separator: <!-- more -->
 ---
 
 The manual of Seasons 19 has been [updated]({{ site.baseurl }}/mods/seasons19/manual/modding) to contain information on preparing mod maps and placeables.
 
 <!-- more -->
-
-IMAGE OF BALES IN A SHED
-{% include big_image.html title="Weeds" url="/assets/img/blog/map-modding/modding.jpg" %}
 
 #### Seasons mask
 
@@ -21,6 +18,8 @@ The Seasons mask is redesigned to be easier to create by map makers and to be li
 Preparing a map for Seasons is required to activate bale and swath rotting. Only with a custom mask can we be sure that all sheds are properly configured, so players know that their bales are safe inside. If a map is not prepared, bales will not rot but snow will still fall to great heights.
 
 See the manual article on the Seasons mask on how to add the mask, configure it, and paint it.
+
+{% include big_image.html title="Weeds" url="/assets/img/blog/map-modding/bales.jpg" %}
 
 #### Placeable masks
 
