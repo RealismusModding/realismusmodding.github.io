@@ -57,6 +57,7 @@ seasons19:
             - ref: maps_objects
             - ref: maps_sound
             - ref: maps_visuals
+            - ref: maps_animal_pens
             # - ref: maps_custom_fruits
         # - ref: geo
         #   entries:

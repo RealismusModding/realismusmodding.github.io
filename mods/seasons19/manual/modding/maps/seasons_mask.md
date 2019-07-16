@@ -90,7 +90,7 @@ If you have static animal pens you can also clean up those:
 
 With the new placeable system in Farming Simulator 19 come new masks. In Seasons17 the whole clearArea of the placeable was automatically masked so no snow fell inside sheds. This is not possible in Farming Simulator 19 as placeables are now bigger and more varied. Especially animal pens have different requirements.
 
-If your map uses custom animal pens that can be placed by the player, you should supply new masks. If the pens are placed by you in items.xml, you can also mask directly in the map Seasons mask, and disable masking inside the placeable.
+If your map uses custom animal pens that can be placed by the player, you should supply new masks. If the pens are placed by you in items.xml, you can also mask directly in the map Seasons mask, and disable masking inside the placeable. Or you can put the mask inside the placeable.
 
 Areas in placeables that should be masked:
  - Silage bunkers
