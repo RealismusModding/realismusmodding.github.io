@@ -42,12 +42,12 @@ mrbear:
   slack: mrbear
   image: /assets/img/team/mrbear.png
 
-baron:
-  nickname: baron
-  name: Markus
-  github: baleBaron
-  role: Bale master
-  image: /assets/img/team/baron.png
-  slack: baron
-  twitter: MarkusMve
-  active: false
+# baron:
+#   nickname: baron
+#   name: Markus
+#   github: baleBaron
+#   role: Bale master
+#   image: /assets/img/team/baron.png
+#   slack: baron
+#   twitter: MarkusMve
+#   active: false
