@@ -1,6 +1,6 @@
 ---
 title: "Seasons 19: Growth"
-date: 2019-07-17 17:00:00 +0100
+date: 2019-07-30 17:00:00 +0100
 author: theseb
 header:
   image: /assets/img/blog/growth19/damage.jpg
