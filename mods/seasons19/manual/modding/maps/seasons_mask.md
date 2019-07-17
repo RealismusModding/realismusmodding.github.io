@@ -110,7 +110,7 @@ Then add the areas to the XML:
     ...
     <seasons>
         <maskAreas>
-            <maskArea startNode="0|1|1" startNode="0|1|1|0" startNode="0|1|1|1" />
+            <maskArea startNode="0|1|1" widthNode="0|1|1|0" heightNode="0|1|1|1" />
         </maskAreas>
     </seasons>
 
