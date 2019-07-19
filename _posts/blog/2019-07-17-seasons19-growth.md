@@ -1,9 +1,9 @@
 ---
 title: "Seasons 19: Growth"
-date: 2019-07-30 17:00:00 +0100
+date: 2019-07-19 17:00:00 +0100
 author: theseb
 header:
-  image: /assets/img/blog/growth19/damage.jpg
+  image: /assets/img/blog/growth19/crop.jpg
 excerpt_separator: <!-- more -->
 ---
 
@@ -13,7 +13,7 @@ One of the major design goals for Seasons was to remove the feeling that you wer
 
 We’ve made some changes in this regard in Seasons 19. Instead of killing entire fields of crops when they were planted at the wrong time, we’ve implemented a feature that I lovingly called patchy crop failure, or PCF for short. PCF, unsurprisingly, does exactly what it says on the tin: it causes patches of failed crops based on temperature and moisture. This helps to introduce an element of randomness into the crops' growth patterns, since these conditions have annual variances. Every crop has been split into 3 states: seeded, young and mature and each of those states has different frost and drought resistances.
 
-{% include big_image.html title="A damaged crop" url="/assets/img/blog/growth19/damage.jpg" %}
+{% include big_image.html title="A damaged crop" url="/assets/img/blog/growth19/crop.jpg" %}
 
 Throughout each day the current temperature and moisture levels are checked and if they exceeded the parameters, patches of your crop will be damaged randomly. PCF causes planted crops to become germination failed. Young plants become harvested and mature plants become withered. These transition states were chosen because they make the most sense visually.
 
