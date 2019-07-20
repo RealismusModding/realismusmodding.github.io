@@ -69,12 +69,6 @@
 
 /* Footer: navigation */
 
-@media (max-width: 540px) {
-    .directorynav {
-        display: none !important;
-    }
-}
-
 .directorynav h3 {
     font-size: 0.9rem;
     font-weight: 700;
@@ -102,6 +96,15 @@
 
 .directorynav input[type="submit"]:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+    // .directorynav {
+    //     // display: none !important;
+    //     display: block;
+    //     max-width: 100% !important;
+    //     flex: 0 0 100%;
+    // }
 }
 
 /*************
