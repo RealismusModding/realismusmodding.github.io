@@ -68,6 +68,8 @@ To paint the infolayer the file also needs to be added to the map i3d file:
 
 You now have a mask based on your tip collisions. This is not required but highly recommended, as no snow can be picked up where tip collision is active. On its turn, tip collision is normally active where a shovel or other tool can't get to the tip, like below road objects.
 
+Tip: To improve the precision in which you can draw your mask, you can convert the GRLE file you created to a PNG file using the grleConverter on [GDN](https://gdn.giants-software.com). Then resize that file to 2048x2048. Save it again as PNG and put it in the location that the GRLE file is. Then delete the GRLE file and open the map in the editor normally. Save at least once so it gets converted to GRLE again.
+
 ## Painting the mask
 
 The next and final step is to paint any changes you want on the mask.
