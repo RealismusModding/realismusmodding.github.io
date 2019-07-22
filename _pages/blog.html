@@ -7,7 +7,8 @@ permalink: /blog/
 
 <section itemscope itemtype="http://schema.org/Blog">
     {% for post in site.posts %}
-      {% if post.categories contains "blog" %}
+      {% if post.hidden != 1 %}
+        {% if post.categories contains "blog" %}
 
     <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" class="mt-4">
         <header>
@@ -35,6 +36,7 @@ permalink: /blog/
             <a href="{{ post.url }}" itemprop="url">Continue reading</a>
         </div>
     </article>
+        {% endif %}
       {% endif %}
     {% endfor %}
 </section>
