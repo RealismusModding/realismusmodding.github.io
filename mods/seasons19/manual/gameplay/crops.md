@@ -29,6 +29,42 @@ Spraying, or spreading, fertiliser can now only be done in the initial growing s
 
 Custom fruits are handled gracefully by using barley's growth patterns. Map makers can choose to modify the growth patterns of vanilla fruits and also make the mod aware of custom fruits by supplying custom growth patterns for them. Also, Seasons GEO Mods can supply their own growth patterns.
 
+
+
+## Crop rotation
+
+Crop rotation is the practice of growing different crops in succession that are beneficial to each other. This is now possible in Seasons 19 and with successful planning and execution there will be increased yields and reduced need to fertilization. A yield effect of 120% of vanilla is possible by using the most beneficial rotations and crops. When planting a crop with beneficial history a fertilization stage will be applied.
+
+Crops are divided into crop categories and have dependencies that determines whether a preceding crop category is favourable, neutral or unfavourable for yield. The categories are somewhat different than plant families. Some crops are more suitable to grow several years in succession (e.g. grass and maize) while others require more variation (e.g. potato and canola). This is how default crops are divided into crop categories:
+
+- Cereals (barley, wheat, oat, maize)
+- Oilseeds (canola, sunflower, oilseed radish)
+- Legumes (soybean)
+- Nightshade (potato)
+- Root crops (sugarbeet)
+- Grasses (grass, poplar, sugarcane, cotton)
+
+It is also possible to leave a field to rest and restore for a year (in the mod this is termed keeping it fallow). Most common crop rotations should be possible to simulate, including the effects of double cropping. Under are some examples of rotations that can be used as a start, but there are many other possibilities:
+
+- wheat – canola – wheat – fallow
+- wheat – canola – soybeans
+- maize – soybeans
+- wheat – soybeans (for instance by double cropping)
+
+In the field HUD you will be able to see the crop categories of the two previously planted crops. Together with a rotation planner this will be an important tool for planning the next crop to plant.
+Rotation planner
+
+The crop rotation planner is a new tool specially made for players to plan their rotations ahead. It can hold four rotations (one per column) and they are saved, even in multiplayer. Next to the selected crop you can see the expected yield multiplier based on the two preceeding crops planted.
+
+<!-- <insert image of the planner gui> -->
+
+
+
+
+
+
+
+
 ## Q: My crops keep disappearing?!
 A: You are seeding in the wrong season. You can look in the Seasons menu to find out when you can plant each crop. Like in real life, if the soil becomes too cold, crops will not grow. This means winter crops needs to be planted before the temperature drops too much in autumn. You will also have to wait in spring until the soil is warm enough for seeds to germinate in the soil. The temperature limit for sowing is set for each fruit in the growth.xml file.
 
