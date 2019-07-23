@@ -25,7 +25,7 @@ It can be downloaded in the ModHub under 'Gameplay' or 'Misc', or on the [ModHub
 
 ### Where are the GEO mods?
 
-We have put all our time and energy into Seasons 19 for now, so the GEO mods are not ready for release. We will do our best to test them and release them next week or the week after. We will release our U.S. Midwest, Wales and Northern Sweden GEOs. There are more planned.
+We have put all our time and energy into Seasons 19 for now, so the GEO mods are not ready for release. We will do our best to test them and release them next week or the week after. We will release our U.S. Midwest, Wales and Northern Sweden GEOs first.
 
 ### What about console?
 
