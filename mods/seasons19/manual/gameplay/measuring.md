@@ -10,9 +10,7 @@ permalink: /mods/seasons19/manual/gameplay/measuring
 # Measuring
 {:.no_toc}
 
-In Seasons 1.2 we added a measurement tool support to aid in getting information about your farm and the objects on it.
-
-The Wopstr M420 is a measurement handtool, created specifically for Seasons. It is available in the shop under the 'Misc' category and sells for 3500 euros. It is a very magical device, that can measure a wide varierty of objects and metrics.
+The MT 9 is a measurement handtool and is available in the shop under the 'Misc' category for 3500 euros. It is a very magical device, that can measure a wide varierty of objects and metrics.
 
 * TOC
 {:toc}
@@ -26,7 +24,7 @@ Usage is simple: activate the handtool by pointing at something nearby and holdi
 
 ## Measurements
 
-The Wopstr can measure a number of things that were not available to the farmer before its introduction.
+The MT 9 can measure a number of things that were not available to the farmer before.
 
 #### Trees
 
@@ -50,7 +48,7 @@ Measuring bales can be very useful, especially when they are wrapped. When measu
 
 #### Soil
 
-When you point the Wopstr slightly down, you can scan the soil. This gives useful information like crop, crop growth, crop moisture and [ground wetness](/blog/2017/11/09/ground-wetness). There are also other things you get to know, like the location in the world (in the map), and your elevation.
+When you point the MT 9 slightly down, you can scan the soil. This gives useful information like crop, crop growth, crop moisture and [ground wetness](/blog/2017/11/09/ground-wetness). There are also other things you get to know, like the location in the world (in the map), and your elevation.
 
 {% include manual_icon_image.html src="/assets/img/mods/seasons/wopstr/compass.jpg" alt="An icon depicting a compass" name="Location" info="Just for orientation and screenshots" %}
 
@@ -68,15 +66,15 @@ When you point the Wopstr slightly down, you can scan the soil. This gives usefu
 
 #### Pallets
 
-The Wopstr also supports scanning pallets and liftable crates (potatoes, sugarbeets). It will show you the contents and the volume of those contents.
+The MT 9 also supports scanning pallets and liftable crates (potatoes, sugarbeets). It will show you the contents and the volume of those contents.
 
 {% include manual_icon_image.html src="/assets/img/mods/seasons/wopstr/contents.jpg" alt="An icon depicting a half-filled can" name="Contents" info="The contents of the pallet, with its volume or amount (liters of potatoes or number of saplings)" %}
 
 ## Final remarks
 
-As said above, the Wopstr is magical, advanced and fragile. If it does not measure something you expect to, try it again in a different direction.
+If the MT 9 does not measure something you expect, then try it again in a different direction.
 
-In real life, trees can grow on, and on, depending on how much light and food they can get. This not the case in the game. That means 100% tree heigth means the tree can't grow anymore in the game. If it is stuck at 50%, it can't grow with the current tree distances.
+In real life, trees can grow on, and on, depending on how much light and food they can get. This not the case in the game. 100% tree height means the tree can't grow anymore in the game. If it is stuck at 50%, it can't grow with the current tree distances.
 
 ## TODO
 
