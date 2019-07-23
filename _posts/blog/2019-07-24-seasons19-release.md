@@ -33,6 +33,6 @@ After FarmCon 19 we will continue resolving bugs and issues that arise. We will 
 
 ### I've encountered a problem!
 
-Report it to us on [GitLab](https://gitlab.com/realismusmodding/fs19_rm_seasons/issues), so we can try to find a fix. You can also send us an email at [realismusmodding@gmail.com](mailto:realismusmodding@gmail.com). Please provide your log file and a .zip file of your whole savegame.
+Report it to us on [GitLab](https://gitlab.com/realismusmodding/fs19_rm_seasons/issues) or [Slack](https://slack.realismusmodding.com/), so we can try to find a fix. Please provide your log file and a .zip file of your whole savegame.
 
 Not all problems are actual bugs. Sometimes it is out intended design. For help on how to play with Seasons 19, consult other players on forums or Discord.
