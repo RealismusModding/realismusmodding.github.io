@@ -39,7 +39,14 @@ If a game encounters an onCreate script call that it can't fulfill because the c
 
 If you want an object to be visible on a map when Seasons is not active, set it as visible in the Giants Editor. A good example is a BBQ. If you want to hide it, like a snowman, set it as invisible.
 
-There is one more issue, and that is collisions. Setting an object invisible does not disable its collision. This is by design. This issue will be fixed in the basegame once the mod hits consoles.
+There is one more issue, and that is collisions. Setting an object invisible does not disable its collision. This is by design. The solution here is simple:
+- For objects that you want hidden when Seasons is not active:
+  - Add a new user attribute named `collisionMask` (integer)
+  - Put in the decimal collision mask value of the object (like 255 for 0xff)
+  - Then set the actual collision mask for the object in the attributes to 0.
+  - This causes the game to load with no collision, and then Seasons will turn on the collision when it is visible.
+- For objects that you want shown when Seasons is not active:
+  - No need to do anything special.
 
 ## Object types
 
@@ -56,6 +63,7 @@ Make an object appear in one or more season, while hiding it in the other season
  - class name: `modOnCreate.SeasonAdmirer`
  - attributes:
    - mask (integer, default is 0)
+   - collisionMask (integer, default is the objects actual collisionMask)
 
 The mask values are as follows:
  - Spring: 1
@@ -74,6 +82,7 @@ Lastly you can specify the required snow level for the object to be visible. Eac
  - attributes:
    - hideWhenSnow (boolean, default is false)
    - minimumLevel (integer, default is `1`)
+   - collisionMask (integer, default is the objects actual collisionMask)
 
 ### Frozen lakes
 
@@ -82,7 +91,8 @@ It is not possible to freeze a lake. It is however possible to make it look like
 Make sure you set the plane invisible so it does not show when not using Seasons.
 
  - class name: `modOnCreate.IcePlane`
- - attributes: none
+ - attributes:
+   - collisionMask (integer, default is the objects actual collisionMask)
 
 For a nice guide to make frozen lakes, see this video by ShyWizard (for Seasons 17):
 
