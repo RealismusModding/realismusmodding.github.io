@@ -111,13 +111,13 @@ Wind speed and direction is modelled. The wind speed is a key attribute to how q
 
 The weather forecast is much more detailed. Not only does it feature minimum temperature, average temperature and maximum temperature, but also wind speed and probability of precipitation. Expected precipitation is also shown. As drying of hay requires good weather, the suitability of the weather for drying grass is indicated in the forecast (more information on this feature in the below section on grass). On top of that, the next 24 hours are detailed in 3-hour blocks for even more frequent information.
 
-However, the forecast is not completely certain: the further away the prediction the more uncertain it is. A predicted rain in 5 days time might not actually happen.
+However, the forecast is not completely certain: the further away into the future, the more uncertain it is. A rain predicted in 5 days time might not actually happen.
 
 The weather-people don't know everything, so it is useful to check the forecast regularly!
 
 ### Snow and the mask
 
-Some small changes to the Seasons mask: we now fall back on the tip collision. This has become possible with new engine changes. This makes it possible to have high snow even on unprepared maps. However, it very likely looks bad, though, until the map has been fully prepared.
+Some small changes to the Seasons mask: we now fall back on the tip collision. This has become possible with new engine changes. This makes it possible to have high snow even on unprepared maps.
 
 Bale rotting still requires a fully prepared map with a special Seasons mask, so that every spot that is expected to cover for rotting also performs that function.
 
@@ -149,7 +149,7 @@ The other animals have similar characteristics to create a more varied, realisti
 
 ### Horses
 
-The horses have received a special treatment. We have redesigned them into a different type of gameplay: a livery stable. The gameplay tries to emulate a farm that provides housing and basic care of a horse for its owner.
+The horses have received a special treatment. They have been redesigned into a different type of gameplay: a livery stable. The gameplay tries to emulate a farm that provides housing and basic care of a horse for its owner.
 
 A horse can be brought to the farm in exchange of no money. It has to be fed, cleaned and ridden every day. Depending on how much care it gets, an income is provided every day. Some breeds require more riding to earn the same amount of money as other breeds. Horses also provide more money when they are very fit.
 
@@ -157,19 +157,19 @@ This all comes at a high risk: an unhealthy animal can die. This will cost quite
 
 ### Grazing
 
-The grazing mod from Farming Simulator 17 has been integrated directly into Seasons 19. Animals in pens that have grass will consume the grass as replacement for the grass in the trough. Be careful, as the grass in a pen can be completely eaten already. This depends on the size of the pen, on the amount of animals, and the time of year.
+The grazing mod from Farming Simulator 17 has been integrated directly into Seasons 19. Animals in pens that have grass will consume the grass as a replacement for the grass in the trough. Be careful, as the grass in a pen can be completely eaten already. This depends on the size of the pen, the amount of animals, and the time of year.
 
 The changes of the animal pens into placeables that plant their own grass, together with more engine changes, allow for automatic detection of the grass. No map changes are required. The only requirement is that the animal pen has grass.
 
 ### Water pump
 
-The animals require a lot of attention. Daily feeding, daily watering, maybe even daily riding. The water requirements of the animals have been corrected to be more to realistic standards. To make it easier for players to have water in the troughs, a new water pump can be placed near the animal pen: it will automatically keep the water level of the water troughs at a minimum of 15%. The water cost is subtracted from your account.
+The animals require a lot of attention. Daily feeding, daily watering, maybe even daily riding. The water requirements of the animals have been corrected to be more realistic. To make it easier for players to have water in the troughs a new water pump can be placed near the animal pen. It will automatically keep the water level of the water troughs at a minimum of 15%. The water cost is subtracted from your account.
 
 {% include big_image.html title="Grass being mown" url="/assets/img/blog/whatsnew19/grass.jpg" %}
 
 ## Better grass handling
 
-The many engine and script changes in Farming Simulator 19 allowed for many new features. Two of those are a multi-step grass drying process, and improved rotting.
+The engine and script changes in Farming Simulator 19 allowed for many new features. Two of those are a multi-step grass drying process and improved rotting.
 
 A new multi-step drying process has been added to create hay. When cutting wet grass, it needs to be tedded. Afterwards it needs to dry in the sun to become hay. When cutting dry (low moisture) grass, it does not need tedding but still needs to dry.
 This means that making hay now depends on the weather. Good planning is required. The more detailed forecast will certainly help here.
@@ -184,7 +184,7 @@ Hay and straw rots when kept outside in the rain. However, straw and hay heaps i
 
 <!-- trees -->
 
-Seasons 19 has received a new system for tree visuals: custom shaders. Together with GIANTS, the team has created new shaders and special custom textures. The trees now gradually change their looks, instead of the sudden color switch in Farming Simulator 17. The leaves grow in spring until fully grown in summer, after which they will brown for autumn.
+Seasons 19 has received a new system for tree visuals: custom shaders. Together with GIANTS, the team has created new shaders and special custom textures. The trees gradually change their looks, instead of the sudden color switch in Farming Simulator 17. The leaves grow in spring until fully grown in summer, after which they will brown for autumn.
 The color of the tree depends on the time of year, the tree and on the weather.
 
 <!-- Lighting -->
@@ -193,7 +193,7 @@ The lighting of Seasons has been rewritten to fully fit the new lighting system 
 
 <!-- Sky -->
 
-The new weather system fully integrates with the new cloud system. A varying amount of clouds are shown throughout the day and move with the wind direction. With these changes the weather during the night is finally working well.
+The new weather system fully integrates with the new cloud system. A varying amount of clouds are shown throughout the day and move with the wind direction. With these changes the weather during the night can be truly dramatic and beautiful.
 
 On top of the cloud system, Seasons adds a new weather event: storms. Storms produce thunder and an occasional lightning effect that will light up your fields.
 
@@ -209,5 +209,5 @@ A new set of flags is added to the map sound system to allow for quiet birds in 
 
 ## Adjusted vehicle maintenance and repair
 
-We have replaced the Seasons 17 repair system for the basegame 19 repair, but added new algorithms for sell and repair prices. Also, we have separated the scratches (visible wear) from the vehicle repair. To improve the performance of your vehicle you can repair. To make the vehicle nice and shiny again you will need to repaint the vehicle. This is costly, depending on the size and complexity of the machine.
+The Seasons 17 repair system has been replaced by the standard one from FS19, but new algorithms have been added to calculate sell and repair prices. Also, the scratches (visible wear) has been separated from the vehicle repair. To improve the performance of your vehicle you can repair. To make the vehicle nice and shiny again you will need to repaint the vehicle. This is costly, depending on the size and complexity of the machine.
 
