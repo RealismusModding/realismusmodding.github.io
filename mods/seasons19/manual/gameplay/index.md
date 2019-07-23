@@ -199,11 +199,11 @@ On top of the cloud system, Seasons adds a new weather event: storms. Storms pro
 
 ### Immersive ambient sound system
 
-Seasons replaces the wind and rain sounds of the basegame with a new system. This new system ties in tightly with the visuals: it is possible to hear how fast the wind is blowing or how heavy it rains or hails.
+Seasons replaces the wind and rain sounds of the basegame with a new system. This ties in tightly with the visuals: it is possible to hear how fast the wind is blowing, or how heavy it rains or hails.
 
-A large set of sounds is being mixed in real time to create the desired effects both inside a vehicle and outside a vehicle.
+A large set of sounds is being mixed in real time to create the desired effects both inside and outside a vehicle.
 
-A new set of flags is added to the map sound system to allow for quiet birds in the winter.
+A new set of flags was added to the map sound system to allow for quiet birds in the winter.
 
 {% include big_image.html title="A vehicle that needs repair and a repaint" url="/assets/img/blog/whatsnew19/repair.jpg" %}
 
