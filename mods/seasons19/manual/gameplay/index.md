@@ -10,7 +10,7 @@ permalink: /mods/seasons19/manual/gameplay/
 
 # Gameplay
 
-A new game starts on the first day of spring with all fields reset to being harvested, thus simulating a farm that you have bought that hasn't been looked after for some time. It is not possible to start at another time of year. You will have to start your game by ploughing, cultivating and seeding your fields before the planing season is over.
+A new game starts on the first day of spring with all fields reset to being harvested, thus simulating a farm that you have bought, which hasn't been looked after for some time. It is not possible to start at another time of the year. You will have to start by ploughing, cultivating and seeding your fields before the planting season is over.
 
 Nearly all aspects of the game have been changed to suit the seasons.
 
@@ -20,21 +20,21 @@ General activities for each season (note that this is with no GEO mod. With GEO 
 * Autumn - harvesting, ploughing, cultivating, fertilising, sowing, spraying
 * Winter - animal care, vehicle and equipment maintenance, forestry
 
-Winters are especially hard because you will not be able to mow any grass for your animals. All their food must come from hay bales and silage you already made. Note you will need to take care of your animals all year.
+Winters are especially hard because you will not be able to mow any grass for your animals. All their food must come from hay bales and silage you already made. YOu will need to take care of your animals all year.
 
-##### Daylight
+### Daylight
 
-The lengths of days and nights have been adjusted to suit the seasons, so nights will be longer in the winter than in the summer. In winter it might be light for only 8 hours while in summer it is near 17 hours. The seasonal effects of sunlight is dependent on latitude, which can be changed in a GEO mod. For default Seasons, the sunlight fits southern UK.
+The lengths of days and nights have been adjusted to suit the seasons, so nights will be longer in the winter than in the summer. In winter it might be light for only 8 hours while in summer it is nearly 17 hours. The seasonal effects of sunlight is dependent on latitude, which can be changed in a GEO mod. For default Seasons the sunlight fits southern UK.
 
 ### Season Length
 
-Each season consists of 3 periods, referred to as early, mid or late in the game. Since there are 4 seasons in a year, there are 12 of these periods. Because each season consists of 3 period, the season length can only be set to a multiple of 3 days. 3 days is the minimum season length, which would mean a period lasting one day and a full year lasting 12 days. We have chosen 24 days as the maximum. A 24 day season length will result in each period lasting 8 days and a full year lasting 96 days.
+Each season consists of 3 periods, referred to as early, mid or late in the game. Since there are 4 seasons in a year, there are 12 of these periods. Because each season consists of 3 periods, the season length can only be set to a multiple of 3 days. 3 days is the minimum season length, which would mean a period lasting one day and a full year lasting 12 days. We have chosen 24 days as the maximum. A 24 day season length will result in each period lasting 8 days and a full year lasting 96 days.
 
-To change the season length, open the Seasons menu (`Alt + S` by default, or `L1 + Options` on console) and navigate to the settings page where you can change the value. The settings are automatically saved.
+To change the season length open the Seasons menu (`Alt + S` by default, or `L1 + Options` on console) and navigate to the settings page where you can change the value. The settings are automatically saved.
 
 ### Warnings for Gameplay
 
-We do not officially support activating the seasons mod on an existing save game. Instead, we recommend that you start a new game. However, using an existing save game is possible and probably will work. We just will not be able to help if things go wrong. Always make a backup of your save game before activating Seasons. We are not responsible for corrupt save games.
+We do not officially support activating the seasons mod on an existing save game. Instead we recommend that you start a new game. However, using an existing save game is possible and probably will work. We just will not be able to help if things go wrong. Always make a backup of your save game before activating Seasons. We are not responsible for corrupt save games.
 
 If you are using a fast forward mod, keep within the below thresholds, otherwise the game will get out of sync with the extra load of seasons:
 - Do not fast forward faster than 6000x on singleplayer (preferable even slower)
@@ -54,9 +54,11 @@ The Seasons mod touches almost all parts of the game. It will therefore conflict
 - Any mod that changes fruit prices, but this conflict will mostly be unnoticeable to the player
 
 
+# New Features in Seasons 19
+
 ## Growth
 
-The growth system in Seasons 19 has received a revamp. No longer is every year the same and neither is success predetermined. Look out for bad weather destroying your crops, whether it be frost or droughts. Also plan a year ahead to keep your fields nutricious using crop rotation.
+The growth system in Seasons 19 has received a revamp. No longer is every year the same and neither is success predetermined. Look out for bad weather destroying your crops, whether it be frost or droughts. Crop rotation plays a large role in keeping the fields full of nutrients and ensuring good yields, so plan ahead by using the crop rotation planner.
 
 ### Improved weeds
 
@@ -68,7 +70,7 @@ Weeds grow in patches only when the temperature is right. They sprout all over t
 
 Three new growth states have been added: planted, germinated and germination Failed
 
-Germination happens every day, as long as the soil temperature is high enough. Normal growth still only occurs during a period change. When crops are planted they will initially be in the Planted state and then will move to Germinated,as long as the soil temperature is high enough. Germination can also fail on parts of your field when the conditions turn too cold, or too dry.
+Germination happens every day, as long as the soil temperature is high enough.
 
 In Seasons 17 entire fields of crops would die, if they were planted at the wrong time of the year. In Seasons 19 the growth and germination system have been redesigned to be more natural and life like. Dry spells and frost can damage parts of your fields, so it's important to try and plant at the right time and when conditions look favourable in the weather forecast.
 
@@ -80,16 +82,16 @@ Crops have 3 maturity states: planted, young and mature. All crops have 3 resist
 ### Crop Rotation
 
 
-Crop rotation is the practice of growing different crops in succession that are beneficial to each other. This is now possible in Seasons 19 and with successful planning and execution there will be increased yields and reduced need to fertilization. A yield effect of 120% of vanilla is possible by using the most beneficial rotations and crops.
+Crop rotation is the practice of growing different crops in succession that are beneficial to each other. Successful forward planning and execution of your rotations will bring increased yields and reduce the need to fertilize. A yield effect of 120% of vanilla is possible by using the most beneficial rotations and crops.
 
 
-Crops are divided into crop categories and have dependencies that determines whether a preceding crop category is favourable, neutral or unfavourable for yield. Some crops are more suitable to grow several years in succession while others require more variation.
+Crops are divided into crop categories and have dependencies that determine whether a preceding crop category is favourable, neutral or unfavourable for yield. Some crops are more suitable to grow several years in succession, while others require more variation.
 
 
 It is also possible to leave a field to rest and restore for a year (in the mod this is termed keeping it fallow). Most common crop rotations should be possible to simulate, including the effects of double cropping.
 
 
-In the field HUD you will be able to see the crop categories of the two previously planted crops. Together with a rotation planner this will be an important tool for planning the next crop to plant.
+In the field info HUD you will see the crop categories of the two previously planted crops. Together with a rotation planner this will be an important tool for planning the next crop to plant.
 
 #### Rotation planner
 
@@ -101,13 +103,13 @@ The crop rotation planner is a new tool specially made for players to plan their
 
 The new sky and the removal of the skybox system asked for a complete rewrite of the weather system with more details, variety and immersion.
 
-The new cloud system has been integrated with new weather generation that allows more events every day. Rain in the morning, cloudy in the afternoon and thunder at night: it is now all possible.
+The new cloud system has been integrated with new weather generation that allows more events every day. Rain in the morning, cloudy in the afternoon and thunder at night: these are all possible.
 
-Wind speed and direction is now modelled. The wind speed is a key attribute to how quickly grass dries. The income from wind turbines are also dependent on wind speed and with very strong winds they will shut down. Visually turbines will also follow the wind direction.
+Wind speed and direction is modelled. The wind speed is a key attribute to how quickly grass dries. The income from wind turbines are also dependent on wind speed and with very strong winds they will shut down. Visually turbines will also follow the wind direction.
 
 ### Detailed forecast and uncertainty
 
-The weather forecast is now much more detailed. Not only does it feature minimum temperature, average temperature and maximum temperature, but also wind speed and probability of precipitation. Expected precipitation is also shown. As drying of hay requires good weather, the suitability of the weather for drying grass is indicated in the forecast (more information on this feature in the below section on grass). On top of that, the next 24 hours are detailed in 3-hour blocks for even more frequent information.
+The weather forecast is much more detailed. Not only does it feature minimum temperature, average temperature and maximum temperature, but also wind speed and probability of precipitation. Expected precipitation is also shown. As drying of hay requires good weather, the suitability of the weather for drying grass is indicated in the forecast (more information on this feature in the below section on grass). On top of that, the next 24 hours are detailed in 3-hour blocks for even more frequent information.
 
 However, the forecast is not completely certain: the further away the prediction the more uncertain it is. A predicted rain in 5 days time might not actually happen.
 
