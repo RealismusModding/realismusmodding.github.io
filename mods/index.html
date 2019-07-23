@@ -19,11 +19,13 @@ title: Mods
                 <h4 class="card-title">{{ mod.title }}</h4>
                 <p class="card-text">{{ mod.list_text }}</p>
 
+                {% if mod.has_more_info %}
                 <a href="/mods/{{ modHash[0] }}" class="btn btn-outline-primary">More info</a>
+                {% endif %}
 
                 {% if mod.modhub_id and mod.released %}
                 <a href="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}" class="card-link ml-2">Download</a>
-                {% endif%}
+                {% endif %}
             </div>
         </div>
     </div>
