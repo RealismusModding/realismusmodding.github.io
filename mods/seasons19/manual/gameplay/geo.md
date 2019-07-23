@@ -23,7 +23,7 @@ Note that this is still a game so the GEO mods are not 100% accurate. Farming te
 If you want to play with weather and growth of a specific area, you can first search for a GEO mod close to it. If you can't find it, you can either create one yourself or ask the team about it.
 If enough requests are made for the same area we might consider making a mod for it.
 
-### Current GEO mods published by Realismus Modding
+### GEO mods coming soon from Realismus Modding
 - Wales - based on weather data from the village of Cwmystwyth
 - Northern Sweden - based on weather data from Storuman and Dikanäs
 - Paraguay - based on weather data from Concepción
