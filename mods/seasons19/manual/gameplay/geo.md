@@ -10,9 +10,9 @@ permalink: /mods/seasons19/manual/gameplay/geo_mods
 
 # GEO mods
 
-GEO mods are tiny mods available to both PC and console players that change the environment of your farm. Most of the GEO mods are based on a real life location. For example the U.S. Midwest GEO mod has weather and growth for the midwest area.
+GEO mods are tiny mods available to both PC and console players that change the environment of your farm. Most of the GEO mods are based on a real life location. For example the U.S. Midwest GEO mod has weather and growth for the midwest area in the United States of America.
 
-You can download GEO mods on the ModHub in the category 'Gameplay' or by searching for "Seasons GEO". If you use a GEO mod you still need to activate Seasons. Also, at most one GEO mod is used, so only select the one you want to play with, or you get unexpected results.
+You can download GEO mods on the ModHub in the category 'Gameplay' or by searching for "Seasons GEO" or just "GEO". If you use a GEO mod you still need to activate Seasons. Also, at most one GEO mod is used, so only select the one you want to play with, or you get unexpected results.
 
 ### Accuracy
 
