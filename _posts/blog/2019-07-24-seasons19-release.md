@@ -7,7 +7,7 @@ header:
 excerpt_separator: <!-- more -->
 ---
 
-When you are reading this, Seasons for Farming Simulator 19 has been released on ModHub for PC and Mac. You can find the mod in the game under the 'Gameplay' category. It is also available on [the ModHub website](https://farming-simulator.com/mod.php?mod_id=137669).
+When you read this Seasons for Farming Simulator 19 has been released on ModHub for PC and Mac. You can find the mod in the game under the 'Gameplay' category. It is also available on [the ModHub website](https://farming-simulator.com/mod.php?mod_id=137669).
 
 [Read the manual](/mods/seasons19/manual) to learn all about the mod. If you missed out on what's new, read [our blog post](/blog/2019/07/11/seasons19.html).
 
