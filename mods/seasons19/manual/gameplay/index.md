@@ -10,7 +10,7 @@ permalink: /mods/seasons19/manual/gameplay/
 
 # Gameplay
 
-A new game starts on the first day of spring with all fields reset to being harvested, thus simulating a farm that you have bought that hasn't been looked after for some time or just got out of winter. It is not possible to start at another time of year. You will have to start your game by ploughing, cultivating and seeding your fields before the plant season is over.
+A new game starts on the first day of spring with all fields reset to being harvested, thus simulating a farm that you have bought that hasn't been looked after for some time. It is not possible to start at another time of year. You will have to start your game by ploughing, cultivating and seeding your fields before the planing season is over.
 
 Nearly all aspects of the game have been changed to suit the seasons.
 
