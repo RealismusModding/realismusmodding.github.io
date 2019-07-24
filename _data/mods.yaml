@@ -78,11 +78,11 @@ seasons19:
     - name: supplements
       title: Additional mods
       url: /mods/seasons19/supplements
-  # video:
-  #   title: Farming Simulator 19 - Seasons Mod - Main features
-  #   id: b4u6Vz1aAvA
-  #   duration: PT2M30S
-  #   date: 2017-06-01T22:47:00+01:00
+  video:
+    title: Farming Simulator 19 - Seasons - Release trailer
+    id: 1--XDtbn2XQ
+    duration: PT2M20S
+    date: 2019-07-24T10:00:00+01:00
   screenshots:
     - title: Autumn
       url: /assets/img/mods/seasons19/screenshots/1autumn.jpg
