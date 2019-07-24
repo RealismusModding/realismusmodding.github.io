@@ -10,7 +10,7 @@ permalink: /mods/seasons19/manual/gameplay/animals
 
 # Animals
 
-The animals system has received a complete overhaul with new complexities and more depth. The age, weight and gender of each animal you own is simulated and the animal types in vanilla has been replaced with real life breeds. It has however, not been possible to change the visual appearance of the animals so they will still look the same irrespective of age, gender and weight. But the visual model ingame corresponds to the correct breed. Each breed has its purpose. Some breeds are meant for meat production, while others are specific breeds for milk, wool and egg production. Horses are designed different than the other animals (see below section).
+Together with Zugs we have worked on a complete overhaul of the animals with new complexities and more depth. The age, weight and gender of each animal you own is simulated and the animal types in vanilla has been replaced with real life breeds. It has however, not been possible to change the visual appearance of the animals so they will still look the same irrespective of age, gender and weight. But the visual model ingame corresponds to the correct breed. Each breed has its purpose. Some breeds are meant for meat production, while others are specific breeds for milk, wool and egg production. Horses are designed different than the other animals (see below section).
 
 The breeds currently implemented are:
 
