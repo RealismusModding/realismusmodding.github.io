@@ -10,10 +10,14 @@ permalink: /mods/seasons19/manual/gameplay/weather
 
 # Weather
 
-The weather system in the game has been adjusted to suit each season. In general the winters are cold, the autumn is wet, while the summers are warm and with less chance of rain. The weather when using the Seasons mod is generally based on weather data from southern UK, except that winters have been made colder. The weather can be customised by map makers, or other mods like for example our GEO mods.
+The weather system in the game has been adjusted to suit each season. In general the winters are cold, the autumn is wet, while the summers are warm and with less chance of rain. The weather when using the Seasons mod is generally based on weather data from southern UK, except that winters have been made colder. The weather can be customised by map makers, or other GEO mods.
+
+Seasons 19 contains a new detailed forecast, with 3-hourly information for the next 24 hours. It also contains wind and percipitation information. Lastly it gives an indication on how well grass can dry.
+
+The new weather also carefully controls downfall, clouds, cloud wind, and wind in trees.
 
 ### Randomized weather
-For every day in the game the air temperature and weather is determined according to weather statistics. In the current version of the mod the weather forecast is very reliable and the forecast will not change. This is with one exception. Hail will not be forecasted and can occur only with a couple of hours warning.
+For every day in the game the air temperature and weather is determined according to weather statistics. The forecast can be used to determine what the weather will be. However, there is an uncertainty in the forecast. This increases when forecasting further into the future.
 
 ### Daylight
 Equations for the suns elevation above the horizon has been used to determine the completely new daylight effects. As default we have used a latitude of 48.9 degrees, but this can be changed for a map that is prepared for our mod, or by using one of our GEO mods.
@@ -41,9 +45,3 @@ When snow falls, tippers and shovels fill up. Put them in a shed (when the map h
 If you want more fun with more snow, ask you mod-map maker to update his or her map for Seasons.
 
 *Note*: The extra weather effects, such as snow, will work on any map, but for the full gameplay experience, we highly recommend you to play on maps that have been optimised for seasons.
-
-
-## TODO
-
-- New forecast
-- Forecast uncertainty
