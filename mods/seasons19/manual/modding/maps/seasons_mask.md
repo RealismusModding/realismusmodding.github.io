@@ -147,4 +147,4 @@ This will tell Seasons that there is a custom mask, where the mask has no areas.
 
 ## Testing
 
-The masks can be tested in-game by dropping snow using the `rmAddSnow 1` console command. Use `rmResetSnow` to remove all snow and start over.
+The masks can be tested in-game by dropping snow using the `rmAddSnow 1` console command. Use `rmResetSnow` to remove all snow and start over. For these commands you need to enable cheats first.
