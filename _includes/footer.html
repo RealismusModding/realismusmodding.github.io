@@ -21,6 +21,8 @@
 {% assign mod = modHash[1] %}
     {% if mod.has_more_info == true %}
                     <li><a href="/mods/{{ modHash[0] }}">{{ mod.title }}</a></li>
+    {% else %}
+                    <li><a href="https://farming-simulator.com/mod.php?mod_id={{ mod.modhub_id }}">{{ mod.title }}</a></li>
     {% endif %}
 {% endfor %}
                 </ul>
