@@ -19,7 +19,9 @@
                 <ul>
 {% for modHash in site.data.mods %}
 {% assign mod = modHash[1] %}
+    {% if mod.has_more_info == true %}
                     <li><a href="/mods/{{ modHash[0] }}">{{ mod.title }}</a></li>
+    {% endif %}
 {% endfor %}
                 </ul>
             </div>
