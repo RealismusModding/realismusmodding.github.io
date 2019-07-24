@@ -1,6 +1,6 @@
 ---
 title: "Seasons 19: Release"
-date: 2019-07-24 14:00:00 +0100
+date: 2019-07-24 14:00:00 +0200
 author: rahkiin
 header:
   image: /assets/img/mods/hauer/plow.jpg
@@ -19,7 +19,7 @@ Together with GIANTS Software we have created two brand new licensed tools from 
 
 The mod requires Seasons to work. Seasons provides BigBags of road salt in the shop.
 
-It can be downloaded in the ModHub under 'Gameplay' or 'Misc', or on the [ModHub website](https://farming-simulator.com/mod.php?mod_id=). TODO LINK
+It can be downloaded in the ModHub under 'Gameplay' or 'Misc', or on the [ModHub website](https://farming-simulator.com/mod.php?mod_id=137675).
 
 {% include big_image.html title="Weeds in the field" url="/assets/img/mods/hauer/plow.jpg" %}
 

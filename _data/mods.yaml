@@ -71,7 +71,7 @@ seasons19:
   modhub_id: 137669
   list_icon: /assets/img/mods/seasons19/SeasonsIcon_1024.jpg
   list_text: Experience a whole new, improved, way of playing Farming Simulator 19!
-  released: false
+  released: true
   console: false
   has_more_info: true
   navitems:
@@ -151,14 +151,14 @@ seasons19:
 #       description: ""
 #       # modhub_id: 102209
 
-# hauerSnowPack:
-#   title: Hauer Snow Pack
-#   modhub_id: 137669
-#   list_icon: /assets/img/mods/hauer/modImage.jpg
-#   list_text: Manage the snow around your farm with these snow tools.
-#   released: false
-#   console: false
-#   has_more_info: false
+hauerSnowPack:
+  title: Hauer Snow Pack
+  modhub_id: 137675
+  list_icon: /assets/img/mods/hauer/modImage.jpg
+  list_text: Manage the snow around your farm with these snow tools.
+  released: true
+  console: false
+  has_more_info: false
 
 # no_teleport:
 #   title: No Teleport
