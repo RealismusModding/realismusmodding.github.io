@@ -142,7 +142,7 @@ An often requested feature by map makers is to disable depth of field for their 
 If you map is invited to get to console by GIANTS, you need to adjust your `visuals.xml` to contain the `memoryUsage` attribute. This is a whole number of bytes. This reserves VRAM slots for the GEO mod so the console does not crash.
 
 ```xml
-<visuals memoryUsage="1024000">
+<materials memoryUsage="1024000">
 ```
 
 ## Notes and Warnings
