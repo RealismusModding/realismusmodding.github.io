@@ -10,7 +10,7 @@ permalink: /mods/seasons19/manual/
 ## Seasons 19 manual
 
 <div class="alert alert-warning" role="alert">
-    <strong>Warning:</strong> The manual is being updated. It currently only contains information for preparing maps for Seasons 19.
+    <strong>Warning:</strong> The manual is still being updated. It contains most information regarding Seasons 19. We will continue updating the manual.
 </div>
 
 Find additional information about Seasons gameplay and features in this manual. In case you notice any missing or erroneous information in this manual please contact us.
