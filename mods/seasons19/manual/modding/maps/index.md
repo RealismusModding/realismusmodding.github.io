@@ -16,6 +16,6 @@ The first thing to do is adding the seasons mask to the map. A full guide is ava
 
 Lastly, you can add custom configurations of Seasons to your map, exactly like a GEO mod can. For this information, look into the GEO mod section.
 
-To activate custom Seasons files for your map, add a folder named `seasons` next to your map XML file. Put all Seasons related XML files in that folder. The mod will automatically find those files.
+To activate custom Seasons files for your map, add a folder named `seasons` next to your modDesc xml file. Put all Seasons related XML files in that folder. The mod will automatically find those files.
 
 If you have any questions you can contact the team on [Slack](https://slack.realismusmodding.com).
