@@ -36,14 +36,14 @@ In this guide you will learn all steps of adding the Seasons mask to a map.
 
 To create the mask, duplicate the tipCol file from your map and name it `seasonsMask.grle`.
 
-Next the map.xml has to be updated to let Seasons know where the mask is.
+Next the map.xml has to be updated to let Seasons know where the mask is. The path has to be relative to the mod folder! So for `myMod/maps/map01/seasonsMask.grle`, put down `maps/map01/seasonsMask.grle`.
 
 ```xml
 <map>
     ...
 
     <seasons>
-        <mask filename="map/seasonsMask.grle" /> <!-- point to the mask file -->
+        <mask filename="maps/map/seasonsMask.grle" /> <!-- point to the mask file -->
     </seasons>
 
     ...
