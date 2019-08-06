@@ -66,4 +66,4 @@ seasons19:
         #     - ref: geo_testing
         - ref: scripting
         - ref: best_practices
-#     - ref: release_notes
+    - ref: release_notes
