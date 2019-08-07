@@ -10,8 +10,7 @@ The release notes contain the changed made in every version after the initial re
 - [Version 1.0.0](#version-100)
 
 ## Version 1.0.1
-<!-- *Released on August 6th, 2019* -->
-*To be released*
+*Released on August 7th, 2019*
 
 ***NOTE***: We recommend removing all grass/semidry/hay from your map before updating. This updates fixes some issues with the grass system. The game does not break if you don't remove your grass but it might give weird drying and rotting behavior for those heaps. This update also fixes the growth issues. Weirdness might persist until the next winter when everything dies and creates a clean slate.
 
