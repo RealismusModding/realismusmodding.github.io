@@ -22,12 +22,16 @@ The breeds currently implemented are:
 - Ayrshire - Low feed consumption and price per head are both two well worthy tradeoffs for lower milk production for this breed.
 - Brahman - A heat tolerant specific breed with marginal feed requirements. They are known for their gain potential and good carcass yields. The heat tolerance is currently not modelled in Seasons.
 
+Limousin, Saler and Brahman are beef breeds where you buy steers (male animals) for further fattening. They will not breed or produce milk (as they are male animals). Holstein and Ayshire are dairy breeds so you buy female heifers at 2 years age. They will start to produce milk once they have given birth. Cows are artifically inseminated and requires no action from the player. The gestation period for cows are 9 periods.
+
 #### Sheep:
 
 -   Dorset - A large breed of sheep that grows moderately fast, has modest wool production and requires a medium amount of feed as an adult. Is relatively prolific and good for 25-40 kg (50-85 lbs) lambs.
 -   Merino - A medium breed that is used for wool production. It grows slowly, is not very prolific, but doesn’t require a lot of feed as an adult.
 -   Suffolk - A large breed of sheep that grows extremely fast, produces a modest amount of wool, requires a lot of feed as adult, is prolific and slow maturing. Good for 45-65 kg (100-140 lbs) lambs.
 -   Dorper - A medium sized breed that grows fast, but produces no wool. Very prolific and fast maturing. Requires little feed as an adult. Great for 40-45 kg (85-100 lbs) lambs.
+
+Although there are differences between the different sheep breeds all sheep are bought as ewes (females). The ewes can get pregnant during the autumn and will give birth 5 periods later.
 
 #### Pigs:
 
@@ -36,10 +40,12 @@ The breeds currently implemented are:
 -   Spotted - Known for their carcass quality, the Spotted grows relatively fast and can be purchased for a modest amount.
 -   Berkshire - The Berkshire is a fast growing animal that requires a modest amount of capital to purchase. Is known for their flavorful meat.
 
+Yorkshire and Spotted are bought as females for breeding, while Old Spot and Berkshire are bought as young male animals for fattening. Like cows the pigs are artifically inseminated and can have around 2 litters every year.
+
 #### Chickens:
 
 -   White Leghorn - This is the bird of choice if eggs are at the top of your priorities. This breed requires less feed than any of the other breeds.
--   Cornish Cross - This meat breed is extremely fast growing and has a fast turnaround in profit. It requires a lot of feed.
+-   Cornish Cross - This meat breed is extremely fast growing and has a fast turnaround in profit. It requires a lot of feed. Male birds are bought.
 -   Rhode Island Red - The Rhode Island Red is a hybrid breed (both eggs and meat) and requires an amount of feed in between that of its laying and meat counterparts.
 -   Rooster - This male bird is primarily used for reproduction and will work to fertilize eggs produced by your chickens and produce chicks. Note: You do not need a Rooster to produce eggs.
 
