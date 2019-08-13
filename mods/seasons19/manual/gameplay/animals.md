@@ -31,7 +31,7 @@ Limousin, Saler and Brahman are beef breeds where you buy steers (male animals) 
 -   Suffolk - A large breed of sheep that grows extremely fast, produces a modest amount of wool, requires a lot of feed as adult, is prolific and slow maturing. Good for 45-65 kg (100-140 lbs) lambs.
 -   Dorper - A medium sized breed that grows fast, but produces no wool. Very prolific and fast maturing. Requires little feed as an adult. Great for 40-45 kg (85-100 lbs) lambs.
 
-Although there are differences between the different sheep breeds all sheep are bought as ewes (females). The ewes can get pregnant during the autumn and will give birth 5 periods later.
+Although there are differences between the different sheep breeds all sheep are bought as ewes (females). The ewes can get pregnant during the autumn and will give birth 5 periods later. Wool will be sheared during spring.
 
 #### Pigs:
 
