@@ -47,6 +47,39 @@ For every texture you want to replace, find the shape in your map. Then find the
 
 Make the material point to the new textures you want to use.
 
+For example: the original material in your map is the following:
+
+```xml
+<File fileId="1204" filename="$data/maps/textures/european/props/flowerPots_diffuse.png"/>
+<File fileId="1205" filename="$data/maps/textures/european/props/flowerPots_normal.png"/>
+<File fileId="1206" filename="$data/maps/textures/european/props/flowerPots_specular.png"/>
+...
+<Material name="flowerPots_mat" materialId="533">
+    <Texture fileId="1204"/>
+    <Normalmap fileId="1205" bumpDepth="0"/>
+    <Glossmap fileId="1206"/>
+</Material>
+```
+
+Now we copy this to the material holder and adjust it with new files.
+
+```xml
+<!-- make sure the file IDs are unique -->
+<File fileId="1" filename="seasons/textures/flowerPots_diffuse_winter.png"/>
+<File fileId="2" filename="$data/maps/textures/european/props/flowerPots_normal.png"/>
+<File fileId="3" filename="$data/maps/textures/european/props/flowerPots_specular.png"/>
+...
+
+<!-- the material ID also has to be unique -->
+<Material name="flowerPots_mat_winter" materialId="1">
+    <Texture fileId="1"/>
+    <Normalmap fileId="2" bumpDepth="0"/>
+    <Glossmap fileId="3"/>
+</Material>
+```
+
+The new material will need to have the exact same setup as the original otherwise it will not work or throw errors on console! This includes any custom shader. So if it uses a billboard shader, the new seasonal material also needs to use this exact shader.
+
 The last step in the material holder is to make the material be held by a shape (otherwise it will not load):
 
 ```xml
