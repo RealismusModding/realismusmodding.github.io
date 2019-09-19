@@ -7,11 +7,7 @@ header:
 excerpt_separator: <!-- more -->
 ---
 
-*This is a guest post written by Adam, also known as Zugs. He has helped us designing the new animal system in Seasons 19 for Farming Simulator 19. He has researched farms and venders around the world to get a good vision and enough data for the mod.*
-
-*In this post he will be explaining more about the animals, their breeds and their design.*
-
-*Note that all numbers in this post are prone to change for rebalancing.*
+*This is a guest post written by Adam, also known as Zugs. He has helped us designing the new animal system in Seasons 19 for Farming Simulator 19. He has researched farms and venders around the world to get a good vision and enough data for the mod. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing.*
 
 <!-- more -->
 
