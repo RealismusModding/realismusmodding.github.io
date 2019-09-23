@@ -1,13 +1,14 @@
 ---
 title: "Seasons 19: Animals"
-date: 2019-09-19 16:00:00 +0200
+date: 2019-09-24 16:00:00 +0200
 author: rahkiin
 header:
   image: /assets/img/blog/whatsnew19/animals.jpg
 excerpt_separator: <!-- more -->
 ---
 
-*This is a guest post written by Adam, also known as Zugs. He has helped us designing the new animal system in Seasons 19 for Farming Simulator 19. He has researched farms and venders around the world to get a good vision and enough data for the mod. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing.*
+*This is a guest post written by Adam, also known as Zugs. He has us with the new animal system in Seasons 19 for Farming Simulator 19.
+Adam has contacted countless sources, such as farmers, nutritionists, veterinarians and agri-governments, to gather the best data possible. Together with him and his knowledge we created a system that we think is interesting, challenging and close enough to real life. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing.*
 
 <!-- more -->
 
