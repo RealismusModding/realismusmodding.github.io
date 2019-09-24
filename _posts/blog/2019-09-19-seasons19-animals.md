@@ -7,7 +7,7 @@ header:
 excerpt_separator: <!-- more -->
 ---
 
-*This is a guest post written by Adam, also known as Zugs. He has us with the new animal system in Seasons 19 for Farming Simulator 19.
+*This is a guest post written by Adam, also known as Zugs. He has helped us with the new animal system in Seasons 19 for Farming Simulator 19.
 Adam has contacted countless sources, such as farmers, nutritionists, veterinarians and agri-governments, to gather the best data possible. Together with him and his knowledge we created a system that we think is interesting, challenging and close enough to real life. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing.*
 
 <!-- more -->
