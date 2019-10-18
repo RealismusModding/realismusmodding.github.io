@@ -11,6 +11,10 @@ permalink: /mods/seasons19/manual/modding/maps/textures
 # Visual Adjustments
 {:.no_toc}
 
+<div class="alert alert-warning" role="alert">
+    <strong>Warning:</strong> This document has been updated for console support. See at the bottom.
+</div>
+
 Learn how to replace your custom foliage textures in different seasons and how to replace textures for any object on your map depending on the season. This requires good knowledge of the i3d system. Using the visuals system is the most complex of all the moddability of Seasons.
 
 *Note*: Whenever we talk here about a 'season', it in reality is the 'visual season'. These two do not match exactly but depend on the latitude and weather. For example, a hot spring could cause summer textures to show earlier, and a cold summer could cause autumn textures to show earlier. The settings for this can be found in `latitudeSeason.xml` in the mod `data` folder.
@@ -40,6 +44,8 @@ It is however still possible to make the trees change textures using the system 
 The state of the tree shader is determined by the visual season setup provided with the mod. Just like the Seasons17 version the mod provides curves for varying latitides. It is very unlikely any change here is needed by the map maker. The latitude of the map is determined by the used GEO mod, or by the latitude provided with the weather file in the map. If you do need a different curve, you can copy the `latitudeSeason.xml` file into your mods Seasons data folder and adjust accordingly.
 
 ## Custom seasonal textures
+
+**NOTE: See below for version 2 of the visuals.xml file, required to pass console QA**
 
 To start replacing any visuals, create a new `visuals.xml` file to your Seasons data folder (more info about this folder at [the map modding introduction](/mods/seasons19/manual/modding/maps/)). You also need to create a material holder that contains all your new textures. You can copy the one supplied by Seasons. Do not forget to copy the shapes file as well, and to remove all materials and shapes you are not using.
 
@@ -172,11 +178,29 @@ An often requested feature by map makers is to disable depth of field for their 
 
 ## Console
 
-If you map is invited to get to console by GIANTS, you need to adjust your `visuals.xml` to contain the `memoryUsage` attribute. This is a whole number of bytes. This reserves VRAM slots for the GEO mod so the console does not crash.
+If you map is invited to get to console by GIANTS, you need to use version 2 of the visuals.xml format. This requires the following changes:
+
+Add the version 2 attribute, and change the filename attribute in `<materials>` to a tag.
 
 ```xml
-<materials memoryUsage="1024000">
+<visuals version="2">
+  <filename>myMaterialHolder.i3d</filename>
+  <materials>
+    ...
+  </materials>
+</visuals>
 ```
+
+You also need to add a block to your modDesc (this seems unintuitive but is required for QA):
+
+```xml
+<seasons>
+  ... other things ...
+  <visuals xmlFilename="seasons/visuals.xml" /> <!-- the path to your visuals.xml file -->
+</seasons>
+```
+
+This will make the extra texture memory take up some slots so the console does not crash when running your map. If this is not done, the custom materials will not be loaded.
 
 ## Notes and Warnings
 
