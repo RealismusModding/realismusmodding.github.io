@@ -191,15 +191,6 @@ Add the version 2 attribute, and change the filename attribute in `<materials>` 
 </visuals>
 ```
 
-You also need to add a block to your modDesc (this seems unintuitive but is required for QA):
-
-```xml
-<seasons>
-  ... other things ...
-  <visuals xmlFilename="seasons/visuals.xml" /> <!-- the path to your visuals.xml file -->
-</seasons>
-```
-
 This will make the extra texture memory take up some slots so the console does not crash when running your map. If this is not done, the custom materials will not be loaded.
 
 ## Notes and Warnings
