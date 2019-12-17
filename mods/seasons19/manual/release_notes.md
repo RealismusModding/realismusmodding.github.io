@@ -11,7 +11,7 @@ The release notes contain the changed made in every version after the initial re
 - [Version 1.0.0](#version-100)
 
 ## Version 1.1.0
-*To be released*
+*Released on December 17th, 2019*
 
 Most important changes:
 - Console release.

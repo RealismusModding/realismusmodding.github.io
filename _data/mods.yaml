@@ -72,7 +72,7 @@ seasons19:
   list_icon: /assets/img/mods/seasons19/SeasonsIcon_1024.jpg
   list_text: Experience a whole new, improved, way of playing Farming Simulator 19!
   released: true
-  console: false
+  console: true
   has_more_info: true
   navitems:
     - name: supplements
