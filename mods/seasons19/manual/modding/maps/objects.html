@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<!-- begin SEO -->
+<meta name="keywords" content="moddingmapsobjects,  guide, modding, maps, objects, admirer" />
+<title>Map Objects - Realismus Modding</title>
+<meta itemprop="name" content="Realismus Modding" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:site_name" content="Realismus Modding" />
+<meta property="og:title" content="Map Objects" />
+  <link rel="canonical" href="https://www.realismusmodding.com/mods/seasons19/manual/modding/maps/objects" itemprop="url" />
+  <meta property="og:url" content="https://www.realismusmodding.com/mods/seasons19/manual/modding/maps/objects" />
+  <meta name="twitter:site" content="@realismusMods" />
+  <meta name="twitter:title" content="Map Objects" />
+  <meta name="twitter:description" content="Adding realism to Farming Simulator with mods such as Seasons" />
+  <meta name="twitter:url" content="https://www.realismusmodding.com/mods/seasons19/manual/modding/maps/objects" />
+    <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://www.realismusmodding.com/assets/img/logo/social.png" />
+<!-- end SEO -->
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Realismus Modding Feed" />
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<meta http-equiv="cleartype" content="on" />
+<meta content="origin" id="mref" name="referrer" />
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body >
+    <!--[if lt IE 9]>
+<div class="text-danger text-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <nav class="navbar navbar-toggleable-xl navbar-light globalnav" aria-label="Global Navigation">
+    <div class="container px-3">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/logo.svg" alt="RM" />
+            <span class="hidden-xs-down">Realismus Modding</span>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/mods">Mods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team">Team</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        <nav class="localnav">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item nav-link hidden-xs-down"><strong>Seasons 19</strong>:</li>
+                    <li class="nav-item "><a href="/mods/seasons19/" class="nav-link">Info</a></li>
+                    <li class="nav-item"><a href="https://farming-simulator.com/mod.php?mod_id=137669" target="_blank" class="nav-link" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://farming-simulator.com/mod.php?mod_id=137669" ga-transport="beacon">Download</a></li>
+                    <li class="nav-item"><a href="/mods/seasons19/supplements" class="nav-link">Additional mods</a></li>
+                    <li class="nav-item"><a href="/mods/seasons19/manual/" class="nav-link active">Manual</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+    <!-- Manual side navigation -->
+    <div class="col-sm-3 col-xs-12 docnav pb-5 pt-5">
+        <ul>
+            <li><a href="/mods/seasons19/manual/">Overview</a></li>
+            <li><a href="/mods/seasons19/manual/gameplay/">Gameplay</a></li>
+                <ul>
+                    <li><a href="/mods/seasons19/manual/gameplay/weather">Weather</a></li>
+                    <li><a href="/mods/seasons19/manual/gameplay/crops">Crops</a></li>
+                    <li><a href="/mods/seasons19/manual/gameplay/grass">Grass</a></li>
+                    <li><a href="/mods/seasons19/manual/gameplay/animals">Animals</a></li>
+                    <li><a href="/mods/seasons19/manual/gameplay/vehicles">Vehicles</a></li>
+                    <li><a href="/mods/seasons19/manual/gameplay/economy">Economy</a></li>
+                    <li><a href="/mods/seasons19/manual/gameplay/measuring">Measuring</a></li>
+                    <li><a href="/mods/seasons19/manual/gameplay/geo_mods">GEO mods</a></li>
+                </ul>
+            <li><a href="/mods/seasons19/manual/modding/">Modding with Seasons</a></li>
+                <ul>
+                    <li><a href="/mods/seasons19/manual/modding/maps/">Maps</a></li>
+                        <ul>
+                            <li><a href="/mods/seasons19/manual/modding/maps/seasons-mask">Seasons Mask</a></li>
+                            <li><a href="/mods/seasons19/manual/modding/maps/objects" class="active">Map Objects</a></li>
+                            <li><a href="/mods/seasons19/manual/modding/maps/sound">Sound</a></li>
+                            <li><a href="/mods/seasons19/manual/modding/maps/textures">Visual Adjustments</a></li>
+                            <li><a href="/mods/seasons19/manual/modding/maps/animal_pens">Animal pens</a></li>
+                        </ul>
+                    <li><a href="/mods/seasons19/manual/modding/scripting/">Scripting</a></li>
+                    <li><a href="/mods/seasons19/manual/best-practices">Best Practices</a></li>
+                </ul>
+            <li><a href="/mods/seasons19/manual/release_notes.html">Release notes</a></li>
+        </ul>
+    </div>
+    <!-- Manual content -->
+    <div class="col-sm-9 col-xs-12 rm-col">
+        <h1 class="no_toc" id="map-objects">Map Objects</h1>
+<p>A map contains many objects, including houses, roads, trees but also traffic lights and other decorations. The vanilla game allows the use of ‘admirers’ to give certain behaviour to objects.
+A good example is the <code class="highlighter-rouge">Nightlight2</code>: it makes the object visible during night and invisible during the day. Another example is the <code class="highlighter-rouge">SunAdmirer</code>, that makes an object only visible when the sun is. (It is invisible in bad weather or the night.)</p>
+<p>Seasons adds some more of these ‘admirers’ to the game, to allow for seasonal objects, such as a BBQ in the summer or a hearth in the winter.</p>
+<ul id="markdown-toc">
+  <li><a href="#how-admirers-and-objects-work" id="markdown-toc-how-admirers-and-objects-work">How admirers and objects work</a>    <ul>
+      <li><a href="#defaults-vanilla-compatibility" id="markdown-toc-defaults-vanilla-compatibility">Defaults: vanilla compatibility</a></li>
+    </ul>
+  </li>
+  <li><a href="#object-types" id="markdown-toc-object-types">Object types</a>    <ul>
+      <li><a href="#visibility-per-season" id="markdown-toc-visibility-per-season">Visibility per season</a></li>
+      <li><a href="#visibility-for-snow" id="markdown-toc-visibility-for-snow">Visibility for snow</a></li>
+      <li><a href="#frozen-lakes" id="markdown-toc-frozen-lakes">Frozen lakes</a></li>
+    </ul>
+  </li>
+  <li><a href="#notes" id="markdown-toc-notes">Notes</a></li>
+</ul>
+<h2 id="how-admirers-and-objects-work">How admirers and objects work</h2>
+<p>Admirers are object classes with an <code class="highlighter-rouge">onCreate</code> method. You have probably seen the term <code class="highlighter-rouge">onCreate</code> before. The method is called during the loading of a map or placeable if it is specified to an object.</p>
+<p>The generic use of an admirer is as follows:</p>
+<ul>
+  <li>Select the object</li>
+  <li>In the attributes editor, add a new use attribute of type <code class="highlighter-rouge">script</code>.</li>
+  <li>Name the attribute <code class="highlighter-rouge">onCreate</code></li>
+  <li>Give the attribut a value in the form of <code class="highlighter-rouge">modOnCreate.&lt;admirer class&gt;</code>, like <code class="highlighter-rouge">modOnCreate.IcePlane</code></li>
+  <li>Add any attributes that are used by the used admirer.</li>
+</ul>
+<p>Note that adding such a script will not change the appearance of an object. The scripts only run when playing the map.</p>
+<h3 id="defaults-vanilla-compatibility">Defaults: vanilla compatibility</h3>
+<p>When testing your admirers, you will notice that without Seasons running, the objects do not change visiblity. That is because the script to do so is not available.
+If a game encounters an onCreate script call that it can’t fulfill because the class is not available, it will be ignored. That means it will not change the state.</p>
+<p>If you want an object to be visible on a map when Seasons is not active, set it as visible in the Giants Editor. A good example is a BBQ. If you want to hide it, like a snowman, set it as invisible.</p>
+<p>There is one more issue, and that is collisions. Setting an object invisible does not disable its collision. This is by design. The solution here is simple:</p>
+<ul>
+  <li>For objects that you want hidden when Seasons is not active:
+    <ul>
+      <li>Add a new user attribute named <code class="highlighter-rouge">collisionMask</code> (integer)</li>
+      <li>Put in the decimal collision mask value of the object (like 255 for 0xff)</li>
+      <li>Then set the actual collision mask for the object in the attributes to 0.</li>
+      <li>This causes the game to load with no collision, and then Seasons will turn on the collision when it is visible.</li>
+    </ul>
+  </li>
+  <li>For objects that you want shown when Seasons is not active:
+    <ul>
+      <li>No need to do anything special.</li>
+    </ul>
+  </li>
+</ul>
+<h2 id="object-types">Object types</h2>
+<p>As of Seasons 1.0, there are three objects that can be used by maps. They are detailed below.</p>
+<p>For each admirer, the name of the class is specified, to be used in the <code class="highlighter-rouge">onCreate</code> attribute. Also any attributes for that admirer are given, with a possible default value. If you omit the attribute the default value is used.</p>
+<p>If you are missing something or want something special, make your own objects or ask the team for it to be added in a future version.</p>
+<h3 id="visibility-per-season">Visibility per season</h3>
+<p>Make an object appear in one or more season, while hiding it in the other seasons. By default the object is invisible for all seasons.</p>
+<ul>
+  <li>class name: <code class="highlighter-rouge">modOnCreate.SeasonAdmirer</code></li>
+  <li>attributes:
+    <ul>
+      <li>mask (integer, default is 0)</li>
+      <li>collisionMask (integer, default is the objects actual collisionMask)</li>
+    </ul>
+  </li>
+</ul>
+<p>The mask values are as follows:</p>
+<ul>
+  <li>Spring: 1</li>
+  <li>Summer: 2</li>
+  <li>Autumn: 4</li>
+  <li>Winter: 8</li>
+</ul>
+<p>Add the value for each season you want the object to be visible for, and put that value into the attribute. For example, <code class="highlighter-rouge">10</code> will show the object only in summer and winter.</p>
+<h3 id="visibility-for-snow">Visibility for snow</h3>
+<p>To create a snowman or visual heaps of snow, you can use the <code class="highlighter-rouge">SnowAdmirer</code>. With it you can make an object visible when there is snow. You can also hide objects if there is snow, by adding the <code class="highlighter-rouge">hide</code> attribute and checking it.
+Lastly you can specify the required snow level for the object to be visible. Each level is 6cm of snow.</p>
+<ul>
+  <li>class name: <code class="highlighter-rouge">modOnCreate.SnowAdmirer</code></li>
+  <li>attributes:
+    <ul>
+      <li>hideWhenSnow (boolean, default is false)</li>
+      <li>minimumLevel (integer, default is <code class="highlighter-rouge">1</code>)</li>
+      <li>collisionMask (integer, default is the objects actual collisionMask)</li>
+    </ul>
+  </li>
+</ul>
+<h3 id="frozen-lakes">Frozen lakes</h3>
+<p>It is not possible to freeze a lake. It is however possible to make it look like it is frozen, by adding a plane just above the water with a frozen ice texture. Then use the <code class="highlighter-rouge">IcePlane</code> admirer to make it visible only when the ground is frozen.</p>
+<p>Make sure you set the plane invisible so it does not show when not using Seasons.</p>
+<ul>
+  <li>class name: <code class="highlighter-rouge">modOnCreate.IcePlane</code></li>
+  <li>attributes:
+    <ul>
+      <li>collisionMask (integer, default is the objects actual collisionMask)</li>
+    </ul>
+  </li>
+</ul>
+<p>For a nice guide to make frozen lakes, see this video by ShyWizard (for Seasons 17):</p>
+<div role="video" class="embed-responsive rounded embed-responsive-16by9" itemscope="" itemtype="http://schema.org/VideoObject">
+    <meta itemprop="name" content="Seasons mod icePlane FS17" />
+    <meta itemprop="thumbnailUrl" content="https://i.ytimg.com/vi/fqG8NeWQMF8/hq720.jpg" />
+    <meta itemprop="uploadDate" content="2017-10-24T10:00:00+01:00" />
+    <meta itemprop="duration" content="45M46S" />
+    <link itemprop="embedUrl" href="https://www.youtube.com/embed/fqG8NeWQMF8" />
+    <div itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="Realismus Modding" />
+<meta itemprop="url" content="https://www.realismusmodding.com" />
+<div itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject">
+    <meta itemprop="url" content="https://www.realismusmodding.com/assets/img/logo_241.png" />
+    <meta itemprop="width" content="241" />
+    <meta itemprop="height" content="241" />
+</div>
+</div>
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fqG8NeWQMF8" allowfullscreen=""></iframe>
+</div>
+<h2 id="notes">Notes</h2>
+<p>Seasons disables collision masks when hiding the objects, unlike the vanilla admirers. Note however that this does not work when using an admirer on a transform group containing nodes with collisions.</p>
+<p>You can use multiple admirers together by using transform groups. Make sure the most restrictive is on the actual node, as per the note above. An example is a BBQ that is only visible in summer when the sun shines.</p>
+        <aside class="row">
+            <div class="col-6 text-left">
+                <p><a href="/mods/seasons19/manual/modding/maps/seasons-mask">Prev page: Seasons Mask</a></p>
+            </div>
+            <div class="col-6 text-right">
+                <p><a href="/mods/seasons19/manual/modding/maps/sound">Next page: Sound</a></p>
+            </div>
+        </aside>
+    </div>
+</div>
+        </div>
+    </main>
+    <section class="site-footer">
+    <footer class="container">
+        <nav class="row" id="footer-links">
+            <div class="col-12">
+  <nav>
+    <ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+      <li class="breadcrumb-item"><a class="" href="/">RM</a></li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="https://www.realismusmodding.com/mods/">
+        <span property="name">Mods</span>
+        </a>
+        <meta property="position" content="1" />
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="https://www.realismusmodding.com/mods/seasons19/">
+        <span property="name">Seasons 19</span>
+        </a>
+        <meta property="position" content="2" />
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="https://www.realismusmodding.com/mods/seasons19/manual/">
+        <span property="name">Manual</span>
+        </a>
+        <meta property="position" content="3" />
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="https://www.realismusmodding.com/mods/seasons19/manual/modding/">
+        <span property="name">Modding with Seasons</span>
+        </a>
+        <meta property="position" content="4" />
+      </li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="https://www.realismusmodding.com/mods/seasons19/manual/modding/maps/">
+        <span property="name">Maps</span>
+        </a>
+        <meta property="position" content="5" />
+      </li>
+      <li class="breadcrumb-item active" property="itemListElement" typeof="ListItem">
+        <span property="name">Map Objects</span>
+        <meta property="position" content="6" />
+      </li>
+    </ol>
+  </nav>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Realismus Modding</h3>
+                <ul>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/team">Team</a></li>
+                    <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<!-- <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1"> -->
+    <input type="submit" name="submit" alt="PayPal – The safer, easier way to pay online!" value="Donate" />
+</form>
+</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Mods</h3>
+                <ul>
+                    <li><a href="/mods/seasons">Seasons 17</a></li>
+                    <li><a href="/mods/seasons19">Seasons 19</a></li>
+                    <li><a href="https://farming-simulator.com/mod.php?mod_id=137675">Hauer Snow Pack</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Social &amp; Contact</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/c/realismusmodding" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.youtube.com/c/realismusmodding" ga-transport="beacon">YouTube</a></li>
+                    <li><a href="https://slack.realismusmodding.com" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://slack.realismusmodding.com" ga-transport="beacon">Slack</a></li>
+                    <li><a href="https://www.twitter.com/realismusMods" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.twitter.com/realismusMods" ga-transport="beacon">Twitter</a></li>
+                    <li><a href="mailto:realismusmodding@gmail.com?subject=Contact%20from%20website">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Website</h3>
+                <ul>
+                    <li><a href="http://eepurl.com/c-E5Gn" target="_blank">Subscribe</a>
+                    <li><a href="/sitemap.xml">Sitemap</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Legal -->
+        <div class="row" id="footer-bottom">
+            <div class="col-10 footer-legal">
+                <p class="mb-0">&copy; 2018 Realismus Modding. All rights reserved. Documentation is licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY-4.0</a>.</p>
+                <p>Farming Simulator is a trademark of GIANTS Software GmbH. All other trademarks are properties of their respective owners.</p>
+            </div>
+            <div class="col-2 text-right footer-language">
+            </div>
+        </div>
+    </footer>
+</section>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-96325378-1', 'auto');
+  ga('require', 'eventTracker');
+  ga('send', 'pageview');
+</script>
+<script async src="/assets/js/autotrack.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.4/cookieconsent.min.css" />
+<script async defer src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.2/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#424242"
+    },
+    "button": {
+      "background": "#7B9CD4"
+    }
+  }
+})});
+</script>
+<script src="/assets/js/anchor.min.js"></script>
+<script>
+(function () {
+  'use strict';
+  anchors.options.placement = 'right';
+  anchors.add();
+})();
+</script>
+</body>
+</html>
+

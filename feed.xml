@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="https://www.realismusmodding.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.realismusmodding.com/" rel="alternate" type="text/html" /><updated>2020-05-29T17:13:54+02:00</updated><id>https://www.realismusmodding.com/</id><title type="html">Realismus Modding</title><subtitle>Adding realism to Farming Simulator with mods such as Seasons
+</subtitle><entry><title type="html">Seasons 19: Animals</title><link href="https://www.realismusmodding.com/blog/2019/09/24/seasons19-animals.html" rel="alternate" type="text/html" title="Seasons 19: Animals" /><published>2019-09-24T16:00:00+02:00</published><updated>2019-09-24T16:00:00+02:00</updated><id>https://www.realismusmodding.com/blog/2019/09/24/seasons19-animals</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2019/09/24/seasons19-animals.html">&lt;p&gt;&lt;em&gt;This is a guest post written by Adam, also known as Zugs. He has helped us with the new animal system in Seasons 19 for Farming Simulator 19.
+Adam has contacted countless sources, such as farmers, nutritionists, veterinarians and agri-governments, to gather the best data possible. Together with him and his knowledge we created a system that we think is interesting, challenging and close enough to real life. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing.&lt;/em&gt;&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;The new version of Seasons for FS19 brings a plethora of new features and a new way of looking at animals in the game. From Cattle to Pigs and Horses to Chickens, every single species in the game has been worked from the ground up to operate more realistically, based on real life data and specially designed systems. This data have been gathered from industry professionals, studies and knowledgeable individuals alike and have allowed us to truly represent how animals should have been represented in the game in the first place.&lt;/p&gt;
+
+&lt;p&gt;In the base game, all we had was a base animal with the same stats and the only difference was the variations in color we got to choose from. We thought this was very boring, bland and most importantly unrealistic. As some of you may notice, now each species has their own individual breeds that they are based off of.&lt;/p&gt;
+
+&lt;p&gt;Each breed was chosen carefully based on a variety of factors that cemented their purpose in the game and made sure they were a perfect fit for our purposes. Some breeds within a species have a different use than others such as dairy versus beef with cattle. By doing this, the player can now take their own route with animals and really pinpoint what they want to do.&lt;/p&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#cattle&quot; id=&quot;markdown-toc-cattle&quot;&gt;Cattle&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#breeds&quot; id=&quot;markdown-toc-breeds&quot;&gt;Breeds&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#cattle-beef&quot; id=&quot;markdown-toc-cattle-beef&quot;&gt;Cattle: Beef&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#cattle-dairy&quot; id=&quot;markdown-toc-cattle-dairy&quot;&gt;Cattle: Dairy&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#cattle-feed-consumption&quot; id=&quot;markdown-toc-cattle-feed-consumption&quot;&gt;Cattle: Feed Consumption&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#pigs&quot; id=&quot;markdown-toc-pigs&quot;&gt;Pigs&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#pigs-the-three-types-of-operations&quot; id=&quot;markdown-toc-pigs-the-three-types-of-operations&quot;&gt;Pigs: The Three Types of Operations&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#farrow-to-feeder&quot; id=&quot;markdown-toc-farrow-to-feeder&quot;&gt;Farrow to Feeder&lt;/a&gt;            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#feeder-to-finish&quot; id=&quot;markdown-toc-feeder-to-finish&quot;&gt;Feeder to Finish&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href=&quot;#farrow-to-finish&quot; id=&quot;markdown-toc-farrow-to-finish&quot;&gt;Farrow to Finish&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pigs-breeds&quot; id=&quot;markdown-toc-pigs-breeds&quot;&gt;Pigs: Breeds&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#pigs-other-changes&quot; id=&quot;markdown-toc-pigs-other-changes&quot;&gt;Pigs: Other Changes&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#sheep&quot; id=&quot;markdown-toc-sheep&quot;&gt;Sheep&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#sheep-breeds&quot; id=&quot;markdown-toc-sheep-breeds&quot;&gt;Sheep: Breeds&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#sheep-breeds-and-their-differences&quot; id=&quot;markdown-toc-sheep-breeds-and-their-differences&quot;&gt;Sheep: Breeds and Their Differences&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#suffolk&quot; id=&quot;markdown-toc-suffolk&quot;&gt;Suffolk&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#dorper&quot; id=&quot;markdown-toc-dorper&quot;&gt;Dorper&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#dorset&quot; id=&quot;markdown-toc-dorset&quot;&gt;Dorset&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#merino&quot; id=&quot;markdown-toc-merino&quot;&gt;Merino&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#sheep-the-purchase&quot; id=&quot;markdown-toc-sheep-the-purchase&quot;&gt;Sheep: The Purchase&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#chickens&quot; id=&quot;markdown-toc-chickens&quot;&gt;Chickens&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#chickens-breeds&quot; id=&quot;markdown-toc-chickens-breeds&quot;&gt;Chickens: Breeds&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#chickens-breeds-and-their-differences&quot; id=&quot;markdown-toc-chickens-breeds-and-their-differences&quot;&gt;Chickens: Breeds and Their Differences&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#white-leghorn-eggs&quot; id=&quot;markdown-toc-white-leghorn-eggs&quot;&gt;White Leghorn (Eggs):&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#cornish-cross-meat&quot; id=&quot;markdown-toc-cornish-cross-meat&quot;&gt;Cornish Cross (Meat):&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#rhode-island-red-eggsmeat&quot; id=&quot;markdown-toc-rhode-island-red-eggsmeat&quot;&gt;Rhode Island Red (Eggs/Meat):&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#chickens-at-purchase&quot; id=&quot;markdown-toc-chickens-at-purchase&quot;&gt;Chickens: At Purchase&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#chickens-breeding-and-incubation&quot; id=&quot;markdown-toc-chickens-breeding-and-incubation&quot;&gt;Chickens: Breeding and incubation&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cattle&quot;&gt;Cattle&lt;/h2&gt;
+
+&lt;p&gt;For cattle, tremendous work was done to simulate a variety of different systems such as realistic milk production, beef production, feed consumption etc based on breed, age, weight and health. Each breed we chose had to fit the category they were filling and introduce their unique natural characteristics into the game.&lt;/p&gt;
+
+&lt;h3 id=&quot;breeds&quot;&gt;Breeds&lt;/h3&gt;
+
+&lt;p&gt;Cattle were separated into two groups. Beef and Dairy.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Beef:
+    &lt;ul&gt;
+      &lt;li&gt;Limousin&lt;/li&gt;
+      &lt;li&gt;Saler&lt;/li&gt;
+      &lt;li&gt;Brahman&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Dairy:
+    &lt;ul&gt;
+      &lt;li&gt;Holstein&lt;/li&gt;
+      &lt;li&gt;Ayrshire&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cattle-beef&quot;&gt;Cattle: Beef&lt;/h3&gt;
+
+&lt;p&gt;With Beef cattle what we wanted to do is try something a little different. So instead of buying breeding stock and breeding the cattle out to produce calves to be later sold as beef, we decided that we wanted to simulate a feeder operation. What a feeder operation is, is buying weaned calves at around 650lbs and feeding them until they are around 1,200lbs to 1,400lbs and then selling them. The player can keep the cattle for longer, but selling at 1,200lbs to 1,400 lbs will be the most cost efficient method due to the cattle having the best lean meat ratio over older and heavier animals which would have more fat content.&lt;/p&gt;
+
+&lt;p&gt;With this method, no breeding is necessary and the way to profit is straight forward. For beef cattle we have three choices; Limousins, Salers and Brahman as seen above. Limousins are known as the carcass breed and are have a natural efficiency in converting feed to meat. This means they can consume the same amount of feed than other animals of the same size but grow quicker. The Saler on the other hand is not quite as feed efficient as the Limousin but can be bought for cheap and is a great for starting beef farmers on a budget. And finally the Brahman is a heat tolerant specific breed that grows fast and performs well on marginal feed.&lt;/p&gt;
+
+&lt;h3 id=&quot;cattle-dairy&quot;&gt;Cattle: Dairy&lt;/h3&gt;
+
+&lt;p&gt;With Dairy cattle we really wanted to make things more realistic and add new aspects of owning dairy animals that were not possible before now. And we did just that. Cattle now are already artificially inseminated at purchase and will give birth at the end of gestation. The gestation period is 9 months. You can start to milk them for 10 months after the birth of a calf and then the cattle will have to be rested for 2 months during their dry period. This is just before they give birth. Currently, 3 months after the birth of a calf, the cow will be artificially inseminated again automatically.&lt;/p&gt;
+
+&lt;p&gt;Milking will also continue during gestation. In early lactation for a Holstein for example (Under 100 days of milking), cows will produce the most milk per day. In late lactation (over 200 days of milking), cows will the least amount of milk per day. Currently Holsteins will produce 10,756 kg of milk per year in game and Ayrshire’s will produce 8,077 kg.&lt;/p&gt;
+
+&lt;h3 id=&quot;cattle-feed-consumption&quot;&gt;Cattle: Feed Consumption&lt;/h3&gt;
+
+&lt;p&gt;To calculate the required feed consumption of an animal, a calculation is done based on the bodyweight of the cow. This percentage depends on the breed, age and the type of cattle discussed. This formula usually only calculates the dry matter intake but a step was added to calculate the amounts on an “as is” basis. Dry matter is the food an animal consumes with the moisture weight taken out of the total weight of the food.&lt;/p&gt;
+
+&lt;p&gt;To do this we take the body weight of the animal, so for example a 1200lbs cow and multiply that by 2.5% for example. So 2.5% of their body weight is what they should eat a day. Remember 2.5% is calculating the dry matter feed intake. Because most grass / dry hay is made up of about 15% water and silage is made up of much more we had to decide that the moisture content we would go with would be the grass/hay value. So we do the calculation to find the dry matter intake and divide that number by 0.85 (100-15). So 1200 x 0.025 = 30. 30 / 0.85 =  35.3. So a 1200lbs cow at 2.5% takes 35lbs as is feed intake. This calculation is done for beef cows as dairy cows eat much more than their beef counterparts and eat a combination of different things as well. Many more calculations are done internally to make these values work, but this is the base one used to actually find the values.&lt;/p&gt;
+
+&lt;p&gt;On top of this, with Dairy breeds for example, they eat more than just grass/hay/silage and need the best of the best when it comes to nutrition. You would provide supplements etc when feeding them. Because the game has no functionality in this way, we have included the weight amounts for those nonexistent feeds in the total feed value. So if a Holstein cows eat 10lbs of grass, 10lbs of Hay, 10lbs of Silage and 10lbs of Dairy Supplement in real life (numbers are just used as an example) the in game weight for total feed consumption (Grass, Hay/Silage or TMR) will be 40lbs even though we only can feed Grass, Hay/Silage and TMR and no supplements in game. So we’re trying to simulate real total feed numbers in every calculation done.&lt;/p&gt;
+
+&lt;h2 id=&quot;pigs&quot;&gt;Pigs&lt;/h2&gt;
+
+&lt;p&gt;A lot of work was done on pigs to simulate two types of real life systems. All of these systems are covered below under “Pigs: The Three Types of Operations”. Four breeds were chosen based on a variety of factors and how well they fit out criteria and the goals we had in mind. The four breeds are Yorkshire, Berkshire, Spotted and Gloucestershire Old Spot. The breeds were grouped into groups of two in order to introduce the player to two new pig management systems. Farrow to Feeder and Feeder to Finish.&lt;/p&gt;
+
+&lt;h3 id=&quot;pigs-the-three-types-of-operations&quot;&gt;Pigs: The Three Types of Operations&lt;/h3&gt;
+
+&lt;h4 id=&quot;farrow-to-feeder&quot;&gt;Farrow to Feeder&lt;/h4&gt;
+&lt;p&gt;A farrow to feeder operation involves breeding sows and then selling the piglets to finishing operations when they weigh 30 to 60 pounds. We chose 60lbs as the piglets would be about eight weeks old. In real life, compared to a farrow to finish operation, this option reduces the need for facilities, operating capital, feed amounts and manure handled. The biggest drawback of this system is that producers, with a small number of animals, are at the mercy of aggressive and unstable feeder pig markets. Meaning prices fluctuate constantly. Another thing that can be noted is the fact that piglets in real life when starting dry food are usually fed a different ration than breeding stock.&lt;/p&gt;
+
+&lt;h5 id=&quot;feeder-to-finish&quot;&gt;Feeder to Finish&lt;/h5&gt;
+&lt;p&gt;Feeder to finish operations buy feeder pigs weighing 30 to 60 pounds (60lbs in our case) at about 8 weeks of age and feed them to a market weight of about 280 pounds or about 6 months old. In real life, fancy setups or facilities are not needed and can be run fine within modest and existing buildings. This system allows for minimum overhead requirements, low labor, and no long term commitments like in Farrow to Feeder and Farrow to Finish operations.
+This method also offers an opportunity for grain farmers to use homegrown feeds to finish pigs without having to manage breeding stock on top of it. So one feed type and mixture can be used for all animals. Source, health, and quality of purchased feeder pigs are all the biggest factors in ensuring a successful startup. Ideally, all feeder pigs should originate from a single farm to maintain consistency and reduce potential herd health problems.&lt;/p&gt;
+
+&lt;h5 id=&quot;farrow-to-finish&quot;&gt;Farrow to Finish&lt;/h5&gt;
+&lt;p&gt;A farrow to finish operation involves breeding sows and then feeding the piglets until they reach a market weight of about 280 pounds (6 months old). So the entire process from birth to finish is done by the same farmer. The entire production period takes around 10 months to complete; Comprised of 4 months for breeding/gestation and 6 months to raise the piglets to market weight. Of the three systems, farrow to finish has the greatest long run market potential and flexibility. This system also demands the most capital and labor, and requires a long term commitment to the swine business as a whole. Another thing that can be noted is that in real life, different feeds would be required for piglets, feeder pigs and breeding stock.&lt;/p&gt;
+
+&lt;h3 id=&quot;pigs-breeds&quot;&gt;Pigs: Breeds&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Farrow to Finish:
+    &lt;ul&gt;
+      &lt;li&gt;Yorkshire&lt;/li&gt;
+      &lt;li&gt;Spotted&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Feeder to Finish:
+    &lt;ul&gt;
+      &lt;li&gt;Berkshire&lt;/li&gt;
+      &lt;li&gt;Gloucestershire Old Spot&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;pigs-other-changes&quot;&gt;Pigs: Other Changes&lt;/h3&gt;
+
+&lt;p&gt;In the Farrow to Finish operation, when piglets are born they weigh in at about 2-4lbs. They are weaned at about 13-15lbs or 21-25 days. Their birth weight and weaning age are all dependant on the breed. As well, when the data on these breeds was collected, the data was organized into 6 separate growing stages consisting of Birth, Wean, Nursery, Grower, Finisher and Mature. Each had their separate values listed for age, feed amount per day, average gain per day and weight range.&lt;/p&gt;
+
+&lt;p&gt;This was done to better visualize how the player will interact with the animals as well as pinpoint specific gains and growth patterns as the animal ages. For pigs it is recommended if you are doing a Farrow to Finish operation, it is best practice to separate animals of different weights so you can better manage your stock and In game and do a little role-playing if you want. This also allows you to keep breeding stock and piglets away from larger pigs. Just have fun with it.&lt;/p&gt;
+
+&lt;p&gt;One other note for pigs are the changes done to feed. Before feed ingredients consisted of Corn (50%), Wheat/Barley (25%), Soybean/Canola/Sunflower (20%) and Beets/Potatoes (5%). Now they are setup as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Corn: 50%&lt;/li&gt;
+  &lt;li&gt;Wheat/Barley: 25%&lt;/li&gt;
+  &lt;li&gt;Soybean/Canola/Sunflower: 25%&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sheep&quot;&gt;Sheep&lt;/h2&gt;
+
+&lt;p&gt;With sheep we wanted to introduce a few changes to gameplay and give each of the breeds purpose. Instead of just choosing a color of sheep you can now choose individual breeds each with their own strongpoint’s and weaknesses. We have also introduced a Wool specific breed.&lt;/p&gt;
+
+&lt;h3 id=&quot;sheep-breeds&quot;&gt;Sheep: Breeds&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Meat:
+    &lt;ul&gt;
+      &lt;li&gt;Suffolk&lt;/li&gt;
+      &lt;li&gt;Dorper&lt;/li&gt;
+      &lt;li&gt;Dorset&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Wool:
+    &lt;ul&gt;
+      &lt;li&gt;Merino&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;sheep-breeds-and-their-differences&quot;&gt;Sheep: Breeds and Their Differences&lt;/h3&gt;
+
+&lt;h3 id=&quot;suffolk&quot;&gt;Suffolk&lt;/h3&gt;
+&lt;p&gt;The Suffolk is a large breed of sheep that grows very fast. It also produces a modest amount of wool for the size it carries. But as with everything there are tradeoffs for the quick growth and performance. For one it requires a lot of feed as adult, more than any other breed.  It is slow maturing as its mature weight is around 250lbs for ewes and 375lbs for rams. So if you’re looking for a fast maturing sheep this may not be the breed for you. They are relatively prolific but not as prolific as the Dorper. They’re also great for 100-140lbs lambs, as smaller lambs of the breed may not have the leanness the market calls for.&lt;/p&gt;
+
+&lt;h4 id=&quot;dorper&quot;&gt;Dorper&lt;/h4&gt;
+&lt;p&gt;A medium sized hair/wool breed that grows fast but produces no wool to sell. The Dorper is the most prolific breed on the list meaning it will have the most amount of lambs per lambing. Its smaller frame also makes it fast maturing and requires little feed as an adult compared to other breeds. Great for 85-100 lbs lambs as they tend to fetch the highest prices at this weight compared to other breeds.&lt;/p&gt;
+
+&lt;h4 id=&quot;dorset&quot;&gt;Dorset&lt;/h4&gt;
+&lt;p&gt;The Dorset is another large breed of sheep that grows moderately fast and produces a good amount of wool for its size. It requires a medium amount of feed as an adult so in-between that of the Suffolk and Dorper. It is relatively prolific and great for 50 -85 lbs lambs.&lt;/p&gt;
+
+&lt;h4 id=&quot;merino&quot;&gt;Merino&lt;/h4&gt;
+&lt;p&gt;The Merino is a medium breed that is used soley for wool production. Given this fact, it would not be the breed of choice if meat were one of your priorities. The Merino grows slowly, is not very prolific but doesn’t require a lot of feed as an adult. Given that it is a Wool breed, it quintuples wool production of the other available breeds.&lt;/p&gt;
+
+&lt;h3 id=&quot;sheep-the-purchase&quot;&gt;Sheep: The Purchase&lt;/h3&gt;
+
+&lt;p&gt;When you purchase a sheep, regardless of breed you are purchasing a female animal. These animals will still breed as the player will have to pretend that they have a male animal in the pens or that breeding is done automatically. Although it should be noted that sheep are not artificially inseminated at this point.&lt;/p&gt;
+
+&lt;h2 id=&quot;chickens&quot;&gt;Chickens&lt;/h2&gt;
+
+&lt;p&gt;With chickens, we wanted to add a lot of variety in the gameplay and the way we choose our breeds. Instead of having all chickens perform and produce the same, we have split them into three groups each with their own unique purpose. They are: Egg layer, meat bird and hybrid. Each breed grows differently, has their own unique traits and feed requirements etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;chickens-breeds&quot;&gt;Chickens: Breeds&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Eggs:
+    &lt;ul&gt;
+      &lt;li&gt;White Leghorn&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Meat:
+    &lt;ul&gt;
+      &lt;li&gt;Cornish Cross&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hybrid:
+    &lt;ul&gt;
+      &lt;li&gt;Rhode Island Red&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;chickens-breeds-and-their-differences&quot;&gt;Chickens: Breeds and Their Differences&lt;/h3&gt;
+
+&lt;h4 id=&quot;white-leghorn-eggs&quot;&gt;White Leghorn (Eggs):&lt;/h4&gt;
+&lt;p&gt;This is the bird of choice if eggs are what you want to produce.  It requires less feed than the meat specific and hybrid breeds and produces the most amount of eggs. Currently in game that number is set to an equivalent of 300 eggs per year.&lt;/p&gt;
+
+&lt;h4 id=&quot;cornish-cross-meat&quot;&gt;Cornish Cross (Meat):&lt;/h4&gt;
+&lt;p&gt;This meat breed is extremely fast growing and top producing meat bird. It can be raised and sold relatively fast. Especially in comparison to the other breeds. It requires a lot of feed though, to meet its requirements.&lt;/p&gt;
+
+&lt;h4 id=&quot;rhode-island-red-eggsmeat&quot;&gt;Rhode Island Red (Eggs/Meat):&lt;/h4&gt;
+&lt;p&gt;The RIR is a hybrid breed meaning it both produces eggs and can be sold for meat. Currently the Rhode Island Red produces an equivalent to 250 eggs per year. Being that it is a hybrid breed, its feed requirements fall in between that of its layer and meat specific counterparts.&lt;/p&gt;
+
+&lt;h3 id=&quot;chickens-at-purchase&quot;&gt;Chickens: At Purchase&lt;/h3&gt;
+
+&lt;p&gt;When you first purchase each of the above birds, depending on the breed they may be chicks or full grown chickens. Currently when you purchase a Cornish Cross, you will be buying chicks. You will grow out these chicks until they are of size. When you buy White Leghorns you will be purchasing ready to lay chickens that will start producing automatically. And finally when you purchase Rhode Island Reds, you will also be purchasing chicks.&lt;/p&gt;
+
+&lt;h3 id=&quot;chickens-breeding-and-incubation&quot;&gt;Chickens: Breeding and incubation&lt;/h3&gt;
+
+&lt;p&gt;If you choose to have a rooster and begin to raise chicks the rule of thumb is 8 chickens to 1 rooster. Keep in mind that if you have a rooster and want your hens to produce chicks, these chickens will become broody and will stop laying. So production for these broody birds will stop.&lt;/p&gt;</content><author><name>rahkiin</name></author><category term="blog" /><summary type="html">This is a guest post written by Adam, also known as Zugs. He has helped us with the new animal system in Seasons 19 for Farming Simulator 19. Adam has contacted countless sources, such as farmers, nutritionists, veterinarians and agri-governments, to gather the best data possible. Together with him and his knowledge we created a system that we think is interesting, challenging and close enough to real life. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing.</summary></entry><entry><title type="html">Seasons 19: Update v1.0.1 and GEO mods</title><link href="https://www.realismusmodding.com/blog/2019/08/07/seasons19-update.html" rel="alternate" type="text/html" title="Seasons 19: Update v1.0.1 and GEO mods" /><published>2019-08-07T14:00:00+02:00</published><updated>2019-08-07T14:00:00+02:00</updated><id>https://www.realismusmodding.com/blog/2019/08/07/seasons19-update</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2019/08/07/seasons19-update.html">&lt;p&gt;We have just released the first update for Seasons 19: version 1.0.1. This update contains a lot of bug fixes, including fixes for all the biggest issues we have seen and have had reported. Some changes have changed the gameplay to make it work better or solve issues that we have seen.&lt;/p&gt;
+
+&lt;p&gt;Today we also released our first three GEO mods: Wales, U.S. Midwest and Snowy Lands.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/mods/seasons19/manual/release_notes.html#version-101&quot;&gt;Read the release notes&lt;/a&gt; to read all the changes made.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&quot;often-seen-issues-that-require-some-explanation&quot;&gt;Often seen issues that require some explanation&lt;/h3&gt;
+
+&lt;p&gt;There are a couple of issues we have seen a lot. The first is growth: there was an issue where the basegame growth was not disabled so two growth systems were updating the crops. This caused almost all growth problems you have seen and is now solved.&lt;/p&gt;
+
+&lt;p&gt;Another thing we have seen quite a bit is confusion regarding the new hay and semidry:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Weeds in the field&quot; title=&quot;Weeds in the field&quot; src=&quot;/assets/img/blog/update19/hay.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The three piles you see here are, from left to right: hay, semidry grass, and wet grass. (On the far left, off the side of the image, you can see a pile of straw). As you might have noticed, we have re-used the basegame hay colors for our semidry and created a new hay texture. Hay now better matched its real life counterpart.&lt;/p&gt;
+
+&lt;p&gt;We have made changes to the grass system in this update so that making silage and hay is a bit easier to control.&lt;/p&gt;
+
+&lt;h3 id=&quot;visual-tree-issues&quot;&gt;Visual tree issues&lt;/h3&gt;
+
+&lt;p&gt;The most heard problem is the ‘sleeping bag tree’ or ‘teabag tree’. This is a problem with the map.&lt;/p&gt;
+
+&lt;p&gt;Seasons 19 only supports trees from Farming Simulator 19 (see the manual). The maple and birch trees from Farming Simulator 17 are not the same, so they show these weird issues. The map maker simply needs to replace the trees to be compatible. There is nothing we can do about this.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-about-console&quot;&gt;What about console?&lt;/h3&gt;
+
+&lt;p&gt;There is no news about a console release. We have been working hard on fixing bugs and improving gameplay, which is the first part of a release on console. Everything needs to work great before GIANTS QA will accept it.&lt;/p&gt;
+
+&lt;p&gt;There is no release date.&lt;/p&gt;</content><author><name>rahkiin</name></author><category term="blog" /><summary type="html">We have just released the first update for Seasons 19: version 1.0.1. This update contains a lot of bug fixes, including fixes for all the biggest issues we have seen and have had reported. Some changes have changed the gameplay to make it work better or solve issues that we have seen. Today we also released our first three GEO mods: Wales, U.S. Midwest and Snowy Lands. Read the release notes to read all the changes made.</summary></entry><entry><title type="html">Seasons 19: Release</title><link href="https://www.realismusmodding.com/blog/2019/07/24/seasons19-release.html" rel="alternate" type="text/html" title="Seasons 19: Release" /><published>2019-07-24T14:00:00+02:00</published><updated>2019-07-24T14:00:00+02:00</updated><id>https://www.realismusmodding.com/blog/2019/07/24/seasons19-release</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2019/07/24/seasons19-release.html">&lt;p&gt;When you read this Seasons for Farming Simulator 19 has been released on ModHub for PC and Mac. You can find the mod in the game under the ‘Gameplay’ category. It is also available on &lt;a href=&quot;https://farming-simulator.com/mod.php?mod_id=137669&quot;&gt;the ModHub website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/mods/seasons19/manual&quot;&gt;Read the manual&lt;/a&gt; to learn all about the mod. If you missed out on what’s new, read &lt;a href=&quot;/blog/2019/07/11/seasons19.html&quot;&gt;our blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h3 id=&quot;hauer-snow-pack&quot;&gt;Hauer Snow Pack&lt;/h3&gt;
+
+&lt;p&gt;Together with GIANTS Software we have created two brand new licensed tools from Hauer: the SRS-3 snow blade and the TS-215 salt spreader. Use it together with Seasons 19 to manage the snow around your yard and fields.&lt;/p&gt;
+
+&lt;p&gt;The mod requires Seasons to work. Seasons provides BigBags of road salt in the shop.&lt;/p&gt;
+
+&lt;p&gt;It can be downloaded in the ModHub under ‘Gameplay’ or ‘Misc’, or on the &lt;a href=&quot;https://farming-simulator.com/mod.php?mod_id=137675&quot;&gt;ModHub website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Weeds in the field&quot; title=&quot;Weeds in the field&quot; src=&quot;/assets/img/mods/hauer/plow.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;where-are-the-geo-mods&quot;&gt;Where are the GEO mods?&lt;/h3&gt;
+
+&lt;p&gt;We have put all our time and energy into Seasons 19 for now, so the GEO mods are not ready for release. We will do our best to test them and release them next week or the week after. We will release our U.S. Midwest, Wales and Northern Sweden GEOs first.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-about-console&quot;&gt;What about console?&lt;/h3&gt;
+
+&lt;p&gt;After FarmCon 19 we will continue resolving bugs and issues that arise. We will also start the QA process for the console. This will require some work and time. Then a game patch will be prepared. All in all, it will take some time. There is no release date, and we also don’t know whether we will have to cut features yet.&lt;/p&gt;
+
+&lt;h3 id=&quot;ive-encountered-a-problem&quot;&gt;I’ve encountered a problem!&lt;/h3&gt;
+
+&lt;p&gt;Report it to us on &lt;a href=&quot;https://gitlab.com/realismusmodding/fs19_rm_seasons/issues&quot;&gt;GitLab&lt;/a&gt; or &lt;a href=&quot;https://slack.realismusmodding.com/&quot;&gt;Slack&lt;/a&gt;, so we can try to find a fix. Please provide your log file and a .zip file of your whole savegame.&lt;/p&gt;
+
+&lt;p&gt;Not all problems are actual bugs. Sometimes it is out intended design. For help on how to play with Seasons 19, consult other players on forums or Discord.&lt;/p&gt;</content><author><name>rahkiin</name></author><category term="blog" /><summary type="html">When you read this Seasons for Farming Simulator 19 has been released on ModHub for PC and Mac. You can find the mod in the game under the ‘Gameplay’ category. It is also available on the ModHub website. Read the manual to learn all about the mod. If you missed out on what’s new, read our blog post.</summary></entry><entry><title type="html">Seasons 19: Growth</title><link href="https://www.realismusmodding.com/blog/2019/07/19/seasons19-growth.html" rel="alternate" type="text/html" title="Seasons 19: Growth" /><published>2019-07-19T18:00:00+02:00</published><updated>2019-07-19T18:00:00+02:00</updated><id>https://www.realismusmodding.com/blog/2019/07/19/seasons19-growth</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2019/07/19/seasons19-growth.html">&lt;p&gt;One of the major design goals for Seasons was to remove the feeling that you were stuck in ground hog day – every day was exactly the same perfect summer’s day. In the morning you could plant crops and you would be harvesting them that same afternoon. Seasons 17 took steps to remove that feeling and gave the player the opportunity to follow a typical farming year with penalties for planting crops at the wrong time. This was better than a ground hog day, but playing through multiple years could also become monotonous and the feeling of ground hog year could creep in. Once a player understood the growth calendar and planted at the right time they were always guaranteed a 100% success rate.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;We’ve made some changes in this regard in Seasons 19. Instead of killing entire fields of crops when they were planted at the wrong time, we’ve implemented a feature that I lovingly called patchy crop failure, or PCF for short. PCF, unsurprisingly, does exactly what it says on the tin: it causes patches of failed crops based on temperature and moisture. This helps to introduce an element of randomness into the crops’ growth patterns, since these conditions have annual variances. Every crop has been split into 3 states: seeded, young and mature and each of those states has different frost and drought resistances.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;A damaged crop&quot; title=&quot;A damaged crop&quot; src=&quot;/assets/img/blog/growth19/crop.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Throughout each day the current temperature and moisture levels are checked and if they exceeded the parameters, patches of your crop will be damaged randomly. PCF causes planted crops to become germination failed. Young plants become harvested and mature plants become withered. These transition states were chosen because they make the most sense visually.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Info screen with crop resistance information&quot; title=&quot;Info screen with crop resistance information&quot; src=&quot;/assets/img/blog/growth19/ui.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Default weather is mostly quite gentle and can be thought of as “easy mode” when it comes to the potential of crop damage. For example, you are not likely to see much frost in your first spring. This creates the opportunity for longer planting windows, especially for those more sensitive plants that used to die if planted in early spring. Similarly, planting in the middle of the summer would cause some crops to die. This does not happen anymore. Instead the crops may try to grow, but if you plant outside the planting window, they are unlikely to mature before winter. Killing in the winter has been moved forward as well. The default growth algorithm now kills all mature crops in the transition between early and mid-winter. This will make all the players who love to harvest potatoes and sugarbeet in the winter very happy, but if the late autumn or early winter are harsh, some parts of the crop may get damaged. &lt;/p&gt;
+
+&lt;p&gt;There are some compromises to be made in terms of game play as we move towards a more natural and weather influenced growth. Previously the player feedback loop was quick – you planted at the wrong time within a few days max in the next period you could see the impact of a wrong decision. Now a bad decision may not become apparent as quickly, so using the information provided in the Seasons menu about planting and harvesting times and crop resistances are the keys to success.&lt;/p&gt;
+
+&lt;p&gt;For GEO makers, the choice is still there. If you wish to stick to the old way of doing things and want to kill crops planted at the wrong time immediately, you can still do it. You can also manipulate the resistance values of all the crops too. It is also possible to create a map with interesting additional crops with special resistances, for example drought resistant barley and then add this new crop and its growth pattern into the GEO mod. We will be creating a manual to help you migrate your old growth files to the Seasons 19 format.&lt;/p&gt;
+
+&lt;p&gt;The topic of crop damage brings the question of crop insurance. It is something that we discussed, but in the end could not find a way to bring this into the game without it feeling like a huge cheat and hence there is currently no crop insurance in Seasons 19.&lt;/p&gt;</content><author><name>theseb</name></author><category term="blog" /><summary type="html">One of the major design goals for Seasons was to remove the feeling that you were stuck in ground hog day – every day was exactly the same perfect summer’s day. In the morning you could plant crops and you would be harvesting them that same afternoon. Seasons 17 took steps to remove that feeling and gave the player the opportunity to follow a typical farming year with penalties for planting crops at the wrong time. This was better than a ground hog day, but playing through multiple years could also become monotonous and the feeling of ground hog year could creep in. Once a player understood the growth calendar and planted at the right time they were always guaranteed a 100% success rate.</summary></entry><entry><title type="html">Seasons 19: Map and placeable mods</title><link href="https://www.realismusmodding.com/blog/2019/07/16/seasons19-map-modding.html" rel="alternate" type="text/html" title="Seasons 19: Map and placeable mods" /><published>2019-07-16T13:00:00+02:00</published><updated>2019-07-16T13:00:00+02:00</updated><id>https://www.realismusmodding.com/blog/2019/07/16/seasons19-map-modding</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2019/07/16/seasons19-map-modding.html">&lt;p&gt;The manual of Seasons 19 has been &lt;a href=&quot;/mods/seasons19/manual/modding&quot;&gt;updated&lt;/a&gt; to contain information on preparing mod maps and placeables.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h4 id=&quot;seasons-mask&quot;&gt;Seasons mask&lt;/h4&gt;
+
+&lt;p&gt;The Seasons mask is redesigned to be easier to create by map makers and to be lighter on the game engine. New changes in the Farming Simulator 19 engine allowed us to switch the way the mask is stored, allowing automatic fallback to the tip collision. This means that even without a prepared map, placeables will act correctly with the snow.&lt;/p&gt;
+
+&lt;p&gt;Preparing a map for Seasons is required to activate bale and swath rotting. Only with a custom mask can we be sure that all sheds are properly configured, so players know that their bales are safe inside. If a map is not prepared, bales will not rot but snow will still fall to great heights.&lt;/p&gt;
+
+&lt;p&gt;See the manual article on the Seasons mask on how to add the mask, configure it, and paint it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Bales stacked, protected by a shed&quot; title=&quot;Bales stacked, protected by a shed&quot; src=&quot;/assets/img/blog/map-modding/bales.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;placeable-masks&quot;&gt;Placeable masks&lt;/h4&gt;
+
+&lt;p&gt;With the increased focus on placeables in Farming Simulator 19, we had to add some new tools to make them work better with snow. In Seasons 17 we looked at the ‘clear area’, the area that browned the ground when placed on grass. This worked great for the basegame placeables and most custom placeables.&lt;/p&gt;
+
+&lt;p&gt;In Farming Simulator 19 this is no longer the case. Placeables got more complex and bigger, with both open and roofed areas, sometimes even with platforms or spawnpoints. To accomodate this, we have added the possibility to add Seasons masks to placeables.&lt;/p&gt;
+
+&lt;p&gt;It works the same way as clearAreas and foliageAreas. For details, carefully read the &lt;a href=&quot;/mods/seasons19/manual/modding/maps/seasons-mask#adding-masks-to-custom-placeables&quot;&gt;manual on placeables&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is also important for modders that made custom placeables on ModHub.&lt;/p&gt;
+
+&lt;h4 id=&quot;trees&quot;&gt;Trees&lt;/h4&gt;
+
+&lt;p&gt;The new tree visuals in Seasons 19 are limited to a small number of trees. To have full visual support on the trees in your map, only use the trees supported. Of course evergreens do not change color so any evergreen is supported (pine, for example).&lt;/p&gt;
+
+&lt;p&gt;The supported trees are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;From Farming Simulator 19:
+    &lt;ul&gt;
+      &lt;li&gt;Maple&lt;/li&gt;
+      &lt;li&gt;Birch&lt;/li&gt;
+      &lt;li&gt;VolumeTree&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;From Farming Simulator 17:
+    &lt;ul&gt;
+      &lt;li&gt;Oak&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Any evergreen&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Older versions of the Farming Simulator 19 trees are not supported.&lt;/p&gt;
+
+&lt;p&gt;Find more information on the new visuals in the &lt;a href=&quot;/mods/seasons19/manual/modding/maps/textures&quot;&gt;visuals manual&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;custom-objects&quot;&gt;Custom objects&lt;/h4&gt;
+
+&lt;p&gt;For Seasons 19 it is still possible to show and hide objects depending on the season. The system has been renamed and changed a bit, but it is all detailed in the manual. You can show and hide objects depending on the snow or season. And the ice plane can be used to show or hide objects when the soil is frozen. Make sure to read the manual carefully.&lt;/p&gt;
+
+&lt;h4 id=&quot;animal-pens-and-grazing&quot;&gt;Animal pens and grazing&lt;/h4&gt;
+
+&lt;p&gt;Any animal husbandry that visually contains grass should have this properly configured in the placeable. Even if the pen can’t be bought or sold by the player. This ensures that the grazing system works for the animals in the pen.&lt;/p&gt;
+
+&lt;p&gt;To prepare for grazing, add foliageAreas with grass. This has already been done in the basegame pens and might already be the case for your own. See the manual for more information.&lt;/p&gt;
+
+&lt;h4 id=&quot;mod-updates-to-giants&quot;&gt;Mod updates to GIANTS&lt;/h4&gt;
+
+&lt;p&gt;You might be eager to get your map or mod updated and sent to GIANTS before Seasons 19 releases. However, you really need to test the changes you make first, with Seasons, before you send it in. So make sure to wait for the release on July 24th, quickly (but thorougly) test your changes together with Seasons, and then send in your update.&lt;/p&gt;</content><author><name>rahkiin</name></author><category term="blog" /><summary type="html">The manual of Seasons 19 has been updated to contain information on preparing mod maps and placeables.</summary></entry><entry><title type="html">Seasons 19: Weeds</title><link href="https://www.realismusmodding.com/blog/2019/07/15/seasons19-weeds.html" rel="alternate" type="text/html" title="Seasons 19: Weeds" /><published>2019-07-15T18:00:00+02:00</published><updated>2019-07-15T18:00:00+02:00</updated><id>https://www.realismusmodding.com/blog/2019/07/15/seasons19-weeds</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2019/07/15/seasons19-weeds.html">&lt;p&gt;As we approach the release date of Seasons 19, we will be deep diving into the various new and improved gameplay mechanics that the mod introduces. Today we will talk about weeds.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Weeds&quot; title=&quot;Weeds&quot; src=&quot;/assets/img/blog/whatsnew19/weeds.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Weeds will sprout on untreated fields as soon as the soil temperature is high enough. Default  soil temperature for weed germination is 4 degrees Celsius, but this can be changed by a GEO mod, or a custom map. This means that weeds can appear on your fields during cultivation and seeding operations, before your crop has started to grow.&lt;/p&gt;
+
+&lt;p&gt;Weeds grow in clumps randomly and the yield is only impacted on patches where the weeds are visible. The rest of the field is not impacted. You can confirm this by using the field info window.&lt;/p&gt;
+
+&lt;p&gt;Initially weeds are small and can be removed by a mechanical weeder, or by spraying, but they will mature when the soil temperature reaches around 12 degrees. Mature weeds can only be killed by spraying. Spraying not only kills all weeds but also has a preemptive effect. Once a field is sprayed it will not grow more weeds, until it is harvested, because default in-game mechanics plant weeds every time the player harvests a field. Weeds will wither and die when the soil temperature is below 0 degrees Celsius. The preemptive effect means that players can spray their field even before seeding and before any weeds are visible to safeguard against weed related yield losses.&lt;/p&gt;
+
+&lt;p&gt;Weed growth is completely organic and not directed by the growth file, so there is no extra work required for GEO makers. However, you can customise the soil temperatures to control when weeds sprout, mature and wither. We will release further and more detailed information about converting your GEO mods to the Seasons 19 format in the near future.&lt;/p&gt;</content><author><name>theseb</name></author><category term="blog" /><summary type="html">As we approach the release date of Seasons 19, we will be deep diving into the various new and improved gameplay mechanics that the mod introduces. Today we will talk about weeds.</summary></entry><entry><title type="html">Seasons 19: What’s new</title><link href="https://www.realismusmodding.com/blog/2019/07/11/seasons19.html" rel="alternate" type="text/html" title="Seasons 19: What's new" /><published>2019-07-11T09:00:00+02:00</published><updated>2019-07-11T09:00:00+02:00</updated><id>https://www.realismusmodding.com/blog/2019/07/11/seasons19</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2019/07/11/seasons19.html">&lt;p&gt;The new version of Seasons, made for Farming Simulator 19, brings plenty of new and improved features.&lt;/p&gt;
+
+&lt;p&gt;Learn about the upgraded growth and weather, the updated visuals and audio, and the brand new animals system in this post.&lt;/p&gt;
+
+&lt;p&gt;The manual will be updated to explain all that is new in Seasons 19. This update will arrive before release.
+&lt;!-- The manual is updated and explains all that is new in Seasons 19. Find it at ....... --&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope the changes and new features provide more interesting and less repetitive gameplay, matching more what real life farmers go through.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+  Dieser Beitrag ist auch auf Deutsch verfügbar unter &lt;a href=&quot;/blog/2019/07/11/seasons19.de.html&quot;&gt;Was ist neu?&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Weeds in the field&quot; title=&quot;Weeds in the field&quot; src=&quot;/assets/img/blog/whatsnew19/weeds.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;growth&quot;&gt;Growth&lt;/h2&gt;
+
+&lt;p&gt;The growth system in Seasons 19 has received a revamp. No longer is every year the same and neither is success predetermined. Look out for bad weather destroying your crops, whether it be frost or droughts. Also plan a year ahead to keep your fields nutricious using crop rotation.&lt;/p&gt;
+
+&lt;h3 id=&quot;improved-weeds&quot;&gt;Improved weeds&lt;/h3&gt;
+
+&lt;p&gt;Farming Simulator 19 added weeds, weeding and spraying. Seasons changes the default behavior of weeds by growing them slowly in patches instead of across entire fields.&lt;/p&gt;
+
+&lt;p&gt;Weeds grow in patches only when the temperature is right. They sprout all over the place as small weeds and mature when it gets warm. When it gets too cold they will start to die on their own. We have implemented preemptive spraying. If you spray early on you will not get weeds on the field until you harvest. Mechanical weeders can only remove young weeds and have no preemptive function.&lt;/p&gt;
+
+&lt;h3 id=&quot;weather-influenced-growth&quot;&gt;Weather-influenced growth&lt;/h3&gt;
+
+&lt;p&gt;Three new growth states have been added: planted, germinated and germination Failed&lt;/p&gt;
+
+&lt;p&gt;Germination happens every day, as long as the soil temperature is high enough. Normal growth still only occurs during a period change. When crops are planted they will initially be in the Planted state and then will move to Germinated,as long as the soil temperature is high enough. Germination can also fail on parts of your field when the conditions turn too cold, or too dry.&lt;/p&gt;
+
+&lt;p&gt;In Seasons 17 entire fields of crops would die, if they were planted at the wrong time of the year. In Seasons 19 the growth and germination system have been redesigned to be more natural and life like. Dry spells and frost can damage parts of your fields, so it’s important to try and plant at the right time and when conditions look favourable in the weather forecast.&lt;/p&gt;
+
+&lt;p&gt;It is possible for crops planted too late to germinate, but they will never mature. Check the Seasons calendar and make sure to plant crops at the correct times.&lt;/p&gt;
+
+&lt;p&gt;Crops have 3 maturity states: planted, young and mature. All crops have 3 resistance ratings, depending on their maturity state. A new help page has been added into the Seasons menu to show the resistance ratings for each maturity state, per plant.&lt;/p&gt;
+
+&lt;h3 id=&quot;crop-rotation&quot;&gt;Crop Rotation&lt;/h3&gt;
+
+&lt;p&gt;Crop rotation is the practice of growing different crops in succession that are beneficial to each other. This is now possible in Seasons 19 and with successful planning and execution there will be increased yields and reduced need to fertilization. A yield effect of 120% of vanilla is possible by using the most beneficial rotations and crops.&lt;/p&gt;
+
+&lt;p&gt;Crops are divided into crop categories and have dependencies that determines whether a preceding crop category is favourable, neutral or unfavourable for yield. Some crops are more suitable to grow several years in succession while others require more variation.&lt;/p&gt;
+
+&lt;p&gt;It is also possible to leave a field to rest and restore for a year (in the mod this is termed keeping it fallow). Most common crop rotations should be possible to simulate, including the effects of double cropping.&lt;/p&gt;
+
+&lt;p&gt;In the field HUD you will be able to see the crop categories of the two previously planted crops. Together with a rotation planner this will be an important tool for planning the next crop to plant.&lt;/p&gt;
+
+&lt;h4 id=&quot;rotation-planner&quot;&gt;Rotation planner&lt;/h4&gt;
+
+&lt;p&gt;The crop rotation planner is a new tool specially made for players to plan their rotations ahead. It can hold four rotations (one per column) and they are saved, even in multiplayer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Winter with snow&quot; title=&quot;Winter with snow&quot; src=&quot;/assets/img/blog/whatsnew19/winter.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;weather&quot;&gt;Weather&lt;/h2&gt;
+
+&lt;p&gt;The new sky and the removal of the skybox system asked for a complete rewrite of the weather system with more details, variety and immersion.&lt;/p&gt;
+
+&lt;p&gt;The new cloud system has been integrated with new weather generation that allows more events every day. Rain in the morning, cloudy in the afternoon and thunder at night: it is now all possible.&lt;/p&gt;
+
+&lt;p&gt;Wind speed and direction is now modelled. The wind speed is a key attribute to how quickly grass dries. The income from wind turbines are also dependent on wind speed and with very strong winds they will shut down. Visually turbines will also follow the wind direction.&lt;/p&gt;
+
+&lt;h3 id=&quot;detailed-forecast-and-uncertainty&quot;&gt;Detailed forecast and uncertainty&lt;/h3&gt;
+
+&lt;p&gt;The weather forecast is now much more detailed. Not only does it feature minimum temperature, average temperature and maximum temperature, but also wind speed and probability of precipitation. Expected precipitation is also shown. As drying of hay requires good weather, the suitability of the weather for drying grass is indicated in the forecast (more information on this feature in the below section on grass). On top of that, the next 24 hours are detailed in 3-hour blocks for even more frequent information.&lt;/p&gt;
+
+&lt;p&gt;However, the forecast is not completely certain: the further away the prediction the more uncertain it is. A predicted rain in 5 days time might not actually happen.&lt;/p&gt;
+
+&lt;p&gt;The weather-people don’t know everything, so it is useful to check the forecast regularly!&lt;/p&gt;
+
+&lt;h3 id=&quot;snow-and-the-mask&quot;&gt;Snow and the mask&lt;/h3&gt;
+
+&lt;p&gt;Some small changes to the Seasons mask: we now fall back on the tip collision. This has become possible with new engine changes. This makes it possible to have high snow even on unprepared maps. However, it very likely looks bad, though, until the map has been fully prepared.&lt;/p&gt;
+
+&lt;p&gt;Bale rotting still requires a fully prepared map with a special Seasons mask, so that every spot that is expected to cover for rotting also performs that function.&lt;/p&gt;
+
+&lt;p&gt;Placeables from the basegame have received their own masking area so they fit better. Map makers likely need to do this as well to further improve their maps for snow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;An animal pen with cattle&quot; title=&quot;An animal pen with cattle&quot; src=&quot;/assets/img/blog/whatsnew19/animals.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;animals&quot;&gt;Animals&lt;/h2&gt;
+
+&lt;p&gt;The animals system has received a complete overhaul with new complexities and more depth. The age, weight and gender of each animal you own is simulated.&lt;/p&gt;
+
+&lt;p&gt;Food intake of each animal depends on their age and their weight. Weight gain also depends on their age and weight and on what they are fed. To maximize weight gain the best feed has to be provided.&lt;/p&gt;
+
+&lt;p&gt;Cattle can produce either manure, or slurry (liquid manure), but not both. What they produce depends on whether they have straw. This aligns better with how real farms are run. Not using straw will cause a slight decrease in productivity, but slurry is much easier to handle and worth more to a farmer than manure.&lt;/p&gt;
+
+&lt;p&gt;Care for the health of the animals has become of utter importance. Keeping them overnight in a trailer will kill the animals due to lack of food, water, and movement.&lt;/p&gt;
+
+&lt;p&gt;Hens lay eggs. To get chicks, get a rooster. Ideal is 1 rooster per 8 hens. The chance of breeding decreases with less roosters. If brooding, no eggs.&lt;/p&gt;
+
+&lt;p&gt;Raising animals for meat production is now possible. As animals gain weight and age, their growth rate decreases, while feed intake generally follows weight. The key to maximizing profits is to find the balance point between optimal weight and age of the animals. Price per kg is higher for younger animals and weight gain will slow down as an animal ages.&lt;/p&gt;
+
+&lt;h3 id=&quot;breeds&quot;&gt;Breeds&lt;/h3&gt;
+
+&lt;p&gt;Seasons 19 includes real life animal breeds and each breed has its purpose. Some breeds are meant for meat production, while others are specific breeds for milk, wool and egg production.&lt;/p&gt;
+
+&lt;p&gt;For instance cattle is now divided into five breeds: Limousin, Saler, Holstein, Ayrshire and Brahman. These all are different. Limousin, Saler and Brahman are meat breeds, so steers are bought at 300 kg weight for fattening. They have different price and weight gains. Holstein and Ayrshire are meant for dairy operations, so 2 year old heifers are available for purchase. Their milk output will follow lactation cycles. The mod assumes that artificial insemination is carried out and that a 14 month gestation cycle is followed (9 month gestation and 5 months between gestations).&lt;/p&gt;
+
+&lt;p&gt;The other animals have similar characteristics to create a more varied, realistic and interesting animal gameplay.&lt;/p&gt;
+
+&lt;h3 id=&quot;horses&quot;&gt;Horses&lt;/h3&gt;
+
+&lt;p&gt;The horses have received a special treatment. We have redesigned them into a different type of gameplay: a livery stable. The gameplay tries to emulate a farm that provides housing and basic care of a horse for its owner.&lt;/p&gt;
+
+&lt;p&gt;A horse can be brought to the farm in exchange of no money. It has to be fed, cleaned and ridden every day. Depending on how much care it gets, an income is provided every day. Some breeds require more riding to earn the same amount of money as other breeds. Horses also provide more money when they are very fit.&lt;/p&gt;
+
+&lt;p&gt;This all comes at a high risk: an unhealthy animal can die. This will cost quite a bit of money as repayment to the owner.&lt;/p&gt;
+
+&lt;h3 id=&quot;grazing&quot;&gt;Grazing&lt;/h3&gt;
+
+&lt;p&gt;The grazing mod from Farming Simulator 17 has been integrated directly into Seasons 19. Animals in pens that have grass will consume the grass as replacement for the grass in the trough. Be careful, as the grass in a pen can be completely eaten already. This depends on the size of the pen, on the amount of animals, and the time of year.&lt;/p&gt;
+
+&lt;p&gt;The changes of the animal pens into placeables that plant their own grass, together with more engine changes, allow for automatic detection of the grass. No map changes are required. The only requirement is that the animal pen has grass.&lt;/p&gt;
+
+&lt;h3 id=&quot;water-pump&quot;&gt;Water pump&lt;/h3&gt;
+
+&lt;p&gt;The animals require a lot of attention. Daily feeding, daily watering, maybe even daily riding. The water requirements of the animals have been corrected to be more to realistic standards. To make it easier for players to have water in the troughs, a new water pump can be placed near the animal pen: it will automatically keep the water level of the water troughs at a minimum of 15%. The water cost is subtracted from your account.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Grass being mown&quot; title=&quot;Grass being mown&quot; src=&quot;/assets/img/blog/whatsnew19/grass.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;better-grass-handling&quot;&gt;Better grass handling&lt;/h2&gt;
+
+&lt;p&gt;The many engine and script changes in Farming Simulator 19 allowed for many new features. Two of those are a multi-step grass drying process, and improved rotting.&lt;/p&gt;
+
+&lt;p&gt;A new multi-step drying process has been added to create hay. When cutting wet grass, it needs to be tedded. Afterwards it needs to dry in the sun to become hay. When cutting dry (low moisture) grass, it does not need tedding but still needs to dry.
+This means that making hay now depends on the weather. Good planning is required. The more detailed forecast will certainly help here.&lt;/p&gt;
+
+&lt;p&gt;If hay is left in the rain it will turn wet again, and afterwards it will start to rot. Freshly mown wet grass will not rot before the second night after mowing.&lt;/p&gt;
+
+&lt;p&gt;Hay and straw rots when kept outside in the rain. However, straw and hay heaps inside buildings will not rot anymore, like was the case in Seasons 17. Grass still always rots, as this material is wet. With the new drying system described above, it will take two days instead of one for the rotting to start on grass heaps.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;An autumn scene&quot; title=&quot;An autumn scene&quot; src=&quot;/assets/img/blog/whatsnew19/autumn.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;improved-visuals-and-audio&quot;&gt;Improved visuals and audio&lt;/h2&gt;
+
+&lt;!-- trees --&gt;
+
+&lt;p&gt;Seasons 19 has received a new system for tree visuals: custom shaders. Together with GIANTS, the team has created new shaders and special custom textures. The trees now gradually change their looks, instead of the sudden color switch in Farming Simulator 17. The leaves grow in spring until fully grown in summer, after which they will brown for autumn.
+The color of the tree depends on the time of year, the tree and on the weather.&lt;/p&gt;
+
+&lt;!-- Lighting --&gt;
+
+&lt;p&gt;The lighting of Seasons has been rewritten to fully fit the new lighting system of Farming Simulator 19. It removes the moon in favor of darker nights and improves the dawn and dusk lighting. The amount of daylight depends on the time of the year and the location of the GEO.&lt;/p&gt;
+
+&lt;!-- Sky --&gt;
+
+&lt;p&gt;The new weather system fully integrates with the new cloud system. A varying amount of clouds are shown throughout the day and move with the wind direction. With these changes the weather during the night is finally working well.&lt;/p&gt;
+
+&lt;p&gt;On top of the cloud system, Seasons adds a new weather event: storms. Storms produce thunder and an occasional lightning effect that will light up your fields.&lt;/p&gt;
+
+&lt;h3 id=&quot;immersive-ambient-sound-system&quot;&gt;Immersive ambient sound system&lt;/h3&gt;
+
+&lt;p&gt;Seasons replaces the wind and rain sounds of the basegame with a new system. This new system ties in tightly with the visuals: it is possible to hear how fast the wind is blowing or how heavy it rains or hails.&lt;/p&gt;
+
+&lt;p&gt;A large set of sounds is being mixed in real time to create the desired effects both inside a vehicle and outside a vehicle.&lt;/p&gt;
+
+&lt;p&gt;A new set of flags is added to the map sound system to allow for quiet birds in the winter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;A vehicle that needs repair and a repaint&quot; title=&quot;A vehicle that needs repair and a repaint&quot; src=&quot;/assets/img/blog/whatsnew19/repair.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;adjusted-vehicle-maintenance-and-repair&quot;&gt;Adjusted vehicle maintenance and repair&lt;/h2&gt;
+
+&lt;p&gt;We have replaced the Seasons 17 repair system for the basegame 19 repair, but added new algorithms for sell and repair prices. Also, we have separated the scratches (visible wear) from the vehicle repair. To improve the performance of your vehicle you can repair. To make the vehicle nice and shiny again you will need to repaint the vehicle. This is costly, depending on the size and complexity of the machine.&lt;/p&gt;
+
+&lt;h2 id=&quot;when-are-we-releasing&quot;&gt;When are we releasing?&lt;/h2&gt;
+
+&lt;p&gt;July 24th, 2019 for PC and Mac.&lt;/p&gt;
+
+&lt;h4 id=&quot;how-about-console&quot;&gt;How about console?&lt;/h4&gt;
+
+&lt;p&gt;We need to make sure the mod is complete and bug free. After that we will go through a final QA process with GIANTS and then we can put it on console.&lt;/p&gt;
+
+&lt;p&gt;Help us out by reporting any bugs to us!&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">The new version of Seasons, made for Farming Simulator 19, brings plenty of new and improved features. Learn about the upgraded growth and weather, the updated visuals and audio, and the brand new animals system in this post. The manual will be updated to explain all that is new in Seasons 19. This update will arrive before release. We hope the changes and new features provide more interesting and less repetitive gameplay, matching more what real life farmers go through.</summary></entry><entry><title type="html">Seasons 19: Was ist neu?</title><link href="https://www.realismusmodding.com/blog/2019/07/11/seasons19.de.html" rel="alternate" type="text/html" title="Seasons 19: Was ist neu?" /><published>2019-07-11T09:00:00+02:00</published><updated>2019-07-11T09:00:00+02:00</updated><id>https://www.realismusmodding.com/blog/2019/07/11/seasons19.de</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2019/07/11/seasons19.de.html">&lt;p&gt;Die neue Version von Seasons für den Landwirtschafts-Simulator 19 bringt eine Menge neuer und verbesserter Funktionen.&lt;/p&gt;
+
+&lt;p&gt;Lerne das verbesserte Pflanzenwachstum und Wetter, die verbesserte Grafik, den verbesserten Sound und das brandneue Tiersystem in diesem Beitrag kennen.&lt;/p&gt;
+
+&lt;p&gt;Das Handbuch, das noch vor der Veröffentlichung herausgegeben wird, wurde erneuert, um alles Neue in Seasons 19 zu erklären.&lt;/p&gt;
+
+&lt;p&gt;Wir hoffen, die Änderungen und neuen Funktionen bieten ein spannenderes und abwechslungsreicheres Spielerlebnis noch näher an den Herausforderungen der echten Landwirtschaft.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+  This post is also available in English under &lt;a href=&quot;/blog/2019/07/11/seasons19.html&quot;&gt;What's new?&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Weeds in the field&quot; title=&quot;Weeds in the field&quot; src=&quot;/assets/img/blog/whatsnew19/weeds.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;pflanzenwachstum&quot;&gt;Pflanzenwachstum&lt;/h2&gt;
+
+&lt;p&gt;Das Pflanzenwachstum in Seasons 19 wurde komplett überarbeitet. Kein Jahr ist mehr wie das andere und Erfolg ist nicht mehr garantiert. Achte auf schlechtes Wetter, das deine Pflanzen zerstören kann, sowohl durch Frost als auch durch Trockenheit. Plane die Fruchtfolge ein Jahr voraus, um deine Felder fruchtbar zu halten.&lt;/p&gt;
+
+&lt;h3 id=&quot;verbessertes-unkrautsystem&quot;&gt;Verbessertes Unkrautsystem&lt;/h3&gt;
+
+&lt;p&gt;Der Landwirtschafts-Simulator 19 fügte Unkraut und die passenden Gegenmaßnahmen ein. Seasons ändert das voreingestellte Unkrautsystem.&lt;/p&gt;
+
+&lt;p&gt;Unkraut wächst nun langsam an einzelnen Stellen im Feld und nicht mehr auf dem gesamten Feld auf einmal. Unkraut wächst nur bei der richtigen Temperatur und entwickelt sich zu großen Pflanzen, wenn es warm wird. Sobald es zu kalt wird, stirbt das Unkraut von alleine. Wir haben präventiven Pflanzenschutz integriert. Wenn du dein Feld früh spritzt wird bis zur Ernte kein Unkraut wachsen. Mechanische Unkrautbekämpfung lässt sich nur bei kleinen Unkrautpflanzen anwenden und hat keine präventive Wirkung.&lt;/p&gt;
+
+&lt;h3 id=&quot;wetter-abhängiges-pflanzenwachstum&quot;&gt;Wetter abhängiges Pflanzenwachstum&lt;/h3&gt;
+
+&lt;p&gt;Drei neue Wachstumsstufen wurden hinzugefügt: gesät, gekeimt und Keimung fehlgeschlagen.&lt;/p&gt;
+
+&lt;p&gt;Keimung findet jeden Tag statt, so lange die Bodentemperatur hoch genug ist. Pflanzenwachstum findet nur während des Wechsels eines Zeitabschnitts statt. Nach der Aussaat befindet sich die Pflanze sofort im „gesät“ Status. Danach wechseln die Pflanzen in den „gekeimt“ Status, sofern die Bodentemperatur hoch genug ist. Die Keimung kann auch an einzelnen Stellen auf dem Feld fehlschlagen, wenn es dort zu kalt oder zu trocken wird.&lt;/p&gt;
+
+&lt;p&gt;In Seasons 17 starben alle Pflanzen eines Feldes, wenn sie zur falschen Zeit gesät wurden. In Seasons 19 wurde das Wachstums- und Keimungssystem neugestaltet, um natürlicher und realistischer zu sein. Trockenperioden und Frost können Teile deiner Pflanzen beschädigen. Es ist also wichtig, dass der Aussaatzeitpunkt gut gewählt wird und die Aussichten im Wetterbeicht gut aussehen.&lt;/p&gt;
+
+&lt;p&gt;Es ist möglich, dass zu spät gesäte Pflanzen keimen, allerdings werden sie niemals reif werden. Prüfe mit dem Seasons Kalender, wann die richtige Zeit zur Aussaat ist.&lt;/p&gt;
+
+&lt;p&gt;Pflanzen haben drei Hauptwachstumsphasen: gesät, schwach und stark. Jede Wachstumsphase bringt eine andere Widerstandsfähigkeit der Pflanze mit sich. Eine neue „Hilfe-Seite“ im Seasons-Menü zeigt die Widerstandsfähigkeit jeder Pflanzenart in den drei Wachstumsphasen an.&lt;/p&gt;
+
+&lt;h3 id=&quot;fruchtfolge&quot;&gt;Fruchtfolge&lt;/h3&gt;
+
+&lt;p&gt;Fruchtfolgen werden auf einem Feld angewendet, um verschiedene Pflanzensorten, die sich positiv auf den Boden auswirken nach einander zu säen. Fruchtfolgen wurden in Seasons 19 implementiert und bei erfolgreicher Planung und Anwendung, werden die Erträge erhöht und zugleich der Düngerbedarf reduziert. Eine Ertragssteigerung von 120% der Grundwerte ist bei idealer Fruchtfolge möglich.&lt;/p&gt;
+
+&lt;p&gt;Nutzpflanzen sind in Pflanzenkategorien eingeteilt diese geben vor, welche vorherige Pflanzenkategorie positive, neutrale oder negative Auswirkungen auf die aktuellen Erträge hat. Manche Pflanzen können für mehrere Jahre angebaut werden, während andere eine größere Variation benötigen.&lt;/p&gt;
+
+&lt;p&gt;Ein Feld kann außerdem unbestellt bleiben und sich somit wieder erholen. Die bekanntesten Fruchtfolgen können simuliert werden, inklusive zwei verschiedener Früchte in einem Jahr.&lt;/p&gt;
+
+&lt;p&gt;Im Feld-Info-Fenster werden die zwei vorherigen Fruchtsorten des jeweiligen Feldes angezeigt. Zusammen mit dem neuen Fruchtfolge-Planer, ist dies eine wichtige Hilfe, um die nächste Aussaat zu planen.&lt;/p&gt;
+
+&lt;h4 id=&quot;fruchtfolge-planer&quot;&gt;Fruchtfolge-Planer&lt;/h4&gt;
+
+&lt;p&gt;Der neue Fruchtfolge-Planer ist eine neue Übersicht für die Spieler, um künftige Fruchtfolgen zu planen. Vier Fruchtfolgen können berücksichtigt werden. Diese werden auch im Multiplayer gespeichert.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Winter with snow&quot; title=&quot;Winter with snow&quot; src=&quot;/assets/img/blog/whatsnew19/winter.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;wetter&quot;&gt;Wetter&lt;/h2&gt;
+
+&lt;p&gt;Der neue Himmel ohne „Skybox-Sytem“ erforderte ein komplett neues Wettersystem mit mehr Details, Abwechslung und Einfluss auf das Spiel.&lt;/p&gt;
+
+&lt;p&gt;Das neue Wolkensystem wurde mit dem neuen Wettersystem eingebaut und erlaubt nun mehr Wetterereignisse an einem einzelnen Tag. Regen am Morgen, bewölkt am Nachmittag und Gewitter in der Nacht: das alles ist nun möglich.&lt;/p&gt;
+
+&lt;p&gt;Windgeschwindigkeiten und Windrichtung wird nun dargestellt. Die Windgeschwindigkeit beeinflusst nun wesentlich die Geschwindigkeit mit der Gras trocknet. Ebenfalls sind die Erträge von Windkraftanlagen von der Windgeschwindigkeit abhängig, bei zu hohen Windgeschwindigkeiten, schalten sich die Windkraftanlagen ab. Weiterhin folgen die Turbineneinheiten der Anlagen nun der Windrichtung.&lt;/p&gt;
+
+&lt;h3 id=&quot;detaillierter-wetterbericht-und-vorhersage-genauigkeit&quot;&gt;Detaillierter Wetterbericht und Vorhersage-Genauigkeit&lt;/h3&gt;
+
+&lt;p&gt;Der Wetterbericht ist jetzt sehr detailliert. Er enthält neben der Tiefst-, Höchst- und Durchschnittstemperatur nun auch die Windgeschwindigkeit, die Niederschlagswahrscheinlichkeit und die erwartete Niederschlagsmenge. Weil gute Wetterbedingungen zum Trocknen von Heu nötig sind, wird diese Information ebenfalls im Wetterbericht angezeigt (mehr dazu im Abschnitt Gras). Die kommenden 24 Stunden werden im Wetterbericht detailliert in 3 Stunden Abschnitten dargestellt, um noch genauere Planung zu ermöglichen.&lt;/p&gt;
+
+&lt;p&gt;Trotzdem ist der neue Wetterbericht nicht komplett verlässlich, je weiter in der Zukunft der Tag der Vorhersage ist, umso unzuverlässiger ist sie. Vorhergesagter Regen in 5 Tagen kann komplett ausbleiben.&lt;/p&gt;
+
+&lt;p&gt;Meteorologen wissen nicht alles, daher ist ein regelmäßiger Blick auf den Wetterbericht empfehlenswert!&lt;/p&gt;
+
+&lt;h2 id=&quot;tiere&quot;&gt;Tiere&lt;/h2&gt;
+
+&lt;p&gt;Das Tiersystem wurde komplett überarbeitet und bietet nun neue Abhängigkeiten und mehr Spieltiefe. Das Alter, Gewicht und Geschlecht jedes deiner Tiere wird nun simuliert.&lt;/p&gt;
+
+&lt;p&gt;Der Nahrungsbedarf eines Tiers orientiert sich am Alter und Gewicht. Die Gewichtszunahme der Tiere hängt ebenfalls vom Alter und Gewicht ab. Um die Gewichtszunahme zu maximieren, müssen die Tiere mit dem besten Futter versorgt werden.&lt;/p&gt;
+
+&lt;p&gt;Kühe können entweder Mist oder Gülle produzieren. Welches von den Beiden sie produzieren, hängt davon ab ob Stroh eingestreut wird. Dadurch wird der Prozess auf echten Bauernhöfen besser simuliert. Kein Stroh zu verwenden wird die Produktivität der Tiere ein wenig verringern, jedoch lässt sich Gülle einfacher verarbeiten und ist für einen Landwirt mehr wert als Mist.&lt;/p&gt;
+
+&lt;p&gt;Die Gesundheit der Tiere hat ebenfalls deutlich an Bedeutung gewonnen. Wenn die Tiere z.B. über Nacht in einem Transporter gelassen werden, werden sie mangels Nahrung, Wasser und Bewegung sterben.&lt;/p&gt;
+
+&lt;p&gt;Hennen legen Eier. Um Küken zu bekommen wird ein Hahn benötigt. Ideal ist ein Hahn für 8 Hennen. Mit weniger Hähnen sinkt ebenfalls die Brutwahrscheinlichkeit. Während des Brütens, legen Hennen keine Eier.&lt;/p&gt;
+
+&lt;p&gt;Tiere können jetzt auch zur Fleischproduktion gezüchtet werden. Während Tiere Gewicht zunehmen und älter werden, sinkt ihre Wachstumsrate. Der Futterverbrauch ist abhängig vom Gewicht. Der Schlüssel, um den Profit durch die Nutztiere zu maximieren ist es das richtige Verhältnis zwischen Gewicht und Alter des Tieres zu finden. Der Preis pro Kilogramm Fleisch ist bei jungen Tieren höher und nimmt mit steigendem Alter ab.&lt;/p&gt;
+
+&lt;h3 id=&quot;rassen&quot;&gt;Rassen&lt;/h3&gt;
+
+&lt;p&gt;Seasons 19 bringt echte Tierrassen ins Spiel. Jede Rasse hat ihren Nutzen. Manche Rassen lassen sich besser für die Fleischproduktion halten, während andere sich effizienter für die Milch-, Wolle- oder Eierproduktion nutzen lassen.&lt;/p&gt;
+
+&lt;p&gt;Zum Beispiel sind Kühe nun in fünf Rassen aufgeteilt: Limousin, Saler, Holstein, Ayrshire and Brahman. Alle fünf sind unterschiedlich. Limousin, Saler und Brahman produzieren Fleisch. Stiere werden mit einem Mastgewicht von 300 Kg verkauft. Sie haben eine unterschiedliche Preis- und Gewichtsentwicklung.&lt;/p&gt;
+
+&lt;p&gt;Holstein und Ayrshire sind Milchkühe. Zwei Jahre alte Färsen können gekauft werden. Ihre Produktivität hängt vom Stillzyklus ab. Der Mod setzt voraus, dass eine künstliche Befruchtung durchgeführt wird und die Kuh 14 Monate trächtig ist.&lt;/p&gt;
+
+&lt;p&gt;Die anderen Tiere haben ähnliche Funktionen, um eine abwechslungsreichere, realistischere und interessantere Spielweise zu schaffen.&lt;/p&gt;
+
+&lt;h3 id=&quot;pferde&quot;&gt;Pferde&lt;/h3&gt;
+
+&lt;p&gt;Die Pferde haben eine besondere Anpassung erhalten. Wie haben das Gameplay hier komplett überarbeitet und simulieren nun einen Pferdehof mit Stellplätzen. Der Spieler kümmert sich also für den Besitzer um das Pferd.&lt;/p&gt;
+
+&lt;p&gt;Ein Pferd kann nun ohne Kosten zum Hof gebracht werden - Es muss jeden Tag gefüttert, gereinigt und geritten werden. Abhängig davon, wie sehr man sich um das Pferd kümmert, wird ein tägliches Einkommen generiert. Manche Rassen benötigen längere Ausritte als andere für den selben Ertrag. Pferde generieren mehr Geld, wenn sie sehr fit sind.&lt;/p&gt;
+
+&lt;p&gt;Das alles ist jedoch nicht ohne Risiko. Kranke Tiere können sterben. Dadurch schuldet ihr dem Besitzer des Pferdes Geld, das von eurem Konto abgezogen wird.&lt;/p&gt;
+
+&lt;h3 id=&quot;grasen&quot;&gt;Grasen&lt;/h3&gt;
+
+&lt;p&gt;Der „Grazing-Mod“ vom Landwirtschafts-Simulator 17 wurde direkt in Seasons 19 integriert. Tiere, die in einem Stall mit Weide gehalten werden, verzehren das Gras der Weide anstelle des Grases im Futtertrog. Die Weide kann allerdings abgegrast sein, dass hängt von der Weidegröße, der Anzahl der Tiere und der Jahreszeit ab.&lt;/p&gt;
+
+&lt;p&gt;Die Änderung der Tierställe in platzierbare Objekte mit eigenem Gras zusammen mit weiteren Änderungen, setzen keine Anpassungen von Karten voraus. Die einzige Voraussetzung ist, dass der Stall über Gras verfügt.&lt;/p&gt;
+
+&lt;h3 id=&quot;wasserpumpen&quot;&gt;Wasserpumpen&lt;/h3&gt;
+
+&lt;p&gt;Tiere benötigen eine Menge Aufmerksamkeit. Tägliches Füttern, täglich frisches Wasser, ggf. sogar tägliches Reiten. Der Wasserbedarf wurde verbessert, um realistischer zu sein. Damit der Spieler trotzdem genug Zeit für andere Dinge hat, kann nun eine Wasserpumpe in der Nähe der Ställe platziert werden. Sie sorgt automatisch dafür, dass das Wasser in den Trögen immer auf einem Minimum von 15% gehalten wird. Die Kosten für das Wasser werden von eurem Konto abgezogen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Grass being mown&quot; title=&quot;Grass being mown&quot; src=&quot;/assets/img/blog/whatsnew19/grass.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;verbessertes-grasssystem&quot;&gt;Verbessertes Grasssystem&lt;/h2&gt;
+
+&lt;p&gt;Die zahlreichen Änderungen im Landwirtschafts-Simulator 19 ermöglichen viele neue Extras. Zwei der neuen Extras sind ein verbesserter Trocknungsprozess für Gras und ein verbessertes Verrotten von Gras.&lt;/p&gt;
+
+&lt;p&gt;Um Heu zu erzeugen, wurde nun ein System aus mehreren Schritten eingefügt. Wenn nasses Gras gemäht wird, muss es gewendet werden und in der Sonne zu Heu trocknen. Falls trockenes Gras geschnitten wird, muss es nicht mehr gewendet werden, jedoch trotzdem in der Sonne trocknen.
+Das heißt die Art und Weise wie Heu produziert wird, hängt nun vom Wetter ab. Gute Planung mit dem verbesserten Wetterbericht kann hier in jedem Fall helfen.&lt;/p&gt;
+
+&lt;p&gt;Heu, das durch Regen wieder nass wird, fängt an zu verrotten. Frisch gemähtes Gras sollte nicht länger als einen Tag draußen gelassen werden, da es sonst ebenfalls zu verrotten beginnt, mit dem neuen Trocknungssystem setzt das Verrotten erst nach zwei Tagen ein. Heu und Stroh in Gebäuden rottet nun nicht mehr, dies wurde im Gegensatz zu Seasons 17 geändert.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;An autumn scene&quot; title=&quot;An autumn scene&quot; src=&quot;/assets/img/blog/whatsnew19/autumn.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;verbesserter-sound-und-verbesserte-grafik&quot;&gt;Verbesserter Sound und verbesserte Grafik&lt;/h2&gt;
+
+&lt;p&gt;Seasons 19 hat ein neues System für das Aussehen der Bäume erhalten: custom shaders.&lt;/p&gt;
+
+&lt;p&gt;Zusammen mit Giants Software hat das Team neue Shader und spezielle Texturen erstellt. Die Bäume wechseln nun fließend ihr Aussehen, während in Seasons 17 noch ein plötzlicher Wechsel nötig war. Die Blätter fangen im Frühling an zu wachsen, bis sie im Sommer ausgewachsen sind und im Herbst dann braun werden. Die Farbe der Blätter eines Baums hängt von der Jahreszeit, dem Wetter und der Baumart ab.&lt;/p&gt;
+
+&lt;p&gt;Die Beleuchtung in Seasons 19 wurde komplett an das neue System vom Landwirtschafts-Simulator 19 angepasst. Der Mond wurde entfernt, um dunklere Nächte zu schaffen und das Licht bei Sonnenauf und -untergang wurde überarbeitet. Wie viel Tageslicht verfügbar ist, hängt von der Jahreszeit und Region der Spielwelt ab.&lt;/p&gt;
+
+&lt;p&gt;Das neue Wettersystem arbeitet komplett mit dem neuen Wolkensystem zusammen. Eine wechselnde Anzahl von Wolken taucht über den Tag auf, und zieht mit der Windrichtung. Diese Änderungen gelten auch für die Wettersimulation während der Nacht.&lt;/p&gt;
+
+&lt;p&gt;Neben dem Wolkensystem wurden nun auch Stürme zu Seasons 19 hinzugefügt. Stürme bringen Gewitter und Blitze, die Ihre Felder erhellen.&lt;/p&gt;
+
+&lt;h3 id=&quot;beeindruckende-umgebungsgeräusche&quot;&gt;Beeindruckende Umgebungsgeräusche&lt;/h3&gt;
+
+&lt;p&gt;Seasons 19 ersetzt die Wind- und Regengeräusche des Basisspiels. Das neue Soundsystem ist mit den sichtbaren Wetterbedingungen verknüpft. Man kann die Stärke des Winds hören oder aber wie stark oder schwach es regnet oder hagelt.&lt;/p&gt;
+
+&lt;p&gt;Eine große Auswahl an Sounds wird gemixt, um die gewünschten Effekte sowohl in einem Fahrzeug als auch außerhalb spürbar zu machen.&lt;/p&gt;
+
+&lt;p&gt;Durch Updates des Map-Sound-Systems werden zudem im Winter kaum Vögel zwitschern.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;A vehicle that needs repair and a repaint&quot; title=&quot;A vehicle that needs repair and a repaint&quot; src=&quot;/assets/img/blog/whatsnew19/repair.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;verbesserte-fahrzeugunterhaltung-und-reparatur&quot;&gt;Verbesserte Fahrzeugunterhaltung und Reparatur&lt;/h2&gt;
+
+&lt;p&gt;Das Reparatursystem aus Seasons 17 wurde durch das Basissystem vom Landwirtschafts-Simulator 19 abgelöst. Es wurden allerdings neue Algorithmen für den Verkauf von Fahrzeugen und ihre Reparatur hinzugefügt. Außerdem gibt es nun einen Unterschied zwischen der Reparatur einer Maschine und der optischen Wiederherstellung. Man kann das Fahrzeug in der Werkstatt nun lackieren, um den optischen Ursprung wiederherzustellen. Die Reparatur hat nur Einfluss auf die Leistungsfähigkeit einer Maschine. Die Kosten hängen von der Größe und Komplexität der Maschine ab.&lt;/p&gt;
+
+&lt;h2 id=&quot;wann-erscheint-seasons-19&quot;&gt;Wann erscheint Seasons 19?&lt;/h2&gt;
+
+&lt;p&gt;Am 24. Juli 2019 für PC und Mac.&lt;/p&gt;
+
+&lt;h4 id=&quot;was-ist-mit-den-konsolen&quot;&gt;Was ist mit den Konsolen?&lt;/h4&gt;
+
+&lt;p&gt;Wir müssen sicher stellen, dass der Mod wirklich fertig ist und keine Bugs hat. Danach durchlaufen wir einen finalen Qualitätstest mit GIANTS Software. Danach veröffentlichen wir Seasons 19 ebenfalls für die Konsolen.&lt;/p&gt;
+
+&lt;p&gt;Helft uns, indem ihr jeden Bug an uns meldet!&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Die neue Version von Seasons für den Landwirtschafts-Simulator 19 bringt eine Menge neuer und verbesserter Funktionen. Lerne das verbesserte Pflanzenwachstum und Wetter, die verbesserte Grafik, den verbesserten Sound und das brandneue Tiersystem in diesem Beitrag kennen. Das Handbuch, das noch vor der Veröffentlichung herausgegeben wird, wurde erneuert, um alles Neue in Seasons 19 zu erklären. Wir hoffen, die Änderungen und neuen Funktionen bieten ein spannenderes und abwechslungsreicheres Spielerlebnis noch näher an den Herausforderungen der echten Landwirtschaft.</summary></entry><entry><title type="html">Animal productivity</title><link href="https://www.realismusmodding.com/blog/2017/11/17/animal-productivity.html" rel="alternate" type="text/html" title="Animal productivity" /><published>2017-11-17T13:00:00+01:00</published><updated>2017-11-17T13:00:00+01:00</updated><id>https://www.realismusmodding.com/blog/2017/11/17/animal-productivity</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2017/11/17/animal-productivity.html">&lt;p&gt;&lt;em&gt;This post is part of a series with background information on Seasons. The previous post was about &lt;a href=&quot;/blog/2017/11/09/ground-wetness&quot;&gt;ground wetness&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: this post is about version 1.2.1 of Seasons. Any future changes might be added below in notes.&lt;/p&gt;
+
+&lt;p&gt;In Seasons version 1.2 came a new feature that controls the productivity of animals. The productivity of animals are now calculated as an average over time, which means that there are no immediate effects for changes in diet. The productivity is now more a measure of healthiness.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Cows&quot; title=&quot;Cows&quot; src=&quot;/assets/img/blog/animalProductivity/cows.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When playing Farming Simulator without Seasons the visible productivity of animals are dependent on what they are fed, whether pigs and cows have straw and that they enough water to drink. Also, if their feeding area is dirty (i.e. less than 10% cleanliness) the productivity is reduced.&lt;/p&gt;
+
+&lt;p&gt;With Seasons the birth rate, wool and milk production (here termed output) varies through the year. Cows give birth in summer, sheep in spring while pigs give birth both in spring and autumn. On many farms today, animals give birth all year round, but we still wanted to keep this as a seasonal aspect. Sheep produce wool in spring and summer, simulating sharing after the cold winter. Milk production also varies throughout the year.&lt;/p&gt;
+
+&lt;p&gt;The combination of output being the instantaneous result of diet, water and straw and the seasonal variations of output from the animals was not realistic. It is not like the milk production will increase by 20% just because the cows are suddenly being fed grass. One could also “cheat” by feeding minimum amounts during seasons when output was small or none.&lt;/p&gt;
+
+&lt;p&gt;We wanted to reflect that it will take time to develop a healthy stock of animals. In Seasons version 1.2 the output from the animals are dependent on a productivity over time, i.e. average productivity. The average productivity is now displayed in the animals menu instead of the productivity. This means that even though all throughs are full, you might not see 100%. The average productivity is updated every hour, but since only whole percentages are shown it might take a day or even more before you see the productivity changing. The starting productivity was set to 80% (might be increased to 90% in a future version), to make the player invest in an animal, and to break making easy profit by buying low and directly selling high.&lt;/p&gt;
+
+&lt;p&gt;Below are some examples with average productivity for cows in some different scenarios.&lt;/p&gt;
+
+&lt;h4 id=&quot;example-1-variations-in-cow-maximum-average-productivity&quot;&gt;Example 1: Variations in cow maximum average productivity&lt;/h4&gt;
+
+&lt;p&gt;When using default growth in Seasons (i.e. no GEO) there is no grass growth in winter. Without feeding grass, the maximal productivity is 80%, which means the average productivity also will be affected. Assuming then that the cows are fed hay/silage/TMR as well has plenty of water and straw, the average productivity will develop like the line plotted in the figure below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Maximum cow productivity&quot; title=&quot;Maximum cow productivity&quot; src=&quot;/assets/img/blog/animalProductivity/cowMax.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;example-2-reduced-productivity-for-a-short-time&quot;&gt;Example 2: Reduced productivity for a short time&lt;/h4&gt;
+
+&lt;p&gt;In this example, the productivity is reduced for a short time. This might for instance be that one runs out of silage or hay. Two scenarios are modelled:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Productivity goes down to 55% for 1 day (for instance running out of grass and TMR, leaving only hay or silage in the through)&lt;/li&gt;
+  &lt;li&gt;Productivity goes down to 28% for 5 days (feeding only grass)
+Both scenarios assume cows have straw. The figure below shows the effect with a reduced diet from day 10 in the first year.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Short term reduced productivity&quot; title=&quot;Short term reduced productivity&quot; src=&quot;/assets/img/blog/animalProductivity/cowReduced.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;example-3-trying-to-increase-average-productivity-of-cows-for-more-births&quot;&gt;Example 3: Trying to increase average productivity of cows for more births&lt;/h4&gt;
+
+&lt;p&gt;In the last example, the effect of trying to increase average productivity before when cows give birth in summer is investigated. Let’s say only hay or silage is fed (no TMR or grass, but the animals have water and straw). Then in spring and summer the player fills all throughs, attempting to increase the average production before cows giving birth in summer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Trying to increase average productivity before summer&quot; title=&quot;Trying to increase average productivity before summer&quot; src=&quot;/assets/img/blog/animalProductivity/cowDesperate.png&quot; /&gt;&lt;/p&gt;</content><author><name>reallogger</name></author><category term="blog" /><summary type="html">This post is part of a series with background information on Seasons. The previous post was about ground wetness. Note: this post is about version 1.2.1 of Seasons. Any future changes might be added below in notes. In Seasons version 1.2 came a new feature that controls the productivity of animals. The productivity of animals are now calculated as an average over time, which means that there are no immediate effects for changes in diet. The productivity is now more a measure of healthiness.</summary></entry><entry><title type="html">New model for ground wetness</title><link href="https://www.realismusmodding.com/blog/2017/11/09/ground-wetness.html" rel="alternate" type="text/html" title="New model for ground wetness" /><published>2017-11-09T14:00:00+01:00</published><updated>2017-11-09T14:00:00+01:00</updated><id>https://www.realismusmodding.com/blog/2017/11/09/ground-wetness</id><content type="html" xml:base="https://www.realismusmodding.com/blog/2017/11/09/ground-wetness.html">&lt;p&gt;&lt;em&gt;This post is part of a series with background information on Seasons. The previous post was about &lt;a href=&quot;/blog/2017/11/07/maintenance-repair&quot;&gt;maintenance and repair of vehicles&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. The model is driven by environmental factors like rain, melting snow, relative humidity, air and soil temperature and more.&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;p&gt;In the original game the ground basically dries fully within an hour after the rain has stopped. Since Seasons brings a longer and variable time scale (i.e. ability to set number of days per season) it was necessary to make some changes. The new model is based on a scientific model of soil moisture dynamics and this model was specifically made for soils in which crops grow.&lt;/p&gt;
+
+&lt;p&gt;Ground wetness is a game variable that varies between 0 and 1. Currently, ground wetness is mainly affecting the tire friction. Exciting features are planned for a future version of Seasons where ground wetness will play a larger role.&lt;/p&gt;
+
+&lt;p&gt;In Seasons ground wetness is interpreted as the level of saturation, where unity is fully saturated soil. Different to vanilla mechanics is that the ground wetness in Seasons never reaches zero as there always is some water in the soil. Generally, depending on what environment (i.e. GEO) the player uses the minimum value is normally around 0.05-0.1. The model is global, which means that the same ground wetness is assumed for the whole map.&lt;/p&gt;
+
+&lt;p&gt;The figure below shows the major effects captured in the model. In the game, at every hour, Seasons now calculates the water infiltration, transpiration from crops, evaporation from soil and drainage.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-fluid rounded&quot; alt=&quot;Soil moisture model&quot; title=&quot;Soil moisture model&quot; src=&quot;/assets/img/blog/groundWetness/wetnessModel.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;water-infiltration-drainage-and-frozen-soil&quot;&gt;Water infiltration, drainage and frozen soil&lt;/h4&gt;
+
+&lt;p&gt;When it rains or when snow melts, water will infiltrate into the ground. This is the main inflow into the soil, but is countered by drainage (i.e. net outflow) to neighbouring areas. In reality the drainage is very dependent on soil type and topography, but for now this is kept constant so hilly areas are drained in similar manner as flat lands. Perhaps a future version can include the effects of topography and ways to customize soil parameters. Currently, when the soil water content is below a field capacity the drainage stops and there is assumed equilibrium between inflow and outflow in the soil. When the soil is frozen the soil water content is not updated. This means whatever water is in the soil in the autumn, when soil freezes, is locked until the soil thaws in spring, given a very cold winter.&lt;/p&gt;
+
+&lt;h4 id=&quot;evaporation-and-transpiration&quot;&gt;Evaporation and transpiration&lt;/h4&gt;
+
+&lt;p&gt;From the surface of the soil and plants, water evaporate. In Seasons evaporation does not occur when the soil water content is below a certain soil saturation point, when the air is saturated with water (i.e. high relative humidity) or when snow is covering the ground. The evaporation is a function of soil water content and other factors. There is also has an upper limit to how much water that can evaporate in one hour.&lt;/p&gt;
+
+&lt;p&gt;Crops, plants and trees are consumers of water. In Seasons the transpiration from growth is considered. There is a lower and upper limit to how much water crops and plants consume every hour. We have also assumed that there is effectively no growth when the air temperature is below 5 degrees so transpiration stops. The effect is that ground dries less quickly in autumn for instance when colder nights can be experienced.&lt;/p&gt;
+
+&lt;p&gt;Below is an example of the ground wetness for one year using a 9 day season length. It rains a few times in spring. Then the whole summer stays dry. In autumn there are days with rain again, but the ground dries before the next rain. Then in late autumn, the ground dries slower after rain. In mid winter the ground freezes when the ground has approximately 40% saturation. This will then be the start value when ground thaws in spring.&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&quot;Soil moisture model&quot; src=&quot;/assets/img/blog/groundWetness/plot.png&quot; class=&quot;mx-auto d-block&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;measuring-the-ground-wetness&quot;&gt;Measuring the ground wetness&lt;/h4&gt;
+
+&lt;p&gt;It is possible to measure the ground wetness with the Wopstr handtool. The icon for ground wetness looks like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img title=&quot;Soil moisture model&quot; src=&quot;/assets/img/blog/groundWetness/wetnessIcon.png&quot; alt=&quot;Droplet icon shown in the WOPSTR for ground wetness&quot; class=&quot;mx-auto d-block&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All of this might seem complicated, but as the model is based on physics, the model works for different locations (e.g. GEO’s) and in different seasons. The decay of ground wetness is scaled with the length of season used. This means that with a 3-day season, the ground will dry faster than when using a 24-day season. This gamification was included as there is less time available to work in fields in a 3-day season.&lt;/p&gt;</content><author><name>reallogger</name></author><category term="blog" /><summary type="html">This post is part of a series with background information on Seasons. The previous post was about maintenance and repair of vehicles. With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. The model is driven by environmental factors like rain, melting snow, relative humidity, air and soil temperature and more.</summary></entry></feed>

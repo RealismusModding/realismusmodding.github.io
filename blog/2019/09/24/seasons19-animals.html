@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<!-- begin SEO -->
+<meta name="keywords" content=",  " />
+<title>Seasons 19: Animals - Realismus Modding</title>
+<meta itemprop="name" content="Realismus Modding" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:site_name" content="Realismus Modding" />
+<meta property="og:title" content="Seasons 19: Animals" />
+  <link rel="canonical" href="https://www.realismusmodding.com/blog/2019/09/24/seasons19-animals.html" itemprop="url" />
+  <meta property="og:url" content="https://www.realismusmodding.com/blog/2019/09/24/seasons19-animals.html" />
+  <meta property="og:description" content="This is a guest post written by Adam, also known as Zugs. He has helped us with the new animal system in Seasons 19 for Farming Simulator 19.
+Adam has contacted countless sources, such as farmers, nutritionists, veterinarians and agri-governments, to gather the best data possible. Together with him and his knowledge we created a system that we think is interesting, challenging and close enough to real life. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing.
+" />
+  <meta name="twitter:site" content="@realismusMods" />
+  <meta name="twitter:title" content="Seasons 19: Animals" />
+  <meta name="twitter:description" content="This is a guest post written by Adam, also known as Zugs. He has helped us with the new animal system in Seasons 19 for Farming Simulator 19.Adam has contacted countless sources, such as farmers, nutritionists, veterinarians and agri-governments, to gather the best data possible. Together with him and his knowledge we created a system that we think is interesting, challenging and close enough to real life. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing." />
+  <meta name="twitter:url" content="https://www.realismusmodding.com/blog/2019/09/24/seasons19-animals.html" />
+    <meta itemprop="image" content="https://www.realismusmodding.com/assets/img/blog/whatsnew19/animals.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.realismusmodding.com/assets/img/blog/whatsnew19/animals.jpg" />
+    <meta name="twitter:creator" content="@rahkiin" />
+  <meta property="og:image" content="https://www.realismusmodding.com/assets/img/blog/whatsnew19/animals.jpg" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2019-09-24T16:00:00+02:00" />
+    <link rel="prev" href="https://www.realismusmodding.com/blog/2019/08/07/seasons19-update.html" title="Seasons 19: Update v1.0.1 and GEO mods" />
+<!-- end SEO -->
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Realismus Modding Feed" />
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<meta http-equiv="cleartype" content="on" />
+<meta content="origin" id="mref" name="referrer" />
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body >
+    <!--[if lt IE 9]>
+<div class="text-danger text-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <nav class="navbar navbar-toggleable-xl navbar-light globalnav" aria-label="Global Navigation">
+    <div class="container px-3">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/logo.svg" alt="RM" />
+            <span class="hidden-xs-down">Realismus Modding</span>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/mods">Mods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team">Team</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+    <div class="col-md-9 col-sm-12 rm-col mx-auto">
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+    <meta itemprop="mainEntityOfPage" content="/blog/2019/09/24/seasons19-animals.html" />
+    <header>
+        <h1 itemprop="name headline">Seasons 19: Animals</h1>
+        <p class="blog-meta">
+            <time datetime="2019-09-24T16:00:00+02:00" itemprop="datePublished">
+                Sep 24, 2019
+            </time>
+              • <author itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="alternateName">Rahkiin</span><span class="d-none" itemprop="name">Jos</span></author>
+        </p>
+        <meta itemprop="dateModified" content="2019-09-24T16:00:00+02:00" />
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="Realismus Modding" />
+<meta itemprop="url" content="https://www.realismusmodding.com" />
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+    <meta itemprop="url" content="https://www.realismusmodding.com/assets/img/logo_241.png" />
+    <meta itemprop="width" content="241" />
+    <meta itemprop="height" content="241" />
+</div>
+</div>
+    </header>
+    <div itemprop="articleBody" class="blog-body">
+        <p><em>This is a guest post written by Adam, also known as Zugs. He has helped us with the new animal system in Seasons 19 for Farming Simulator 19.
+Adam has contacted countless sources, such as farmers, nutritionists, veterinarians and agri-governments, to gather the best data possible. Together with him and his knowledge we created a system that we think is interesting, challenging and close enough to real life. In this post he will be explaining more about the animals, their breeds and their design. Note that all numbers in this post are prone to change for rebalancing.</em></p>
+<!-- more -->
+<p>The new version of Seasons for FS19 brings a plethora of new features and a new way of looking at animals in the game. From Cattle to Pigs and Horses to Chickens, every single species in the game has been worked from the ground up to operate more realistically, based on real life data and specially designed systems. This data have been gathered from industry professionals, studies and knowledgeable individuals alike and have allowed us to truly represent how animals should have been represented in the game in the first place.</p>
+<p>In the base game, all we had was a base animal with the same stats and the only difference was the variations in color we got to choose from. We thought this was very boring, bland and most importantly unrealistic. As some of you may notice, now each species has their own individual breeds that they are based off of.</p>
+<p>Each breed was chosen carefully based on a variety of factors that cemented their purpose in the game and made sure they were a perfect fit for our purposes. Some breeds within a species have a different use than others such as dairy versus beef with cattle. By doing this, the player can now take their own route with animals and really pinpoint what they want to do.</p>
+<ul id="markdown-toc">
+  <li><a href="#cattle" id="markdown-toc-cattle">Cattle</a>    <ul>
+      <li><a href="#breeds" id="markdown-toc-breeds">Breeds</a></li>
+      <li><a href="#cattle-beef" id="markdown-toc-cattle-beef">Cattle: Beef</a></li>
+      <li><a href="#cattle-dairy" id="markdown-toc-cattle-dairy">Cattle: Dairy</a></li>
+      <li><a href="#cattle-feed-consumption" id="markdown-toc-cattle-feed-consumption">Cattle: Feed Consumption</a></li>
+    </ul>
+  </li>
+  <li><a href="#pigs" id="markdown-toc-pigs">Pigs</a>    <ul>
+      <li><a href="#pigs-the-three-types-of-operations" id="markdown-toc-pigs-the-three-types-of-operations">Pigs: The Three Types of Operations</a>        <ul>
+          <li><a href="#farrow-to-feeder" id="markdown-toc-farrow-to-feeder">Farrow to Feeder</a>            <ul>
+              <li><a href="#feeder-to-finish" id="markdown-toc-feeder-to-finish">Feeder to Finish</a></li>
+              <li><a href="#farrow-to-finish" id="markdown-toc-farrow-to-finish">Farrow to Finish</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#pigs-breeds" id="markdown-toc-pigs-breeds">Pigs: Breeds</a></li>
+      <li><a href="#pigs-other-changes" id="markdown-toc-pigs-other-changes">Pigs: Other Changes</a></li>
+    </ul>
+  </li>
+  <li><a href="#sheep" id="markdown-toc-sheep">Sheep</a>    <ul>
+      <li><a href="#sheep-breeds" id="markdown-toc-sheep-breeds">Sheep: Breeds</a></li>
+      <li><a href="#sheep-breeds-and-their-differences" id="markdown-toc-sheep-breeds-and-their-differences">Sheep: Breeds and Their Differences</a></li>
+      <li><a href="#suffolk" id="markdown-toc-suffolk">Suffolk</a>        <ul>
+          <li><a href="#dorper" id="markdown-toc-dorper">Dorper</a></li>
+          <li><a href="#dorset" id="markdown-toc-dorset">Dorset</a></li>
+          <li><a href="#merino" id="markdown-toc-merino">Merino</a></li>
+        </ul>
+      </li>
+      <li><a href="#sheep-the-purchase" id="markdown-toc-sheep-the-purchase">Sheep: The Purchase</a></li>
+    </ul>
+  </li>
+  <li><a href="#chickens" id="markdown-toc-chickens">Chickens</a>    <ul>
+      <li><a href="#chickens-breeds" id="markdown-toc-chickens-breeds">Chickens: Breeds</a></li>
+      <li><a href="#chickens-breeds-and-their-differences" id="markdown-toc-chickens-breeds-and-their-differences">Chickens: Breeds and Their Differences</a>        <ul>
+          <li><a href="#white-leghorn-eggs" id="markdown-toc-white-leghorn-eggs">White Leghorn (Eggs):</a></li>
+          <li><a href="#cornish-cross-meat" id="markdown-toc-cornish-cross-meat">Cornish Cross (Meat):</a></li>
+          <li><a href="#rhode-island-red-eggsmeat" id="markdown-toc-rhode-island-red-eggsmeat">Rhode Island Red (Eggs/Meat):</a></li>
+        </ul>
+      </li>
+      <li><a href="#chickens-at-purchase" id="markdown-toc-chickens-at-purchase">Chickens: At Purchase</a></li>
+      <li><a href="#chickens-breeding-and-incubation" id="markdown-toc-chickens-breeding-and-incubation">Chickens: Breeding and incubation</a></li>
+    </ul>
+  </li>
+</ul>
+<h2 id="cattle">Cattle</h2>
+<p>For cattle, tremendous work was done to simulate a variety of different systems such as realistic milk production, beef production, feed consumption etc based on breed, age, weight and health. Each breed we chose had to fit the category they were filling and introduce their unique natural characteristics into the game.</p>
+<h3 id="breeds">Breeds</h3>
+<p>Cattle were separated into two groups. Beef and Dairy.</p>
+<ul>
+  <li>Beef:
+    <ul>
+      <li>Limousin</li>
+      <li>Saler</li>
+      <li>Brahman</li>
+    </ul>
+  </li>
+  <li>Dairy:
+    <ul>
+      <li>Holstein</li>
+      <li>Ayrshire</li>
+    </ul>
+  </li>
+</ul>
+<h3 id="cattle-beef">Cattle: Beef</h3>
+<p>With Beef cattle what we wanted to do is try something a little different. So instead of buying breeding stock and breeding the cattle out to produce calves to be later sold as beef, we decided that we wanted to simulate a feeder operation. What a feeder operation is, is buying weaned calves at around 650lbs and feeding them until they are around 1,200lbs to 1,400lbs and then selling them. The player can keep the cattle for longer, but selling at 1,200lbs to 1,400 lbs will be the most cost efficient method due to the cattle having the best lean meat ratio over older and heavier animals which would have more fat content.</p>
+<p>With this method, no breeding is necessary and the way to profit is straight forward. For beef cattle we have three choices; Limousins, Salers and Brahman as seen above. Limousins are known as the carcass breed and are have a natural efficiency in converting feed to meat. This means they can consume the same amount of feed than other animals of the same size but grow quicker. The Saler on the other hand is not quite as feed efficient as the Limousin but can be bought for cheap and is a great for starting beef farmers on a budget. And finally the Brahman is a heat tolerant specific breed that grows fast and performs well on marginal feed.</p>
+<h3 id="cattle-dairy">Cattle: Dairy</h3>
+<p>With Dairy cattle we really wanted to make things more realistic and add new aspects of owning dairy animals that were not possible before now. And we did just that. Cattle now are already artificially inseminated at purchase and will give birth at the end of gestation. The gestation period is 9 months. You can start to milk them for 10 months after the birth of a calf and then the cattle will have to be rested for 2 months during their dry period. This is just before they give birth. Currently, 3 months after the birth of a calf, the cow will be artificially inseminated again automatically.</p>
+<p>Milking will also continue during gestation. In early lactation for a Holstein for example (Under 100 days of milking), cows will produce the most milk per day. In late lactation (over 200 days of milking), cows will the least amount of milk per day. Currently Holsteins will produce 10,756 kg of milk per year in game and Ayrshire’s will produce 8,077 kg.</p>
+<h3 id="cattle-feed-consumption">Cattle: Feed Consumption</h3>
+<p>To calculate the required feed consumption of an animal, a calculation is done based on the bodyweight of the cow. This percentage depends on the breed, age and the type of cattle discussed. This formula usually only calculates the dry matter intake but a step was added to calculate the amounts on an “as is” basis. Dry matter is the food an animal consumes with the moisture weight taken out of the total weight of the food.</p>
+<p>To do this we take the body weight of the animal, so for example a 1200lbs cow and multiply that by 2.5% for example. So 2.5% of their body weight is what they should eat a day. Remember 2.5% is calculating the dry matter feed intake. Because most grass / dry hay is made up of about 15% water and silage is made up of much more we had to decide that the moisture content we would go with would be the grass/hay value. So we do the calculation to find the dry matter intake and divide that number by 0.85 (100-15). So 1200 x 0.025 = 30. 30 / 0.85 =  35.3. So a 1200lbs cow at 2.5% takes 35lbs as is feed intake. This calculation is done for beef cows as dairy cows eat much more than their beef counterparts and eat a combination of different things as well. Many more calculations are done internally to make these values work, but this is the base one used to actually find the values.</p>
+<p>On top of this, with Dairy breeds for example, they eat more than just grass/hay/silage and need the best of the best when it comes to nutrition. You would provide supplements etc when feeding them. Because the game has no functionality in this way, we have included the weight amounts for those nonexistent feeds in the total feed value. So if a Holstein cows eat 10lbs of grass, 10lbs of Hay, 10lbs of Silage and 10lbs of Dairy Supplement in real life (numbers are just used as an example) the in game weight for total feed consumption (Grass, Hay/Silage or TMR) will be 40lbs even though we only can feed Grass, Hay/Silage and TMR and no supplements in game. So we’re trying to simulate real total feed numbers in every calculation done.</p>
+<h2 id="pigs">Pigs</h2>
+<p>A lot of work was done on pigs to simulate two types of real life systems. All of these systems are covered below under “Pigs: The Three Types of Operations”. Four breeds were chosen based on a variety of factors and how well they fit out criteria and the goals we had in mind. The four breeds are Yorkshire, Berkshire, Spotted and Gloucestershire Old Spot. The breeds were grouped into groups of two in order to introduce the player to two new pig management systems. Farrow to Feeder and Feeder to Finish.</p>
+<h3 id="pigs-the-three-types-of-operations">Pigs: The Three Types of Operations</h3>
+<h4 id="farrow-to-feeder">Farrow to Feeder</h4>
+<p>A farrow to feeder operation involves breeding sows and then selling the piglets to finishing operations when they weigh 30 to 60 pounds. We chose 60lbs as the piglets would be about eight weeks old. In real life, compared to a farrow to finish operation, this option reduces the need for facilities, operating capital, feed amounts and manure handled. The biggest drawback of this system is that producers, with a small number of animals, are at the mercy of aggressive and unstable feeder pig markets. Meaning prices fluctuate constantly. Another thing that can be noted is the fact that piglets in real life when starting dry food are usually fed a different ration than breeding stock.</p>
+<h5 id="feeder-to-finish">Feeder to Finish</h5>
+<p>Feeder to finish operations buy feeder pigs weighing 30 to 60 pounds (60lbs in our case) at about 8 weeks of age and feed them to a market weight of about 280 pounds or about 6 months old. In real life, fancy setups or facilities are not needed and can be run fine within modest and existing buildings. This system allows for minimum overhead requirements, low labor, and no long term commitments like in Farrow to Feeder and Farrow to Finish operations.
+This method also offers an opportunity for grain farmers to use homegrown feeds to finish pigs without having to manage breeding stock on top of it. So one feed type and mixture can be used for all animals. Source, health, and quality of purchased feeder pigs are all the biggest factors in ensuring a successful startup. Ideally, all feeder pigs should originate from a single farm to maintain consistency and reduce potential herd health problems.</p>
+<h5 id="farrow-to-finish">Farrow to Finish</h5>
+<p>A farrow to finish operation involves breeding sows and then feeding the piglets until they reach a market weight of about 280 pounds (6 months old). So the entire process from birth to finish is done by the same farmer. The entire production period takes around 10 months to complete; Comprised of 4 months for breeding/gestation and 6 months to raise the piglets to market weight. Of the three systems, farrow to finish has the greatest long run market potential and flexibility. This system also demands the most capital and labor, and requires a long term commitment to the swine business as a whole. Another thing that can be noted is that in real life, different feeds would be required for piglets, feeder pigs and breeding stock.</p>
+<h3 id="pigs-breeds">Pigs: Breeds</h3>
+<ul>
+  <li>Farrow to Finish:
+    <ul>
+      <li>Yorkshire</li>
+      <li>Spotted</li>
+    </ul>
+  </li>
+  <li>Feeder to Finish:
+    <ul>
+      <li>Berkshire</li>
+      <li>Gloucestershire Old Spot</li>
+    </ul>
+  </li>
+</ul>
+<h3 id="pigs-other-changes">Pigs: Other Changes</h3>
+<p>In the Farrow to Finish operation, when piglets are born they weigh in at about 2-4lbs. They are weaned at about 13-15lbs or 21-25 days. Their birth weight and weaning age are all dependant on the breed. As well, when the data on these breeds was collected, the data was organized into 6 separate growing stages consisting of Birth, Wean, Nursery, Grower, Finisher and Mature. Each had their separate values listed for age, feed amount per day, average gain per day and weight range.</p>
+<p>This was done to better visualize how the player will interact with the animals as well as pinpoint specific gains and growth patterns as the animal ages. For pigs it is recommended if you are doing a Farrow to Finish operation, it is best practice to separate animals of different weights so you can better manage your stock and In game and do a little role-playing if you want. This also allows you to keep breeding stock and piglets away from larger pigs. Just have fun with it.</p>
+<p>One other note for pigs are the changes done to feed. Before feed ingredients consisted of Corn (50%), Wheat/Barley (25%), Soybean/Canola/Sunflower (20%) and Beets/Potatoes (5%). Now they are setup as follows:</p>
+<ul>
+  <li>Corn: 50%</li>
+  <li>Wheat/Barley: 25%</li>
+  <li>Soybean/Canola/Sunflower: 25%</li>
+</ul>
+<h2 id="sheep">Sheep</h2>
+<p>With sheep we wanted to introduce a few changes to gameplay and give each of the breeds purpose. Instead of just choosing a color of sheep you can now choose individual breeds each with their own strongpoint’s and weaknesses. We have also introduced a Wool specific breed.</p>
+<h3 id="sheep-breeds">Sheep: Breeds</h3>
+<ul>
+  <li>Meat:
+    <ul>
+      <li>Suffolk</li>
+      <li>Dorper</li>
+      <li>Dorset</li>
+    </ul>
+  </li>
+  <li>Wool:
+    <ul>
+      <li>Merino</li>
+    </ul>
+  </li>
+</ul>
+<h3 id="sheep-breeds-and-their-differences">Sheep: Breeds and Their Differences</h3>
+<h3 id="suffolk">Suffolk</h3>
+<p>The Suffolk is a large breed of sheep that grows very fast. It also produces a modest amount of wool for the size it carries. But as with everything there are tradeoffs for the quick growth and performance. For one it requires a lot of feed as adult, more than any other breed.  It is slow maturing as its mature weight is around 250lbs for ewes and 375lbs for rams. So if you’re looking for a fast maturing sheep this may not be the breed for you. They are relatively prolific but not as prolific as the Dorper. They’re also great for 100-140lbs lambs, as smaller lambs of the breed may not have the leanness the market calls for.</p>
+<h4 id="dorper">Dorper</h4>
+<p>A medium sized hair/wool breed that grows fast but produces no wool to sell. The Dorper is the most prolific breed on the list meaning it will have the most amount of lambs per lambing. Its smaller frame also makes it fast maturing and requires little feed as an adult compared to other breeds. Great for 85-100 lbs lambs as they tend to fetch the highest prices at this weight compared to other breeds.</p>
+<h4 id="dorset">Dorset</h4>
+<p>The Dorset is another large breed of sheep that grows moderately fast and produces a good amount of wool for its size. It requires a medium amount of feed as an adult so in-between that of the Suffolk and Dorper. It is relatively prolific and great for 50 -85 lbs lambs.</p>
+<h4 id="merino">Merino</h4>
+<p>The Merino is a medium breed that is used soley for wool production. Given this fact, it would not be the breed of choice if meat were one of your priorities. The Merino grows slowly, is not very prolific but doesn’t require a lot of feed as an adult. Given that it is a Wool breed, it quintuples wool production of the other available breeds.</p>
+<h3 id="sheep-the-purchase">Sheep: The Purchase</h3>
+<p>When you purchase a sheep, regardless of breed you are purchasing a female animal. These animals will still breed as the player will have to pretend that they have a male animal in the pens or that breeding is done automatically. Although it should be noted that sheep are not artificially inseminated at this point.</p>
+<h2 id="chickens">Chickens</h2>
+<p>With chickens, we wanted to add a lot of variety in the gameplay and the way we choose our breeds. Instead of having all chickens perform and produce the same, we have split them into three groups each with their own unique purpose. They are: Egg layer, meat bird and hybrid. Each breed grows differently, has their own unique traits and feed requirements etc.</p>
+<h3 id="chickens-breeds">Chickens: Breeds</h3>
+<ul>
+  <li>Eggs:
+    <ul>
+      <li>White Leghorn</li>
+    </ul>
+  </li>
+  <li>Meat:
+    <ul>
+      <li>Cornish Cross</li>
+    </ul>
+  </li>
+  <li>Hybrid:
+    <ul>
+      <li>Rhode Island Red</li>
+    </ul>
+  </li>
+</ul>
+<h3 id="chickens-breeds-and-their-differences">Chickens: Breeds and Their Differences</h3>
+<h4 id="white-leghorn-eggs">White Leghorn (Eggs):</h4>
+<p>This is the bird of choice if eggs are what you want to produce.  It requires less feed than the meat specific and hybrid breeds and produces the most amount of eggs. Currently in game that number is set to an equivalent of 300 eggs per year.</p>
+<h4 id="cornish-cross-meat">Cornish Cross (Meat):</h4>
+<p>This meat breed is extremely fast growing and top producing meat bird. It can be raised and sold relatively fast. Especially in comparison to the other breeds. It requires a lot of feed though, to meet its requirements.</p>
+<h4 id="rhode-island-red-eggsmeat">Rhode Island Red (Eggs/Meat):</h4>
+<p>The RIR is a hybrid breed meaning it both produces eggs and can be sold for meat. Currently the Rhode Island Red produces an equivalent to 250 eggs per year. Being that it is a hybrid breed, its feed requirements fall in between that of its layer and meat specific counterparts.</p>
+<h3 id="chickens-at-purchase">Chickens: At Purchase</h3>
+<p>When you first purchase each of the above birds, depending on the breed they may be chicks or full grown chickens. Currently when you purchase a Cornish Cross, you will be buying chicks. You will grow out these chicks until they are of size. When you buy White Leghorns you will be purchasing ready to lay chickens that will start producing automatically. And finally when you purchase Rhode Island Reds, you will also be purchasing chicks.</p>
+<h3 id="chickens-breeding-and-incubation">Chickens: Breeding and incubation</h3>
+<p>If you choose to have a rooster and begin to raise chicks the rule of thumb is 8 chickens to 1 rooster. Keep in mind that if you have a rooster and want your hens to produce chicks, these chickens will become broody and will stop laying. So production for these broody birds will stop.</p>
+    </div>
+</article>
+<div id="mc_embed_signup" class="hidden-print">
+    <form action="https://realismusmodding.us17.list-manage.com/subscribe/post?u=64fb01215386c3228a441298f&amp;id=e765b15ba4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline justify-content-center" target="_blank" novalidate>
+        <label for="mce-EMAIL" style="font-size:18pt">Subscribe to our mailing list for the latest updates</label>
+        <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required="required" style="width:350px" />
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_64fb01215386c3228a441298f_e765b15ba4" tabindex="-1" value="" /></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ml-2 btn btn-primary submit" />
+    </form>
+</div>
+<aside class="row mt-5">
+    <div class="col text-left">
+        <p><a href="/blog/2019/08/07/seasons19-update.html">Previous post: Seasons 19: Update v1.0.1 and GEO mods</a></p>
+    </div>
+</aside>
+    </div>
+</div>
+        </div>
+    </main>
+    <section class="site-footer">
+    <footer class="container">
+        <nav class="row" id="footer-links">
+            <div class="col-12">
+  <nav>
+    <ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+      <li class="breadcrumb-item"><a class="" href="/">RM</a></li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="https://www.realismusmodding.com/blog/">
+        <span property="name">Blog</span>
+        </a>
+        <meta property="position" content="1" />
+      </li>
+      <li class="breadcrumb-item active" property="itemListElement" typeof="ListItem">
+        <span property="name">Seasons 19: Animals</span>
+        <meta property="position" content="2" />
+      </li>
+    </ol>
+  </nav>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Realismus Modding</h3>
+                <ul>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/team">Team</a></li>
+                    <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<!-- <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1"> -->
+    <input type="submit" name="submit" alt="PayPal – The safer, easier way to pay online!" value="Donate" />
+</form>
+</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Mods</h3>
+                <ul>
+                    <li><a href="/mods/seasons">Seasons 17</a></li>
+                    <li><a href="/mods/seasons19">Seasons 19</a></li>
+                    <li><a href="https://farming-simulator.com/mod.php?mod_id=137675">Hauer Snow Pack</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Social &amp; Contact</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/c/realismusmodding" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.youtube.com/c/realismusmodding" ga-transport="beacon">YouTube</a></li>
+                    <li><a href="https://slack.realismusmodding.com" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://slack.realismusmodding.com" ga-transport="beacon">Slack</a></li>
+                    <li><a href="https://www.twitter.com/realismusMods" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.twitter.com/realismusMods" ga-transport="beacon">Twitter</a></li>
+                    <li><a href="mailto:realismusmodding@gmail.com?subject=Contact%20from%20website">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Website</h3>
+                <ul>
+                    <li><a href="http://eepurl.com/c-E5Gn" target="_blank">Subscribe</a>
+                    <li><a href="/sitemap.xml">Sitemap</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Legal -->
+        <div class="row" id="footer-bottom">
+            <div class="col-10 footer-legal">
+                <p class="mb-0">&copy; 2018 Realismus Modding. All rights reserved. Documentation is licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY-4.0</a>.</p>
+                <p>Farming Simulator is a trademark of GIANTS Software GmbH. All other trademarks are properties of their respective owners.</p>
+            </div>
+            <div class="col-2 text-right footer-language">
+            </div>
+        </div>
+    </footer>
+</section>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-96325378-1', 'auto');
+  ga('require', 'eventTracker');
+  ga('send', 'pageview');
+</script>
+<script async src="/assets/js/autotrack.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.4/cookieconsent.min.css" />
+<script async defer src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.2/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#424242"
+    },
+    "button": {
+      "background": "#7B9CD4"
+    }
+  }
+})});
+</script>
+<script src="/assets/js/anchor.min.js"></script>
+<script>
+(function () {
+  'use strict';
+  anchors.options.placement = 'right';
+  anchors.add();
+})();
+</script>
+</body>
+</html>
+

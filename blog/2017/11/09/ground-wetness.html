@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebSite">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<!-- begin SEO -->
+<meta name="keywords" content=",  " />
+<title>New model for ground wetness - Realismus Modding</title>
+<meta itemprop="name" content="Realismus Modding" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:site_name" content="Realismus Modding" />
+<meta property="og:title" content="New model for ground wetness" />
+  <link rel="canonical" href="https://www.realismusmodding.com/blog/2017/11/09/ground-wetness.html" itemprop="url" />
+  <meta property="og:url" content="https://www.realismusmodding.com/blog/2017/11/09/ground-wetness.html" />
+  <meta property="og:description" content="This post is part of a series with background information on Seasons. The previous post was about maintenance and repair of vehicles.
+With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. The model is driven by environmental factors like rain, melting snow, relative humidity, air and soil temperature and more.
+" />
+  <meta name="twitter:site" content="@realismusMods" />
+  <meta name="twitter:title" content="New model for ground wetness" />
+  <meta name="twitter:description" content="With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. This post elaborates on the model, its implementation and effects on the game." />
+  <meta name="twitter:url" content="https://www.realismusmodding.com/blog/2017/11/09/ground-wetness.html" />
+    <meta itemprop="image" content="https://www.realismusmodding.com/assets/img/blog/groundWetness/wetnessModel.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://www.realismusmodding.com/assets/img/blog/groundWetness/wetnessModel.png" />
+    <meta name="twitter:creator" content="@reallogger" />
+  <meta property="og:image" content="https://www.realismusmodding.com/assets/img/blog/groundWetness/wetnessModel.png" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2017-11-09T14:00:00+01:00" />
+    <link rel="next" href="https://www.realismusmodding.com/blog/2017/11/17/animal-productivity.html" title="Animal productivity" />
+    <link rel="prev" href="https://www.realismusmodding.com/blog/2017/11/07/maintenance-repair.html" title="Maintenance, repair and Seasons" />
+<!-- end SEO -->
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Realismus Modding Feed" />
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<meta http-equiv="cleartype" content="on" />
+<meta content="origin" id="mref" name="referrer" />
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body >
+    <!--[if lt IE 9]>
+<div class="text-danger text-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    <nav class="navbar navbar-toggleable-xl navbar-light globalnav" aria-label="Global Navigation">
+    <div class="container px-3">
+        <a class="navbar-brand" href="/">
+            <img src="/assets/img/logo.svg" alt="RM" />
+            <span class="hidden-xs-down">Realismus Modding</span>
+        </a>
+        <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/mods">Mods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/team">Team</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+    <div class="col-md-9 col-sm-12 rm-col mx-auto">
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+    <meta itemprop="mainEntityOfPage" content="/blog/2017/11/09/ground-wetness.html" />
+    <header>
+        <h1 itemprop="name headline">New model for ground wetness</h1>
+        <p class="blog-meta">
+            <time datetime="2017-11-09T14:00:00+01:00" itemprop="datePublished">
+                Nov 9, 2017
+            </time>
+              • <author itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="alternateName">reallogger</span><span class="d-none" itemprop="name">Per</span></author>
+        </p>
+        <meta itemprop="dateModified" content="2017-11-09T14:00:00+01:00" />
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="Realismus Modding" />
+<meta itemprop="url" content="https://www.realismusmodding.com" />
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+    <meta itemprop="url" content="https://www.realismusmodding.com/assets/img/logo_241.png" />
+    <meta itemprop="width" content="241" />
+    <meta itemprop="height" content="241" />
+</div>
+</div>
+    </header>
+    <div itemprop="articleBody" class="blog-body">
+        <p><em>This post is part of a series with background information on Seasons. The previous post was about <a href="/blog/2017/11/07/maintenance-repair">maintenance and repair of vehicles</a>.</em></p>
+<p>With Seasons version 1.2 comes a new model for ground wetness to better capture the variability of the water content in the soil. The model is driven by environmental factors like rain, melting snow, relative humidity, air and soil temperature and more.</p>
+<!-- more -->
+<p>In the original game the ground basically dries fully within an hour after the rain has stopped. Since Seasons brings a longer and variable time scale (i.e. ability to set number of days per season) it was necessary to make some changes. The new model is based on a scientific model of soil moisture dynamics and this model was specifically made for soils in which crops grow.</p>
+<p>Ground wetness is a game variable that varies between 0 and 1. Currently, ground wetness is mainly affecting the tire friction. Exciting features are planned for a future version of Seasons where ground wetness will play a larger role.</p>
+<p>In Seasons ground wetness is interpreted as the level of saturation, where unity is fully saturated soil. Different to vanilla mechanics is that the ground wetness in Seasons never reaches zero as there always is some water in the soil. Generally, depending on what environment (i.e. GEO) the player uses the minimum value is normally around 0.05-0.1. The model is global, which means that the same ground wetness is assumed for the whole map.</p>
+<p>The figure below shows the major effects captured in the model. In the game, at every hour, Seasons now calculates the water infiltration, transpiration from crops, evaporation from soil and drainage.</p>
+<p><img class="img-fluid rounded" alt="Soil moisture model" title="Soil moisture model" src="/assets/img/blog/groundWetness/wetnessModel.png" /></p>
+<h4 id="water-infiltration-drainage-and-frozen-soil">Water infiltration, drainage and frozen soil</h4>
+<p>When it rains or when snow melts, water will infiltrate into the ground. This is the main inflow into the soil, but is countered by drainage (i.e. net outflow) to neighbouring areas. In reality the drainage is very dependent on soil type and topography, but for now this is kept constant so hilly areas are drained in similar manner as flat lands. Perhaps a future version can include the effects of topography and ways to customize soil parameters. Currently, when the soil water content is below a field capacity the drainage stops and there is assumed equilibrium between inflow and outflow in the soil. When the soil is frozen the soil water content is not updated. This means whatever water is in the soil in the autumn, when soil freezes, is locked until the soil thaws in spring, given a very cold winter.</p>
+<h4 id="evaporation-and-transpiration">Evaporation and transpiration</h4>
+<p>From the surface of the soil and plants, water evaporate. In Seasons evaporation does not occur when the soil water content is below a certain soil saturation point, when the air is saturated with water (i.e. high relative humidity) or when snow is covering the ground. The evaporation is a function of soil water content and other factors. There is also has an upper limit to how much water that can evaporate in one hour.</p>
+<p>Crops, plants and trees are consumers of water. In Seasons the transpiration from growth is considered. There is a lower and upper limit to how much water crops and plants consume every hour. We have also assumed that there is effectively no growth when the air temperature is below 5 degrees so transpiration stops. The effect is that ground dries less quickly in autumn for instance when colder nights can be experienced.</p>
+<p>Below is an example of the ground wetness for one year using a 9 day season length. It rains a few times in spring. Then the whole summer stays dry. In autumn there are days with rain again, but the ground dries before the next rain. Then in late autumn, the ground dries slower after rain. In mid winter the ground freezes when the ground has approximately 40% saturation. This will then be the start value when ground thaws in spring.</p>
+<p><img title="Soil moisture model" src="/assets/img/blog/groundWetness/plot.png" class="mx-auto d-block" /></p>
+<h4 id="measuring-the-ground-wetness">Measuring the ground wetness</h4>
+<p>It is possible to measure the ground wetness with the Wopstr handtool. The icon for ground wetness looks like this:</p>
+<p><img title="Soil moisture model" src="/assets/img/blog/groundWetness/wetnessIcon.png" alt="Droplet icon shown in the WOPSTR for ground wetness" class="mx-auto d-block" /></p>
+<p>All of this might seem complicated, but as the model is based on physics, the model works for different locations (e.g. GEO’s) and in different seasons. The decay of ground wetness is scaled with the length of season used. This means that with a 3-day season, the ground will dry faster than when using a 24-day season. This gamification was included as there is less time available to work in fields in a 3-day season.</p>
+    </div>
+</article>
+<div id="mc_embed_signup" class="hidden-print">
+    <form action="https://realismusmodding.us17.list-manage.com/subscribe/post?u=64fb01215386c3228a441298f&amp;id=e765b15ba4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline justify-content-center" target="_blank" novalidate>
+        <label for="mce-EMAIL" style="font-size:18pt">Subscribe to our mailing list for the latest updates</label>
+        <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="email address" required="required" style="width:350px" />
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_64fb01215386c3228a441298f_e765b15ba4" tabindex="-1" value="" /></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ml-2 btn btn-primary submit" />
+    </form>
+</div>
+<aside class="row mt-5">
+    <div class="col text-left">
+        <p><a href="/blog/2017/11/07/maintenance-repair.html">Previous post: Maintenance, repair and Seasons</a></p>
+    </div>
+    <div class="col text-right">
+        <p><a href="/blog/2017/11/17/animal-productivity.html">Next post: Animal productivity</a></p>
+    </div>
+</aside>
+    </div>
+</div>
+        </div>
+    </main>
+    <section class="site-footer">
+    <footer class="container">
+        <nav class="row" id="footer-links">
+            <div class="col-12">
+  <nav>
+    <ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+      <li class="breadcrumb-item"><a class="" href="/">RM</a></li>
+      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+        <a property="item" typeof="WebPage" href="https://www.realismusmodding.com/blog/">
+        <span property="name">Blog</span>
+        </a>
+        <meta property="position" content="1" />
+      </li>
+      <li class="breadcrumb-item active" property="itemListElement" typeof="ListItem">
+        <span property="name">New model for ground wetness</span>
+        <meta property="position" content="2" />
+      </li>
+    </ol>
+  </nav>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Realismus Modding</h3>
+                <ul>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/team">Team</a></li>
+                    <li><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<!-- <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1"> -->
+    <input type="submit" name="submit" alt="PayPal – The safer, easier way to pay online!" value="Donate" />
+</form>
+</li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Mods</h3>
+                <ul>
+                    <li><a href="/mods/seasons">Seasons 17</a></li>
+                    <li><a href="/mods/seasons19">Seasons 19</a></li>
+                    <li><a href="https://farming-simulator.com/mod.php?mod_id=137675">Hauer Snow Pack</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Social &amp; Contact</h3>
+                <ul>
+                    <li><a href="https://www.youtube.com/c/realismusmodding" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.youtube.com/c/realismusmodding" ga-transport="beacon">YouTube</a></li>
+                    <li><a href="https://slack.realismusmodding.com" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://slack.realismusmodding.com" ga-transport="beacon">Slack</a></li>
+                    <li><a href="https://www.twitter.com/realismusMods" target="_blank" ga-on="click" ga-event-category="Outbound Link" ga-event-label="https://www.twitter.com/realismusMods" ga-transport="beacon">Twitter</a></li>
+                    <li><a href="mailto:realismusmodding@gmail.com?subject=Contact%20from%20website">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-6 directorynav">
+                <h3>Website</h3>
+                <ul>
+                    <li><a href="http://eepurl.com/c-E5Gn" target="_blank">Subscribe</a>
+                    <li><a href="/sitemap.xml">Sitemap</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Legal -->
+        <div class="row" id="footer-bottom">
+            <div class="col-10 footer-legal">
+                <p class="mb-0">&copy; 2018 Realismus Modding. All rights reserved. Documentation is licensed <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY-4.0</a>.</p>
+                <p>Farming Simulator is a trademark of GIANTS Software GmbH. All other trademarks are properties of their respective owners.</p>
+            </div>
+            <div class="col-2 text-right footer-language">
+            </div>
+        </div>
+    </footer>
+</section>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-96325378-1', 'auto');
+  ga('require', 'eventTracker');
+  ga('send', 'pageview');
+</script>
+<script async src="/assets/js/autotrack.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.4/cookieconsent.min.css" />
+<script async defer src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.2/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#424242"
+    },
+    "button": {
+      "background": "#7B9CD4"
+    }
+  }
+})});
+</script>
+<script src="/assets/js/anchor.min.js"></script>
+<script>
+(function () {
+  'use strict';
+  anchors.options.placement = 'right';
+  anchors.add();
+})();
+</script>
+</body>
+</html>
+
