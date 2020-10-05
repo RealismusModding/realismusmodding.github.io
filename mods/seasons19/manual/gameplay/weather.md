@@ -28,7 +28,7 @@ A thermodynamic model has been implemented to model the propagation of heat into
 <img src="/assets/img/mods/seasons/frozenGround.jpg" alt="Frozen ground icon" class="img-fluid rounded" />
 
 ### Crop moisture
-Crop moisture is simulated in the Seasons mod. Rain and hail increases crop moisture, while sunny weather helps to decrease it. An icon will show on the screen when the crop is too moist to harvest crops (shown below). When crop is moist it is also not possible to turn grass into hay by using a tedder. Crops will dry faster in summer than in autumn, both due to lower temperatures in autumn, but at this time of year there is also much less solar radiation. At night crop dry very slowly (as of yet there is no modelling of wind). This will mean that if you are unlucky and experiences a late afternoon shower in autumn, you might not be able to harvest before next morning after sunrise some time.
+Crop moisture is simulated in the Seasons mod. Rain and hail increases crop moisture, while sunny weather helps to decrease it. An icon will show on the screen when the crop is too moist (more than 20% moisture content) to harvest crops (shown below). When crop is moist it is also not possible to turn grass into hay by using a tedder. Crops will dry faster in summer than in autumn, both due to lower temperatures in autumn, but at this time of year there is also much less solar radiation. At night crop dry very slowly (as of yet there is no modelling of wind). This will mean that if you are unlucky and experiences a late afternoon shower in autumn, you might not be able to harvest before next morning after sunrise some time.
 
 Note that you can turn off this feature if it is too bothersome to you. There is a toggle in the Seasons menu settings.
 
